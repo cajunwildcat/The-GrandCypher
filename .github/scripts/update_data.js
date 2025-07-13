@@ -199,10 +199,6 @@ let overhead = `dataSet[dataSetVersion] = {};
 
 dataSet[dataSetVersion].options = [
     {
-        name: "Filter by Unique",
-        key: "unique"
-    },
-	{
 		name: "Filter by Rarity",
 		key: "rarity",
 		checked: true,
@@ -269,6 +265,12 @@ dataSet[dataSetVersion].options = [
 			{name: "Other", key: "o"},
 		]
 	},
+	{
+        name: "Filter to Unique",
+        key: "unique",
+		checked: true,
+		tooltip: "This will filter the options to be non-seasonal versions of characters unless that character only has 1 seasonal playable"
+    },
 ];`
 
 let characterData;
@@ -276,7 +278,6 @@ let latestCount;
 characterData = JSON.parse(readFileSync(characterFilePath, "utf8"));
 latestCount = 0
 if (Object.keys(characterData).length != latestCount) {
-    let uniqueNames = new Set(Object.values(characterData).map(c => c.name));
     let date = new Date();
     let dataDate = `${date.getFullYear()}-${('0' + (date.getMonth() + 1)).slice(-2)}-${('0' + (date.getDate() + 1)).slice(-2)}`;
     console.log(`Writing new dataset for ${dataDate}`);
@@ -293,7 +294,7 @@ if (Object.keys(characterData).length != latestCount) {
                 element: [char.element],
                 gender: [char.gender],
                 race: char.race,
-                unique: !char.pageName.includes(" (") || Object.values(characterData).filter(c => c.charid == char.charid).length == 1
+                unique: (char.pageName.includes(" (") && Object.values(characterData).filter(c=>c.name==char.name).length != 1) || typeof(char.charid) != "number"
             }
         });
     }
