@@ -61,15 +61,23 @@ const jqQueries = {
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/zoom/${item.id}_02.png`, `./assets/characters/full/${item.id}_02`);
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_01.jpg`, `./assets/characters/tall/${item.id}_01`);
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_02.jpg`, `./assets/characters/tall/${item.id}_02`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_01.jpg`, `./assets/characters/icon/${item.id}_01`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_02.jpg`, `./assets/characters/icon/${item.id}_02`);
             if (item.maxUncap >= 5) {
                 downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/zoom/${item.id}_03.png`, `./assets/characters/full/${item.id}_03`);
                 downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_03.jpg`, `./assets/characters/tall/${item.id}_03`);
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_03.jpg`, `./assets/characters/icon/${item.id}_03`);
             }
             if (item.maxUncap >= 6) {
                 downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/zoom/${item.id}_04.png`, `./assets/characters/full/${item.id}_04`);
                 downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_04.jpg`, `./assets/characters/tall/${item.id}_04`);
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_04.jpg`, `./assets/characters/icon/${item.id}_04`);
             }
-            if (item.artbonus != null) downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/zoom/${item.id}_91.png`, `./assets/characters/full/${item.id}_91`);
+            if (item.artbonus != null) {
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/zoom/${item.id}_91.png`, `./assets/characters/full/${item.id}_91`);
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_91.png`, `./assets/characters/full/${item.id}_91`);
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_91.png`, `./assets/characters/full/${item.id}_91`);
+            }
         }
         return {
             [item.id]: {
@@ -160,7 +168,7 @@ function downloadImage(srcLink, destinationFile) {
     if (existsSync(`${destinationFile}.webp`)) {
         return;
     }
-    downloadlist.push(new Promise(async (resolve) => {
+    downloadlist.push(async () => {
         get(srcLink, (res) => {
             let data = [];
             res.on('data', chunk => data.push(chunk));
@@ -175,13 +183,11 @@ function downloadImage(srcLink, destinationFile) {
                 } catch (err) {
                     console.error(`Error converting image ${destinationFile}:`, err);
                 }
-                resolve();
             });
         }).on('error', (err) => {
             console.error('Error downloading image:', err);
-            resolve();
         });
-    }));
+    });
 }
 
 // Update json files
@@ -276,7 +282,7 @@ dataSet[dataSetVersion].options = [
 let characterData;
 let latestCount;
 characterData = JSON.parse(readFileSync(characterFilePath, "utf8"));
-latestCount = 0
+latestCount = readFileSync(sorterDataPath + "latest-count", "utf-8")
 if (Object.keys(characterData).length != latestCount) {
     let date = new Date();
     let dataDate = `${date.getFullYear()}-${('0' + (date.getMonth() + 1)).slice(-2)}-${('0' + (date.getDate() + 1)).slice(-2)}`;
@@ -294,7 +300,7 @@ if (Object.keys(characterData).length != latestCount) {
                 element: [char.element],
                 gender: [char.gender],
                 race: char.race,
-                unique: (char.pageName.includes(" (") && Object.values(characterData).filter(c=>c.name==char.name).length != 1) || typeof(char.charid) != "number"
+                unique: (char.pageName.includes(" (") && Object.values(characterData).filter(c => c.name == char.name).length != 1) || typeof (char.charid) != "number"
             }
         });
     }
@@ -312,9 +318,11 @@ dataSet[dataSetVersion].characterData = ${JSON.stringify(formattedData)};`);
 }
 
 // Download images
-
-for (const task of downloadlist) {
-    if (typeof (task) != "function") continue;
-    await task();
-    await new Promise(resolve => setTimeout(resolve, 50))
-}
+(function resolveDownloads(i) {
+    setTimeout(() => {
+        if (i < downloadlist.length) {
+            downloadlist[i]();
+            resolveDownloads(i + 1)
+        }
+    }, 100);
+})(0)
