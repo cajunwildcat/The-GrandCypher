@@ -274,8 +274,8 @@ dataSet[dataSetVersion].options = [
 	{
         name: "Filter to Unique",
         key: "unique",
-		checked: true,
-		tooltip: "This will filter the options to be non-seasonal versions of characters unless that character only has 1 seasonal playable"
+		checked: false,
+		tooltip: "This will filter the options to be non-seasonal versions of characters unless that character only has 1 seasonal playable. You should leave this unchecked unless you have all or almost all other filters enabled."
     },
 ];`
 
