@@ -282,7 +282,7 @@ dataSet[dataSetVersion].options = [
 let characterData;
 let latestCount;
 characterData = JSON.parse(readFileSync(characterFilePath, "utf8"));
-latestCount = readFileSync(sorterDataPath + "latest-count", "utf-8")
+latestCount = readFileSync(sorterDataPath + "latest-count", "utf-8");
 if (Object.keys(characterData).length != latestCount) {
     let date = new Date();
     let dataDate = `${date.getFullYear()}-${('0' + (date.getMonth() + 1)).slice(-2)}-${('0' + (date.getDate() + 1)).slice(-2)}`;
@@ -293,7 +293,8 @@ if (Object.keys(characterData).length != latestCount) {
         let series = char.series ? char.series.split(",") : ["none"];
         formattedData.push({
             name: char.pageName,
-            img: `${id}_01.webp`,
+            img: `full/${id}_01.webp`,
+            img2: `icon/${id}_01.webp`,
             opts: {
                 rarity: [char.rarity],
                 series: series,

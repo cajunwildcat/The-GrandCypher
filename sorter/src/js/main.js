@@ -115,22 +115,6 @@ function init() {
 		}
 	});
 
-	document.querySelector('.image.selector').insertAdjacentElement('beforeend', document.createElement('select'));
-
-	/** Initialize image quantity selector for results. */
-	for (let i = 0; i <= 10; i++) {
-		const select = document.createElement('option');
-		select.value = i;
-		select.text = i;
-		if (i === 3) { select.selected = 'selected'; }
-		document.querySelector('.image.selector > select').insertAdjacentElement('beforeend', select);
-	}
-
-	document.querySelector('.image.selector > select').addEventListener('input', (e) => {
-		const imageNum = e.target.options[e.target.selectedIndex].value;
-		result(Number(imageNum));
-	});
-
 	/** Show load button if save data exists. */
 	if (storedSaveType) {
 		document.querySelector('.starting.load.button > span').insertAdjacentText('beforeend', storedSaveType);
@@ -478,12 +462,11 @@ function progressBar(indicator, percentage) {
 
 /**
  * Shows the result of the sorter.
- * 
- * @param {number} [imageNum=3] Number of images to display. Defaults to 3.
  */
-function result(imageNum = 3) {
+function result() {
+	document.querySelector(".sort.left.image").src = "src/assets/defaultL.png";
+	document.querySelector(".sort.right.image").src = "src/assets/defaultR.png";
 	document.querySelectorAll('.finished.button').forEach(el => el.style.display = 'block');
-	document.querySelector('.image.selector').style.display = 'block';
 	document.querySelector('.time.taken').style.display = 'block';
 
 	document.querySelectorAll('.sorting.button').forEach(el => el.style.display = 'none');
@@ -491,38 +474,30 @@ function result(imageNum = 3) {
 	document.querySelector('.options').style.display = 'none';
 	document.querySelector('.info').style.display = 'none';
 
-	const header = '<div class="result head"><div class="left">Order</div><div class="right">Name</div></div>';
 	const timeStr = `This sorter was completed on ${new Date(timestamp + timeTaken).toString()} and took ${msToReadableTime(timeTaken)}. <a href="${location.protocol}//${sorterURL}">Do another sorter?</a>`;
-	const imgRes = (char, num) => {
-		const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
-		const charTooltip = char.name !== charName ? char.name : '';
-		return `<div class="result image"><div class="left"><span>${num}</span></div><div class="right"><img src="${char.img}"><div><span title="${charTooltip}">${charName}</span></div></div></div>`;
-	}
 	const res = (char, num) => {
 		const charName = reduceTextWidth(char.name, 'Arial 12px', 160);
 		const charTooltip = char.name !== charName ? char.name : '';
-		return `<div class="result"><div class="left">${num}</div><div class="right"><span title="${charTooltip}">${charName}</span></div></div>`;
+		return `<div class="result"><a target="_blank" href="https://www.gbf.wiki/${char.name}"><img src="${num > 5? char.img2 : char.img}"></a><div class="text"><span title="${charTooltip}">${charName}</span><span class="rank">${num}</span></div></div>`;
 	}
 
 	let rankNum = 1;
 	let tiedRankNum = 1;
-	let imageDisplay = imageNum;
 
 	const finalSortedIndexes = sortedIndexList[0].slice(0);
 	const resultTable = document.querySelector('.results');
 	const timeElem = document.querySelector('.time.taken');
 
-	resultTable.innerHTML = header;
 	timeElem.innerHTML = timeStr;
+	let top5 = document.createElement("div");
+	top5.classList.add("top-5")
+	resultTable.appendChild(top5);
 
 	characterDataToSort.forEach((val, idx) => {
 		const characterIndex = finalSortedIndexes[idx];
 		const character = characterDataToSort[characterIndex];
-		if (imageDisplay-- > 0) {
-			resultTable.insertAdjacentHTML('beforeend', imgRes(character, rankNum));
-		} else {
-			resultTable.insertAdjacentHTML('beforeend', res(character, rankNum));
-		}
+		if (rankNum <= 5) top5.insertAdjacentHTML('beforeend', res(character, rankNum));
+		else resultTable.insertAdjacentHTML('beforeend', res(character, rankNum));
 		finalCharacters.push({ rank: rankNum, name: character.name });
 
 		if (idx < characterDataToSort.length - 1) {
@@ -794,6 +769,7 @@ function preloadImages() {
 
 	return Promise.all(characterDataToSort.map(async (char, idx) => {
 		characterDataToSort[idx].img = await loadImage(imageRoot + char.img);
+		characterDataToSort[idx].img2 = await loadImage(imageRoot + char.img2);
 	}));
 }
 
