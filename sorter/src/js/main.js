@@ -759,7 +759,7 @@ function preloadImages() {
 		return new Promise((res, rej) => {
 			const reader = new FileReader();
 			reader.onload = ev => {
-				progressBar(`Loading Image ${++imagesLoaded}`, Math.floor(imagesLoaded * 100 / totalLength));
+				progressBar(`Loading Image ${++imagesLoaded}`, Math.floor(imagesLoaded / 2 * 100 / totalLength));
 				res(ev.target.result);
 			};
 			reader.onerror = rej;
