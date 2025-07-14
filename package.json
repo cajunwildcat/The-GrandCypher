@@ -1,0 +1,25 @@
+{
+  "name": "the-grandcypher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "https": "^1.0.0",
+    "sharp": "^0.34.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cajunwildcat/The-GrandCypher.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cajunwildcat/The-GrandCypher/issues"
+  },
+  "homepage": "https://github.com/cajunwildcat/The-GrandCypher#readme",
+  "description": ""
+}

@@ -41,20 +41,20 @@ body {
 .sorter {
   margin: 0px auto;
   display: grid;
-  grid-template-columns: 44% 6% 44%;
+  grid-template-columns: 43% auto 43%;
   grid-gap: 20px;
   justify-content: center;
 }
 
 .button {
-  font-size: 1.5em;
+  font-size: 1.2em;
   border: 1px solid black;
   text-align: center;
   padding: 6%;
   grid-column: 2 / 3;
   cursor: pointer;
   align-self: center;
-  /*border-radius: 20%;*/
+  min-width: fit-content;
 }
 
 .starting.start.button {
