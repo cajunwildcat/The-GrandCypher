@@ -3214,5 +3214,13 @@
     "rarity": "SSR",
     "element": "fire",
     "series": "robur"
+  },
+  "2040437000": {
+    "pageName": "Bastet (Summer)",
+    "name": "Bastet",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "wind",
+    "series": "summer"
   }
 }

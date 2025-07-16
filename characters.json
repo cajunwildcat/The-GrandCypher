@@ -27634,5 +27634,63 @@
     "artbouns": false,
     "artex": false,
     "charid": 3100
+  },
+  "3040601000": {
+    "pageName": "Atum (Summer)",
+    "name": "Atum",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": "summer",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "アトゥム",
+    "releaseDate": "2025-07-15",
+    "gender": "m",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Primal"
+    ],
+    "recruitWeapon": "Shati Hariq",
+    "weapon": [
+      "Staff"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3280
+  },
+  "3040602000": {
+    "pageName": "Korwa (Yukata)",
+    "name": "Korwa",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": "yukata",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "コルワ",
+    "releaseDate": "2025-07-15",
+    "gender": "f",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Special",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Quill of Happy Endings",
+    "weapon": [
+      "Staff"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3058
   }
 }

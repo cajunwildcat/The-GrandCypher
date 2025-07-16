@@ -2008,5 +2008,10 @@
     "pageName": "Soul Invoker",
     "name": "Soul Invoker",
     "maxUncap": 3
+  },
+  "2040437000": {
+    "pageName": "Bastet (Summer)",
+    "name": "Bastet",
+    "maxUncap": 4
   }
 }
