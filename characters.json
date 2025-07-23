@@ -13499,7 +13499,7 @@
   "3040119000": {
     "pageName": "Drang (Grand)",
     "name": "Drang",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Water",
     "series": "grand",
@@ -13511,7 +13511,7 @@
     "obtain": [
       "premium,grand,flash"
     ],
-    "flbDate": null,
+    "flbDate": "2025-07-22",
     "expeditionType": "mercenary/skyfarer",
     "type": "Special",
     "race": [
