@@ -34118,6 +34118,23 @@
     "awakeningType1": null,
     "awakeningType2": null
   },
+  "1040425000": {
+    "pageName": "Shade and Suffering",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "earth",
+    "s1Name": "Staff Wrath",
+    "s2Name": "Staff Voltage II",
+    "s3Name": null,
+    "s1 icon": "ws_skill_job_weapon.png",
+    "s2 icon": "ws_skill_job_weapon.png",
+    "s3 icon": null,
+    "type": "staff",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null
+  },
   "1040500000": {
     "pageName": "Gastraphetes",
     "maxUncap": 4,
@@ -40286,6 +40303,23 @@
     "s3 icon": "ws_skill_job_weapon.png",
     "type": "melee",
     "awakening": "rowv",
+    "awakeningType1": null,
+    "awakeningType2": null
+  },
+  "1040620800": {
+    "pageName": "Beach House Ramen",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "wind",
+    "s1Name": "Ventosus's Trium",
+    "s2Name": "Wind's Healing",
+    "s3Name": "Whirlwind's Stamina",
+    "s1 icon": "ws_skill_ta_4_3.png",
+    "s2 icon": "ws_skill_heal_limit_4_1.png",
+    "s3 icon": "ws_skill_whole_4_2.png",
+    "type": "melee",
+    "awakening": null,
     "awakeningType1": null,
     "awakeningType2": null
   },

@@ -27651,7 +27651,7 @@
       "premium,swimsuit"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Attack",
     "race": [
       "Primal"
@@ -27692,5 +27692,64 @@
     "artbouns": false,
     "artex": false,
     "charid": 3058
+  },
+  "3040603000": {
+    "pageName": "Lich (Summer)",
+    "name": "Lich",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": "summer",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "リッチ",
+    "releaseDate": "2025-07-31",
+    "gender": "f",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Primal"
+    ],
+    "recruitWeapon": "Shade and Suffering",
+    "weapon": [
+      "Staff"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3184
+  },
+  "3040604000": {
+    "pageName": "Cassius (Summer)",
+    "name": "Cassius",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": "summer",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "カシウス",
+    "releaseDate": "2025-07-31",
+    "gender": "m",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Balanced",
+    "race": [
+      "Other"
+    ],
+    "recruitWeapon": "Beach House Ramen",
+    "weapon": [
+      "Melee",
+      "Spear"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 2142
   }
 }

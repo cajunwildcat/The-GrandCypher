@@ -3222,5 +3222,13 @@
     "rarity": "SSR",
     "element": "wind",
     "series": "summer"
+  },
+  "2040438000": {
+    "pageName": "Commander of Destruction",
+    "name": "Commander of Destruction",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "element": "earth",
+    "series": "robur"
   }
 }
