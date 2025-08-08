@@ -3230,5 +3230,13 @@
     "rarity": "SSR",
     "element": "earth",
     "series": "robur"
+  },
+  "2040439000": {
+    "pageName": "Nobunaga, Feitan, Machi, and Uvogin",
+    "name": "Nobunaga, Feitan, Machi, and Uvogin",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "dark",
+    "series": null
   }
 }

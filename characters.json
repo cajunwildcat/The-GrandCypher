@@ -27751,5 +27751,94 @@
     "artbouns": false,
     "artex": false,
     "charid": 2142
+  },
+  "3040605000": {
+    "pageName": "Gon",
+    "name": "Gon",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": "tie-in",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ゴン",
+    "releaseDate": "2025-08-07",
+    "gender": "m",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Balanced",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": null,
+    "weapon": [
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3281
+  },
+  "3040607000": {
+    "pageName": "Kurapika",
+    "name": "Kurapika",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": "tie-in",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "クラピカ",
+    "releaseDate": "2025-08-07",
+    "gender": "m",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Balanced",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Five-Finger Chain",
+    "weapon": [
+      "Dagger",
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
+  },
+  "3040608000": {
+    "pageName": "Chrollo",
+    "name": "Chrollo",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": "tie-in",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "クロロ",
+    "releaseDate": "2025-08-07",
+    "gender": "m",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Bandit's Secret",
+    "weapon": [
+      "Staff",
+      "Dagger"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
   }
 }
