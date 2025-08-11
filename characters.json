@@ -27206,7 +27206,7 @@
       "premium,swimsuit"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Attack",
     "race": [
       "Human"
@@ -27533,7 +27533,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": "Bloodhound",
     "type": "Special",
     "race": [
       "Other"
@@ -27827,7 +27827,7 @@
       "collab"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Special",
     "race": [
       "Human"
