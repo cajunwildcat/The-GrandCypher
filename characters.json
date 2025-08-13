@@ -27781,6 +27781,36 @@
     "artex": false,
     "charid": 3281
   },
+  "3040606000": {
+    "pageName": "Killua",
+    "name": "Killua",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": "tie-in",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "キルア",
+    "releaseDate": "2025-08-12",
+    "gender": "m",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": null,
+    "weapon": [
+      "Melee",
+      "Dagger"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3282
+  },
   "3040607000": {
     "pageName": "Kurapika",
     "name": "Kurapika",

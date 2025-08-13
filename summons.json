@@ -3238,5 +3238,13 @@
     "rarity": "SSR",
     "element": "dark",
     "series": "collab"
+  },
+  "2040440000": {
+    "pageName": "Hisoka",
+    "name": "Hisoka",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "water",
+    "series": "collab"
   }
 }
