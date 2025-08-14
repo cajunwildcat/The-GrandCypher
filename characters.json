@@ -27797,7 +27797,7 @@
       "collab"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Special",
     "race": [
       "Human"
@@ -27869,6 +27869,6 @@
     ],
     "artbouns": false,
     "artex": false,
-    "charid": null
+    "charid": 3284
   }
 }
