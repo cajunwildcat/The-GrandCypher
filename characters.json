@@ -27870,5 +27870,65 @@
     "artbouns": false,
     "artex": false,
     "charid": 3284
+  },
+  "3040609000": {
+    "pageName": "Haaselia (Summer)",
+    "name": "Haaselia",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": "evokers,summer",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ハーゼリーラ",
+    "releaseDate": "2025-08-15",
+    "gender": "f",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": "Evokers",
+    "type": "Balanced",
+    "race": [
+      "Harvin"
+    ],
+    "recruitWeapon": "Moon Shotel",
+    "weapon": [
+      "Staff",
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3107
+  },
+  "3040610000": {
+    "pageName": "Catura (Summer)",
+    "name": "Catura",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": "12generals,summer",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "シャトラ",
+    "releaseDate": "2025-08-15",
+    "gender": "f",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Defense",
+    "race": [
+      "Draph"
+    ],
+    "recruitWeapon": "Second Float of the Herd",
+    "weapon": [
+      "Spear",
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3170
   }
 }
