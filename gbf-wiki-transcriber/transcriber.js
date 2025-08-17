@@ -1,0 +1,62 @@
+const getSubstringFromNInstance = (str, char, N = 3) => {
+    // Initialize the position for searching and the count of occurrences
+    let position = -1;
+
+    // Loop to find the index of the third occurrence of the character
+    for (let i = 0; i < N; i++) {
+        position = str.indexOf(char, position + 1);
+        if (position === -1) break; // If the character is not found, exit the loop
+    }
+
+    // If the third occurrence is found, return the substring starting from it
+    if (position !== -1) {
+        return str.substring(position + 1);
+    } else {
+        // Return an empty string or null if the third occurrence is not found
+        return '';
+    }
+};
+
+const convertTableToTemplate = (tableText) => {
+    tableText = tableText.replace(`{| class="wikitable sortable header-fixed" style="text-align:center; max-width: 100%; background-color:#e5dfd8;"
+! style="background-color:#743e32; color:#FFFFFF; width: 120px;" class="unsortable" |Weapon
+! style="background-color:#743e32; color:#FFFFFF; width: auto;" |Rank
+! style="background-color:#743e32; color:#FFFFFF; width: 62px;" |Copies
+! style="background-color:#743e32; color:#FFFFFF; width: auto;" class="unsortable"|Notes
+|-`, "").replace(`|}`, "");
+    // Split the input into rows based on the MediaWiki table row delimiter "|-"
+    let rows = tableText.split("|-");
+
+    // Iterate over each row
+    rows = rows.map((row, index) => {
+        let info = row.split("\n|").filter(i=>i.trim()!="");
+        console.log(info);
+
+        let wep = info[0].match(/itm\|[^|]+\|/);
+        if (wep) wep = "|weapon=" + wep[0].split("|")[1];
+        else wep = "|customweapon=" + info[0].match(/{{.+}}/)[0];
+        
+        let rank = "|rank=" + info[1].match(/'''.+'''/)[0].replaceAll("'''","");
+
+        let copies = "|copies=" + info[2].substring(info[2].indexOf("|")+1).replaceAll("'''","").trim();
+
+        let notes = "|notes=" + info[3].substring(info[3].indexOf("|")+1).trim();
+
+        return `{{Advanced Grids/WeaponTable/Row
+${wep}
+${rank}
+${copies}
+${notes}
+}}`
+    });
+
+    // Join all sections into the final output
+    return `{{Advanced Grids/WeaponTable|color=core|\n${rows.join("\n\n")}\n}}`;
+};
+
+window.onload = e => {
+    document.querySelector("#convert-button").onclick = (e) => {
+        document.querySelector("#output-textarea").value =
+            convertTableToTemplate(document.querySelector("#input-textarea").value)
+    }
+}
