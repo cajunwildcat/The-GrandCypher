@@ -18,29 +18,28 @@ const getSubstringFromNInstance = (str, char, N = 3) => {
 };
 
 const convertTableToTemplate = (tableText) => {
-    tableText = tableText.replace(`{| class="wikitable sortable header-fixed" style="text-align:center; max-width: 100%; background-color:#e5dfd8;"
-! style="background-color:#743e32; color:#FFFFFF; width: 120px;" class="unsortable" |Weapon
-! style="background-color:#743e32; color:#FFFFFF; width: auto;" |Rank
-! style="background-color:#743e32; color:#FFFFFF; width: 62px;" |Copies
-! style="background-color:#743e32; color:#FFFFFF; width: auto;" class="unsortable"|Notes
-|-`, "").replace(`|}`, "");
+    tableText = tableText.substring(tableText.indexOf("|-")).replace(`|}`, "");
     // Split the input into rows based on the MediaWiki table row delimiter "|-"
-    let rows = tableText.split("|-");
+    let rows = tableText.split("|-").filter(i => i.trim() != "");
 
     // Iterate over each row
     rows = rows.map((row, index) => {
-        let info = row.split("\n|").filter(i=>i.trim()!="");
+        let info = row.split("\n|").filter(i => i.trim() != "");
         console.log(info);
 
-        let wep = info[0].match(/itm\|[^|]+\|/);
+        let wep = info[0].match(/(i|I)tm\|[^|]+\|/);
         if (wep) wep = "|weapon=" + wep[0].split("|")[1];
-        else wep = "|customweapon=" + info[0].match(/{{.+}}/)[0];
-        
-        let rank = "|rank=" + info[1].match(/'''.+'''/)[0].replaceAll("'''","");
+        else {
+            wep = info[0].match(/{{.+}}/);
+            if (!wep) wep = info;
+            wep = "|customweapon=" + wep[0];
+        }
 
-        let copies = "|copies=" + info[2].substring(info[2].indexOf("|")+1).replaceAll("'''","").trim();
+        let rank = "|rank=" + info[1].match(/'''.+'''/)[0].replaceAll("'''", "");
 
-        let notes = "|notes=" + info[3].substring(info[3].indexOf("|")+1).trim();
+        let copies = "|copies=" + info[2].substring(info[2].indexOf("|") + 1).replaceAll("'''", "").trim();
+
+        let notes = "|notes=" + info[3].substring(info[3].indexOf("|") + 1).trim();
 
         return `{{Advanced Grids/WeaponTable/Row
 ${wep}
