@@ -26,7 +26,7 @@ const convertTableToTemplate = (tableText) => {
     rows = rows.map((row, index) => {
         let info = row.split("\n|").filter(i => i.trim() != "");
         console.log(info);
-
+        
         let wep = info[0].match(/(i|I)tm\|[^|]+\|/);
         if (wep) wep = "|weapon=" + wep[0].split("|")[1];
         else {
@@ -34,16 +34,19 @@ const convertTableToTemplate = (tableText) => {
             if (!wep) wep = info;
             wep = "|customweapon=" + wep[0];
         }
-
-        let rank = "|rank=" + info[1].match(/'''.+'''/)[0].replaceAll("'''", "");
-
-        let copies = "|copies=" + info[2].substring(info[2].indexOf("|") + 1).replaceAll("'''", "").trim();
-
-        let notes = "|notes=" + info[3].substring(info[3].indexOf("|") + 1).trim();
+        
+        let i = 1;
+        let rank;
+        if (info.length > 3) {
+            rank = "|rank=" + info[i].match(/'''.+'''/)[0].replaceAll("'''", "");
+            i++;
+        }
+        let copies = "|copies=" + info[i].substring(info[i].indexOf("|") + 1).replaceAll("'''", "").trim();
+        i++;
+        let notes = "|notes=" + info[i].substring(info[i].indexOf("|") + 1).trim();
 
         return `{{Advanced Grids/WeaponTable/Row
-${wep}
-${rank}
+${wep}${rank? "\n"+rank : ""}
 ${copies}
 ${notes}
 }}`
