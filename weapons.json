@@ -37123,7 +37123,7 @@
     "s2 icon": "ws_skill_job_weapon.png",
     "s3 icon": null,
     "type": "gun",
-    "awakening": null,
+    "awakening": "exo",
     "awakeningType1": null,
     "awakeningType2": null
   },
