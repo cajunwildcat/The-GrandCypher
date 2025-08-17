@@ -2824,5 +2824,35 @@
   },
   "3040600000": {
     "pageName": "Fraux (Formal)"
+  },
+  "3040601000": {
+    "pageName": "Atum (Summer)"
+  },
+  "3040602000": {
+    "pageName": "Korwa (Yukata)"
+  },
+  "3040603000": {
+    "pageName": "Lich (Summer)"
+  },
+  "3040604000": {
+    "pageName": "Cassius (Summer)"
+  },
+  "3040605000": {
+    "pageName": "Gon"
+  },
+  "3040606000": {
+    "pageName": "Killua"
+  },
+  "3040607000": {
+    "pageName": "Kurapika"
+  },
+  "3040608000": {
+    "pageName": "Chrollo"
+  },
+  "3040609000": {
+    "pageName": "Haaselia (Summer)"
+  },
+  "3040610000": {
+    "pageName": "Catura (Summer)"
   }
 }

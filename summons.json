@@ -3162,7 +3162,7 @@
   "2040430000": {
     "pageName": "Wedges of the Sky",
     "name": "Wedges of the Sky",
-    "maxUncap": 3,
+    "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
     "series": null
@@ -3214,5 +3214,37 @@
     "rarity": "SSR",
     "element": "fire",
     "series": "robur"
+  },
+  "2040437000": {
+    "pageName": "Bastet (Summer)",
+    "name": "Bastet",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "wind",
+    "series": "summer"
+  },
+  "2040438000": {
+    "pageName": "Commander of Destruction",
+    "name": "Commander of Destruction",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "element": "earth",
+    "series": "robur"
+  },
+  "2040439000": {
+    "pageName": "Nobunaga, Feitan, Machi, and Uvogin",
+    "name": "Nobunaga, Feitan, Machi, and Uvogin",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "dark",
+    "series": "collab"
+  },
+  "2040440000": {
+    "pageName": "Hisoka",
+    "name": "Hisoka",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "water",
+    "series": "collab"
   }
 }
