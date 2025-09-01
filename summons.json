@@ -3246,5 +3246,13 @@
     "rarity": "SSR",
     "element": "water",
     "series": "collab"
+  },
+  "2040441000": {
+    "pageName": "Vepar",
+    "name": "Vepar",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "element": "dark",
+    "series": "robur"
   }
 }
