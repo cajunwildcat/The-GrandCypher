@@ -27988,5 +27988,64 @@
     "artbouns": false,
     "artex": false,
     "charid": 3286
+  },
+  "3040613000": {
+    "pageName": "Sylvia",
+    "name": "Sylvia",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": "grand",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "シルヴィア",
+    "releaseDate": "2025-09-19",
+    "gender": "f",
+    "obtain": [
+      "premium,grand,flash"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Balanced",
+    "race": [
+      "Primal"
+    ],
+    "recruitWeapon": "Ebony Retribution",
+    "weapon": [
+      "Sabre"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3287
+  },
+  "3040614000": {
+    "pageName": "Joel (SSR)",
+    "name": "Joel",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": null,
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ジョエル",
+    "releaseDate": "2025-09-19",
+    "gender": "m",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Heal",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Lagoon's Edge",
+    "weapon": [
+      "Melee",
+      "Dagger"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 1036
   }
 }
