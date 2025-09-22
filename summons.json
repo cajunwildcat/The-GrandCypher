@@ -2746,7 +2746,7 @@
   "2040378000": {
     "pageName": "Baihu",
     "name": "Baihu",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "earth",
     "series": null
@@ -2754,7 +2754,7 @@
   "2040379000": {
     "pageName": "Qinglong",
     "name": "Qinglong",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "wind",
     "series": null
