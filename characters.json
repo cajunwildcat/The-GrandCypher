@@ -12003,7 +12003,7 @@
   "3040066000": {
     "pageName": "Lilele",
     "name": "Lilele",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Water",
     "series": null,
@@ -12015,7 +12015,7 @@
     "obtain": [
       "classic"
     ],
-    "flbDate": null,
+    "flbDate": "2025-09-25",
     "expeditionType": null,
     "type": "Special",
     "race": [
