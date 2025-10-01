@@ -17523,7 +17523,7 @@
     "charid": 2035
   },
   "3040256000": {
-    "pageName": "Danua (SSR)",
+    "pageName": "Danua (Light)",
     "name": "Danua",
     "maxUncap": 4,
     "rarity": "SSR",
@@ -28047,5 +28047,64 @@
     "artbouns": false,
     "artex": false,
     "charid": 1036
+  },
+  "3040615000": {
+    "pageName": "Lamorak",
+    "name": "Lamorak",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": null,
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ラモラック",
+    "releaseDate": "2025-09-30",
+    "gender": "m",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Special",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Feder des Zugvogels",
+    "weapon": [
+      "Staff"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
+  },
+  "3040616000": {
+    "pageName": "Danua (SSR)",
+    "name": "Danua",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": null,
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ダヌア",
+    "releaseDate": "2025-09-30",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Draph"
+    ],
+    "recruitWeapon": "Marionette Machete",
+    "weapon": [
+      "Dagger",
+      "Axe"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 2017
   }
 }

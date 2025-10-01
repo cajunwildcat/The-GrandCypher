@@ -1794,7 +1794,7 @@
     "pageName": "Noa (Grand)"
   },
   "3040256000": {
-    "pageName": "Danua (SSR)"
+    "pageName": "Danua (Light)"
   },
   "3040257000": {
     "pageName": "Jin"
@@ -2866,5 +2866,11 @@
   },
   "3040614000": {
     "pageName": "Joel (SSR)"
+  },
+  "3040615000": {
+    "pageName": "Lamorak"
+  },
+  "3040616000": {
+    "pageName": "Danua (SSR)"
   }
 }
