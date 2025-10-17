@@ -28106,5 +28106,94 @@
     "artbouns": false,
     "artex": false,
     "charid": 2017
+  },
+  "3040617000": {
+    "pageName": "Vajra (Halloween)",
+    "name": "Vajra",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": "12generals,halloween",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ヴァジラ",
+    "releaseDate": "2025-10-16",
+    "gender": "f",
+    "obtain": [
+      "premium,halloween"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Eleventh Treat of the Pack",
+    "weapon": [
+      "Katana",
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3093
+  },
+  "3040618000": {
+    "pageName": "Lancelot (Halloween)",
+    "name": "Lancelot",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": "halloween",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ランスロット",
+    "releaseDate": "2025-10-16",
+    "gender": "m",
+    "obtain": [
+      "premium,halloween"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Black Cat in a Hat",
+    "weapon": [
+      "Staff",
+      "Dagger"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3020
+  },
+  "3040619000": {
+    "pageName": "Tien (Halloween)",
+    "name": "Tien",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": "eternals,halloween",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "エッセル",
+    "releaseDate": "2025-10-16",
+    "gender": "f",
+    "obtain": [
+      "premium,halloween"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Pistolet Fleuri",
+    "weapon": [
+      "Gun"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 4010
   }
 }
