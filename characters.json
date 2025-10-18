@@ -27976,7 +27976,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Special",
     "race": [
       "Primal"
@@ -28034,7 +28034,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": "Naturalist",
     "type": "Heal",
     "race": [
       "Human"
@@ -28153,7 +28153,7 @@
       "premium,halloween"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Attack",
     "race": [
       "Human"
@@ -28183,7 +28183,7 @@
       "premium,halloween"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Attack",
     "race": [
       "Erune"
