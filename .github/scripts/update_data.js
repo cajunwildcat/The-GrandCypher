@@ -55,33 +55,58 @@ const jqQueries = {
             maxUncap: item.maxUncap
         }
     })).reduce((acc, curr) => Object.assign(acc, curr), {}),
-    characters: data => data.map(item => ({
-        [item.id]: {
-            pageName: item.pageName.replace(/&#039;/g, "'"),
-            name: item.name.replace(/&#039;/g, "'"),
-            maxUncap: item.maxUncap,
-            rarity: item.rarity,
-            element: item.element.trim(),
-            series: item.series,
-            styleName: item.styleName,
-            styleId: item.styleId,
-            jpname: item.jpname,
-            releaseDate: item.releaseDate,
-            gender: item.gender,
-            obtain: item.obtain,
-            flbDate: item.flbDate,
-            expeditionType: item.expeditionType,
-            type: item.type.trim(),
-            customType: item.customType,
-            race: item.race.map(r => r.trim()),
-            recruitWeapon: item.recruitWeapon ? item.recruitWeapon.replace(/&#039;/g, "'") : null,
-            weapon: item.weapon.map(w => w.trim()),
-            artbouns: item.artbouns ? true : false,
-            artex: item.artex ? true : false,
-            gender: item.gender,
-            charid: item.charid
+    characters: data => data.map(item => {
+        if (item.id != 3030182000) {
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/zoom/${item.id}_01.png`, `./assets/characters/full/${item.id}_01`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/zoom/${item.id}_02.png`, `./assets/characters/full/${item.id}_02`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_01.jpg`, `./assets/characters/tall/${item.id}_01`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_02.jpg`, `./assets/characters/tall/${item.id}_02`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_01.jpg`, `./assets/characters/icon/${item.id}_01`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_02.jpg`, `./assets/characters/icon/${item.id}_02`);
+            if (item.maxUncap >= 5) {
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/zoom/${item.id}_03.png`, `./assets/characters/full/${item.id}_03`);
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_03.jpg`, `./assets/characters/tall/${item.id}_03`);
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_03.jpg`, `./assets/characters/icon/${item.id}_03`);
+            }
+            if (item.maxUncap >= 6) {
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/zoom/${item.id}_04.png`, `./assets/characters/full/${item.id}_04`);
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_04.jpg`, `./assets/characters/tall/${item.id}_04`);
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_04.jpg`, `./assets/characters/icon/${item.id}_04`);
+            }
+            if (item.artbonus != null) {
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/zoom/${item.id}_91.png`, `./assets/characters/full/${item.id}_91`);
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_91.png`, `./assets/characters/full/${item.id}_91`);
+                downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_91.png`, `./assets/characters/full/${item.id}_91`);
+            }
         }
-    })).reduce((acc, curr) => Object.assign(acc, curr), {}),
+        return {
+            [item.id]: {
+                pageName: item.pageName.replace(/&#039;/g, "'"),
+                name: item.name.replace(/&#039;/g, "'"),
+                maxUncap: item.maxUncap,
+                rarity: item.rarity,
+                element: item.element.trim(),
+                series: item.series,
+                styleName: item.styleName,
+                styleId: item.styleId,
+                jpname: item.jpname,
+                releaseDate: item.releaseDate,
+                gender: item.gender,
+                obtain: item.obtain,
+                flbDate: item.flbDate,
+                expeditionType: item.expeditionType,
+                type: item.type.trim(),
+                customType: item.customType,
+                race: item.race.map(r => r.trim()),
+                recruitWeapon: item.recruitWeapon ? item.recruitWeapon.replace(/&#039;/g, "'") : null,
+                weapon: item.weapon.map(w => w.trim()),
+                artbouns: item.artbouns ? true : false,
+                artex: item.artex ? true : false,
+                gender: item.gender,
+                charid: item.charid
+            }
+        }
+    }).reduce((acc, curr) => Object.assign(acc, curr), {}),
     minCharacters: data => data.map(item => ({
         [item.id]: {
             pageName: item.pageName.replace(/&#039;/g, "'")
