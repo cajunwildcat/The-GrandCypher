@@ -3262,5 +3262,13 @@
     "rarity": "SSR",
     "element": "light",
     "series": "robur"
+  },
+  "2040443000": {
+    "pageName": "Cassiopeia",
+    "name": "Cassiopeia",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "element": "wind",
+    "series": "robur"
   }
 }

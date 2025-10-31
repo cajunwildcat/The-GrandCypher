@@ -27976,7 +27976,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Special",
     "race": [
       "Primal"
@@ -28034,7 +28034,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": "Naturalist",
     "type": "Heal",
     "race": [
       "Human"
@@ -28075,7 +28075,7 @@
     ],
     "artbouns": false,
     "artex": false,
-    "charid": null
+    "charid": 3288
   },
   "3040616000": {
     "pageName": "Danua (SSR)",
@@ -28106,5 +28106,152 @@
     "artbouns": false,
     "artex": false,
     "charid": 2017
+  },
+  "3040617000": {
+    "pageName": "Vajra (Halloween)",
+    "name": "Vajra",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": "12generals,halloween",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ヴァジラ",
+    "releaseDate": "2025-10-16",
+    "gender": "f",
+    "obtain": [
+      "premium,halloween"
+    ],
+    "flbDate": null,
+    "expeditionType": "bloodhound",
+    "type": "Attack",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Eleventh Treat of the Pack",
+    "weapon": [
+      "Katana",
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3093
+  },
+  "3040618000": {
+    "pageName": "Lancelot (Halloween)",
+    "name": "Lancelot",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": "halloween",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ランスロット",
+    "releaseDate": "2025-10-16",
+    "gender": "m",
+    "obtain": [
+      "premium,halloween"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Attack",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Black Cat in a Hat",
+    "weapon": [
+      "Staff",
+      "Dagger"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3020
+  },
+  "3040619000": {
+    "pageName": "Tien (Halloween)",
+    "name": "Tien",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": "eternals,halloween",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "エッセル",
+    "releaseDate": "2025-10-16",
+    "gender": "f",
+    "obtain": [
+      "premium,halloween"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Attack",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Pistolet Fleuri",
+    "weapon": [
+      "Gun"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 4010
+  },
+  "3040620000": {
+    "pageName": "Metera (Grand)",
+    "name": "Metera",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": "grand",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "メーテラ",
+    "releaseDate": "2025-10-31",
+    "gender": "f",
+    "obtain": [
+      "premium,grand,gala"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Aetherial Maverick",
+    "weapon": [
+      "Bow"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3012
+  },
+  "3040621000": {
+    "pageName": "Chichiri (Water)",
+    "name": "Chichiri",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": "4saints",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "チチリ",
+    "releaseDate": "2025-10-31",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Balanced",
+    "race": [
+      "Draph"
+    ],
+    "recruitWeapon": "Sweety-Weety Garnet Broadaxe",
+    "weapon": [
+      "Axe"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3248
   }
 }
