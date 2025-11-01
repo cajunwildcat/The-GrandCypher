@@ -60891,7 +60891,7 @@
     "pageName": "Aetherial Maverick",
     "maxUncap": 4,
     "rarity": "SSR",
-    "series": null,
+    "series": "grand",
     "element": "wind",
     "character": "Metera (Grand)",
     "skill1": {
@@ -68991,7 +68991,7 @@
       "icon": "ws_skill_penetrate_defense_1_3.png"
     },
     "skill3": {
-      "name": "Scarlet Swashbuckler",
+      "name": "Scarlet Aramis",
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "katana",

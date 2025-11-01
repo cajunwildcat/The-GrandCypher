@@ -28212,7 +28212,7 @@
       "premium,grand,gala"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Attack",
     "race": [
       "Erune"
@@ -28241,7 +28241,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Balanced",
     "race": [
       "Draph"
