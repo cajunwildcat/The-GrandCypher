@@ -3270,5 +3270,21 @@
     "rarity": "SSR",
     "element": "wind",
     "series": "robur"
+  },
+  "2040444000": {
+    "pageName": "Trigger of Awakening: Shinji and Rei",
+    "name": "Trigger of Awakening: Shinji and Rei",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "element": "water",
+    "series": "collab"
+  },
+  "2040445000": {
+    "pageName": "Mari and Unit 08",
+    "name": "Mari and Unit 08",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "element": "wind",
+    "series": "collab"
   }
 }

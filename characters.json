@@ -28253,5 +28253,95 @@
     "artbouns": false,
     "artex": false,
     "charid": 3248
+  },
+  "3040622000": {
+    "pageName": "Shinji &amp; Unit 01",
+    "name": "Shinji &amp; Unit 01",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": "tie-in",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "シンジ＆初号機",
+    "releaseDate": "2025-11-05",
+    "gender": "m",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Balanced",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": null,
+    "weapon": [
+      "Gun",
+      "Katana"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3289
+  },
+  "3040624000": {
+    "pageName": "Asuka &amp; Unit 02",
+    "name": "Asuka &amp; Unit 02",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": "tie-in",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "アスカ&amp;2号機",
+    "releaseDate": "2025-11-05",
+    "gender": "f",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Progressive Knife (Man-Portable)",
+    "weapon": [
+      "Gun",
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
+  },
+  "3040625000": {
+    "pageName": "Kaworu &amp; Mark.06",
+    "name": "Kaworu &amp; Mark.06",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": "tie-in",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "カヲル&amp;Mark.06",
+    "releaseDate": "2025-11-05",
+    "gender": "m",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Other"
+    ],
+    "recruitWeapon": "Spear of Cassius (Man-Portable)",
+    "weapon": [
+      "Spear",
+      "Harp"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
   }
 }

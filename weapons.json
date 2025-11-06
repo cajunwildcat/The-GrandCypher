@@ -33599,6 +33599,30 @@
     "awakeningType1": null,
     "awakeningType2": null
   },
+  "1040122400": {
+    "pageName": "Progressive Knife (Man-Portable)",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "fire",
+    "character": null,
+    "skill1": {
+      "name": "Hellfire's Stamina",
+      "icon": "ws_skill_whole_1_2.png"
+    },
+    "skill2": {
+      "name": "Hellfire's Verity",
+      "icon": "ws_skill_tec_1_2.png"
+    },
+    "skill3": {
+      "name": "Fire's Fandango",
+      "icon": "ws_skill_ranbu_1_1.png"
+    },
+    "type": "dagger",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null
+  },
   "1040200000": {
     "pageName": "Cletine",
     "maxUncap": 3,
@@ -38196,6 +38220,54 @@
     },
     "skill2": {
       "name": "Covert Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "spear",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null
+  },
+  "1040220500": {
+    "pageName": "Spear of Cassius (Man-Portable)",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "light",
+    "character": null,
+    "skill1": {
+      "name": "Zion's Aegis",
+      "icon": "ws_skill_hp_5_3.png"
+    },
+    "skill2": {
+      "name": "Light's  Healing",
+      "icon": "ws_skill_heal_limit_5_1.png"
+    },
+    "skill3": {
+      "name": "Glimmer's Persistence",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "spear",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null
+  },
+  "1040220600": {
+    "pageName": "Spear of Longinus (Man-Portable)",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": null,
+    "skill1": {
+      "name": "Spear of Despair",
+      "icon": "ws_skill_atk_a_6_3.png"
+    },
+    "skill2": {
+      "name": "Anti-A.T. Field",
       "icon": "ws_skill_job_weapon.png"
     },
     "skill3": {
@@ -52789,6 +52861,30 @@
     "skill2": {
       "name": "Water's Aegis",
       "icon": "ws_skill_hp_2_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "gun",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null
+  },
+  "1040518700": {
+    "pageName": "Assault Rifle (Man-Portable)",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "light",
+    "character": null,
+    "skill1": {
+      "name": "Full-Auto Fire",
+      "icon": "ws_skill_moment_a_5_3.png"
+    },
+    "skill2": {
+      "name": "EM Hypervelocity Round",
+      "icon": "ws_skill_job_weapon.png"
     },
     "skill3": {
       "name": null,
