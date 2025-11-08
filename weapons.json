@@ -33601,11 +33601,11 @@
   },
   "1040122400": {
     "pageName": "Progressive Knife (Man-Portable)",
-    "maxUncap": 3,
+    "maxUncap": 4,
     "rarity": "SSR",
     "series": null,
     "element": "fire",
-    "character": null,
+    "character": "Asuka &amp; Unit 02",
     "skill1": {
       "name": "Hellfire's Stamina",
       "icon": "ws_skill_whole_1_2.png"
@@ -38233,11 +38233,11 @@
   },
   "1040220500": {
     "pageName": "Spear of Cassius (Man-Portable)",
-    "maxUncap": 3,
+    "maxUncap": 4,
     "rarity": "SSR",
     "series": null,
     "element": "light",
-    "character": null,
+    "character": "Kaworu &amp; Mark.06",
     "skill1": {
       "name": "Zion's Aegis",
       "icon": "ws_skill_hp_5_3.png"
