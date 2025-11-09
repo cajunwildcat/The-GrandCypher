@@ -27839,7 +27839,7 @@
     ],
     "artbouns": false,
     "artex": false,
-    "charid": null
+    "charid": 3283
   },
   "3040608000": {
     "pageName": "Chrollo",
@@ -28270,7 +28270,7 @@
       "collab"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Balanced",
     "race": [
       "Human"
@@ -28312,7 +28312,7 @@
     ],
     "artbouns": false,
     "artex": false,
-    "charid": null
+    "charid": 3291
   },
   "3040625000": {
     "pageName": "Kaworu &amp; Mark.06",
@@ -28342,6 +28342,6 @@
     ],
     "artbouns": false,
     "artex": false,
-    "charid": null
+    "charid": 3292
   }
 }

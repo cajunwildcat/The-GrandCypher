@@ -33603,7 +33603,7 @@
     "pageName": "Progressive Knife (Man-Portable)",
     "maxUncap": 4,
     "rarity": "SSR",
-    "series": null,
+    "series": "collab",
     "element": "fire",
     "character": "Asuka &amp; Unit 02",
     "skill1": {
@@ -38235,7 +38235,7 @@
     "pageName": "Spear of Cassius (Man-Portable)",
     "maxUncap": 4,
     "rarity": "SSR",
-    "series": null,
+    "series": "collab",
     "element": "light",
     "character": "Kaworu &amp; Mark.06",
     "skill1": {
@@ -38259,7 +38259,7 @@
     "pageName": "Spear of Longinus (Man-Portable)",
     "maxUncap": 4,
     "rarity": "SSR",
-    "series": null,
+    "series": "collab",
     "element": "dark",
     "character": null,
     "skill1": {
@@ -52875,7 +52875,7 @@
     "pageName": "Assault Rifle (Man-Portable)",
     "maxUncap": 4,
     "rarity": "SSR",
-    "series": null,
+    "series": "collab",
     "element": "light",
     "character": null,
     "skill1": {
