@@ -28284,6 +28284,35 @@
     "artex": false,
     "charid": 3289
   },
+  "3040623000": {
+    "pageName": "Rei &amp; Unit 00",
+    "name": "Rei &amp; Unit 00",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": "tie-in",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "レイ＆零号機",
+    "releaseDate": "2025-11-10",
+    "gender": "f",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Defense",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": null,
+    "weapon": [
+      "Gun"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3290
+  },
   "3040624000": {
     "pageName": "Asuka &amp; Unit 02",
     "name": "Asuka &amp; Unit 02",
