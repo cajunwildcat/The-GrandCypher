@@ -13381,7 +13381,7 @@
   "3040115000": {
     "pageName": "Sturm (Grand)",
     "name": "Sturm",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Fire",
     "series": "grand",
@@ -13393,7 +13393,7 @@
     "obtain": [
       "premium,grand,flash"
     ],
-    "flbDate": null,
+    "flbDate": "2025-11-13",
     "expeditionType": "mercenary/skyfarer",
     "type": "Attack",
     "race": [
@@ -15976,7 +15976,7 @@
   "3040204000": {
     "pageName": "Sen (SSR)",
     "name": "Sen",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Wind",
     "series": null,
@@ -15988,7 +15988,7 @@
     "obtain": [
       "premium,normal"
     ],
-    "flbDate": null,
+    "flbDate": "2025-11-13",
     "expeditionType": "bloodhound",
     "type": "Attack",
     "race": [
