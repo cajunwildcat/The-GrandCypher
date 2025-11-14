@@ -5,7 +5,8 @@
     "maxUncap": 3,
     "rarity": "N",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ウィンドラビット"
   },
   "2010002000": {
     "pageName": "Air Devil",
@@ -13,7 +14,8 @@
     "maxUncap": 3,
     "rarity": "N",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "エアグレイブ"
   },
   "2010003000": {
     "pageName": "Killer Bee",
@@ -21,7 +23,8 @@
     "maxUncap": 3,
     "rarity": "N",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "キラービー"
   },
   "2010004000": {
     "pageName": "Goblin",
@@ -29,7 +32,8 @@
     "maxUncap": 3,
     "rarity": "N",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ゴブリン"
   },
   "2010005000": {
     "pageName": "Scalewing",
@@ -37,7 +41,8 @@
     "maxUncap": 3,
     "rarity": "N",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "スケール"
   },
   "2010006000": {
     "pageName": "Pincer",
@@ -45,7 +50,8 @@
     "maxUncap": 3,
     "rarity": "N",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "スニッパー"
   },
   "2010010000": {
     "pageName": "Skewerfish",
@@ -53,7 +59,8 @@
     "maxUncap": 3,
     "rarity": "N",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ミートミキサー"
   },
   "2010011000": {
     "pageName": "Timber Wolf",
@@ -61,7 +68,8 @@
     "maxUncap": 3,
     "rarity": "N",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ラウンドウルフ"
   },
   "2010012000": {
     "pageName": "Mirage Maker",
@@ -69,7 +77,8 @@
     "maxUncap": 3,
     "rarity": "N",
     "element": "light",
-    "series": "upgrader"
+    "series": "upgrader",
+    "jpname": "サモンミラージュ"
   },
   "2020002000": {
     "pageName": "Alpha Wolf",
@@ -77,7 +86,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ウルフリーダー"
   },
   "2020003000": {
     "pageName": "Storm Rabbit",
@@ -85,7 +95,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "エムダラビット"
   },
   "2020004000": {
     "pageName": "Hornbird",
@@ -93,7 +104,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ホーンバード"
   },
   "2020005000": {
     "pageName": "Magma Golem",
@@ -101,7 +113,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ラーヴァゴーレム"
   },
   "2020006000": {
     "pageName": "Spearsting",
@@ -109,7 +122,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ビースティンガー"
   },
   "2020007000": {
     "pageName": "Lavavian",
@@ -117,7 +131,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ラヴァード"
   },
   "2020008000": {
     "pageName": "Wind Elemental",
@@ -125,7 +140,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "風のエレメンタル"
   },
   "2020009000": {
     "pageName": "Skeleton",
@@ -133,7 +149,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "スケルトン"
   },
   "2020010000": {
     "pageName": "Dragonflair",
@@ -141,7 +158,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "雨切蜻蛉"
   },
   "2020011000": {
     "pageName": "Crusher",
@@ -149,7 +167,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ランページシェル"
   },
   "2020012000": {
     "pageName": "Minotaur",
@@ -157,7 +176,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ミノタウロス"
   },
   "2020013000": {
     "pageName": "Mandrake",
@@ -165,7 +185,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "マンドラゴラ"
   },
   "2020014000": {
     "pageName": "Sleepyhead",
@@ -173,7 +194,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "スリーピィ"
   },
   "2020015000": {
     "pageName": "Angelie",
@@ -181,7 +203,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ジェリー"
   },
   "2020016000": {
     "pageName": "Jawfish",
@@ -189,7 +212,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "マイトフィッシュ"
   },
   "2020017000": {
     "pageName": "Swordshark",
@@ -197,7 +221,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "剣鮫"
   },
   "2020018000": {
     "pageName": "Fire Elemental",
@@ -205,7 +230,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "火のエレメンタル"
   },
   "2020019000": {
     "pageName": "Water Elemental",
@@ -213,7 +239,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "水のエレメンタル"
   },
   "2020020000": {
     "pageName": "Earth Elemental",
@@ -221,7 +248,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "土のエレメンタル"
   },
   "2020021000": {
     "pageName": "Angel Queen",
@@ -229,7 +257,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "light",
-    "series": "upgrader"
+    "series": "upgrader",
+    "jpname": "エンジェル"
   },
   "2020022000": {
     "pageName": "Cave Bat",
@@ -237,7 +266,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "ケイブバット"
   },
   "2020023000": {
     "pageName": "Rivacuda",
@@ -245,7 +275,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ウラザナ"
   },
   "2020024000": {
     "pageName": "Lumacie Griffin",
@@ -253,7 +284,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ルーマシーグリフォン"
   },
   "2020025000": {
     "pageName": "Venom Lancer",
@@ -261,7 +293,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "メルトランサー"
   },
   "2020026000": {
     "pageName": "Rodfly",
@@ -269,7 +302,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ロッド"
   },
   "2020027000": {
     "pageName": "Walking Torch",
@@ -277,7 +311,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ランニングトーチ"
   },
   "2020028000": {
     "pageName": "Slime",
@@ -285,7 +320,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "スライム"
   },
   "2020029000": {
     "pageName": "Imp",
@@ -293,7 +329,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "インプ"
   },
   "2020030000": {
     "pageName": "Bonethorn",
@@ -301,7 +338,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ボーンネイル"
   },
   "2020031000": {
     "pageName": "Twilight Devil",
@@ -309,7 +347,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "トワイライトフライ"
   },
   "2020032000": {
     "pageName": "Purgatorian",
@@ -317,7 +356,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "辺獄の亡者"
   },
   "2020033000": {
     "pageName": "Belle",
@@ -325,7 +365,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "風鈴茸"
   },
   "2020034000": {
     "pageName": "Ghost Light",
@@ -333,7 +374,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "スピリット"
   },
   "2020035000": {
     "pageName": "Crawler",
@@ -341,7 +383,8 @@
     "maxUncap": 3,
     "rarity": "R",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "クロウラー"
   },
   "2030000000": {
     "pageName": "Tiamat (Summon)",
@@ -349,7 +392,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "wind",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "ティアマト"
   },
   "2030001000": {
     "pageName": "Colossus (Summon)",
@@ -357,7 +401,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "コロッサス"
   },
   "2030002000": {
     "pageName": "Proto Bahamut",
@@ -365,7 +410,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "プロトバハムート"
   },
   "2030003000": {
     "pageName": "Griffin",
@@ -373,7 +419,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "グリフォン"
   },
   "2030005000": {
     "pageName": "Golem",
@@ -381,7 +428,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ゴーレム"
   },
   "2030006000": {
     "pageName": "Hydra",
@@ -389,7 +437,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ヒドラ"
   },
   "2030007000": {
     "pageName": "Wyvern",
@@ -397,7 +446,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ワイバーン"
   },
   "2030008000": {
     "pageName": "Myconid",
@@ -405,7 +455,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "マイコニド"
   },
   "2030009000": {
     "pageName": "Hellhound",
@@ -413,7 +464,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ヘルハウンド"
   },
   "2030010000": {
     "pageName": "Doomworm",
@@ -421,7 +473,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "グレイブディガー"
   },
   "2030011000": {
     "pageName": "Leviathan",
@@ -429,7 +482,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "water",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "リヴァイアサン"
   },
   "2030012000": {
     "pageName": "Basilisk",
@@ -437,7 +491,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "バジリスク"
   },
   "2030013000": {
     "pageName": "Machina Soldier MK II",
@@ -445,7 +500,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "機械兵・改"
   },
   "2030015000": {
     "pageName": "Yggdrasil (Summon)",
@@ -453,7 +509,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "ユグドラシル"
   },
   "2030016000": {
     "pageName": "Peridot Carbuncle",
@@ -461,7 +518,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "wind",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "カーバンクル・ペリドット"
   },
   "2030017000": {
     "pageName": "Archangel Queen",
@@ -469,7 +527,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "light",
-    "series": "upgrader"
+    "series": "upgrader",
+    "jpname": "アークエンジェル"
   },
   "2030018000": {
     "pageName": "Hitodama",
@@ -477,7 +536,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "たゆたう焔魂"
   },
   "2030019000": {
     "pageName": "Wilinus Icewyrm",
@@ -485,7 +545,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "氷竜ウィリヌス"
   },
   "2030020000": {
     "pageName": "Elmenhilde Windsprite",
@@ -493,7 +554,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "風霊エルメンヒルデ"
   },
   "2030021000": {
     "pageName": "Aquamarine Carbuncle",
@@ -501,7 +563,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "water",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "カーバンクル・アクアマリン"
   },
   "2030022000": {
     "pageName": "Vrazarek Firewyrm",
@@ -509,7 +572,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "火竜ヴレッザレク"
   },
   "2030023000": {
     "pageName": "Stone Golem",
@@ -517,7 +581,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ストーンゴーレム"
   },
   "2030024000": {
     "pageName": "Zircon Carbuncle",
@@ -525,7 +590,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "カーバンクル・ジルコン"
   },
   "2030025000": {
     "pageName": "Ruination Gargoyle",
@@ -533,7 +599,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ルインガーゴイル"
   },
   "2030026000": {
     "pageName": "White Rabbit",
@@ -541,7 +608,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "ホワイトラビット"
   },
   "2030028000": {
     "pageName": "Pixie",
@@ -549,7 +617,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "ピクシー"
   },
   "2030029000": {
     "pageName": "Anneliefe",
@@ -557,7 +626,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "アニーリーフ"
   },
   "2030031000": {
     "pageName": "Garnet Carbuncle",
@@ -565,7 +635,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "カーバンクル・ガーネット"
   },
   "2030032000": {
     "pageName": "Luminiera",
@@ -573,7 +644,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "light",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "シュヴァリエ"
   },
   "2030033000": {
     "pageName": "Elusious Windwyrm",
@@ -581,7 +653,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "風竜イールシアス"
   },
   "2030034000": {
     "pageName": "Angelie Cascade",
@@ -589,7 +662,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "カスケードジェリー"
   },
   "2030039000": {
     "pageName": "Onyx Carbuncle",
@@ -597,7 +671,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "dark",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "カーバンクル・オニキス"
   },
   "2030040000": {
     "pageName": "Nopal",
@@ -605,7 +680,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "カクターマン"
   },
   "2030041000": {
     "pageName": "Celeste",
@@ -613,7 +689,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "dark",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "セレスト"
   },
   "2030042000": {
     "pageName": "Opal Carbuncle",
@@ -621,7 +698,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "light",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "カーバンクル・オパール"
   },
   "2030051000": {
     "pageName": "Belle Sylphid",
@@ -629,7 +707,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "シルフィードベル"
   },
   "2030062000": {
     "pageName": "Tiamat Alter",
@@ -637,7 +716,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "wind",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "嵐竜のティアマト"
   },
   "2030063000": {
     "pageName": "Colossus Alter",
@@ -645,7 +725,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "機炎のコロッサス"
   },
   "2030064000": {
     "pageName": "Leviathan Alter",
@@ -653,7 +734,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "water",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "海神のリヴァイアサン"
   },
   "2030065000": {
     "pageName": "Yggdrasil Alter",
@@ -661,7 +743,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "創樹のユグドラシル"
   },
   "2030066000": {
     "pageName": "Luminiera Alter",
@@ -669,7 +752,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "light",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "騎解のシュヴァリエ"
   },
   "2030067000": {
     "pageName": "Celeste Alter",
@@ -677,7 +761,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "dark",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "黒霧のセレスト"
   },
   "2030068000": {
     "pageName": "Diantha (Summon)",
@@ -685,7 +770,8 @@
     "maxUncap": 1,
     "rarity": "SR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ディアンサ"
   },
   "2030069000": {
     "pageName": "Linaria",
@@ -693,7 +779,8 @@
     "maxUncap": 1,
     "rarity": "SR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "リナリア"
   },
   "2030070000": {
     "pageName": "Harie",
@@ -701,7 +788,8 @@
     "maxUncap": 1,
     "rarity": "SR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ハリエ"
   },
   "2030071000": {
     "pageName": "Canna",
@@ -709,7 +797,8 @@
     "maxUncap": 1,
     "rarity": "SR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "カンナ"
   },
   "2030072000": {
     "pageName": "Diola",
@@ -717,7 +806,8 @@
     "maxUncap": 1,
     "rarity": "SR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ジオラ"
   },
   "2030073000": {
     "pageName": "Ruby Carbuncle",
@@ -725,7 +815,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "紅玉のカーバンクル"
   },
   "2030074000": {
     "pageName": "Sapphire Carbuncle",
@@ -733,7 +824,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "water",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "藍玉のカーバンクル"
   },
   "2030075000": {
     "pageName": "Amber Carbuncle",
@@ -741,7 +833,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "琥珀のカーバンクル"
   },
   "2030076000": {
     "pageName": "Jade Carbuncle",
@@ -749,7 +842,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "wind",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "翠玉のカーバンクル"
   },
   "2030077000": {
     "pageName": "Moonlight Carbuncle",
@@ -757,7 +851,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "light",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "月白のカーバンクル"
   },
   "2030078000": {
     "pageName": "Obsidian Carbuncle",
@@ -765,7 +860,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "dark",
-    "series": "carbuncle"
+    "series": "carbuncle",
+    "jpname": "黒玉のカーバンクル"
   },
   "2030079000": {
     "pageName": "Black Rabbit",
@@ -773,7 +869,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "ブラックラビット"
   },
   "2030080000": {
     "pageName": "Clay Golem",
@@ -781,7 +878,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "クレイゴーレム"
   },
   "2030081000": {
     "pageName": "Justice (SR)",
@@ -789,7 +887,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "water",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ジャスティス"
   },
   "2030085000": {
     "pageName": "The Hanged Man (SR)",
@@ -797,7 +896,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・ハングドマン"
   },
   "2030089000": {
     "pageName": "Death (SR)",
@@ -805,7 +905,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "dark",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "デス"
   },
   "2030093000": {
     "pageName": "Temperance (SR)",
@@ -813,7 +914,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "wind",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "テンペランス"
   },
   "2030097000": {
     "pageName": "The Devil (SR)",
@@ -821,7 +923,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・デビル"
   },
   "2030101000": {
     "pageName": "The Tower (SR)",
@@ -829,7 +932,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "earth",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・タワー"
   },
   "2030105000": {
     "pageName": "The Star (SR)",
@@ -837,7 +941,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "light",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・スター"
   },
   "2030109000": {
     "pageName": "The Moon (SR)",
@@ -845,7 +950,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "water",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・ムーン"
   },
   "2030113000": {
     "pageName": "The Sun (SR)",
@@ -853,7 +959,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "fire",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・サン"
   },
   "2030117000": {
     "pageName": "Judgement (SR)",
@@ -861,7 +968,8 @@
     "maxUncap": 3,
     "rarity": "SR",
     "element": "wind",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ジャッジメント"
   },
   "2040001000": {
     "pageName": "Satan",
@@ -869,7 +977,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "サタン"
   },
   "2040002000": {
     "pageName": "Macula Marius (Summon)",
@@ -877,7 +986,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "マキュラ・マリウス"
   },
   "2040003000": {
     "pageName": "Bahamut",
@@ -885,7 +995,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "dark",
-    "series": "providence"
+    "series": "providence",
+    "jpname": "バハムート"
   },
   "2040004000": {
     "pageName": "Vortex Dragon",
@@ -893,7 +1004,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "雷霆公"
   },
   "2040005000": {
     "pageName": "Dark Angel Olivia",
@@ -901,7 +1013,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "Dエンジェル・オリヴィエ"
   },
   "2040006000": {
     "pageName": "Anat",
@@ -909,7 +1022,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "アナト"
   },
   "2040007000": {
     "pageName": "Grani",
@@ -917,7 +1031,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "グラニ"
   },
   "2040008000": {
     "pageName": "Phoenix",
@@ -925,7 +1040,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "フェニックス"
   },
   "2040009000": {
     "pageName": "Quetzalcoatl",
@@ -933,7 +1049,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ケツァルカトル"
   },
   "2040010000": {
     "pageName": "Cocytus",
@@ -941,7 +1058,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "コキュートス"
   },
   "2040011000": {
     "pageName": "Nephthys",
@@ -949,7 +1067,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ネフティス"
   },
   "2040012000": {
     "pageName": "Lich (Summon)",
@@ -957,7 +1076,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "リッチ"
   },
   "2040013000": {
     "pageName": "Baal (Summon)",
@@ -965,7 +1085,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "バアル"
   },
   "2040014000": {
     "pageName": "Vohu Manah",
@@ -973,7 +1094,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ウォフマナフ"
   },
   "2040015000": {
     "pageName": "Manawydan",
@@ -981,7 +1103,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "マナウィダン"
   },
   "2040016000": {
     "pageName": "Ifrit",
@@ -989,7 +1112,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "イフリート"
   },
   "2040017000": {
     "pageName": "Siren",
@@ -997,7 +1121,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "セイレーン"
   },
   "2040018000": {
     "pageName": "Midgardsormr",
@@ -1005,7 +1130,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ミドガルズオルム"
   },
   "2040019000": {
     "pageName": "Behemoth",
@@ -1013,7 +1139,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "ベヒーモス"
   },
   "2040020000": {
     "pageName": "Tiamat Omega",
@@ -1021,7 +1148,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "wind",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "ティアマト・マグナ"
   },
   "2040021000": {
     "pageName": "Athena (Summon)",
@@ -1029,7 +1157,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "アテナ"
   },
   "2040022000": {
     "pageName": "Grendel",
@@ -1037,7 +1166,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ベオウルフ"
   },
   "2040023000": {
     "pageName": "Apollo",
@@ -1045,7 +1175,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "アポロン"
   },
   "2040024000": {
     "pageName": "Albacore",
@@ -1053,7 +1184,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "アルバコア"
   },
   "2040025000": {
     "pageName": "Cait Sith",
@@ -1061,7 +1193,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "ケット・シー"
   },
   "2040026000": {
     "pageName": "Gugalanna",
@@ -1069,7 +1202,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "グガランナ"
   },
   "2040027000": {
     "pageName": "Yggdrasil Omega",
@@ -1077,7 +1211,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "earth",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "ユグドラシル・マグナ"
   },
   "2040028000": {
     "pageName": "Leviathan Omega",
@@ -1085,7 +1220,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "water",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "リヴァイアサン・マグナ"
   },
   "2040029000": {
     "pageName": "Odin",
@@ -1093,7 +1229,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "オーディン"
   },
   "2040030000": {
     "pageName": "Hekatonkheir",
@@ -1101,7 +1238,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "ヘカトンケイル"
   },
   "2040031000": {
     "pageName": "Sagittarius",
@@ -1109,7 +1247,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "サジタリウス"
   },
   "2040032000": {
     "pageName": "Cerberus (Summon)",
@@ -1117,7 +1256,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "ケルベロス"
   },
   "2040033000": {
     "pageName": "Oceanus",
@@ -1125,7 +1265,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "オケアノス"
   },
   "2040034000": {
     "pageName": "Colossus Omega",
@@ -1133,7 +1274,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "fire",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "コロッサス・マグナ"
   },
   "2040035000": {
     "pageName": "Allosaurus",
@@ -1141,7 +1283,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "アロザロウス"
   },
   "2040036000": {
     "pageName": "Cybele",
@@ -1149,7 +1292,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "キュベレー"
   },
   "2040037000": {
     "pageName": "Poseidon (Summon)",
@@ -1157,7 +1301,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ポセイドン"
   },
   "2040038000": {
     "pageName": "Brunnhilde",
@@ -1165,7 +1310,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ブリュンヒルデ"
   },
   "2040039000": {
     "pageName": "Mithra",
@@ -1173,7 +1319,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ミスラ"
   },
   "2040041000": {
     "pageName": "Jack-o'-Lantern",
@@ -1181,7 +1328,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "ジャック・オー・ランタン"
   },
   "2040042000": {
     "pageName": "Nezha (Summon)",
@@ -1189,7 +1337,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ナタク"
   },
   "2040043000": {
     "pageName": "Marduk",
@@ -1197,7 +1346,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "マルドゥーク"
   },
   "2040044000": {
     "pageName": "Corow",
@@ -1205,7 +1355,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "コロゥ"
   },
   "2040045000": {
     "pageName": "Audumbla",
@@ -1213,7 +1364,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "アウズンブラ"
   },
   "2040046000": {
     "pageName": "Celeste Omega",
@@ -1221,7 +1373,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "dark",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "セレスト・マグナ"
   },
   "2040047000": {
     "pageName": "Luminiera Omega",
@@ -1229,7 +1382,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "light",
-    "series": "omega"
+    "series": "omega",
+    "jpname": "シュヴァリエ・マグナ"
   },
   "2040048000": {
     "pageName": "Sylph (Summon)",
@@ -1237,7 +1391,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "シルフ"
   },
   "2040049000": {
     "pageName": "Fenrir",
@@ -1245,7 +1400,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "フェンリル"
   },
   "2040050000": {
     "pageName": "Mahisha",
@@ -1253,7 +1409,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "マヒシャ"
   },
   "2040053000": {
     "pageName": "Satyr (Summon)",
@@ -1261,7 +1418,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "サテュロス"
   },
   "2040055000": {
     "pageName": "Wind God and Thunder God",
@@ -1269,7 +1427,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "風神・雷神"
   },
   "2040056000": {
     "pageName": "Lucifer",
@@ -1277,7 +1436,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "light",
-    "series": "providence"
+    "series": "providence",
+    "jpname": "ルシフェル"
   },
   "2040057000": {
     "pageName": "Ranko Kanzaki (Summon)",
@@ -1285,7 +1445,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "[覚醒魔王]神崎蘭子"
   },
   "2040058000": {
     "pageName": "Kirari Moroboshi",
@@ -1293,7 +1454,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "諸星きらり"
   },
   "2040059000": {
     "pageName": "Medusa (Summon)",
@@ -1301,7 +1463,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "メドゥーサ"
   },
   "2040060000": {
     "pageName": "Branwen",
@@ -1309,7 +1472,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ブランウェン"
   },
   "2040062000": {
     "pageName": "Diablo",
@@ -1317,7 +1481,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "ディアボロス"
   },
   "2040063000": {
     "pageName": "Twin Elements",
@@ -1325,7 +1490,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "フラム＝グラス"
   },
   "2040064000": {
     "pageName": "Magus (Summon)",
@@ -1333,7 +1499,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "マギ"
   },
   "2040065000": {
     "pageName": "Grand Order",
@@ -1341,7 +1508,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "light",
-    "series": "dynamis"
+    "series": "dynamis",
+    "jpname": "ジ・オーダー・グランデ"
   },
   "2040067000": {
     "pageName": "Mammon",
@@ -1349,7 +1517,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "マモーナス"
   },
   "2040069000": {
     "pageName": "Neptune",
@@ -1357,7 +1526,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ネプチューン"
   },
   "2040071000": {
     "pageName": "Garuda",
@@ -1365,7 +1535,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ガルーダ"
   },
   "2040072000": {
     "pageName": "Avaritia",
@@ -1373,7 +1544,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "アワリティア"
   },
   "2040073000": {
     "pageName": "Kirari",
@@ -1381,7 +1553,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "[ラブリーナイト]きらり"
   },
   "2040076000": {
     "pageName": "Oxymoron",
@@ -1389,7 +1562,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "オクシモロン"
   },
   "2040080000": {
     "pageName": "Zeus",
@@ -1397,7 +1571,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "light",
-    "series": "optimus"
+    "series": "optimus",
+    "jpname": "ゼウス"
   },
   "2040081000": {
     "pageName": "Robomi Rocket",
@@ -1405,7 +1580,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "ロボミ発進指令"
   },
   "2040084000": {
     "pageName": "Titan",
@@ -1413,7 +1589,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "earth",
-    "series": "optimus"
+    "series": "optimus",
+    "jpname": "ティターン"
   },
   "2040085000": {
     "pageName": "Ebisu",
@@ -1421,7 +1598,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ヱビス"
   },
   "2040086000": {
     "pageName": "Inchoate World",
@@ -1429,7 +1607,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "胎動する世界"
   },
   "2040090000": {
     "pageName": "Hades",
@@ -1437,7 +1616,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "dark",
-    "series": "optimus"
+    "series": "optimus",
+    "jpname": "ハデス"
   },
   "2040091000": {
     "pageName": "Veselago",
@@ -1445,7 +1625,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "ヴェセラゴ"
   },
   "2040094000": {
     "pageName": "Agni",
@@ -1453,7 +1634,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "fire",
-    "series": "optimus"
+    "series": "optimus",
+    "jpname": "アグニス"
   },
   "2040095000": {
     "pageName": "Deirdre",
@@ -1461,7 +1643,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ディアドラ"
   },
   "2040096000": {
     "pageName": "Pierre",
@@ -1469,7 +1652,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ピエール"
   },
   "2040097000": {
     "pageName": "Harvest Myconid",
@@ -1477,7 +1661,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "オータム・マイコニド"
   },
   "2040098000": {
     "pageName": "Zephyrus",
@@ -1485,7 +1670,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "wind",
-    "series": "optimus"
+    "series": "optimus",
+    "jpname": "ゼピュロス"
   },
   "2040099000": {
     "pageName": "Fafnir",
@@ -1493,7 +1679,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ファフニール"
   },
   "2040100000": {
     "pageName": "Varuna",
@@ -1501,7 +1688,8 @@
     "maxUncap": 6,
     "rarity": "SSR",
     "element": "water",
-    "series": "optimus"
+    "series": "optimus",
+    "jpname": "ヴァルナ"
   },
   "2040105000": {
     "pageName": "Rose Queen",
@@ -1509,7 +1697,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ローズクイーン"
   },
   "2040109000": {
     "pageName": "Illuyanka",
@@ -1517,7 +1706,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "イルルヤンカシュ"
   },
   "2040113000": {
     "pageName": "Odajumoki Gang",
@@ -1525,7 +1715,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "オダヅモッキー・ギャングスタ"
   },
   "2040114000": {
     "pageName": "Kaguya (Summon)",
@@ -1533,7 +1724,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "dynamis"
+    "series": "dynamis",
+    "jpname": "カグヤ"
   },
   "2040115000": {
     "pageName": "Joya",
@@ -1541,7 +1733,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ジョヤ"
   },
   "2040122000": {
     "pageName": "Morrigna (Summon)",
@@ -1549,7 +1742,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "epic"
+    "series": "epic",
+    "jpname": "バイヴカハ"
   },
   "2040123000": {
     "pageName": "King Krustacea",
@@ -1557,7 +1751,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "氷海の覇王"
   },
   "2040124000": {
     "pageName": "Ti Icniuhtli Xolotl",
@@ -1565,7 +1760,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "ティクニウトリ・ショロトル"
   },
   "2040125000": {
     "pageName": "Prometheus",
@@ -1573,7 +1769,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "epic"
+    "series": "epic",
+    "jpname": "プロメテウス"
   },
   "2040129000": {
     "pageName": "Lady Katapillar",
@@ -1581,7 +1778,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "キャタピラさん"
   },
   "2040130000": {
     "pageName": "Gilgamesh",
@@ -1589,7 +1787,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "epic"
+    "series": "epic",
+    "jpname": "ギルガメッシュ"
   },
   "2040131000": {
     "pageName": "Bahamut Unchained",
@@ -1597,7 +1796,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "拘束破りし黒銀の翼"
   },
   "2040133000": {
     "pageName": "Druj",
@@ -1605,7 +1805,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "ドゥルジ"
   },
   "2040134000": {
     "pageName": "Anubis",
@@ -1613,7 +1814,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "epic"
+    "series": "epic",
+    "jpname": "アヌビス"
   },
   "2040141000": {
     "pageName": "Queen Bee",
@@ -1621,7 +1823,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "クイーンビー"
   },
   "2040142000": {
     "pageName": "Ikelos",
@@ -1629,7 +1832,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "イケロス"
   },
   "2040144000": {
     "pageName": "Hector",
@@ -1637,7 +1841,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "epic"
+    "series": "epic",
+    "jpname": "ヘクトル"
   },
   "2040157000": {
     "pageName": "Huanglong",
@@ -1645,7 +1850,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "黄龍"
   },
   "2040158000": {
     "pageName": "Qilin",
@@ -1653,7 +1859,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "黒麒麟"
   },
   "2040159000": {
     "pageName": "Super Robo Gigantes",
@@ -1661,7 +1868,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "超鋼巨人・ゴッドギガンテス"
   },
   "2040160000": {
     "pageName": "Ca Ong",
@@ -1669,7 +1877,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "epic"
+    "series": "epic",
+    "jpname": "カー・オン"
   },
   "2040167000": {
     "pageName": "Bonito",
@@ -1677,7 +1886,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "カツウォヌス"
   },
   "2040168000": {
     "pageName": "Custos Citrullus",
@@ -1685,7 +1895,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "守畏禍"
   },
   "2040170000": {
     "pageName": "Milia",
@@ -1693,7 +1904,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ミリア"
   },
   "2040171000": {
     "pageName": "Sethlans",
@@ -1701,7 +1913,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "セスランス"
   },
   "2040172000": {
     "pageName": "Treant",
@@ -1709,7 +1922,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "トレント"
   },
   "2040173000": {
     "pageName": "Tezcatlipoca",
@@ -1717,7 +1931,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "テスカトリポカ"
   },
   "2040175000": {
     "pageName": "Verona Heart",
@@ -1725,7 +1940,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ヴェローナ・ハート"
   },
   "2040177000": {
     "pageName": "Setekh",
@@ -1733,7 +1949,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "セト"
   },
   "2040178000": {
     "pageName": "Grueler",
@@ -1741,7 +1958,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ゲルラ"
   },
   "2040180000": {
     "pageName": "Typhon",
@@ -1749,7 +1967,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "テュポーン"
   },
   "2040181000": {
     "pageName": "Dragon Knights",
@@ -1757,7 +1976,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ドラゴンナイツ"
   },
   "2040184000": {
     "pageName": "Blue Orbit",
@@ -1765,7 +1985,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ブルーオービット"
   },
   "2040185000": {
     "pageName": "Shiva (Summon)",
@@ -1773,7 +1994,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "genesis"
+    "series": "genesis",
+    "jpname": "シヴァ"
   },
   "2040188000": {
     "pageName": "Thor",
@@ -1781,7 +2003,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "トール"
   },
   "2040189000": {
     "pageName": "Levin Sisters (Summon)",
@@ -1789,7 +2012,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "レヴィオンシスターズ"
   },
   "2040192000": {
     "pageName": "Bellringer Angel",
@@ -1797,7 +2021,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ベルエンジェル"
   },
   "2040195000": {
     "pageName": "Sandalphon (Summon)",
@@ -1805,7 +2030,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "サンダルフォン"
   },
   "2040198000": {
     "pageName": "Dark Flame Scion",
@@ -1813,7 +2039,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "闇の炎の子"
   },
   "2040199000": {
     "pageName": "Seraphim Cradle",
@@ -1821,7 +2048,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": "upgrader"
+    "series": "upgrader",
+    "jpname": "セラフィム・クレイドル"
   },
   "2040202000": {
     "pageName": "Raphael (Summon)",
@@ -1829,7 +2057,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "archangel"
+    "series": "archangel",
+    "jpname": "ラファエル"
   },
   "2040203000": {
     "pageName": "Uriel (Summon)",
@@ -1837,7 +2066,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "archangel"
+    "series": "archangel",
+    "jpname": "ウリエル"
   },
   "2040205000": {
     "pageName": "Godsworn Alexiel",
@@ -1845,7 +2075,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "genesis"
+    "series": "genesis",
+    "jpname": "ゴッドガード・ブローディア"
   },
   "2040207000": {
     "pageName": "H.P.A.",
@@ -1853,7 +2084,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "K・B・S・N"
   },
   "2040211000": {
     "pageName": "Super Cute Genius Alchemist",
@@ -1861,7 +2093,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "美少女錬金術師"
   },
   "2040212000": {
     "pageName": "Nacht",
@@ -1869,7 +2102,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "ナハト"
   },
   "2040214000": {
     "pageName": "Lumiel Gourmet",
@@ -1877,7 +2111,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "リュミエールグルメ"
   },
   "2040216000": {
     "pageName": "Aphrodite",
@@ -1885,7 +2120,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "アフロディーテ"
   },
   "2040219000": {
     "pageName": "Forest Ranger",
@@ -1893,7 +2129,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "フォレストレンジャー"
   },
   "2040221000": {
     "pageName": "Garula, Shining Hawk",
@@ -1901,7 +2138,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "シャインホーク・ガルラ"
   },
   "2040224000": {
     "pageName": "Urkin",
@@ -1909,7 +2147,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ンニ"
   },
   "2040225000": {
     "pageName": "Europa (Summon)",
@@ -1917,7 +2156,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "genesis"
+    "series": "genesis",
+    "jpname": "エウロペ"
   },
   "2040228000": {
     "pageName": "Lonesome Dragoness (Summon)",
@@ -1925,7 +2165,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "孤独の竜姫"
   },
   "2040229000": {
     "pageName": "Zaoshen",
@@ -1933,7 +2174,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ザオシェン"
   },
   "2040232000": {
     "pageName": "Sharom",
@@ -1941,7 +2183,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "シャローム"
   },
   "2040233000": {
     "pageName": "Ankusha",
@@ -1949,7 +2192,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "アンクシャ"
   },
   "2040234000": {
     "pageName": "Kero-chan",
@@ -1957,7 +2201,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ケロちゃん"
   },
   "2040236000": {
     "pageName": "Justice (SSR)",
@@ -1965,7 +2210,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "water",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ジャスティス"
   },
   "2040237000": {
     "pageName": "The Hanged Man (SSR)",
@@ -1973,7 +2219,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "earth",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・ハングドマン"
   },
   "2040238000": {
     "pageName": "Death (SSR)",
@@ -1981,7 +2228,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "dark",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "デス"
   },
   "2040239000": {
     "pageName": "Temperance (SSR)",
@@ -1989,7 +2237,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "wind",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "テンペランス"
   },
   "2040240000": {
     "pageName": "The Devil (SSR)",
@@ -1997,7 +2246,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "fire",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・デビル"
   },
   "2040241000": {
     "pageName": "The Tower (SSR)",
@@ -2005,7 +2255,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "earth",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・タワー"
   },
   "2040242000": {
     "pageName": "The Star (SSR)",
@@ -2013,7 +2264,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "light",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・スター"
   },
   "2040243000": {
     "pageName": "The Moon (SSR)",
@@ -2021,7 +2273,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "water",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・ムーン"
   },
   "2040244000": {
     "pageName": "The Sun (SSR)",
@@ -2029,7 +2282,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "fire",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ザ・サン"
   },
   "2040245000": {
     "pageName": "Judgement (SSR)",
@@ -2037,7 +2291,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "wind",
-    "series": "arcarum"
+    "series": "arcarum",
+    "jpname": "ジャッジメント"
   },
   "2040248000": {
     "pageName": "Sapphire Dance: Gentiana",
@@ -2045,7 +2300,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "蒼紅之舞・竜胆"
   },
   "2040249000": {
     "pageName": "Snow White",
@@ -2053,7 +2309,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "スノウホワイト"
   },
   "2040252000": {
     "pageName": "Knight of Knights",
@@ -2061,7 +2318,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "俊秀の義剣士"
   },
   "2040253000": {
     "pageName": "Adramelech",
@@ -2069,7 +2327,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "アドラメレク"
   },
   "2040255000": {
     "pageName": "Eren",
@@ -2077,7 +2336,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "エレン"
   },
   "2040259000": {
     "pageName": "Crimson Spear, Ebony Scythe",
@@ -2085,7 +2345,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "紅き穿光と黒き大鎌"
   },
   "2040261000": {
     "pageName": "Grimnir (Summon)",
@@ -2093,7 +2354,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "genesis"
+    "series": "genesis",
+    "jpname": "グリームニル"
   },
   "2040263000": {
     "pageName": "Tsukuyomi (Summon)",
@@ -2101,7 +2363,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "ツクヨミ"
   },
   "2040269000": {
     "pageName": "Demi Agni",
@@ -2109,7 +2372,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "Demi Optimus"
+    "series": "Demi Optimus",
+    "jpname": "アグニス・ディヴィジョン"
   },
   "2040270000": {
     "pageName": "Demi Varuna",
@@ -2117,7 +2381,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "demi optimus"
+    "series": "demi optimus",
+    "jpname": "ヴァルナ・ディヴィジョン"
   },
   "2040271000": {
     "pageName": "Demi Titan",
@@ -2125,7 +2390,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "demi optimus"
+    "series": "demi optimus",
+    "jpname": "ティターン・ディヴィジョン"
   },
   "2040272000": {
     "pageName": "Demi Zephyrus",
@@ -2133,7 +2399,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "demi optimus"
+    "series": "demi optimus",
+    "jpname": "ゼピュロス・ディヴィジョン"
   },
   "2040273000": {
     "pageName": "Demi Zeus",
@@ -2141,7 +2408,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "demi optimus"
+    "series": "demi optimus",
+    "jpname": "ゼウス・ディヴィジョン"
   },
   "2040274000": {
     "pageName": "Demi Hades",
@@ -2149,7 +2417,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "demi optimus"
+    "series": "demi optimus",
+    "jpname": "ハデス・ディヴィジョン"
   },
   "2040275000": {
     "pageName": "Halluel and Malluel (Summon)",
@@ -2157,7 +2426,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "archangel"
+    "series": "archangel",
+    "jpname": "ハールート・マールート"
   },
   "2040279000": {
     "pageName": "Gigante Blazer",
@@ -2165,7 +2435,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "兄弟砲ギガントブレイザー"
   },
   "2040281000": {
     "pageName": "Freyr (Summon)",
@@ -2173,7 +2444,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "フレイ"
   },
   "2040282000": {
     "pageName": "Unrivaled Fighter",
@@ -2181,7 +2453,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "古今独歩の大拳豪"
   },
   "2040285000": {
     "pageName": "Gorilla",
@@ -2189,7 +2462,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ゴリラ"
   },
   "2040286000": {
     "pageName": "Lunalu (Summon)",
@@ -2197,7 +2471,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "ルナール"
   },
   "2040288000": {
     "pageName": "Morgana Car",
@@ -2205,7 +2480,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "dark",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "モルガナカー"
   },
   "2040290000": {
     "pageName": "Nobiyo",
@@ -2213,7 +2489,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "ノビヨ"
   },
   "2040291000": {
     "pageName": "Narita",
@@ -2221,7 +2498,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "ナリタ"
   },
   "2040292000": {
     "pageName": "Electric Eal",
@@ -2229,7 +2507,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "デンキンナギ"
   },
   "2040293000": {
     "pageName": "Macula Marius (Summer)",
@@ -2237,7 +2516,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "マキュラ・マリウス"
   },
   "2040294000": {
     "pageName": "JEHUTY",
@@ -2245,7 +2525,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ジェフティ"
   },
   "2040295000": {
     "pageName": "Gearcycle",
@@ -2253,7 +2534,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ケッタギア"
   },
   "2040296000": {
     "pageName": "Hamsa",
@@ -2261,7 +2543,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ハンサ"
   },
   "2040297000": {
     "pageName": "Anat, for Love and War",
@@ -2269,7 +2552,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "愛と戦いの神 アナト"
   },
   "2040298000": {
     "pageName": "H.D. Mining Excavator",
@@ -2277,7 +2561,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "坑道用大型掘削機"
   },
   "2040299000": {
     "pageName": "Mepple and Mipple",
@@ -2285,7 +2570,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "メップル＆ミップル"
   },
   "2040300000": {
     "pageName": "Vane's Cooking",
@@ -2293,7 +2579,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "クッキング・ヴェイン"
   },
   "2040301000": {
     "pageName": "Krelkulkil",
@@ -2301,7 +2588,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "カラクラキル"
   },
   "2040302000": {
     "pageName": "Poseidon, the Tide Father",
@@ -2309,7 +2597,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "気高き水神 ポセイドン"
   },
   "2040303000": {
     "pageName": "Princess Knight",
@@ -2317,7 +2606,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "プリンセスナイト"
   },
   "2040304000": {
     "pageName": "Sylph, Flutterspirit of Purity",
@@ -2325,7 +2615,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "白純の霊蝶 シルフ"
   },
   "2040305000": {
     "pageName": "Cerberus, Hellhound Trifecta",
@@ -2333,7 +2624,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "冥界の三魔犬 ケルベロス"
   },
   "2040306000": {
     "pageName": "Michael (Summon)",
@@ -2341,7 +2633,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "archangel"
+    "series": "archangel",
+    "jpname": "ミカエル"
   },
   "2040309000": {
     "pageName": "Flamek Pact",
@@ -2349,7 +2642,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "フラメクの契約者"
   },
   "2040310000": {
     "pageName": "Magus, Triad of Wisdom",
@@ -2357,7 +2651,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "三知一鎧の賢者 マギ"
   },
   "2040311000": {
     "pageName": "Gabriel (Summon)",
@@ -2365,7 +2660,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "archangel"
+    "series": "archangel",
+    "jpname": "ガブリエル"
   },
   "2040312000": {
     "pageName": "Cat Parade",
@@ -2373,7 +2669,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ビッグマーチ・オブ・ネコ"
   },
   "2040323000": {
     "pageName": "Marduk, Battlefield Reaper",
@@ -2381,7 +2678,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "破格の戦鬼 マルドゥーク"
   },
   "2040324000": {
     "pageName": "Dragon's Rage",
@@ -2389,7 +2687,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "神撃の竜"
   },
   "2040325000": {
     "pageName": "Delinquent Spirit",
@@ -2397,7 +2696,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ツッパリ魂"
   },
   "2040326000": {
     "pageName": "Demonbream",
@@ -2405,7 +2705,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "魔鯛"
   },
   "2040327000": {
     "pageName": "Sariel (Summon)",
@@ -2413,7 +2714,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "archangel"
+    "series": "archangel",
+    "jpname": "サリエル"
   },
   "2040328000": {
     "pageName": "Gorgon Sisters",
@@ -2421,7 +2723,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ゴルゴーン三姉妹"
   },
   "2040329000": {
     "pageName": "From Ladiva with Love",
@@ -2429,7 +2732,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "レスラーより愛をこめて"
   },
   "2040330000": {
     "pageName": "Metatron (Summon)",
@@ -2437,7 +2741,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "archangel"
+    "series": "archangel",
+    "jpname": "メタトロン"
   },
   "2040331000": {
     "pageName": "C.C.",
@@ -2445,7 +2750,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "dark",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "C.C."
   },
   "2040332000": {
     "pageName": "Rainy Day",
@@ -2453,7 +2759,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "RAINY DAY"
   },
   "2040333000": {
     "pageName": "Yggdrasil (Summer)",
@@ -2461,7 +2768,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "ユグドラシル"
   },
   "2040334000": {
     "pageName": "God Albacore",
@@ -2469,7 +2777,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ゴッド・アルバコア"
   },
   "2040335000": {
     "pageName": "Satyr (Summer)",
@@ -2477,7 +2786,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "サテュロス"
   },
   "2040336000": {
     "pageName": "Rose Queen (Summer)",
@@ -2485,7 +2795,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "ローズクイーン"
   },
   "2040337000": {
     "pageName": "Dancing Man",
@@ -2493,7 +2804,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ダンシング・マン"
   },
   "2040338000": {
     "pageName": "Surtr",
@@ -2501,7 +2813,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "crest"
+    "series": "crest",
+    "jpname": "スルト"
   },
   "2040339000": {
     "pageName": "Team Chickadee",
@@ -2509,7 +2822,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "眠れる竜と獅子"
   },
   "2040340000": {
     "pageName": "Princess Long Ji",
@@ -2517,7 +2831,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "crest"
+    "series": "crest",
+    "jpname": "竜吉公主"
   },
   "2040341000": {
     "pageName": "Sapphire Dance: Habotan",
@@ -2525,7 +2840,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "蒼紅之舞・竜胆"
   },
   "2040342000": {
     "pageName": "Dogu",
@@ -2533,7 +2849,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "crest"
+    "series": "crest",
+    "jpname": "ドグー"
   },
   "2040343000": {
     "pageName": "Sky Carriage SS Pew Pew",
@@ -2541,7 +2858,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "スカイキャリッジ☆ミ号"
   },
   "2040344000": {
     "pageName": "Elil",
@@ -2549,7 +2867,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "crest"
+    "series": "crest",
+    "jpname": "エッリル"
   },
   "2040345000": {
     "pageName": "Mukku",
@@ -2557,7 +2876,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ムック"
   },
   "2040347000": {
     "pageName": "Belial",
@@ -2565,7 +2885,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "providence"
+    "series": "providence",
+    "jpname": "ベリアル"
   },
   "2040348000": {
     "pageName": "Proto-Joya",
@@ -2573,7 +2894,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "プロトジョヤ"
   },
   "2040349000": {
     "pageName": "Swinger of the Ebony Scythe",
@@ -2581,7 +2903,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "大鎌を操りし漆黒"
   },
   "2040350000": {
     "pageName": "Heimdallr",
@@ -2589,7 +2912,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "crest"
+    "series": "crest",
+    "jpname": "ヘイムダル"
   },
   "2040351000": {
     "pageName": "The Eternal Defenders",
@@ -2597,7 +2921,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "空の安寧を守りし十天衆"
   },
   "2040352000": {
     "pageName": "Nyarlathotep",
@@ -2605,7 +2930,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "crest"
+    "series": "crest",
+    "jpname": "ナイアルラトホテップ"
   },
   "2040360000": {
     "pageName": "Dynamic Merc Duo",
@@ -2613,7 +2939,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "疾風怒濤の傭兵コンビ"
   },
   "2040361000": {
     "pageName": "Red Hare",
@@ -2621,7 +2948,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "bellum"
+    "series": "bellum",
+    "jpname": "セキトバ"
   },
   "2040362000": {
     "pageName": "Silver Salvation",
@@ -2629,7 +2957,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "一臂の力を揮う銀の軍師"
   },
   "2040363000": {
     "pageName": "Charybdis",
@@ -2637,7 +2966,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "bellum"
+    "series": "bellum",
+    "jpname": "カリュブディス"
   },
   "2040364000": {
     "pageName": "Golden Piña",
@@ -2645,7 +2975,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ゴールデンぴにゃこら太"
   },
   "2040365000": {
     "pageName": "Goregrinders",
@@ -2653,7 +2984,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ゴアグラインダー"
   },
   "2040366000": {
     "pageName": "Owlcat",
@@ -2661,7 +2993,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "bellum"
+    "series": "bellum",
+    "jpname": "オウルキャット"
   },
   "2040367000": {
     "pageName": "Xeno Ifrit",
@@ -2669,7 +3002,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ゼノ・イフリート"
   },
   "2040368000": {
     "pageName": "Mammoth",
@@ -2677,7 +3011,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "bellum"
+    "series": "bellum",
+    "jpname": "マンモス"
   },
   "2040369000": {
     "pageName": "Athena (Summer)",
@@ -2685,7 +3020,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "アテナ"
   },
   "2040370000": {
     "pageName": "Xeno Vohu Manah",
@@ -2693,7 +3029,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ゼノ・ウォフマナフ"
   },
   "2040371000": {
     "pageName": "Deepflight Oyster",
@@ -2701,7 +3038,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "カキフライ"
   },
   "2040373000": {
     "pageName": "Colossal Hermit",
@@ -2709,7 +3047,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "灼弩火罹"
   },
   "2040374000": {
     "pageName": "Freyr (Yukata)",
@@ -2717,7 +3056,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "yukata"
+    "series": "yukata",
+    "jpname": "フレイ"
   },
   "2040375000": {
     "pageName": "Kaguya (Summer)",
@@ -2725,7 +3065,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "カグヤ"
   },
   "2040376000": {
     "pageName": "Zhuque",
@@ -2733,7 +3074,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "朱雀"
   },
   "2040377000": {
     "pageName": "Xuanwu",
@@ -2741,7 +3083,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "玄武"
   },
   "2040378000": {
     "pageName": "Baihu",
@@ -2749,7 +3092,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "白虎"
   },
   "2040379000": {
     "pageName": "Qinglong",
@@ -2757,7 +3101,8 @@
     "maxUncap": 5,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "青龍"
   },
   "2040380000": {
     "pageName": "Blessed Wedding",
@@ -2765,7 +3110,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "結婚式"
   },
   "2040381000": {
     "pageName": "Artemis",
@@ -2773,7 +3119,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "bellum"
+    "series": "bellum",
+    "jpname": "アルテミス"
   },
   "2040382000": {
     "pageName": "Xeno Sagittarius",
@@ -2781,7 +3128,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ゼノ・サジタリウス"
   },
   "2040383000": {
     "pageName": "Ignis Dragon",
@@ -2789,7 +3137,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "イグニスドラゴン"
   },
   "2040384000": {
     "pageName": "Frost Lord's Army",
@@ -2797,7 +3146,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "竜騰虎闘の氷皇軍"
   },
   "2040385000": {
     "pageName": "Zirnitra",
@@ -2805,7 +3155,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "bellum"
+    "series": "bellum",
+    "jpname": "ジルニトラ"
   },
   "2040386000": {
     "pageName": "Cutest Golden Statue in the Skies",
@@ -2813,7 +3164,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "世界で一番カワイイ黄金像"
   },
   "2040387000": {
     "pageName": "Guardian Ku-Keoloewa",
@@ -2821,7 +3173,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "護りし者 クー・ケオロエワ"
   },
   "2040388000": {
     "pageName": "Sariel (Holiday)",
@@ -2829,7 +3182,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "holiday"
+    "series": "holiday",
+    "jpname": "サリエル"
   },
   "2040389000": {
     "pageName": "Giyu Tomioka",
@@ -2837,7 +3191,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "冨岡義勇"
   },
   "2040390000": {
     "pageName": "Xeno Corow",
@@ -2845,7 +3200,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "ゼノ・コロゥ"
   },
   "2040391000": {
     "pageName": "Ultra Robo Grand God Kaiser",
@@ -2853,7 +3209,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "極鋼巨帝グランゴッドカイザー"
   },
   "2040392000": {
     "pageName": "Tsuchinoko",
@@ -2861,7 +3218,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "cryptid"
+    "series": "cryptid",
+    "jpname": "ツチノコ"
   },
   "2040393000": {
     "pageName": "Idle Sparkle",
@@ -2869,7 +3227,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "ぼんやりピカピカの魔法"
   },
   "2040394000": {
     "pageName": "Automagod Triumvirate",
@@ -2877,7 +3236,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "月に降り立ちし三機神"
   },
   "2040395000": {
     "pageName": "Xeno Cocytus",
@@ -2885,7 +3245,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "ゼノ・コキュートス"
   },
   "2040396000": {
     "pageName": "Snapshot of Divinity",
@@ -2893,7 +3254,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": null
+    "series": null,
+    "jpname": "十二神将水浴衣図"
   },
   "2040397000": {
     "pageName": "Arbiter of Lies",
@@ -2901,7 +3263,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "偽りを裁く雷光"
   },
   "2040398000": {
     "pageName": "Wilnas (Summon)",
@@ -2909,7 +3272,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "six dragons"
+    "series": "six dragons",
+    "jpname": "ウィルナス"
   },
   "2040399000": {
     "pageName": "Xeno Diablo",
@@ -2917,7 +3281,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": null
+    "series": null,
+    "jpname": "ゼノ・ディアボロス"
   },
   "2040400000": {
     "pageName": "Destiny Nocturnes",
@@ -2925,7 +3290,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": null
+    "series": null,
+    "jpname": "宿命夜想曲･特攻隊"
   },
   "2040401000": {
     "pageName": "Galleon (Summon)",
@@ -2933,7 +3299,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "six dragons"
+    "series": "six dragons",
+    "jpname": "ガレヲン"
   },
   "2040402000": {
     "pageName": "Tiamat (Summer)",
@@ -2941,7 +3308,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "ティアマト"
   },
   "2040403000": {
     "pageName": "Mandrake (Summer)",
@@ -2949,7 +3317,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "マンドラゴラ"
   },
   "2040404000": {
     "pageName": "Gold Ship and Mejiro McQueen",
@@ -2957,7 +3326,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ゴールドシップ＆メジロマックイーン"
   },
   "2040405000": {
     "pageName": "Kotaro Katsura and Elizabeth",
@@ -2965,7 +3335,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "桂小太郎&amp;エリザベス"
   },
   "2040406000": {
     "pageName": "Ewiyar (Summon)",
@@ -2973,7 +3344,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "six dragons"
+    "series": "six dragons",
+    "jpname": "イーウィヤ"
   },
   "2040407000": {
     "pageName": "Shizuka, Gian, and Suneo",
@@ -2981,7 +3353,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "しずか&amp;ジャイアン&amp;スネ夫"
   },
   "2040408000": {
     "pageName": "Beelzebub",
@@ -2989,7 +3362,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "providence"
+    "series": "providence",
+    "jpname": "ベルゼバブ"
   },
   "2040409000": {
     "pageName": "Lu Woh (Summon)",
@@ -2997,7 +3371,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "six dragons"
+    "series": "six dragons",
+    "jpname": "ル・オー"
   },
   "2040410000": {
     "pageName": "Shantotto II",
@@ -3005,7 +3380,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "シャントットII"
   },
   "2040411000": {
     "pageName": "Belial (Summer)",
@@ -3013,7 +3389,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "ベリアル"
   },
   "2040412000": {
     "pageName": "Sleepyhead (Summer)",
@@ -3021,7 +3398,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "スリーピィ"
   },
   "2040413000": {
     "pageName": "Wamdus (Summon)",
@@ -3029,7 +3407,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "Six Dragons"
+    "series": "Six Dragons",
+    "jpname": "ワムデュス"
   },
   "2040414000": {
     "pageName": "Usopp, Chopper, Franky, Brook, and Jimbei",
@@ -3037,7 +3416,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ウソップ＆チョッパー＆フランキー＆ブルック＆ジンベエ"
   },
   "2040415000": {
     "pageName": "Uta",
@@ -3045,7 +3425,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ウタ"
   },
   "2040416000": {
     "pageName": "Hekate (Summon)",
@@ -3053,7 +3434,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "ヘカテー"
   },
   "2040417000": {
     "pageName": "Yatima (Summon)",
@@ -3061,7 +3443,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "providence"
+    "series": "providence",
+    "jpname": "ヤチマ"
   },
   "2040418000": {
     "pageName": "Fediel (Summon)",
@@ -3069,7 +3452,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "six dragons"
+    "series": "six dragons",
+    "jpname": "フェディエル"
   },
   "2040419000": {
     "pageName": "Sanrio Characters",
@@ -3077,7 +3461,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "サンリオキャラクターズ☆"
   },
   "2040420000": {
     "pageName": "Cerberus (Summer)",
@@ -3085,7 +3470,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "fire",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "ケルベロス"
   },
   "2040421000": {
     "pageName": "Satoru Gojo",
@@ -3093,7 +3479,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "五条 悟"
   },
   "2040422000": {
     "pageName": "Aoi Todo",
@@ -3101,7 +3488,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "東堂 葵"
   },
   "2040423000": {
     "pageName": "Tyrannosaurus (Summer)",
@@ -3109,7 +3497,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "ティラノサウルス"
   },
   "2040424000": {
     "pageName": "Noire (Summon)",
@@ -3117,7 +3506,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "ノワール"
   },
   "2040425000": {
     "pageName": "Triple Zero",
@@ -3125,7 +3515,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "providence"
+    "series": "providence",
+    "jpname": "トリプルゼロ"
   },
   "2040426000": {
     "pageName": "All Might",
@@ -3133,7 +3524,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "オールマイト"
   },
   "2040427000": {
     "pageName": "Tuna and Salmun",
@@ -3141,7 +3533,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": null
+    "series": null,
+    "jpname": "トゥナ＆シャーモン"
   },
   "2040428000": {
     "pageName": "Mars (Summer)",
@@ -3149,7 +3542,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "マーズ"
   },
   "2040429000": {
     "pageName": "Beelzebub (Summer)",
@@ -3157,7 +3551,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "ベルゼバブ"
   },
   "2040430000": {
     "pageName": "Wedges of the Sky",
@@ -3165,7 +3560,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": null
+    "series": null,
+    "jpname": "蒼空の楔"
   },
   "2040431000": {
     "pageName": "Milim Nava",
@@ -3173,7 +3569,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ミリム・ナーヴァ"
   },
   "2040432000": {
     "pageName": "God Rabbit Gigamax",
@@ -3181,7 +3578,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": null
+    "series": null,
+    "jpname": "ゴッドラビットギガマックス"
   },
   "2040433000": {
     "pageName": "Orologia (Summon)",
@@ -3189,7 +3587,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "providence"
+    "series": "providence",
+    "jpname": "オロロジャイア"
   },
   "2040434000": {
     "pageName": "Asuna Kagurazaka",
@@ -3197,7 +3596,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "light",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "神楽坂明日菜"
   },
   "2040435000": {
     "pageName": "Tetragod",
@@ -3205,7 +3605,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "water",
-    "series": "robur"
+    "series": "robur",
+    "jpname": "テトラゴッド"
   },
   "2040436000": {
     "pageName": "Soul Invoker",
@@ -3213,7 +3614,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "fire",
-    "series": "robur"
+    "series": "robur",
+    "jpname": "ソウルインヴォーカー"
   },
   "2040437000": {
     "pageName": "Bastet (Summer)",
@@ -3221,7 +3623,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "summer"
+    "series": "summer",
+    "jpname": "バステト"
   },
   "2040438000": {
     "pageName": "Commander of Destruction",
@@ -3229,7 +3632,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "earth",
-    "series": "robur"
+    "series": "robur",
+    "jpname": "デストロイヤーズコマンダー"
   },
   "2040439000": {
     "pageName": "Nobunaga, Feitan, Machi, and Uvogin",
@@ -3237,7 +3641,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "dark",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ノブナガ＆フェイタン＆マチ＆ウボォーギン"
   },
   "2040440000": {
     "pageName": "Hisoka",
@@ -3245,7 +3650,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "ヒソカ"
   },
   "2040441000": {
     "pageName": "Vepar",
@@ -3253,7 +3659,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "dark",
-    "series": "robur"
+    "series": "robur",
+    "jpname": "ウェパル"
   },
   "2040442000": {
     "pageName": "Fairy Princess",
@@ -3261,7 +3668,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "light",
-    "series": "robur"
+    "series": "robur",
+    "jpname": "フェアリープリンセス"
   },
   "2040443000": {
     "pageName": "Cassiopeia",
@@ -3269,7 +3677,8 @@
     "maxUncap": 3,
     "rarity": "SSR",
     "element": "wind",
-    "series": "robur"
+    "series": "robur",
+    "jpname": "カシオペア"
   },
   "2040444000": {
     "pageName": "Trigger of Awakening: Shinji and Rei",
@@ -3277,7 +3686,8 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "water",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "覚醒のトリガー シンジ＆レイ"
   },
   "2040445000": {
     "pageName": "Mari and Unit 08",
@@ -3285,6 +3695,7 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "wind",
-    "series": "collab"
+    "series": "collab",
+    "jpname": "マリ＆８号機"
   }
 }
