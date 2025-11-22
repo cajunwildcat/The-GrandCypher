@@ -29201,7 +29201,7 @@
   },
   "1040025400": {
     "pageName": "Gateway-Star Sword",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "series": "celestial",
     "element": "wind",
@@ -29219,7 +29219,7 @@
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "sabre",
-    "awakening": null,
+    "awakening": "celestial",
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "天枢・極星剣"
@@ -34426,7 +34426,7 @@
   },
   "1040120100": {
     "pageName": "Twinfall-Sky Blade",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "series": "celestial",
     "element": "water",
@@ -34444,7 +34444,7 @@
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "dagger",
-    "awakening": null,
+    "awakening": "celestial",
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "双葬・落天刃"
@@ -39551,7 +39551,7 @@
   },
   "1040219400": {
     "pageName": "Selfless-Rift Spear",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "series": "celestial",
     "element": "water",
@@ -39569,7 +39569,7 @@
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "spear",
-    "awakening": null,
+    "awakening": "celestial",
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "無我・天伐槍"
@@ -44451,7 +44451,7 @@
   },
   "1040319100": {
     "pageName": "Demolition-Tiger Axe",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "series": "celestial",
     "element": "earth",
@@ -44469,7 +44469,7 @@
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "axe",
-    "awakening": null,
+    "awakening": "celestial",
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "絶壊・威寅斧"
@@ -50151,7 +50151,7 @@
   },
   "1040423300": {
     "pageName": "Altruism-Soul Staff",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "series": "celestial",
     "element": "light",
@@ -50169,7 +50169,7 @@
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "staff",
-    "awakening": null,
+    "awakening": "celestial",
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "献誠・煌神杖"
@@ -54751,7 +54751,7 @@
   },
   "1040517100": {
     "pageName": "Twinpain-Wolf Gun",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "series": "celestial",
     "element": "fire",
@@ -54769,7 +54769,7 @@
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "gun",
-    "awakening": null,
+    "awakening": "celestial",
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "双創・凱狼雷"
@@ -59301,7 +59301,7 @@
   },
   "1040618600": {
     "pageName": "Covenant-Ruin Fist",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "series": "celestial",
     "element": "dark",
@@ -59319,7 +59319,7 @@
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "melee",
-    "awakening": null,
+    "awakening": "celestial",
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "盟道・廻崩拳"
@@ -63226,7 +63226,7 @@
   },
   "1040713600": {
     "pageName": "Desolation-Crown Bow",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "series": "celestial",
     "element": "light",
@@ -63244,7 +63244,7 @@
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "bow",
-    "awakening": null,
+    "awakening": "celestial",
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "真滅・覇王弓"
@@ -67476,7 +67476,7 @@
   },
   "1040816300": {
     "pageName": "Fantasia-Realm Harp",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "series": "celestial",
     "element": "wind",
@@ -67494,7 +67494,7 @@
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "harp",
-    "awakening": null,
+    "awakening": "celestial",
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "幻奏・沙界琴"
@@ -71901,7 +71901,7 @@
   },
   "1040916900": {
     "pageName": "Oration-Life Katana",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "series": "celestial",
     "element": "earth",
@@ -71919,7 +71919,7 @@
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "katana",
-    "awakening": null,
+    "awakening": "celestial",
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "真打・無命切"
