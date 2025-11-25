@@ -28094,7 +28094,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Attack",
     "race": [
       "Draph"
@@ -28330,7 +28330,7 @@
       "collab"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Attack",
     "race": [
       "Human"
