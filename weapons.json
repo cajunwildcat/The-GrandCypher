@@ -16574,6 +16574,31 @@
     "awakeningType2": null,
     "jpname": "ヴォカツィオーネ"
   },
+  "1030406800": {
+    "pageName": "Achromatic Palette",
+    "maxUncap": 3,
+    "rarity": "SR",
+    "series": null,
+    "element": "wind",
+    "character": null,
+    "skill1": {
+      "name": "Willed Gale",
+      "icon": "ws_skill_hp_a_4_2.png"
+    },
+    "skill2": {
+      "name": null,
+      "icon": null
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "staff",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "白黒の調色板"
+  },
   "1030499000": {
     "pageName": "Archangel Wand",
     "maxUncap": 3,
@@ -35023,6 +35048,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "プログレッシブナイフ・汎人用"
+  },
+  "1040122500": {
+    "pageName": "Chromatic Paintbrush",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "wind",
+    "character": null,
+    "skill1": {
+      "name": "Armed Gale",
+      "icon": "ws_skill_atk_a_4_3.png"
+    },
+    "skill2": {
+      "name": "Synchronized Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "dagger",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "色彩の絵筆"
   },
   "1040200000": {
     "pageName": "Cletine",
