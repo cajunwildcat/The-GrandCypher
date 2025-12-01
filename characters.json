@@ -28373,5 +28373,63 @@
     "artbouns": false,
     "artex": false,
     "charid": 3292
+  },
+  "3040626000": {
+    "pageName": "Reinhardtzar (Holiday)",
+    "name": "Reinhardtzar",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": "holiday",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ラインハルザ",
+    "releaseDate": "2025-11-30",
+    "gender": "m",
+    "obtain": [
+      "premium,holiday"
+    ],
+    "flbDate": null,
+    "expeditionType": "Nalhegrande",
+    "type": "Attack",
+    "race": [
+      "Draph"
+    ],
+    "recruitWeapon": "Ripening Spirit",
+    "weapon": [
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 2135
+  },
+  "3040627000": {
+    "pageName": "Bennu (Holiday)",
+    "name": "Bennu",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": "holiday",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ベンヌ",
+    "releaseDate": "2025-11-30",
+    "gender": "m",
+    "obtain": [
+      "premium,holiday"
+    ],
+    "flbDate": null,
+    "expeditionType": "Naturalist",
+    "type": "Attack",
+    "race": [
+      "Primal"
+    ],
+    "recruitWeapon": "Jinn Al-Shajarah",
+    "weapon": [
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
   }
 }

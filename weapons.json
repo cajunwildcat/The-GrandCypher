@@ -44649,6 +44649,31 @@
     "awakeningType2": null,
     "jpname": "甘々柘榴の鉞"
   },
+  "1040319700": {
+    "pageName": "Jinn Al-Shajarah",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "earth",
+    "character": "Bennu (Holiday)",
+    "skill1": {
+      "name": "Mountain's Stamina",
+      "icon": "ws_skill_whole_3_2.png"
+    },
+    "skill2": {
+      "name": "Mountain's Aegis",
+      "icon": "ws_skill_hp_3_2.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "axe",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "シャジャラ・ジン"
+  },
   "1040400200": {
     "pageName": "Kerykeion",
     "maxUncap": 4,
@@ -60023,6 +60048,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "万象尽滅の鎧腕"
+  },
+  "1040621300": {
+    "pageName": "Ripening Spirit",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "earth",
+    "character": "Reinhardtzar (Holiday)",
+    "skill1": {
+      "name": "Mountain's Celere",
+      "icon": "ws_skill_moment_3.png"
+    },
+    "skill2": {
+      "name": "Earth's Healing",
+      "icon": "ws_skill_heal_limit_3_1.png"
+    },
+    "skill3": {
+      "name": "Strike: Earth",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "melee",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "追熟の烈酒"
   },
   "1040700000": {
     "pageName": "Eurytos Bow",
