@@ -64,6 +64,9 @@ const jqQueries = {
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_02.jpg`, `./assets/characters/tall/${item.id}_02`);
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_01.jpg`, `./assets/characters/icon/${item.id}_01`);
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_02.jpg`, `./assets/characters/icon/${item.id}_02`);
+
+            downloadImage(`https://media.skycompass.io/assets/customizes/characters/1138x1138/${item.id}_01.png`, `./assets/characters/skycompass/${item.id}_01`);
+            downloadImage(`https://media.skycompass.io/assets/customizes/characters/1138x1138/${item.id}_02.png`, `./assets/characters/skycompass/${item.id}_02`);
             if (item.maxUncap >= 5) {
                 downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/zoom/${item.id}_03.png`, `./assets/characters/full/${item.id}_03`);
                 downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_03.jpg`, `./assets/characters/tall/${item.id}_03`);
