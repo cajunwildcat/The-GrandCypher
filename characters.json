@@ -15000,7 +15000,7 @@
   "3040171000": {
     "pageName": "Cain (Grand)",
     "name": "Cain",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Earth",
     "series": "grand",
@@ -15012,7 +15012,7 @@
     "obtain": [
       "premium,grand,gala"
     ],
-    "flbDate": null,
+    "flbDate": "2025-12-11",
     "expeditionType": "nalhegrande",
     "type": "Special",
     "race": [
