@@ -28431,5 +28431,64 @@
     "artbouns": false,
     "artex": false,
     "charid": 3293
+  },
+  "3040628000": {
+    "pageName": "Zeta (Holiday)",
+    "name": "Zeta",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": "holiday",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ゼタ",
+    "releaseDate": "2025-12-15",
+    "gender": "f",
+    "obtain": [
+      "premium,christmas"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Attack",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Frosty Eve Spear",
+    "weapon": [
+      "Spear"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3024
+  },
+  "3040629000": {
+    "pageName": "Maria Theresa (Holiday)",
+    "name": "Maria Theresa",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": "evokers,holiday",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "マリア・テレサ",
+    "releaseDate": "2025-12-15",
+    "gender": "f",
+    "obtain": [
+      "premium,christmas"
+    ],
+    "flbDate": null,
+    "expeditionType": "evokers",
+    "type": "Balanced",
+    "race": [
+      "Draph"
+    ],
+    "recruitWeapon": "Pugnale dei Volant",
+    "weapon": [
+      "Staff",
+      "Sabre"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3099
   }
 }

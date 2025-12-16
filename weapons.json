@@ -35074,6 +35074,31 @@
     "awakeningType2": null,
     "jpname": "色彩の絵筆"
   },
+  "1040122600": {
+    "pageName": "Pugnale dei Volant",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "fire",
+    "character": "Maria Theresa (Holiday)",
+    "skill1": {
+      "name": "Hellfire's Auspice",
+      "icon": "ws_skill_hp_heal_limit_1_2.png"
+    },
+    "skill2": {
+      "name": "Hellfire's Verity",
+      "icon": "ws_skill_tec_1_2.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "dagger",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "ヴォラン・プニャーレ"
+  },
   "1040200000": {
     "pageName": "Cletine",
     "maxUncap": 3,
@@ -39923,6 +39948,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "ロンギヌスの槍・汎人用"
+  },
+  "1040220700": {
+    "pageName": "Frosty Eve Spear",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": "Zeta (Holiday)",
+    "skill1": {
+      "name": "Hatred's Sentence",
+      "icon": "ws_skill_deadly_6_2.png"
+    },
+    "skill2": {
+      "name": "Purgatory's Quenching",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": "Hatred's Aegis",
+      "icon": "ws_skill_hp_6_2.png"
+    },
+    "type": "spear",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "フロストイヴスピア"
   },
   "1040300000": {
     "pageName": "Ukonvasara",
