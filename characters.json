@@ -28490,5 +28490,34 @@
     "artbouns": false,
     "artex": false,
     "charid": 3099
+  },
+  "3040631000": {
+    "pageName": "Darydara",
+    "name": "Darydara",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": null,
+    "styleName": null,
+    "styleId": null,
+    "jpname": null,
+    "releaseDate": "2025-12-27",
+    "gender": "m",
+    "obtain": [
+      "main_quest,4-II"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Defense",
+    "race": [
+      "Harvin"
+    ],
+    "recruitWeapon": null,
+    "weapon": [
+      "Axe"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
   }
 }

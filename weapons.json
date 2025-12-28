@@ -29974,6 +29974,31 @@
     "awakeningType2": null,
     "jpname": "万象尽滅の宝剣"
   },
+  "1040029000": {
+    "pageName": "Demonsword of Mortality Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "water",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Allowater's Majesty IV",
+      "icon": "ws_skill_god_k_2_4.png"
+    },
+    "skill2": {
+      "name": "Taboo Allowater's Empowerment III",
+      "icon": "ws_skill_rise_k_2_3.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "sabre",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
+  },
   "1040100000": {
     "pageName": "Azoth",
     "maxUncap": 3,
@@ -39973,6 +39998,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "フロストイヴスピア"
+  },
+  "1040220800": {
+    "pageName": "Demonspear of Prosperity Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "fire",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Doomfire's Majesty IV",
+      "icon": "ws_skill_god_k_1_4.png"
+    },
+    "skill2": {
+      "name": "Taboo Doomfire's Empowerment III",
+      "icon": "ws_skill_rise_k_1_3.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "spear",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
   },
   "1040300000": {
     "pageName": "Ukonvasara",
@@ -50824,6 +50874,31 @@
     "awakeningType2": null,
     "jpname": "とんがり帽子の黒猫"
   },
+  "1040425500": {
+    "pageName": "Cyclestaff of Mortality Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "water",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Allowater's Tempering II",
+      "icon": "ws_skill_train_k_2_2.png"
+    },
+    "skill2": {
+      "name": "Taboo Allowater's Garrison III",
+      "icon": "ws_skill_guard_k_2_3.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "staff",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
+  },
   "1040500000": {
     "pageName": "Gastraphetes",
     "maxUncap": 4,
@@ -55223,6 +55298,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "アサルトライフル・汎人用"
+  },
+  "1040518800": {
+    "pageName": "Deathcannon of Prosperity Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "fire",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Doomfire's Glory II",
+      "icon": "ws_skill_hero_k_1_2.png"
+    },
+    "skill2": {
+      "name": "Taboo Doomfire's Crux III",
+      "icon": "ws_skill_secret_k_1_3.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "gun",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
   },
   "1040600000": {
     "pageName": "Lion Khan Claw",
@@ -60124,6 +60224,31 @@
     "awakeningType2": null,
     "jpname": "追熟の烈酒"
   },
+  "1040621400": {
+    "pageName": "Blazefist of Prosperity Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "fire",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Doomfire's Fandango II",
+      "icon": "ws_skill_ranbu_k_1_2.png"
+    },
+    "skill2": {
+      "name": "Taboo Doomfire's Garrison III",
+      "icon": "ws_skill_guard_k_1_3.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "melee",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
+  },
   "1040700000": {
     "pageName": "Eurytos Bow",
     "maxUncap": 4,
@@ -63698,6 +63823,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "マーヴェリック・エーテリアル"
+  },
+  "1040714900": {
+    "pageName": "Terrorbow of Mortality Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "water",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Allowater's Auspice II",
+      "icon": "ws_skill_hp_heal_limit_k_2_2.png"
+    },
+    "skill2": {
+      "name": "Taboo Allowater's Progression III",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "bow",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
   },
   "1040800000": {
     "pageName": "Luminiera Harp Omega",

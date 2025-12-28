@@ -3697,5 +3697,23 @@
     "element": "wind",
     "series": "collab",
     "jpname": "マリ＆８号機"
+  },
+  "2040446000": {
+    "pageName": "Belmervolk",
+    "name": "Belmervolk",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "fire",
+    "series": "odious",
+    "jpname": "ベルメルヴォルク"
+  },
+  "2040447000": {
+    "pageName": "Nihuyvintae",
+    "name": "Nihuyvintae",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "water",
+    "series": "odious",
+    "jpname": "ニフイヴィンテ"
   }
 }
