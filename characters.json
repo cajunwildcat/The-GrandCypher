@@ -28491,6 +28491,35 @@
     "artex": false,
     "charid": 3099
   },
+  "3040630000": {
+    "pageName": "Bhaisa",
+    "name": "Bhaisa",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": "grand",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "バイシュラ",
+    "releaseDate": "2025-12-28",
+    "gender": "f",
+    "obtain": [
+      "premium,grand,flash"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Heal",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Staff of the Medicinal Master",
+    "weapon": [
+      "Staff"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3294
+  },
   "3040631000": {
     "pageName": "Darydara",
     "name": "Darydara",
@@ -28500,14 +28529,14 @@
     "series": null,
     "styleName": null,
     "styleId": null,
-    "jpname": null,
+    "jpname": "ダリダラ",
     "releaseDate": "2025-12-27",
     "gender": "m",
     "obtain": [
       "main_quest,4-II"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": "Mercenary/Skyfarer",
     "type": "Defense",
     "race": [
       "Harvin"
@@ -28518,6 +28547,35 @@
     ],
     "artbouns": false,
     "artex": false,
-    "charid": null
+    "charid": 3295
+  },
+  "3040634000": {
+    "pageName": "Amaterasu",
+    "name": "Amaterasu",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": null,
+    "styleName": null,
+    "styleId": null,
+    "jpname": "アマテラス",
+    "releaseDate": "2025-12-28",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Heal",
+    "race": [
+      "Primal"
+    ],
+    "recruitWeapon": "Sunwheel Chime",
+    "weapon": [
+      "Staff"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3298
   }
 }

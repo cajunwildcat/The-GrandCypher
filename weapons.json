@@ -50899,6 +50899,31 @@
     "awakeningType2": null,
     "jpname": null
   },
+  "1040425600": {
+    "pageName": "Staff of the Medicinal Master",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "grand",
+    "element": "earth",
+    "character": "Bhaisa",
+    "skill1": {
+      "name": "Terra's Onslaught",
+      "icon": "ws_skill_special_skill_concurrent_attack_3_3.png"
+    },
+    "skill2": {
+      "name": "Terra's Impalement",
+      "icon": "ws_skill_penetrate_defense_3_3.png"
+    },
+    "skill3": {
+      "name": "Amber Porthos",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "staff",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "医王善杖"
+  },
   "1040500000": {
     "pageName": "Gastraphetes",
     "maxUncap": 4,
@@ -68173,6 +68198,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "万象尽滅の楽弦"
+  },
+  "1040818000": {
+    "pageName": "Sunwheel Chime",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "light",
+    "character": null,
+    "skill1": {
+      "name": "Thunder's Tempering",
+      "icon": "ws_skill_train_5_2.png"
+    },
+    "skill2": {
+      "name": "Light's  Healing",
+      "icon": "ws_skill_heal_limit_5_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "harp",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "日輪鈴"
   },
   "1040900000": {
     "pageName": "Asura",
