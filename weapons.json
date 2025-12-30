@@ -23624,6 +23624,31 @@
     "awakeningType2": null,
     "jpname": "暗影刀"
   },
+  "1030903900": {
+    "pageName": "Mindfade Edge",
+    "maxUncap": 3,
+    "rarity": "SR",
+    "series": null,
+    "element": "fire",
+    "character": null,
+    "skill1": {
+      "name": "Clawed Blaze",
+      "icon": "ws_skill_atk_a_1_2.png"
+    },
+    "skill2": {
+      "name": null,
+      "icon": null
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "katana",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "煩濁ノ忘刀"
+  },
   "1030999000": {
     "pageName": "Archangel Katana",
     "maxUncap": 3,
@@ -29997,7 +30022,32 @@
     "awakening": null,
     "awakeningType1": null,
     "awakeningType2": null,
-    "jpname": null
+    "jpname": "禁命の禍剣"
+  },
+  "1040029100": {
+    "pageName": "Blade of Calamity's Bane",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "fire",
+    "character": null,
+    "skill1": {
+      "name": "Armed Blaze",
+      "icon": "ws_skill_atk_a_1_3.png"
+    },
+    "skill2": {
+      "name": "Technical Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "sabre",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "厄除之利剣"
   },
   "1040100000": {
     "pageName": "Azoth",
