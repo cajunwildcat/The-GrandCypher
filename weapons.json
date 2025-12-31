@@ -68255,7 +68255,7 @@
     "rarity": "SSR",
     "series": null,
     "element": "light",
-    "character": null,
+    "character": "Amaterasu",
     "skill1": {
       "name": "Thunder's Tempering",
       "icon": "ws_skill_train_5_2.png"
