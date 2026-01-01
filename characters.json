@@ -28549,6 +28549,65 @@
     "artex": false,
     "charid": 3295
   },
+  "3040632000": {
+    "pageName": "Caesar",
+    "name": "Caesar",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": "grand",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "シーザー",
+    "releaseDate": "2025-12-31",
+    "gender": "m",
+    "obtain": [
+      "premium,grand,gala"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Balanced",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "White Sword of Splendor",
+    "weapon": [
+      "Sabre"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3296
+  },
+  "3040633000": {
+    "pageName": "Sandira",
+    "name": "Sandira",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": "12generals",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "サンチラ",
+    "releaseDate": "2025-12-31",
+    "gender": "f",
+    "obtain": [
+      "premium,zodiac"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Equinius",
+    "weapon": [
+      "Bow",
+      "Harp"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3297
+  },
   "3040634000": {
     "pageName": "Amaterasu",
     "name": "Amaterasu",

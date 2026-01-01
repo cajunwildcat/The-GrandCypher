@@ -30049,6 +30049,31 @@
     "awakeningType2": null,
     "jpname": "厄除之利剣"
   },
+  "1040029200": {
+    "pageName": "White Sword of Splendor",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "grand",
+    "element": "light",
+    "character": "Caesar",
+    "skill1": {
+      "name": "Glimmer's Spectacle",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill2": {
+      "name": "Zion's Rigor",
+      "icon": "ws_skill_rigor_5_3.png"
+    },
+    "skill3": {
+      "name": "Zion's Verity",
+      "icon": "ws_skill_tec_5_3.png"
+    },
+    "type": "sabre",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
+  },
   "1040100000": {
     "pageName": "Azoth",
     "maxUncap": 3,
@@ -63917,6 +63942,31 @@
     "skill3": {
       "name": null,
       "icon": null
+    },
+    "type": "bow",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
+  },
+  "1040715000": {
+    "pageName": "Equinius",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "fire",
+    "character": "Sandira",
+    "skill1": {
+      "name": "Inferno's Mystery",
+      "icon": "ws_skill_sp_atk_1_3.png"
+    },
+    "skill2": {
+      "name": "Scarlet Arts",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": "Arsus Excelsior",
+      "icon": "ws_skill_sp_limit_1.png"
     },
     "type": "bow",
     "awakening": null,

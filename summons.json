@@ -3715,5 +3715,14 @@
     "element": "water",
     "series": "odious",
     "jpname": "ニフイヴィンテ"
+  },
+  "2040448000": {
+    "pageName": "Versusia",
+    "name": "Versusia",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "fire",
+    "series": "providence",
+    "jpname": null
   }
 }
