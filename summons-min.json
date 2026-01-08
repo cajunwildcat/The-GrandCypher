@@ -2068,5 +2068,15 @@
     "pageName": "Versusia",
     "name": "Versusia",
     "maxUncap": 4
+  },
+  "2040449000": {
+    "pageName": "Virtuous Huanglong",
+    "name": "Virtuous Huanglong",
+    "maxUncap": 5
+  },
+  "2040450000": {
+    "pageName": "Stygian Qilin",
+    "name": "Stygian Qilin",
+    "maxUncap": 5
   }
 }

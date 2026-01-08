@@ -3724,5 +3724,23 @@
     "element": "fire",
     "series": "providence",
     "jpname": "ヴェルサシア"
+  },
+  "2040449000": {
+    "pageName": "Virtuous Huanglong",
+    "name": "Virtuous Huanglong",
+    "maxUncap": 5,
+    "rarity": "SSR",
+    "element": "light",
+    "series": null,
+    "jpname": null
+  },
+  "2040450000": {
+    "pageName": "Stygian Qilin",
+    "name": "Stygian Qilin",
+    "maxUncap": 5,
+    "rarity": "SSR",
+    "element": "dark",
+    "series": null,
+    "jpname": null
   }
 }
