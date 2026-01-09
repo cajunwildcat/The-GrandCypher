@@ -3732,7 +3732,7 @@
     "rarity": "SSR",
     "element": "light",
     "series": null,
-    "jpname": null
+    "jpname": "護徳黄龍"
   },
   "2040450000": {
     "pageName": "Stygian Qilin",
@@ -3741,6 +3741,6 @@
     "rarity": "SSR",
     "element": "dark",
     "series": null,
-    "jpname": null
+    "jpname": "紫禍黒麒麟"
   }
 }
