@@ -50999,6 +50999,56 @@
     "awakeningType2": null,
     "jpname": "医王善杖"
   },
+  "1040425700": {
+    "pageName": "Use a Gold Brick",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "wind",
+    "character": "Lulou Holou",
+    "skill1": {
+      "name": "Glamorous Gold's Glitter",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill2": {
+      "name": "Jade Hunt",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "staff",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "ヒヒイロカネ飾ってみた"
+  },
+  "1040425800": {
+    "pageName": "Erlkoenig-Nachweis",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": "Constance",
+    "skill1": {
+      "name": "Hatred's Stamina",
+      "icon": "ws_skill_whole_6_2.png"
+    },
+    "skill2": {
+      "name": "Dark's Spearhead",
+      "icon": "ws_skill_ta_tec_6_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "staff",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "エルケーニヒ・アウスヴァイス"
+  },
   "1040500000": {
     "pageName": "Gastraphetes",
     "maxUncap": 4,

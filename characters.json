@@ -28636,5 +28636,63 @@
     "artbouns": false,
     "artex": false,
     "charid": 3298
+  },
+  "3040635000": {
+    "pageName": "Lulou Holou",
+    "name": "Lulou Holou",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": null,
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ルロウホロウ",
+    "releaseDate": "2026-01-16",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Harvin"
+    ],
+    "recruitWeapon": "Use a Gold Brick",
+    "weapon": [
+      "Gun"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3299
+  },
+  "3040636000": {
+    "pageName": "Constance",
+    "name": "Constance",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": null,
+    "styleName": null,
+    "styleId": null,
+    "jpname": "コンスタンツィア",
+    "releaseDate": "2026-01-16",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Erlkoenig-Nachweis",
+    "weapon": [
+      "Staff"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3300
   }
 }
