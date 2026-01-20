@@ -22932,7 +22932,7 @@
   "3040441000": {
     "pageName": "Makura",
     "name": "Makura",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Light",
     "series": "12generals",
@@ -22944,7 +22944,7 @@
     "obtain": [
       "premium,zodiac"
     ],
-    "flbDate": null,
+    "flbDate": "2026-01-20",
     "expeditionType": "bloodhound",
     "type": "Attack",
     "race": [
