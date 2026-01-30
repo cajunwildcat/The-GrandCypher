@@ -20249,6 +20249,31 @@
     "awakeningType2": null,
     "jpname": "惑乱の手甲"
   },
+  "1030610100": {
+    "pageName": "Orichalcum Claw",
+    "maxUncap": 3,
+    "rarity": "SR",
+    "series": null,
+    "element": "light",
+    "character": null,
+    "skill1": {
+      "name": "Clawed Shine",
+      "icon": "ws_skill_atk_a_5_2.png"
+    },
+    "skill2": {
+      "name": null,
+      "icon": null
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "melee",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "オリハルコンの鉤爪"
+  },
   "1030699000": {
     "pageName": "Archangel Brass Knuckles",
     "maxUncap": 3,
@@ -64023,6 +64048,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "天干地支弓・午之飾"
+  },
+  "1040715100": {
+    "pageName": "Ravenous Wingbow",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "light",
+    "character": null,
+    "skill1": {
+      "name": "Armed Shine",
+      "icon": "ws_skill_atk_a_5_3.png"
+    },
+    "skill2": {
+      "name": "Covert Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "bow",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "飢命の翼弓"
   },
   "1040800000": {
     "pageName": "Luminiera Harp Omega",
