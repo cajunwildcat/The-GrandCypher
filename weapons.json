@@ -30099,6 +30099,31 @@
     "awakeningType2": null,
     "jpname": "白耀剣"
   },
+  "1040029300": {
+    "pageName": "Con Tenerezza",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "light",
+    "character": "Arriet (Light)",
+    "skill1": {
+      "name": "Thunder's Primacy",
+      "icon": "ws_skill_musou_5_2.png"
+    },
+    "skill2": {
+      "name": "Thunder's Healing",
+      "icon": "ws_skill_heal_limit_5_2.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "sabre",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "コンテネレッツァ"
+  },
   "1040100000": {
     "pageName": "Azoth",
     "maxUncap": 3,
@@ -35223,6 +35248,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "ヴォラン・プニャーレ"
+  },
+  "1040122700": {
+    "pageName": "Spy’s Sleeve Dagger",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "earth",
+    "character": "McCoy",
+    "skill1": {
+      "name": "Mountain's Majesty",
+      "icon": "ws_skill_god_3_2.png"
+    },
+    "skill2": {
+      "name": "Amber Arts",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": "Earth's Progression",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "dagger",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": "密偵の懐剣"
   },
   "1040200000": {
     "pageName": "Cletine",

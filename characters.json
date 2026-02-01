@@ -28694,5 +28694,64 @@
     "artbouns": false,
     "artex": false,
     "charid": 3300
+  },
+  "3040637000": {
+    "pageName": "McCoy",
+    "name": "McCoy",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": null,
+    "styleName": null,
+    "styleId": null,
+    "jpname": "マッコイ",
+    "releaseDate": "2026-01-31",
+    "gender": "m",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Spy’s Sleeve Dagger",
+    "weapon": [
+      "Dagger"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3301
+  },
+  "3040638000": {
+    "pageName": "Arriet (Light)",
+    "name": "Arriet",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": null,
+    "styleName": null,
+    "styleId": null,
+    "jpname": "アンリエット",
+    "releaseDate": "2026-01-31",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Balanced",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Con Tenerezza",
+    "weapon": [
+      "Sabre",
+      "Harp"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3045
   }
 }
