@@ -1,0 +1,1151 @@
+{
+  "Acrobatic Volley": {
+    "id": "440301_bw_ex1"
+  },
+  "Actuation": {
+    "id": "290201_gu_ex1"
+  },
+  "Amyntiko Fos": {
+    "id": "120401_wa_ex1"
+  },
+  "Armor Break II": {
+    "id": "100301_sw_ex1"
+  },
+  "Assault Drive / Weapon Discharge": {
+    "id": "470301_ax_ex1"
+  },
+  "Banahogg": {
+    "id": "100401_sw_ex1"
+  },
+  "Black Cat's Path": {
+    "id": "250301_wa_ex1"
+  },
+  "Blessing II": {
+    "id": "120301_wa_ex1"
+  },
+  "Blitzburst": {
+    "id": "240201_gu_ex1"
+  },
+  "Blood Oath": {
+    "id": "170401_bw_ex1"
+  },
+  "Bounce": {
+    "id": "130201_wa_ex1"
+  },
+  "Bounce Chasse": {
+    "id": "280301_kn_ex1"
+  },
+  "Bounty Hunter IV": {
+    "id": "140301_kn_ex1"
+  },
+  "Brave Soul": {
+    "id": "100201_sw_ex1"
+  },
+  "Charge Conversion": {
+    "id": "100501_sw_ex1"
+  },
+  "Conceal": {
+    "id": "260201_kn_ex1"
+  },
+  "Contrablade": {
+    "id": "230201_sw_ex1"
+  },
+  "Couteau Royal": {
+    "id": "140401_kn_ex1"
+  },
+  "Cross Guard": {
+    "id": "300201_sw_ex1"
+  },
+  "Dark Haze": {
+    "id": "130301_wa_ex1"
+  },
+  "Devotion": {
+    "id": "260301_kn_ex1"
+  },
+  "Dirge for the Dead": {
+    "id": "180301_mc_ex1"
+  },
+  "Dragphract": {
+    "id": "420301_sp_ex1"
+  },
+  "Dual Arts": {
+    "id": "300301_sw_ex1"
+  },
+  "Eagle Reversal": {
+    "id": "220301_kt_ex1"
+  },
+  "Espada": {
+    "id": "230301_sw_ex1"
+  },
+  "Extend Break": {
+    "id": "140201_kn_ex1"
+  },
+  "Fury Capsule": {
+    "id": "200201_kn_ex1"
+  },
+  "Guardian": {
+    "id": "110301_sw_ex1"
+  },
+  "Home-Made Bomb": {
+    "id": "210201_kt_ex1"
+  },
+  "Into Thin Air": {
+    "id": "220201_kt_ex1"
+  },
+  "Laughing Logger": {
+    "id": "410301_ax_ex1"
+  },
+  "Mana Burst": {
+    "id": "210301_kt_ex1"
+  },
+  "Mosh Pit": {
+    "id": "270301_mc_ex1"
+  },
+  "Noblesse Proteger": {
+    "id": "110401_sw_ex1"
+  },
+  "Nutrients": {
+    "id": "200301_kn_ex1"
+  },
+  "Open Fire": {
+    "id": "240301_gu_ex1"
+  },
+  "Pas Seul": {
+    "id": "280201_kn_ex1"
+  },
+  "Pizzicato": {
+    "id": "180401_mc_ex1"
+  },
+  "Quick Down": {
+    "id": "150201_sw_ex1"
+  },
+  "Randgrith": {
+    "id": "190201_sp_ex1"
+  },
+  "Reflection": {
+    "id": "110201_sw_ex1"
+  },
+  "Resonate Rhythm": {
+    "id": "270201_mc_ex1"
+  },
+  "Ring Ruler": {
+    "id": "160301_me_ex1"
+  },
+  "Sheep Song": {
+    "id": "180201_mc_ex1"
+  },
+  "Shikigami: Mizuchi": {
+    "id": "150401_kn_ex1"
+  },
+  "Spirit of Training": {
+    "id": "160201_me_ex1"
+  },
+  "Steady Aim": {
+    "id": "170201_bw_ex1"
+  },
+  "Swan Song": {
+    "id": "190301_sp_ex1"
+  },
+  "Tactical Relocation": {
+    "id": "170301_bw_ex1"
+  },
+  "Tactical Shield": {
+    "id": "450301_sw_ex1"
+  },
+  "Third Eye": {
+    "id": "250201_wa_ex1"
+  },
+  "True Strike": {
+    "id": "430301_me_ex1"
+  },
+  "Ultimate Palm Strike": {
+    "id": "160401_me_ex1"
+  },
+  "Uprising": {
+    "id": "150301_sw_ex1"
+  },
+  "Veil": {
+    "id": "120201_wa_ex1"
+  },
+  "Watch and Wound": {
+    "id": "460301_sw_ex1"
+  },
+  "Wild Magica": {
+    "id": "130401_wa_ex1"
+  },
+  "Ensemble of Heroes": {
+    "id": "180401_mc_ex1a"
+  },
+  "Sky Splitter": {
+    "id": "160401_me_ex1a"
+  },
+  "Aether Bane": {
+    "id": "130301_wa_ex2"
+  },
+  "Al Doble": {
+    "id": "230301_sw_ex2"
+  },
+  "Battering Ram": {
+    "id": "420301_sp_ex2"
+  },
+  "Bespoke Tailoring": {
+    "id": "170401_bw_ex2"
+  },
+  "Blood Sword": {
+    "id": "150201_sw_ex2"
+  },
+  "Boosted Resistance": {
+    "id": "110401_sw_ex2"
+  },
+  "Celestial Genesis": {
+    "id": "150401_kn_ex2"
+  },
+  "Centurion II": {
+    "id": "110301_sw_ex2"
+  },
+  "Change": {
+    "id": "170201_bw_ex2"
+  },
+  "Chase Blade": {
+    "id": "300201_sw_ex2"
+  },
+  "Choke": {
+    "id": "130201_wa_ex2"
+  },
+  "Dance of Zeal": {
+    "id": "190301_sp_ex2"
+  },
+  "Dawnbreak": {
+    "id": "100501_sw_ex2"
+  },
+  "Despierta, Mi Bien": {
+    "id": "180401_mc_ex2"
+  },
+  "Diptych": {
+    "id": "300301_sw_ex2"
+  },
+  "Dispel Deluge": {
+    "id": "120301_wa_ex2"
+  },
+  "Dragon Break": {
+    "id": "210301_kt_ex2"
+  },
+  "Einherjar": {
+    "id": "190201_sp_ex2"
+  },
+  "Emerald Fog": {
+    "id": "440301_bw_ex2"
+  },
+  "Force Snatch": {
+    "id": "140201_kn_ex2"
+  },
+  "Fortitude": {
+    "id": "240301_gu_ex2"
+  },
+  "Frequency Jam": {
+    "id": "170301_bw_ex2"
+  },
+  "Horizontal Solace": {
+    "id": "160201_me_ex2"
+  },
+  "In the Face of Adversity": {
+    "id": "160401_me_ex2"
+  },
+  "Jet to Jet": {
+    "id": "270301_mc_ex2"
+  },
+  "Leaf Burning": {
+    "id": "410301_ax_ex2"
+  },
+  "Limit Burst": {
+    "id": "450301_sw_ex2"
+  },
+  "Maddening Vitality": {
+    "id": "200301_kn_ex2"
+  },
+  "Marshaling Shout": {
+    "id": "470301_ax_ex2"
+  },
+  "Mic Hype": {
+    "id": "160301_me_ex2"
+  },
+  "Moonshadow": {
+    "id": "250301_wa_ex2"
+  },
+  "No More Doubt": {
+    "id": "220301_kt_ex2"
+  },
+  "Non-Sequence": {
+    "id": "280301_kn_ex2"
+  },
+  "Parfait d'Amour": {
+    "id": "140401_kn_ex2"
+  },
+  "Pneuma": {
+    "id": "120401_wa_ex2"
+  },
+  "Power Raise": {
+    "id": "100201_sw_ex2"
+  },
+  "Rage IV": {
+    "id": "100301_sw_ex2"
+  },
+  "Recursive Nightmare": {
+    "id": "260301_kn_ex2"
+  },
+  "Secret Triad": {
+    "id": "130401_wa_ex2"
+  },
+  "Testudo": {
+    "id": "110201_sw_ex2"
+  },
+  "Tremor Round": {
+    "id": "180201_mc_ex2"
+  },
+  "Unpredictable": {
+    "id": "150301_sw_ex2"
+  },
+  "Unyielding Form": {
+    "id": "430301_me_ex2"
+  },
+  "Vinland": {
+    "id": "100401_sw_ex2"
+  },
+  "Voice Unveiled": {
+    "id": "180301_mc_ex2"
+  },
+  "White Smoke": {
+    "id": "140301_kn_ex2"
+  },
+  "White Wall": {
+    "id": "120201_wa_ex2"
+  },
+  "Whitehail Gust": {
+    "id": "460301_sw_ex2"
+  },
+  "Ensemble of Warriors": {
+    "id": "180401_mc_ex2a"
+  },
+  "Salt of Cleansing Spirits": {
+    "id": "160401_me_ex2a"
+  },
+  "Adrenaline Rush": {
+    "id": "200301_kn_ex3"
+  },
+  "Aurum Flow": {
+    "id": "300301_sw_ex3"
+  },
+  "Barbed Wire": {
+    "id": "260301_kn_ex3"
+  },
+  "Blitz Raid": {
+    "id": "450301_sw_ex3"
+  },
+  "Call of the Abyss": {
+    "id": "180301_mc_ex3"
+  },
+  "Chaos": {
+    "id": "150301_sw_ex3"
+  },
+  "Chaser": {
+    "id": "130301_wa_ex3"
+  },
+  "Colmillos": {
+    "id": "230301_sw_ex3"
+  },
+  "Dappled Sunlight": {
+    "id": "410301_ax_ex3"
+  },
+  "Execration / Five-Phase Seal": {
+    "id": "150401_kn_ex3"
+  },
+  "Guerrilla Tactics": {
+    "id": "240301_gu_ex3"
+  },
+  "Hardened Shield": {
+    "id": "110301_sw_ex3"
+  },
+  "High Command": {
+    "id": "420301_sp_ex3"
+  },
+  "Jomsborg": {
+    "id": "100401_sw_ex3"
+  },
+  "Le Manteau du Roi": {
+    "id": "140401_kn_ex3"
+  },
+  "Megali Fotia": {
+    "id": "120401_wa_ex3"
+  },
+  "Overtrance": {
+    "id": "130401_wa_ex3"
+  },
+  "Paws of Power": {
+    "id": "250301_wa_ex3"
+  },
+  "Peace of Mind": {
+    "id": "120301_wa_ex3"
+  },
+  "Rampage II": {
+    "id": "100301_sw_ex3"
+  },
+  "Regimented Formation": {
+    "id": "470301_ax_ex3"
+  },
+  "Rending Flash": {
+    "id": "220301_kt_ex3"
+  },
+  "Return of the Fox": {
+    "id": "440301_bw_ex3"
+  },
+  "Rock Crusher": {
+    "id": "430301_me_ex3"
+  },
+  "Rupie Flip": {
+    "id": "140301_kn_ex3"
+  },
+  "Sacred Protection": {
+    "id": "110401_sw_ex3"
+  },
+  "Seasplitter": {
+    "id": "460301_sw_ex3"
+  },
+  "Sei Colpi": {
+    "id": "170401_bw_ex3"
+  },
+  "Shall We Dance": {
+    "id": "280301_kn_ex3"
+  },
+  "Spell Boost": {
+    "id": "210301_kt_ex3"
+  },
+  "Springwater Robe": {
+    "id": "190301_sp_ex3"
+  },
+  "Sumai Meet": {
+    "id": "160401_me_ex3"
+  },
+  "Tag Team": {
+    "id": "160301_me_ex3"
+  },
+  "Twilight Zone": {
+    "id": "170301_bw_ex3"
+  },
+  "Ultimate Ensemble": {
+    "id": "180401_mc_ex3"
+  },
+  "Unleash the Fury": {
+    "id": "270301_mc_ex3"
+  },
+  "Unlimited Boost": {
+    "id": "100501_sw_ex3"
+  },
+  "Combat Spirit Infusion": {
+    "id": "160401_me_ex3a"
+  },
+  "Absorption": {
+    "id": "150301_sw_ex4"
+  },
+  "Crestfallen Flower": {
+    "id": "190301_sp_ex4"
+  },
+  "Judicious Shot": {
+    "id": "170301_bw_ex4"
+  },
+  "Oratorio": {
+    "id": "180301_mc_ex4"
+  },
+  "Resounding Chant": {
+    "id": "130301_wa_ex4"
+  },
+  "Spring's Gate": {
+    "id": "140301_kn_ex4"
+  },
+  "Ulfhedinn": {
+    "id": "100301_sw_ex4"
+  },
+  "Spirit Suppression": {
+    "id": "160401_me_ex4a"
+  },
+  "Lightning Strike": {
+    "id": "190301_sp_ex5"
+  },
+  "Time On Target": {
+    "id": "170301_bw_ex5"
+  },
+  "Activate": {
+    "id": "290201_gu_s1"
+  },
+  "Aether Blast": {
+    "id": "130101_wa_s1"
+  },
+  "Aether Blast II": {
+    "id": "130201_wa_s1"
+  },
+  "Aether Blast III": {
+    "id": "130301_wa_s1"
+  },
+  "Aether Siphon": {
+    "id": "130401_wa_s1"
+  },
+  "Alchemize Green Potion": {
+    "id": "200201_kn_s1"
+  },
+  "Aperitif": {
+    "id": "140401_kn_s1"
+  },
+  "Ascetic Stance": {
+    "id": "430301_me_s1"
+  },
+  "Awakening Blade": {
+    "id": "230201_sw_s1"
+  },
+  "Bait Step": {
+    "id": "280301_kn_s1"
+  },
+  "Blade Swap": {
+    "id": "300201_sw_s1"
+  },
+  "Blade Swap II": {
+    "id": "300301_sw_s1"
+  },
+  "Cat's Meow": {
+    "id": "250301_wa_s1"
+  },
+  "Concludere": {
+    "id": "180301_mc_s1"
+  },
+  "Counter": {
+    "id": "160101_me_s1"
+  },
+  "Counter II": {
+    "id": "160201_me_s1"
+  },
+  "Crack Shot": {
+    "id": "140101_kn_s1"
+  },
+  "Crack Shot II": {
+    "id": "140201_kn_s1"
+  },
+  "Crack Shot III": {
+    "id": "140301_kn_s1"
+  },
+  "Drive It In": {
+    "id": "190101_sp_s1"
+  },
+  "Drive It In II": {
+    "id": "190201_sp_s1"
+  },
+  "Drum Roll": {
+    "id": "270201_mc_s1"
+  },
+  "Early Shot": {
+    "id": "240201_gu_s1"
+  },
+  "Elemental Phalanx": {
+    "id": "110401_sw_s1"
+  },
+  "Empezar a Tocar": {
+    "id": "180401_mc_s1"
+  },
+  "Engage Augments": {
+    "id": "450301_sw_s1"
+  },
+  "Evasive Maneuvers": {
+    "id": "170301_bw_s1"
+  },
+  "Execute": {
+    "id": "260301_kn_s1"
+  },
+  "Finishing Touch": {
+    "id": "220201_kt_s1"
+  },
+  "Full Arsenal": {
+    "id": "100101_sw_s1"
+  },
+  "Full Arsenal II": {
+    "id": "100201_sw_s1"
+  },
+  "Full Arsenal III": {
+    "id": "100301_sw_s1"
+  },
+  "Full Arsenal IV": {
+    "id": "100501_sw_s1"
+  },
+  "Glory Arts": {
+    "id": "230301_sw_s1"
+  },
+  "Horseman's Duty": {
+    "id": "420301_sp_s1"
+  },
+  "Knifehand Strike": {
+    "id": "160301_me_s1"
+  },
+  "Ninjutsu": {
+    "id": "210201_kt_s1"
+  },
+  "Norden Harr": {
+    "id": "100401_sw_s1"
+  },
+  "Omnipotent Eye": {
+    "id": "250201_wa_s1"
+  },
+  "One with the Blade": {
+    "id": "220301_kt_s1"
+  },
+  "Opening Shot": {
+    "id": "440301_bw_s1"
+  },
+  "Overture": {
+    "id": "180101_mc_s1"
+  },
+  "Overture II": {
+    "id": "180201_mc_s1"
+  },
+  "Panacea": {
+    "id": "120101_wa_s1"
+  },
+  "Panacea II": {
+    "id": "120201_wa_s1"
+  },
+  "Panacea III": {
+    "id": "120301_wa_s1"
+  },
+  "Parabellum Rain": {
+    "id": "170401_bw_s1"
+  },
+  "Phalanx": {
+    "id": "110101_sw_s1"
+  },
+  "Phalanx II": {
+    "id": "110201_sw_s1"
+  },
+  "Phalanx III": {
+    "id": "110301_sw_s1"
+  },
+  "Potion Refinement": {
+    "id": "200301_kn_s1"
+  },
+  "Quick Step": {
+    "id": "170101_bw_s1"
+  },
+  "Quick Step II": {
+    "id": "170201_bw_s1"
+  },
+  "Rising Force": {
+    "id": "270301_mc_s1"
+  },
+  "Runeweaving": {
+    "id": "210301_kt_s1"
+  },
+  "Sealing Talisman": {
+    "id": "150401_kn_s1"
+  },
+  "Selectively Skilled": {
+    "id": "260201_kn_s1"
+  },
+  "Shield of Valor": {
+    "id": "470301_ax_s1"
+  },
+  "Shiranui Stance": {
+    "id": "160401_me_s1"
+  },
+  "Spellbound Salsa": {
+    "id": "280201_kn_s1"
+  },
+  "Stall": {
+    "id": "150101_sw_s1"
+  },
+  "Stall II": {
+    "id": "150201_sw_s1"
+  },
+  "Stall III": {
+    "id": "150301_sw_s1"
+  },
+  "Take the Head": {
+    "id": "460301_sw_s1"
+  },
+  "Three-Round Burst": {
+    "id": "240301_gu_s1"
+  },
+  "Thunder on the Water": {
+    "id": "190301_sp_s1"
+  },
+  "Transcendent Blue": {
+    "id": "orologia_summon_1"
+  },
+  "Vita Brevis": {
+    "id": "120401_wa_s1"
+  },
+  "Woodcutter's Song": {
+    "id": "410301_ax_s1"
+  },
+  "Angelic Voice": {
+    "id": "180001_mc_s2"
+  },
+  "Angelic Voice II": {
+    "id": "180101_mc_s2"
+  },
+  "Bounty Hunter": {
+    "id": "140001_kn_s2"
+  },
+  "Bounty Hunter II": {
+    "id": "140101_kn_s2"
+  },
+  "Bounty Hunter III": {
+    "id": "140201_kn_s2"
+  },
+  "Clarity": {
+    "id": "120101_wa_s2"
+  },
+  "Classical Lead": {
+    "id": "280201_kn_s2"
+  },
+  "Customized Action": {
+    "id": "290201_gu_s2"
+  },
+  "Dispel": {
+    "id": "120201_wa_s2"
+  },
+  "Double Trouble": {
+    "id": "190001_sp_s2"
+  },
+  "Double Trouble II": {
+    "id": "190101_sp_s2"
+  },
+  "Double Trouble III": {
+    "id": "190201_sp_s2"
+  },
+  "Elemental Focus": {
+    "id": "150001_sw_s2"
+  },
+  "Elemental Focus II": {
+    "id": "150101_sw_s2"
+  },
+  "Fate Foreseen": {
+    "id": "250201_wa_s2"
+  },
+  "Fighting Spirit": {
+    "id": "160201_me_s2"
+  },
+  "Fire": {
+    "id": "130001_wa_s2"
+  },
+  "Freeze": {
+    "id": "130101_wa_s2"
+  },
+  "Fuma Shuriken": {
+    "id": "210201_kt_s2"
+  },
+  "Grace": {
+    "id": "120001_wa_s2"
+  },
+  "Just the Cure": {
+    "id": "200201_kn_s2"
+  },
+  "Miserable Mist": {
+    "id": "150201_sw_s2"
+  },
+  "Never Miss a Beat": {
+    "id": "270201_mc_s2"
+  },
+  "Out of Sight": {
+    "id": "260201_kn_s2"
+  },
+  "Overdrive Surge": {
+    "id": "110001_sw_s2"
+  },
+  "Overdrive Surge II": {
+    "id": "110101_sw_s2"
+  },
+  "Overdrive Surge III": {
+    "id": "110201_sw_s2"
+  },
+  "Rage": {
+    "id": "100001_sw_s2"
+  },
+  "Rage II": {
+    "id": "100101_sw_s2"
+  },
+  "Rain of Arrows": {
+    "id": "170001_bw_s2"
+  },
+  "Rain of Arrows II": {
+    "id": "170101_bw_s2"
+  },
+  "Rain of Arrows III": {
+    "id": "170201_bw_s2"
+  },
+  "Rampage": {
+    "id": "100201_sw_s2"
+  },
+  "Resonating Blade": {
+    "id": "230201_sw_s2"
+  },
+  "Self Reflection": {
+    "id": "220201_kt_s2"
+  },
+  "Soul Soloist": {
+    "id": "180201_mc_s2"
+  },
+  "Taking Chances": {
+    "id": "160001_me_s2"
+  },
+  "Taking Chances II": {
+    "id": "160101_me_s2"
+  },
+  "Triple Threat": {
+    "id": "240201_gu_s2"
+  },
+  "Twin Coil": {
+    "id": "300201_sw_s2"
+  },
+  "Venom": {
+    "id": "130201_wa_s2"
+  },
+  "A Little Pick-Me-Up": {
+    "id": "200201_kn_s3"
+  },
+  "Armor Break": {
+    "id": "100101_sw_s3"
+  },
+  "Bard Song": {
+    "id": "180101_mc_s3"
+  },
+  "Battle Scar": {
+    "id": "190101_sp_s3"
+  },
+  "Blessing": {
+    "id": "120101_wa_s3"
+  },
+  "Blind": {
+    "id": "130101_wa_s3"
+  },
+  "Bullseye Run": {
+    "id": "170201_bw_s3"
+  },
+  "Centurion": {
+    "id": "110101_sw_s3"
+  },
+  "Chi Channeler": {
+    "id": "160101_me_s3"
+  },
+  "Decimate": {
+    "id": "300201_sw_s3"
+  },
+  "Energize": {
+    "id": "230201_sw_s3"
+  },
+  "Gravity Wave": {
+    "id": "150201_sw_s3"
+  },
+  "Hard Line": {
+    "id": "170101_bw_s3"
+  },
+  "Haze": {
+    "id": "210201_kt_s3"
+  },
+  "Laser Focus": {
+    "id": "130201_wa_s3"
+  },
+  "Lethal Aim": {
+    "id": "140201_kn_s3"
+  },
+  "Lock 'n' Load": {
+    "id": "240201_gu_s3"
+  },
+  "Pandemonium": {
+    "id": "160201_me_s3"
+  },
+  "Quick Strike": {
+    "id": "150101_sw_s3"
+  },
+  "Quiet Strategy": {
+    "id": "220201_kt_s3"
+  },
+  "Rage III": {
+    "id": "100201_sw_s3"
+  },
+  "Refuel": {
+    "id": "290201_gu_s3"
+  },
+  "Resonating Surge": {
+    "id": "190201_sp_s3"
+  },
+  "Resounding Rhythm": {
+    "id": "270201_mc_s3"
+  },
+  "Retaliation Reprise": {
+    "id": "260201_kn_s3"
+  },
+  "Revive": {
+    "id": "120201_wa_s3"
+  },
+  "Sky Realm Song": {
+    "id": "180201_mc_s3"
+  },
+  "Splitting Spirit": {
+    "id": "250201_wa_s3"
+  },
+  "Substitute": {
+    "id": "110201_sw_s3"
+  },
+  "Tricky Moves": {
+    "id": "140101_kn_s3"
+  },
+  "Two to Tango": {
+    "id": "280201_kn_s3"
+  },
+  "Bleak Disorder": {
+    "id": "150301_sw_umex1"
+  },
+  "Breath of the Serpent": {
+    "id": "460301_sw_umex1"
+  },
+  "Combat Rations": {
+    "id": "240301_gu_umex1"
+  },
+  "Combat Shield": {
+    "id": "470301_ax_umex1"
+  },
+  "Demonic Flare": {
+    "id": "130301_wa_umex1"
+  },
+  "Deuce Xiphos": {
+    "id": "300301_sw_umex1"
+  },
+  "Fatal Venom": {
+    "id": "260301_kn_umex1"
+  },
+  "Ferocious Roar": {
+    "id": "100301_sw_umex1"
+  },
+  "Fever Pitch": {
+    "id": "270301_mc_umex1"
+  },
+  "Flageolet": {
+    "id": "180301_mc_umex1"
+  },
+  "Glorious Vow": {
+    "id": "230301_sw_umex1"
+  },
+  "Homing Beacon": {
+    "id": "170301_bw_umex1"
+  },
+  "Lightning Shot": {
+    "id": "450301_sw_umex1"
+  },
+  "Lucha de Parejas": {
+    "id": "160301_me_umex1"
+  },
+  "Multiplying Magic": {
+    "id": "210301_kt_umex1"
+  },
+  "Mystic Restoration": {
+    "id": "430301_me_umex1"
+  },
+  "Nocked Exorcism": {
+    "id": "220301_kt_umex1"
+  },
+  "Nyagrodha": {
+    "id": "190301_sp_umex1"
+  },
+  "Oculus Felis": {
+    "id": "250301_wa_umex1"
+  },
+  "On the Waltz": {
+    "id": "280301_kn_umex1"
+  },
+  "Path Illuminated": {
+    "id": "120301_wa_umex1"
+  },
+  "Primary Care": {
+    "id": "200301_kn_umex1"
+  },
+  "Roll of the Dice": {
+    "id": "140301_kn_umex1"
+  },
+  "Thermopylae": {
+    "id": "110301_sw_umex1"
+  },
+  "Thousand Arrows": {
+    "id": "440301_bw_umex1"
+  },
+  "Valorous Assault": {
+    "id": "420301_sp_umex1"
+  },
+  "Verdant Melody": {
+    "id": "410301_ax_umex1"
+  },
+  "Sweeping Arrow": {
+    "id": "440301_bw_umex1a"
+  },
+  "Ameno Totsuka": {
+    "id": "460301_sw_umex2"
+  },
+  "Arcane Field": {
+    "id": "130301_wa_umex2"
+  },
+  "Astrapste": {
+    "id": "300301_sw_umex2"
+  },
+  "Beast Fang": {
+    "id": "100301_sw_umex2"
+  },
+  "Birdsong of Balmy Breeze": {
+    "id": "410301_ax_umex2"
+  },
+  "Circle of Coalescence": {
+    "id": "210301_kt_umex2"
+  },
+  "Crowning Fluidity": {
+    "id": "190301_sp_umex2"
+  },
+  "Defiance": {
+    "id": "470301_ax_umex2"
+  },
+  "Diatonic Harmony": {
+    "id": "180301_mc_umex2"
+  },
+  "Fervent Focus": {
+    "id": "430301_me_umex2"
+  },
+  "Fight Song": {
+    "id": "160301_me_umex2"
+  },
+  "Flames of Chaos": {
+    "id": "150301_sw_umex2"
+  },
+  "Gloryblade": {
+    "id": "230301_sw_umex2"
+  },
+  "Hoplite": {
+    "id": "110301_sw_umex2"
+  },
+  "Hypervelocity": {
+    "id": "450301_sw_umex2"
+  },
+  "Immortal Operative": {
+    "id": "240301_gu_umex2"
+  },
+  "Lapin Blanc": {
+    "id": "120301_wa_umex2"
+  },
+  "Matatabby": {
+    "id": "250301_wa_umex2"
+  },
+  "Mounted Bulwark": {
+    "id": "420301_sp_umex2"
+  },
+  "Outperform": {
+    "id": "200301_kn_umex2"
+  },
+  "Pinch Harmonics": {
+    "id": "270301_mc_umex2"
+  },
+  "Rebellion Shot": {
+    "id": "440301_bw_umex2"
+  },
+  "Secret Style: Blink Slash": {
+    "id": "220301_kt_umex2"
+  },
+  "Spiral Turn": {
+    "id": "280301_kn_umex2"
+  },
+  "Stealth Protocol": {
+    "id": "170301_bw_umex2"
+  },
+  "Sublime Springscape": {
+    "id": "140301_kn_umex2"
+  },
+  "Thousand Slices": {
+    "id": "260301_kn_umex2"
+  },
+  "Deepshot Arrow": {
+    "id": "440301_bw_umex2a"
+  },
+  "Accelerando": {
+    "id": "180301_mc_umex3"
+  },
+  "Amber Edge": {
+    "id": "300301_sw_umex3"
+  },
+  "Ammunition Belt": {
+    "id": "240301_gu_umex3"
+  },
+  "Bloodzerker": {
+    "id": "100301_sw_umex3"
+  },
+  "Brutal Cell": {
+    "id": "450301_sw_umex3"
+  },
+  "Cathedral's Benison": {
+    "id": "120301_wa_umex3"
+  },
+  "Crest Discharge": {
+    "id": "130301_wa_umex3"
+  },
+  "Enlightened Fury": {
+    "id": "430301_me_umex3"
+  },
+  "Everlasting Bonds": {
+    "id": "270301_mc_umex3"
+  },
+  "Executing Blow": {
+    "id": "260301_kn_umex3"
+  },
+  "Field Commander": {
+    "id": "420301_sp_umex3"
+  },
+  "Heart of Chivalry": {
+    "id": "140301_kn_umex3"
+  },
+  "High Immunity": {
+    "id": "200301_kn_umex3"
+  },
+  "Intuition": {
+    "id": "220301_kt_umex3"
+  },
+  "Log Lop": {
+    "id": "410301_ax_umex3"
+  },
+  "Malignity": {
+    "id": "150301_sw_umex3"
+  },
+  "Martial Choreography": {
+    "id": "280301_kn_umex3"
+  },
+  "Mastery's Edge": {
+    "id": "230301_sw_umex3"
+  },
+  "Molon Labe": {
+    "id": "110301_sw_umex3"
+  },
+  "Quadruple Hex": {
+    "id": "210301_kt_umex3"
+  },
+  "Rapid Nocking": {
+    "id": "440301_bw_umex3"
+  },
+  "Rearguard Relocation": {
+    "id": "170301_bw_umex3"
+  },
+  "Sanctifying Kagura": {
+    "id": "460301_sw_umex3"
+  },
+  "Scratching Post": {
+    "id": "250301_wa_umex3"
+  },
+  "Shield Hurl": {
+    "id": "470301_ax_umex3"
+  },
+  "Showstopper": {
+    "id": "190301_sp_umex3"
+  },
+  "Vez de Rudo": {
+    "id": "160301_me_umex3"
+  },
+  "Affliction Arrow": {
+    "id": "440301_bw_umex3a"
+  }
+}
