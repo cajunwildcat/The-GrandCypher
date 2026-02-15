@@ -28753,5 +28753,65 @@
     "artbouns": false,
     "artex": false,
     "charid": 3045
+  },
+  "3040639000": {
+    "pageName": "Wamdus (Valentine)",
+    "name": "Wamdus",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": "valentine",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ワムデュス",
+    "releaseDate": "2026-02-14",
+    "gender": "o",
+    "obtain": [
+      "premium,valentine"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Harvin"
+    ],
+    "recruitWeapon": "Dreamy Mendiant",
+    "weapon": [
+      "Staff",
+      "Axe"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3211
+  },
+  "3040640000": {
+    "pageName": "Gawain (Valentine)",
+    "name": "Gawain",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": "valentine",
+    "styleName": null,
+    "styleId": null,
+    "jpname": "ガウェイン",
+    "releaseDate": "2026-02-14",
+    "gender": "m",
+    "obtain": [
+      "premium,valentine"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Bipenne Galante",
+    "weapon": [
+      "Axe",
+      "Spear"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3000
   }
 }

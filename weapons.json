@@ -44924,6 +44924,31 @@
     "awakeningType2": null,
     "jpname": "シャジャラ・ジン"
   },
+  "1040319800": {
+    "pageName": "Bipenne Galante",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "water",
+    "character": "Gawain (Valentine)",
+    "skill1": {
+      "name": "Tsunami's Stamina",
+      "icon": "ws_skill_whole_2_2.png"
+    },
+    "skill2": {
+      "name": "Tsunami's Aegis",
+      "icon": "ws_skill_hp_2_2.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "axe",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
+  },
   "1040400200": {
     "pageName": "Kerykeion",
     "maxUncap": 4,
@@ -68473,6 +68498,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "日輪鈴"
+  },
+  "1040818100": {
+    "pageName": "Dreamy Mendiant",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": "Wamdus (Valentine)",
+    "skill1": {
+      "name": "Oblivion's Glory",
+      "icon": "ws_skill_hero_6_3.png"
+    },
+    "skill2": {
+      "name": "Sweet Tune",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "harp",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
   },
   "1040900000": {
     "pageName": "Asura",
