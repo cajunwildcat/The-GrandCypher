@@ -10789,7 +10789,7 @@
     "obtain": [
       "classic"
     ],
-    "flbDate": null,
+    "flbDate": "2026-02-17",
     "expeditionType": null,
     "type": "Heal",
     "race": [
@@ -28770,7 +28770,7 @@
       "premium,valentine"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Special",
     "race": [
       "Harvin"
@@ -28800,7 +28800,7 @@
       "premium,valentine"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Attack",
     "race": [
       "Human"
