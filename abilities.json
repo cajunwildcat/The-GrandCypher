@@ -57,7 +57,7 @@
   "Bounce Chasse": {
     "ix": "ex1",
     "id": "280301_kn_ex1",
-    "icon": "Ability m 1413 3.png ‎"
+    "icon": "Ability m 1413 3.png"
   },
   "Bounty Hunter IV": {
     "ix": "ex1",
@@ -462,7 +462,7 @@
   "Non-Sequence": {
     "ix": "ex2",
     "id": "280301_kn_ex2",
-    "icon": "Ability m 1414 1.png ‎"
+    "icon": "Ability m 1414 1.png"
   },
   "Parfait d'Amour": {
     "ix": "ex2",
@@ -692,7 +692,7 @@
   "Shall We Dance": {
     "ix": "ex3",
     "id": "280301_kn_ex3",
-    "icon": "Ability m 1415 5.png ‎"
+    "icon": "Ability m 1415 5.png"
   },
   "Spell Boost": {
     "ix": "ex3",
@@ -837,7 +837,7 @@
   "Bait Step": {
     "ix": "s1",
     "id": "280301_kn_s1",
-    "icon": "Ability m 1412 3.png ‎"
+    "icon": "Ability m 1412 3.png"
   },
   "Blade Swap": {
     "ix": "s1",

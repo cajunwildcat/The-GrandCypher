@@ -98,6 +98,9 @@ const jqQueries = {
             addImageDownload(item.id + "_02", "weapon");
             addImageDownload(item.id + "_03", "weapon");
         }
+        if (item["s1Icon"]) addImageDownload(item["s1Icon"], "weapon skill");
+        if (item["s2Icon"]) addImageDownload(item["s2Icon"], "weapon skill");
+        if (item["s3Icon"]) addImageDownload(item["s3Icon"], "weapon skill");
 
         return {
             [item.id]: {
@@ -129,24 +132,28 @@ const jqQueries = {
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
 
     abilities: data => data.map(item => {
-        addImageDownload(item.icon.split(",")[0].replace("\u200e","").trim().replaceAll(" ", "_").replaceAll(/&#039;/g, "'"), "ability", {id: item.id});
+        addImageDownload(item.icon.split(",")[0].replaceAll(" ", "_").replaceAll(/&#039;/g, "'"), "ability", { id: item.id });
 
-        return { [item.name.replace(/&#039;/g, "'")]: {
-            ix: item.ix,
-            id: item.id,
-            icon: item.icon
+        return {
+            [item.name.replace(/&#039;/g, "'")]: {
+                ix: item.ix,
+                id: item.id,
+                icon: item.icon
+            }
         }
-    }}).reduce((acc, curr) => Object.assign(acc, curr), {}),
+    }).reduce((acc, curr) => Object.assign(acc, curr), {}),
 
     classes: data => data.map(item => {
         addImageDownload(item.imgid, "class");
 
-        return {[item.name.replace(/&#039;/g, "'")]: {
-            id: item.id,
-            imgid: item.imgid,
-            jpname: item.jpname
+        return {
+            [item.name.replace(/&#039;/g, "'")]: {
+                id: item.id,
+                imgid: item.imgid,
+                jpname: item.jpname
+            }
         }
-    }}).reduce((acc, curr) => Object.assign(acc, curr), {})
+    }).reduce((acc, curr) => Object.assign(acc, curr), {})
 };
 
 const ERROR_LOG_FILE = './assets/error_log.json';
@@ -225,17 +232,24 @@ function addImageDownload(itemID, itemType, options = {}) {
         case "class":
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/leader/quest/${itemID}_0_01.jpg`, `./assets/classes/tall/${itemID}_0`);
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/leader/quest/${itemID}_1_01.jpg`, `./assets/classes/tall/${itemID}_1`);
-        break;
+            break;
+        case "weapon skill":
+            downloadImage(`https://gbf.wiki/Special:Redirect/file/${itemID}`, `./assets/weapons/skills/${itemID.replace(".png","")}`);
+            break;
     }
 }
 
+const downloadlistqueue = {};
 function downloadImage(srcLink, destinationFile) {
-    if (existsSync(`${destinationFile}.webp`)) {
+    if (existsSync(`${destinationFile}.webp`) ||
+        isInErrorLog(destinationFile)) {
         return;
     }
-    if (isInErrorLog(destinationFile)) {
+
+    if (downloadlistqueue[destinationFile]) {
         return;
     }
+    downloadlistqueue[destinationFile] = true;
 
     downloadlist.push(async () => {
         https.get(srcLink, (res) => {
