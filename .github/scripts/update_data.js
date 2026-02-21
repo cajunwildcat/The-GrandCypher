@@ -23,19 +23,15 @@ const urls = {
 const files = {
     characters: [
         { query: "characters", file: "characters.json" },
-        { query: "minCharacters", file: "characters-min.json" }
     ],
     summons: [
         { query: "summons", file: "summons.json" },
-        { query: "minSummons", file: "summons-min.json" }
     ],
     weapons: [
         { query: "weapons", file: "weapons.json" },
-        { query: "minWeapons", file: "weapons-min.json" }
     ],
     abilities: [
         { query: "abilities", file: "abilities.json" },
-        { query: "minAbilities", file: "abilities-min.json" }
     ],
     classes: [
         { query: "classes", file: "classes.json" }
@@ -43,39 +39,29 @@ const files = {
 };
 
 const jqQueries = {
-    summons: data => data.map(item => ({
-        [item.id]: {
-            pageName: item.pageName.replace(/&#039;/g, "'"),
-            name: item.name.replace(/&#039;/g, "'"),
-            maxUncap: item.maxUncap,
-            rarity: item.rarity,
-            element: item.element,
-            series: item.series,
-            jpname: item.jpname
-        }
-    })).reduce((acc, curr) => Object.assign(acc, curr), {}),
-    minSummons: data => data.map(item => ({
-        [item.id]: {
-            pageName: item.pageName.replace(/&#039;/g, "'"),
-            name: item.name.replace(/&#039;/g, "'"),
-            maxUncap: item.maxUncap
-        }
-    })).reduce((acc, curr) => Object.assign(acc, curr), {}),
-    characters: data => data.map(item => {
-        downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/s/${item.id}_01.jpg`, `./assets/characters/square/${item.id}_01`);
-        downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_01.jpg`, `./assets/characters/tall/${item.id}_01`);
-        downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_01.jpg`, `./assets/characters/icon/${item.id}_01`);
+    summons: data => data.map(item => {
+        addImageDownload(item.id, "summon");
+        if (item.maxUncap >= 5) addImageDownload(item.id + "_02", "summon");
+        if (item.maxUncap >= 6) addImageDownload(item.id + "_04", "summon");
 
-        if (item.maxUncap >= 5) {
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/s/${item.id}_03.jpg`, `./assets/characters/square/${item.id}_03`);
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_03.jpg`, `./assets/characters/tall/${item.id}_03`);
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_03.jpg`, `./assets/characters/icon/${item.id}_03`);
+        return {
+            [item.id]: {
+                pageName: item.pageName.replace(/&#039;/g, "'"),
+                name: item.name.replace(/&#039;/g, "'"),
+                maxUncap: item.maxUncap,
+                rarity: item.rarity,
+                element: item.element,
+                series: item.series,
+                jpname: item.jpname
+            }
         }
-        if (item.maxUncap >= 6) {
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/s/${item.id}_04.jpg`, `./assets/characters/square/${item.id}_04`);
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${item.id}_04.jpg`, `./assets/characters/tall/${item.id}_04`);
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/m/${item.id}_04.jpg`, `./assets/characters/icon/${item.id}_04`);
-        }
+    }).reduce((acc, curr) => Object.assign(acc, curr), {}),
+
+    characters: data => data.map(item => {
+        addImageDownload(item.id + "_01", "character");
+        if (item.maxUncap >= 5) addImageDownload(item.id + "_03", "character");
+        if (item.maxUncap >= 6) addImageDownload(item.id + "_04", "character");
+
         return {
             [item.id]: {
                 pageName: item.pageName.replace(/&#039;/g, "'"),
@@ -104,43 +90,43 @@ const jqQueries = {
             }
         }
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
-    minCharacters: data => data.map(item => ({
-        [item.id]: {
-            pageName: item.pageName.replace(/&#039;/g, "'")
+
+    weapons: data => data.map(item => {
+        addImageDownload(item.id, "weapon");
+        if (item.maxUncap >= 6) {
+            addImageDownload(item.id + "_02", "weapon");
+            addImageDownload(item.id + "_03", "weapon");
         }
-    })).reduce((acc, curr) => Object.assign(acc, curr), {}),
-    weapons: data => data.map(item => ({
-        [item.id]: {
-            pageName: item.pageName.replace(/&#039;/g, "'"),
-            maxUncap: item.maxUncap,
-            rarity: item.rarity,
-            series: item.series,
-            element: item.element,
-            character: item.character,
-            skill1: {
-                name: item.s1Name ? item.s1Name.replace(/&#039;/g, "'") : null,
-                icon: item["s1Icon"],
-            },
-            skill2: {
-                name: item.s2Name ? item.s2Name.replace(/&#039;/g, "'") : null,
-                icon: item["s2Icon"],
-            },
-            skill3: {
-                name: item.s3Name ? item.s3Name.replace(/&#039;/g, "'") : null,
-                icon: item["s3Icon"],
-            },
-            type: item.type,
-            awakening: item.awakening,
-            awakeningType1: item.awakeningType1,
-            awakeningType2: item.awakeningType2,
-            jpname: item.jpname
+
+        return {
+            [item.id]: {
+                pageName: item.pageName.replace(/&#039;/g, "'"),
+                maxUncap: item.maxUncap,
+                rarity: item.rarity,
+                series: item.series,
+                element: item.element,
+                character: item.character,
+                skill1: {
+                    name: item.s1Name ? item.s1Name.replace(/&#039;/g, "'") : null,
+                    icon: item["s1Icon"],
+                },
+                skill2: {
+                    name: item.s2Name ? item.s2Name.replace(/&#039;/g, "'") : null,
+                    icon: item["s2Icon"],
+                },
+                skill3: {
+                    name: item.s3Name ? item.s3Name.replace(/&#039;/g, "'") : null,
+                    icon: item["s3Icon"],
+                },
+                type: item.type,
+                awakening: item.awakening,
+                awakeningType1: item.awakeningType1,
+                awakeningType2: item.awakeningType2,
+                jpname: item.jpname
+            }
         }
-    })).reduce((acc, curr) => Object.assign(acc, curr), {}),
-    minWeapons: data => data.map(item => ({
-        [item.id]: {
-            maxUncap: item.maxUncap
-        }
-    })).reduce((acc, curr) => Object.assign(acc, curr), {}),
+    }).reduce((acc, curr) => Object.assign(acc, curr), {}),
+
     abilities: data => data.map(item => ({
         [item.name.replace(/&#039;/g, "'")]: {
             ix: item.ix,
@@ -148,11 +134,7 @@ const jqQueries = {
             icon: item.icon
         }
     })).reduce((acc, curr) => Object.assign(acc, curr), {}),
-    minAbilities: data => data.map(item => ({
-        [item.name.replace(/&#039;/g, "'")]: {
-            id: item.id,
-        }
-    })).reduce((acc, curr) => Object.assign(acc, curr), {}),
+
     classes: data => data.map(item => ({
         [item.name.replace(/&#039;/g, "'")]: {
             id: item.id,
@@ -217,6 +199,24 @@ async function processData() {
     }
 }
 
+function addImageDownload(itemID, itemType) {
+    switch (itemType) {
+        case "character":
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/s/${itemID}.jpg`, `./assets/characters/square/${itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${itemID}.jpg`, `./assets/characters/tall/${itemID}`);
+            break;
+        case "summon":
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/summon/party_main/${itemID}.jpg`, `./assets/summons/main/${itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/summon/party_sub/${itemID}.jpg`, `./assets/summons/sub/${itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/summon/m/${itemID}.jpg`, `./assets/summons/icon/${itemID}`);
+            break;
+        case "weapon":
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/weapon/m/${itemID}.jpg`, `./assets/weapons/icon/${itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/weapon/ls/${itemID}.jpg`, `./assets/weapons/main/${itemID}`);
+            break;
+    }
+}
+
 function downloadImage(srcLink, destinationFile) {
     if (existsSync(`${destinationFile}.webp`)) {
         return;
@@ -224,6 +224,7 @@ function downloadImage(srcLink, destinationFile) {
     if (isInErrorLog(destinationFile)) {
         return;
     }
+
     downloadlist.push(async () => {
         get(srcLink, (res) => {
             let data = [];
@@ -237,7 +238,7 @@ function downloadImage(srcLink, destinationFile) {
                         .toFile(`${destinationFile}.webp`);
                     console.log(`New image: ${destinationFile}`);
                 } catch (err) {
-                    console.error(`Error converting image ${destinationFile}:`, err);
+                    console.error(`Error converting image ${srcLink}:`, err);
                     addToErrorLog(destinationFile);
                 }
             });
