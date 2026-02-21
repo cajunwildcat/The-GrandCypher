@@ -206,13 +206,13 @@ function addImageDownload(itemID, itemType) {
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${itemID}.jpg`, `./assets/characters/tall/${itemID}`);
             break;
         case "summon":
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/summon/party_main/${itemID}.jpg`, `./assets/summons/main/${itemID}`);
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/summon/party_sub/${itemID}.jpg`, `./assets/summons/sub/${itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/summon/party_main/${itemID}.jpg`, `./assets/summons/party_main/${itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/summon/party_sub/${itemID}.jpg`, `./assets/summons/party_sub/${itemID}`);
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/summon/m/${itemID}.jpg`, `./assets/summons/icon/${itemID}`);
             break;
         case "weapon":
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/weapon/m/${itemID}.jpg`, `./assets/weapons/icon/${itemID}`);
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/weapon/ls/${itemID}.jpg`, `./assets/weapons/main/${itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/weapon/ls/${itemID}.jpg`, `./assets/weapons/mainhand/${itemID}`);
             break;
     }
 }
