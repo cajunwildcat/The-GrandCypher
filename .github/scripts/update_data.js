@@ -1,5 +1,6 @@
 import { writeFileSync, existsSync, readFileSync } from 'fs';
-import { get } from 'https';
+//import { get } from 'https';
+import https from 'follow-redirects/https.js';
 import { config } from 'dotenv';
 import sharp from 'sharp';
 
@@ -127,21 +128,25 @@ const jqQueries = {
         }
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
 
-    abilities: data => data.map(item => ({
-        [item.name.replace(/&#039;/g, "'")]: {
+    abilities: data => data.map(item => {
+        addImageDownload(item.icon.split(",")[0].replace("\u200e","").trim().replaceAll(" ", "_").replaceAll(/&#039;/g, "'"), "ability", {id: item.id});
+
+        return { [item.name.replace(/&#039;/g, "'")]: {
             ix: item.ix,
             id: item.id,
             icon: item.icon
         }
-    })).reduce((acc, curr) => Object.assign(acc, curr), {}),
+    }}).reduce((acc, curr) => Object.assign(acc, curr), {}),
 
-    classes: data => data.map(item => ({
-        [item.name.replace(/&#039;/g, "'")]: {
+    classes: data => data.map(item => {
+        addImageDownload(item.imgid, "class");
+
+        return {[item.name.replace(/&#039;/g, "'")]: {
             id: item.id,
             imgid: item.imgid,
             jpname: item.jpname
         }
-    })).reduce((acc, curr) => Object.assign(acc, curr), {})
+    }}).reduce((acc, curr) => Object.assign(acc, curr), {})
 };
 
 const ERROR_LOG_FILE = './assets/error_log.json';
@@ -199,7 +204,7 @@ async function processData() {
     }
 }
 
-function addImageDownload(itemID, itemType) {
+function addImageDownload(itemID, itemType, options = {}) {
     switch (itemType) {
         case "character":
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/s/${itemID}.jpg`, `./assets/characters/square/${itemID}`);
@@ -214,6 +219,13 @@ function addImageDownload(itemID, itemType) {
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/weapon/m/${itemID}.jpg`, `./assets/weapons/icon/${itemID}`);
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/weapon/ls/${itemID}.jpg`, `./assets/weapons/mainhand/${itemID}`);
             break;
+        case "ability":
+            downloadImage(`https://gbf.wiki/Special:Redirect/file/${itemID}`, `./assets/abilities/${options.id}`);
+            break;
+        case "class":
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/leader/quest/${itemID}_0_01.jpg`, `./assets/classes/tall/${itemID}_0`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/leader/quest/${itemID}_1_01.jpg`, `./assets/classes/tall/${itemID}_1`);
+        break;
     }
 }
 
@@ -226,7 +238,7 @@ function downloadImage(srcLink, destinationFile) {
     }
 
     downloadlist.push(async () => {
-        get(srcLink, (res) => {
+        https.get(srcLink, (res) => {
             let data = [];
             res.on('data', chunk => data.push(chunk));
             res.on('end', async () => {

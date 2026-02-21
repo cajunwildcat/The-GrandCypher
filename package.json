@@ -5,6 +5,7 @@
   "type": "module",
   "dependencies": {
     "dotenv": "^17.2.0",
+    "follow-redirects": "^1.15.11",
     "https": "^1.0.0",
     "sharp": "^0.34.3"
   },
