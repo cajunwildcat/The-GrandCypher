@@ -19,6 +19,8 @@ const urls = {
     weapons: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=weapons&fields=id%2C_pageName%3DpageName%2Cevo_max%3DmaxUncap%2Crarity%2Cseries%2Celement%2Ccharacter_unlock%3Dcharacter%2Ctype%2Cawakening%2Cawakening_type1%3DawakeningType1%2Cawakening_type2%3DawakeningType2%2Cs1_icon%3Ds1Icon%2Cs2_icon%3Ds2Icon%2Cs3_icon%3Ds3Icon%2Cs1_name%3Ds1Name%2Cs2_name%3Ds2Name%2Cs3_name%3Ds3Name%2Cjpname&formatversion=2",
     abilities: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=class_skill&fields=ix%2Cname%2Cicon%2Cunique_key%3Did&formatversion=2",
     classes: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=classes&fields=name%2Cjpname%2Cid_num%3Did%2Cid%3Dimgid&formatversion=2",
+    minos: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=manatura&fields=name%2Cid&formatversion=2",
+    shields: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=shields&fields=name%2Cid&formatversion=2",
 };
 
 const files = {
@@ -36,7 +38,13 @@ const files = {
     ],
     classes: [
         { query: "classes", file: "classes.json" }
-    ]
+    ],
+    minos: [
+        { query: "minos", file: "minos.json" }
+    ],
+    shields: [
+        { query: "shields", file: "shields.json" }
+    ],
 };
 
 const jqQueries = {
@@ -153,7 +161,27 @@ const jqQueries = {
                 jpname: item.jpname
             }
         }
-    }).reduce((acc, curr) => Object.assign(acc, curr), {})
+    }).reduce((acc, curr) => Object.assign(acc, curr), {}),
+
+    minos: data => data.map(item => {
+        addImageDownload(item.id, "gear", {type: "familiar"});
+
+        return {
+            [item.id]: {
+                name: item.name.replace(/&#039;/g, "'")
+            }
+        }
+    }).reduce((acc, curr) => Object.assign(acc, curr), {}),
+
+    shields: data => data.map(item => {
+        addImageDownload(item.id, "gear", {type: "shield"});
+
+        return {
+            [item.id]: {
+                name: item.name.replace(/&#039;/g, "'")
+            }
+        }
+    }).reduce((acc, curr) => Object.assign(acc, curr), {}),
 };
 
 const ERROR_LOG_FILE = './assets/error_log.json';
@@ -236,6 +264,8 @@ function addImageDownload(itemID, itemType, options = {}) {
         case "weapon skill":
             downloadImage(`https://gbf.wiki/Special:Redirect/file/${itemID}`, `./assets/weapons/skills/${itemID.replace(".png","")}`);
             break;
+        case "gear":
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/${options.type}/s/${itemID}.jpg`, `./assets/gear/minos/${itemID}`);
     }
 }
 
