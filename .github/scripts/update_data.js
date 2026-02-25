@@ -124,8 +124,8 @@ const jqQueries = {
                 },
                 type: item.type,
                 awakening: item.awakening,
-                awakeningType1: item.awakeningType1,
-                awakeningType2: item.awakeningType2,
+                awakeningType1: item.awakeningType1?.replace(" dmg", "").replace(".",""),
+                awakeningType2: item.awakeningType2?.replace(" dmg", "").replace(".",""),
                 jpname: item.jpname
             }
         }
