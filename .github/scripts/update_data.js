@@ -164,7 +164,7 @@ const jqQueries = {
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
 
     minos: data => data.map(item => {
-        addImageDownload(item.id, "gear", {type: "familiar"});
+        addImageDownload(item.id, "gear", {type: "familiar", saveType: "minos"});
 
         return {
             [item.id]: {
@@ -174,7 +174,7 @@ const jqQueries = {
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
 
     shields: data => data.map(item => {
-        addImageDownload(item.id, "gear", {type: "shield"});
+        addImageDownload(item.id, "gear", {type: "shield", saveType: "shields"});
 
         return {
             [item.id]: {
@@ -265,7 +265,7 @@ function addImageDownload(itemID, itemType, options = {}) {
             downloadImage(`https://gbf.wiki/Special:Redirect/file/${itemID}`, `./assets/weapons/skills/${itemID.replace(".png","")}`);
             break;
         case "gear":
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/${options.type}/s/${itemID}.jpg`, `./assets/gear/minos/${itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/${options.type}/s/${itemID}.jpg`, `./assets/gear/${options.saveType}/${itemID}`);
     }
 }
 
