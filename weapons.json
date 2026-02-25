@@ -35274,6 +35274,31 @@
     "awakeningType2": null,
     "jpname": "密偵の懐剣"
   },
+  "1040122800": {
+    "pageName": "Demondagger of Liberation Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "wind",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Dreadwind's Glory II",
+      "icon": "ws_skill_hero_k_4_2.png"
+    },
+    "skill2": {
+      "name": "Taboo Dreadwind's Crux III",
+      "icon": "ws_skill_secret_k_4_3.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "dagger",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
+  },
   "1040200000": {
     "pageName": "Cletine",
     "maxUncap": 3,
@@ -40174,6 +40199,31 @@
     "awakeningType2": null,
     "jpname": "禁栄の禍槍"
   },
+  "1040220900": {
+    "pageName": "Gougelance of Liberation Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "wind",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Dreadwind's Majesty IV",
+      "icon": "ws_skill_god_k_4_4.png"
+    },
+    "skill2": {
+      "name": "Taboo Dreadwind's Empowerment III",
+      "icon": "ws_skill_rise_k_4_3.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "spear",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
+  },
   "1040300000": {
     "pageName": "Ukonvasara",
     "maxUncap": 4,
@@ -44948,6 +44998,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "ガラン・ビペンヌ"
+  },
+  "1040319900": {
+    "pageName": "Sealhammer of Liberation Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "wind",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Dreadwind's Stamina III",
+      "icon": "ws_skill_whole_k_4_3.png"
+    },
+    "skill2": {
+      "name": "Taboo Dreadwind's Sapience",
+      "icon": "ws_skill_ta_heal_limit_k_4_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "axe",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
   },
   "1040400200": {
     "pageName": "Kerykeion",
@@ -64149,6 +64224,31 @@
     "awakeningType2": null,
     "jpname": "飢命の翼弓"
   },
+  "1040715200": {
+    "pageName": "Lusterbow of Desire Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "earth",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Famishgold's Majesty IV",
+      "icon": "ws_skill_god_k_3_4.png"
+    },
+    "skill2": {
+      "name": "Taboo Famishgold's Empowerment III",
+      "icon": "ws_skill_rise_k_3_3.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "bow",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
+  },
   "1040800000": {
     "pageName": "Luminiera Harp Omega",
     "maxUncap": 5,
@@ -68524,6 +68624,31 @@
     "awakeningType2": null,
     "jpname": "ドリームマンディアン"
   },
+  "1040818200": {
+    "pageName": "Heartstrings of Desire Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "earth",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Famishgold's Precocity II",
+      "icon": "ws_skill_tec_heal_limit_k_3_2.png"
+    },
+    "skill2": {
+      "name": "Taboo Famishgold's Tempering II",
+      "icon": "ws_skill_train_k_3_2.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "harp",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
+  },
   "1040900000": {
     "pageName": "Asura",
     "maxUncap": 4,
@@ -72898,6 +73023,31 @@
     "awakeningType1": null,
     "awakeningType2": null,
     "jpname": "断罪の黎刃"
+  },
+  "1040918300": {
+    "pageName": "Demonedge of Desire Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "earth",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Famishgold's Celere II",
+      "icon": "ws_skill_moment_k_3_2.png"
+    },
+    "skill2": {
+      "name": "Taboo Famishgold's Trium II",
+      "icon": "ws_skill_ta_k_3_2.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "katana",
+    "awakening": null,
+    "awakeningType1": null,
+    "awakeningType2": null,
+    "jpname": null
   },
   "1040002000_note": {
     "pageName": "Excalibur",

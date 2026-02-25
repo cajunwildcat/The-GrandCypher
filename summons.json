@@ -3742,5 +3742,23 @@
     "element": "dark",
     "series": null,
     "jpname": "紫禍黒麒麟"
+  },
+  "2040451000": {
+    "pageName": "Narophirmidas",
+    "name": "Narophirmidas",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "earth",
+    "series": "odious",
+    "jpname": "ナロフィルミダス"
+  },
+  "2040452000": {
+    "pageName": "Macutanmacar",
+    "name": "Macutanmacar",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "wind",
+    "series": "odious",
+    "jpname": "マクタンマカル"
   }
 }
