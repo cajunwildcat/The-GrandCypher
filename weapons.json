@@ -12327,6 +12327,29 @@
     "awakening": null,
     "jpname": "想いのカンタービレ"
   },
+  "1030208200": {
+    "pageName": "Plagueborne Spear",
+    "maxUncap": 3,
+    "rarity": "SR",
+    "series": null,
+    "element": "earth",
+    "character": null,
+    "skill1": {
+      "name": "Clawed Grounds",
+      "icon": "ws_skill_atk_a_3_2.png"
+    },
+    "skill2": {
+      "name": null,
+      "icon": null
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "spear",
+    "awakening": null,
+    "jpname": "疫禍の武槍"
+  },
   "1030299000": {
     "pageName": "Archangel Spear",
     "maxUncap": 3,
@@ -47155,6 +47178,29 @@
     "type": "staff",
     "awakening": null,
     "jpname": "エルケーニヒ・アウスヴァイス"
+  },
+  "1040425900": {
+    "pageName": "Dawnstar Weaver",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "light",
+    "character": null,
+    "skill1": {
+      "name": "Armed Shine",
+      "icon": "ws_skill_atk_a_5_3.png"
+    },
+    "skill2": {
+      "name": "Technical Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "staff",
+    "awakening": null,
+    "jpname": "晨星の紡杖"
   },
   "1040500000": {
     "pageName": "Gastraphetes",
