@@ -69,7 +69,7 @@ const jqQueries = {
                 rarity: item.rarity,
                 element: item.element,
                 series: item.series,
-                jpname: item.jpname
+                jpname: item.jpname.replace("&amp;","&")
             }
         }
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
