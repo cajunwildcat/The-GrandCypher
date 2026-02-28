@@ -59,7 +59,7 @@ const jqQueries = {
         addImageDownload(item.id, "summon");
         if (item.maxUncap >= 5) addImageDownload(item.id + "_02", "summon");
         if (item.maxUncap >= 6) addImageDownload(item.id + "_04", "summon");
-        mins["summons"][item.id] = { pageName: item.pageName.replace(/&#039;/g, "'"), name: item.name.replace(/&#039;/g, "'"), maxUncap: item.maxUncap };
+        mins["summons"][item.id] = { pageName: item.pageName.replace(/&#039;/g, "'"), name: item.name.replace(/&#039;/g, "'"), maxUncap: item.maxUncap, jpname: item.jpname };
 
         return {
             [item.id]: {
