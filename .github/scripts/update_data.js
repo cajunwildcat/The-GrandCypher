@@ -90,7 +90,7 @@ const jqQueries = {
                 series: item.series,
                 styleName: item.styleName,
                 styleId: item.styleId,
-                jpname: item.jpname,
+                jpname: item.jpname.replace("&amp;","&"),
                 releaseDate: item.releaseDate,
                 gender: item.gender,
                 obtain: item.obtain,
