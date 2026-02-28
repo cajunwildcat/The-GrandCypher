@@ -14,13 +14,13 @@ const USER_AGENT = process.env.USER_AGENT;
 let downloadlist = [];
 
 const urls = {
-    summons: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=summons&fields=id%2C_pageName%3DpageName%2Cname%2Cevo_max%3DmaxUncap%2Crarity%2Celement%2Cseries%2Cjpname&formatversion=2",
-    characters: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=characters&fields=_pageName%3DpageName%2Cid%2Cseries%2Cstyle_name%3DstyleName%2Cstyle_id%3DstyleId%2Cjpname%2Cname%2Crelease_date%3DreleaseDate%2Cgender%2Cobtain%2C5star_date%3DflbDate%2Cmax_evo%3DmaxUncap%2Cexpedition_type%3DexpeditionType%2Crarity%2Celement%2Ctype%2Ccustomtype%2Crace%2Cjoin_weapon%3DrecruitWeapon%2Cweapon%2Cart_ex%3Dartex%2Cart_bonus%3Dartbonus%2Cgender%2Ccharid&formatversion=2",
-    weapons: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=weapons&fields=id%2C_pageName%3DpageName%2Cevo_max%3DmaxUncap%2Crarity%2Cseries%2Celement%2Ccharacter_unlock%3Dcharacter%2Ctype%2Cawakening%2Cawakening_type1%3DawakeningType1%2Cawakening_type2%3DawakeningType2%2Cs1_icon%3Ds1Icon%2Cs2_icon%3Ds2Icon%2Cs3_icon%3Ds3Icon%2Cs1_name%3Ds1Name%2Cs2_name%3Ds2Name%2Cs3_name%3Ds3Name%2Cjpname&formatversion=2",
-    abilities: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=class_skill&fields=ix%2Cname%2Cicon%2Cunique_key%3Did&formatversion=2",
-    classes: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=classes&fields=name%2Cjpname%2Cid_num%3Did%2Cid%3Dimgid&formatversion=2",
-    minos: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=manatura&fields=name%2Cid&formatversion=2",
-    shields: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=5000&tables=shields&fields=name%2Cid&formatversion=2",
+    summons: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=summons&fields=id%2C_pageName%3DpageName%2Cname%2Cevo_max%3DmaxUncap%2Crarity%2Celement%2Cseries%2Cjpname&formatversion=2",
+    characters: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=characters&fields=_pageName%3DpageName%2Cid%2Cseries%2Cstyle_name%3DstyleName%2Cstyle_id%3DstyleId%2Cjpname%2Cname%2Crelease_date%3DreleaseDate%2Cgender%2Cobtain%2C5star_date%3DflbDate%2Cmax_evo%3DmaxUncap%2Cexpedition_type%3DexpeditionType%2Crarity%2Celement%2Ctype%2Ccustomtype%2Crace%2Cjoin_weapon%3DrecruitWeapon%2Cweapon%2Cart_ex%3Dartex%2Cart_bonus%3Dartbonus%2Cgender%2Ccharid&formatversion=2",
+    weapons: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=weapons&fields=id%2C_pageName%3DpageName%2Cevo_max%3DmaxUncap%2Crarity%2Cseries%2Celement%2Ccharacter_unlock%3Dcharacter%2Ctype%2Cawakening%2Cawakening_type1%3DawakeningType1%2Cawakening_type2%3DawakeningType2%2Cs1_icon%3Ds1Icon%2Cs2_icon%3Ds2Icon%2Cs3_icon%3Ds3Icon%2Cs1_name%3Ds1Name%2Cs2_name%3Ds2Name%2Cs3_name%3Ds3Name%2Cjpname&formatversion=2",
+    abilities: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=class_skill&fields=ix%2Cname%2Cicon%2Cunique_key%3Did%2Cjpname&formatversion=2",
+    classes: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=classes&fields=name%2Cjpname%2Cid_num%3Did%2Cid%3Dimgid&formatversion=2",
+    minos: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=manatura&fields=name%2Cid%2Cjpname&formatversion=2",
+    shields: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=shields&fields=name%2Cid%2Cjpname&formatversion=2",
 };
 
 const files = {
@@ -47,11 +47,19 @@ const files = {
     ],
 };
 
+const mins = {
+    characters: {},
+    summons: {},
+    weapons: {},
+    abilities: {},
+};
+
 const jqQueries = {
     summons: data => data.map(item => {
         addImageDownload(item.id, "summon");
         if (item.maxUncap >= 5) addImageDownload(item.id + "_02", "summon");
         if (item.maxUncap >= 6) addImageDownload(item.id + "_04", "summon");
+        mins["summons"][item.id] = { pageName: item.pageName.replace(/&#039;/g, "'"), name: item.name.replace(/&#039;/g, "'"), maxUncap: item.maxUncap };
 
         return {
             [item.id]: {
@@ -70,6 +78,7 @@ const jqQueries = {
         addImageDownload(item.id + "_01", "character");
         if (item.maxUncap >= 5) addImageDownload(item.id + "_03", "character");
         if (item.maxUncap >= 6) addImageDownload(item.id + "_04", "character");
+        mins["characters"][item.id] = item.pageName.replace(/&#039;/g, "'");
 
         return {
             [item.id]: {
@@ -109,6 +118,7 @@ const jqQueries = {
         if (item["s1Icon"]) addImageDownload(item["s1Icon"], "weapon skill");
         if (item["s2Icon"]) addImageDownload(item["s2Icon"], "weapon skill");
         if (item["s3Icon"]) addImageDownload(item["s3Icon"], "weapon skill");
+        mins["weapons"][item.id] = item.maxUncap;
 
         return {
             [item.id]: {
@@ -141,11 +151,13 @@ const jqQueries = {
 
     abilities: data => data.map(item => {
         addImageDownload(item.icon.split(",")[0].replaceAll(" ", "_").replaceAll(/&#039;/g, "'"), "ability", { id: item.id });
+        mins["abilities"][item.id] = { name: item.name.replace(/&#039;/g, "'"), jpname: item.jpname };
 
         return {
-            [item.name.replace(/&#039;/g, "'")]: {
+            [item.id]: {
+                name: item.name.replace(/&#039;/g, "'"),
+                jpname: item.jpname,
                 ix: item.ix,
-                id: item.id,
                 icon: item.icon
             }
         }
@@ -155,8 +167,8 @@ const jqQueries = {
         addImageDownload(item.imgid, "class");
 
         return {
-            [item.name.replace(/&#039;/g, "'")]: {
-                id: item.id,
+            [item.id]: {
+                name: item.name.replace(/&#039;/g, "'"),
                 imgid: item.imgid,
                 jpname: item.jpname
             }
@@ -168,7 +180,8 @@ const jqQueries = {
 
         return {
             [item.id]: {
-                name: item.name.replace(/&#039;/g, "'")
+                name: item.name.replace(/&#039;/g, "'"),
+                jpname: item.jpname
             }
         }
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
@@ -178,7 +191,8 @@ const jqQueries = {
 
         return {
             [item.id]: {
-                name: item.name.replace(/&#039;/g, "'")
+                name: item.name.replace(/&#039;/g, "'"),
+                jpname: item.jpname
             }
         }
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
@@ -219,7 +233,9 @@ async function fetchData(url) {
     await fetch(url, {
         headers: {
             "User-Agent": USER_AGENT
-        }
+        },
+        cache: "no-store",
+        method: "GET"
     })
         .then(response => response.json())
         .then(response => data = response)
@@ -233,10 +249,11 @@ async function processData() {
         let data = await fetchData(url);
         files[key].forEach(f => {
             let query = jqQueries[f.query](data);
-            writeFileSync(f.file, JSON.stringify(query, null, 2));
+            writeFileSync(f.file, JSON.stringify(query, null, 0));
             console.log(`Saved ${f.file}.`);
         })
     }
+    writeFileSync("bookmarklet-mins.json", JSON.stringify(mins, null, 0));
 }
 
 function addImageDownload(itemID, itemType, options = {}) {
