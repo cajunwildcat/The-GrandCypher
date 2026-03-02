@@ -75,13 +75,15 @@ const jqQueries = {
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
 
     characters: data => data.map(item => {
+        let correctedId = item.styleId > 1? `${item.id.toString().slice(0,-1)}${item.styleId}` : item.id;
         addImageDownload(item.id + "_01", "character");
+        if (item.styleId > 1) addImageDownload(item.id + `_01_st${item.styleId}`, "character", {id: correctedId});
         if (item.maxUncap >= 5) addImageDownload(item.id + "_03", "character");
         if (item.maxUncap >= 6) addImageDownload(item.id + "_04", "character");
-        mins["characters"][item.id] = item.pageName.replace(/&#039;/g, "'");
+        mins["characters"][correctedId] = item.pageName.replace(/&#039;/g, "'");
 
         return {
-            [item.id]: {
+            [correctedId]: {
                 pageName: item.pageName.replace(/&#039;/g, "'"),
                 name: item.name.replace(/&#039;/g, "'"),
                 maxUncap: item.maxUncap,
@@ -259,8 +261,8 @@ async function processData() {
 function addImageDownload(itemID, itemType, options = {}) {
     switch (itemType) {
         case "character":
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/s/${itemID}.jpg`, `./assets/characters/square/${itemID}`);
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${itemID}.jpg`, `./assets/characters/tall/${itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/s/${itemID}.jpg`, `./assets/characters/square/${options.id? options.id : itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${itemID}.jpg`, `./assets/characters/tall/${options.id? options.id : itemID}`);
             break;
         case "summon":
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/summon/party_main/${itemID}.jpg`, `./assets/summons/party_main/${itemID}`);
