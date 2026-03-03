@@ -77,7 +77,7 @@ const jqQueries = {
     characters: data => data.map(item => {
         let correctedId = item.styleId > 1? `${item.id.toString().slice(0,-1)}${item.styleId}` : item.id;
         addImageDownload(item.id + "_01", "character");
-        if (item.styleId > 1) addImageDownload(item.id + `_01_st${item.styleId}`, "character", {id: correctedId});
+        if (item.styleId > 1) addImageDownload(item.id + `_01_st${item.styleId}`, "character", {id: `${correctedId}_01`});
         if (item.maxUncap >= 5) addImageDownload(item.id + "_03", "character");
         if (item.maxUncap >= 6) addImageDownload(item.id + "_04", "character");
         mins["characters"][correctedId] = item.pageName.replace(/&#039;/g, "'");
