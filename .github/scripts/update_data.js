@@ -16,7 +16,7 @@ let downloadlist = [];
 const urls = {
     summons: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=summons&fields=id%2C_pageName%3DpageName%2Cname%2Cevo_max%3DmaxUncap%2Crarity%2Celement%2Cseries%2Cjpname&formatversion=2",
     characters: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=characters&fields=_pageName%3DpageName%2Cid%2Cseries%2Cstyle_name%3DstyleName%2Cstyle_id%3DstyleId%2Cjpname%2Cname%2Crelease_date%3DreleaseDate%2Cgender%2Cobtain%2C5star_date%3DflbDate%2Cmax_evo%3DmaxUncap%2Cexpedition_type%3DexpeditionType%2Crarity%2Celement%2Ctype%2Ccustomtype%2Crace%2Cjoin_weapon%3DrecruitWeapon%2Cweapon%2Cart_ex%3Dartex%2Cart_bonus%3Dartbonus%2Cgender%2Ccharid&formatversion=2",
-    weapons: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=weapons&fields=id%2C_pageName%3DpageName%2Cevo_max%3DmaxUncap%2Crarity%2Cseries%2Celement%2Ccharacter_unlock%3Dcharacter%2Ctype%2Cawakening%2Cawakening_type1%3DawakeningType1%2Cawakening_type2%3DawakeningType2%2Cs1_icon%3Ds1Icon%2Cs2_icon%3Ds2Icon%2Cs3_icon%3Ds3Icon%2Cs1_name%3Ds1Name%2Cs2_name%3Ds2Name%2Cs3_name%3Ds3Name%2Cjpname&formatversion=2",
+    weapons: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=weapons&fields=id%2C_pageName%3DpageName%2Cevo_max%3DmaxUncap%2Crarity%2Cseries%2Celement%2Ccharacter_unlock%3Dcharacter%2Ctype%2Cawakening%2Cawakening_type1%3DawakeningType1%2Cawakening_type2%3DawakeningType2%2Cs1_icon%3Ds1Icon%2Cs2_icon%3Ds2Icon%2Cs3_icon%3Ds3Icon%2Cs1_name%3Ds1Name%2Cs2_name%3Ds2Name%2Cs3_name%3Ds3Name%2Cjpname%2Cbullet1%2Cbullet2%2Cbullet3%2Cbullet4%2Cbullet5%2Cbullet6&formatversion=2",
     abilities: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=class_skill&fields=ix%2Cname%2Cicon%2Cunique_key%3Did%2Cjpname&formatversion=2",
     classes: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=classes&fields=name%2Cjpname%2Cid_num%3Did%2Cid%3Dimgid&formatversion=2",
     minos: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=manatura&fields=name%2Cid%2Cjpname&formatversion=2",
@@ -146,7 +146,8 @@ const jqQueries = {
                 awakening: item.awakening,
                 awakeningType1: item.awakeningType1?.replace(" dmg", "").replace(".",""),
                 awakeningType2: item.awakeningType2?.replace(" dmg", "").replace(".",""),
-                jpname: item.jpname
+                jpname: item.jpname,
+                bullets: item.type.toLowerCase() =="gun"? [item.bullet1, item.bullet2, item.bullet3, item.bullet4, item.bullet5, item.bullet6].map(e=>e?.toLowerCase()) : null
             }
         }
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
@@ -252,6 +253,7 @@ async function processData() {
         files[key].forEach(f => {
             let query = jqQueries[f.query](data);
             writeFileSync(f.file, JSON.stringify(query, null, 0));
+            writeFileSync(`readable/${f.file}`, JSON.stringify(query, null, 2));
             console.log(`Saved ${f.file}.`);
         })
     }
