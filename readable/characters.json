@@ -11662,7 +11662,8 @@
     "releaseDate": "2015-07-31",
     "gender": "f",
     "obtain": [
-      "premium,grand,gala"
+      "premium,grand,gala",
+      "academy"
     ],
     "flbDate": "2019-09-30",
     "expeditionType": "phantagrande",
@@ -11808,7 +11809,8 @@
     "releaseDate": "2015-09-28",
     "gender": "m",
     "obtain": [
-      "premium,grand,gala"
+      "premium,grand,gala",
+      "academy"
     ],
     "flbDate": "2019-09-30",
     "expeditionType": "phantagrande",
@@ -11984,7 +11986,8 @@
     "releaseDate": "2015-11-30",
     "gender": "f",
     "obtain": [
-      "premium,grand,gala"
+      "premium,grand,gala",
+      "academy"
     ],
     "flbDate": "2020-04-23",
     "expeditionType": "phantagrande",
@@ -12071,7 +12074,8 @@
     "releaseDate": "2015-12-29",
     "gender": "f",
     "obtain": [
-      "premium,grand,gala"
+      "premium,grand,gala",
+      "academy"
     ],
     "flbDate": "2021-11-11",
     "expeditionType": "phantagrande",
@@ -12334,7 +12338,8 @@
     "releaseDate": "2016-02-26",
     "gender": "m",
     "obtain": [
-      "premium,grand,gala"
+      "premium,grand,gala",
+      "academy"
     ],
     "flbDate": "2021-05-21",
     "expeditionType": "phantagrande",
@@ -16192,7 +16197,8 @@
     "releaseDate": "2019-02-28",
     "gender": "f",
     "obtain": [
-      "premium,grand,gala"
+      "premium,grand,gala",
+      "academy"
     ],
     "flbDate": null,
     "expeditionType": "bloodhound",

@@ -21,7 +21,7 @@ const urls = {
     classes: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=classes&fields=name%2Cjpname%2Cid_num%3Did%2Cid%3Dimgid&formatversion=2",
     minos: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=manatura&fields=name%2Cid%2Cjpname&formatversion=2",
     shields: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=shields&fields=name%2Cid%2Cjpname&formatversion=2",
-    shields: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=bullets&fields=name%2Cid&formatversion=2",
+    bullets: "https://gbf.wiki/index.php?title=Special:CargoExport&format=json&limit=MAX&tables=bullets&fields=name%2Cid%2Cjpname&formatversion=2",
 };
 
 const files = {
@@ -46,7 +46,7 @@ const files = {
     shields: [
         { query: "shields", file: "shields.json" }
     ],
-    shields: [
+    bullets: [
         { query: "bullets", file: "bullets.json" }
     ],
 };
@@ -210,7 +210,7 @@ const jqQueries = {
         return {
             [item.id]: {
                 name: item.name.replace(/&#039;/g, "'"),
-                //jpname: item.jpname
+                jpname: item.jpname
             }
         }
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
