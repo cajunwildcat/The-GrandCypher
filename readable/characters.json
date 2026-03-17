@@ -28718,7 +28718,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Heal",
     "race": [
       "Primal"
@@ -28996,5 +28996,95 @@
     "artbouns": false,
     "artex": false,
     "charid": 2124
+  },
+  "3040644000": {
+    "pageName": "Octavia",
+    "name": "Octavia",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": "grand",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "オクタヴィア",
+    "releaseDate": "2026-03-16",
+    "gender": "f",
+    "obtain": [
+      "premium,grand,flash"
+    ],
+    "flbDate": null,
+    "expeditionType": "craftsman",
+    "type": "Attack",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Clockwork Blade: Kumogakure",
+    "weapon": [
+      "Katana",
+      "Gun"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3303
+  },
+  "3040645000": {
+    "pageName": "Apollonia (Summer)",
+    "name": "Apollonia",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": "summer",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "アポロニア",
+    "releaseDate": "2026-03-16",
+    "gender": "f",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Defense",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Mysteries of the Ocean",
+    "weapon": [
+      "Sabre",
+      "Gun"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3059
+  },
+  "3040646000": {
+    "pageName": "Eustace (Yukata)",
+    "name": "Eustace",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": "yukata",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "鎮魂の宵狼",
+    "releaseDate": "2026-03-16",
+    "gender": "m",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Balanced",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Firework Galvanizer",
+    "weapon": [
+      "Gun",
+      "Dagger"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3049
   }
 }

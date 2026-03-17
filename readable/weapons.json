@@ -49892,6 +49892,30 @@
     "jpname": "晨星の紡杖",
     "bullets": null
   },
+  "1040426000": {
+    "pageName": "Mysteries of the Ocean",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "earth",
+    "character": "Apollonia (Summer)",
+    "skill1": {
+      "name": "Mountain's Grace",
+      "icon": "ws_skill_grace_3_2.png"
+    },
+    "skill2": {
+      "name": "Mountain's Aegis",
+      "icon": "ws_skill_hp_3_2.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "staff",
+    "awakening": null,
+    "jpname": "海の神秘",
+    "bullets": null
+  },
   "1040500000": {
     "pageName": "Gastraphetes",
     "maxUncap": 4,
@@ -55381,6 +55405,37 @@
       "cartridge",
       "cartridge",
       "cartridge"
+    ]
+  },
+  "1040518900": {
+    "pageName": "Firework Galvanizer",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "fire",
+    "character": "Eustace (Yukata)",
+    "skill1": {
+      "name": "Hellfire's Verity",
+      "icon": "ws_skill_tec_1_2.png"
+    },
+    "skill2": {
+      "name": "Blaze's Crux",
+      "icon": "ws_skill_secret_1_3.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "gun",
+    "awakening": null,
+    "jpname": "ファイヤワークスバンカー",
+    "bullets": [
+      "cartridge",
+      "rifle",
+      "aetherial",
+      "rifle",
+      "aetherial",
+      null
     ]
   },
   "1040600000": {
@@ -72101,6 +72156,30 @@
     "type": "katana",
     "awakening": null,
     "jpname": "禁望の禍刀",
+    "bullets": null
+  },
+  "1040918400": {
+    "pageName": "Clockwork Blade: Kumogakure",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "grand",
+    "element": "water",
+    "character": "Octavia",
+    "skill1": {
+      "name": "Hoarfrost's Fandango",
+      "icon": "ws_skill_ranbu_2_3.png"
+    },
+    "skill2": {
+      "name": "Water's Spearhead",
+      "icon": "ws_skill_ta_tec_2_1.png"
+    },
+    "skill3": {
+      "name": "Hoarfrost's Deathstrike",
+      "icon": "ws_skill_concurrent_attack_2_3.png"
+    },
+    "type": "katana",
+    "awakening": null,
+    "jpname": "絡繰刀・雲隠",
     "bullets": null
   },
   "1040002000_note": {
