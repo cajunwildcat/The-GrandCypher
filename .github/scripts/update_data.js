@@ -62,7 +62,10 @@ const jqQueries = {
     summons: data => data.map(item => {
         addImageDownload(item.id, "summon");
         if (item.maxUncap >= 5) addImageDownload(item.id + "_02", "summon");
-        if (item.maxUncap >= 6) addImageDownload(item.id + "_04", "summon");
+        if (item.maxUncap >= 6) {
+            addImageDownload(item.id + "_03", "summon");
+            addImageDownload(item.id + "_04", "summon");
+        }
         mins["summons"][item.id] = { pageName: item.pageName.replace(/&#039;/g, "'"), name: item.name.replace(/&#039;/g, "'"), maxUncap: item.maxUncap, jpname: item.jpname };
 
         return {
@@ -73,15 +76,15 @@ const jqQueries = {
                 rarity: item.rarity,
                 element: item.element,
                 series: item.series,
-                jpname: item.jpname.replace("&amp;","&")
+                jpname: item.jpname.replace("&amp;", "&")
             }
         }
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
 
     characters: data => data.map(item => {
-        let correctedId = item.styleId > 1? `${item.id.toString().slice(0,-1)}${item.styleId}` : item.id;
+        let correctedId = item.styleId > 1 ? `${item.id.toString().slice(0, -1)}${item.styleId}` : item.id;
         addImageDownload(item.id + "_01", "character");
-        if (item.styleId > 1) addImageDownload(item.id + `_01_st${item.styleId}`, "character", {id: `${correctedId}_01`});
+        if (item.styleId > 1) addImageDownload(item.id + `_01_st${item.styleId}`, "character", { id: `${correctedId}_01` });
         if (item.maxUncap >= 5) addImageDownload(item.id + "_03", "character");
         if (item.maxUncap >= 6) addImageDownload(item.id + "_04", "character");
         mins["characters"][correctedId] = item.pageName.replace(/&#039;/g, "'");
@@ -96,7 +99,7 @@ const jqQueries = {
                 series: item.series,
                 styleName: item.styleName,
                 styleId: item.styleId,
-                jpname: item.jpname.replace("&amp;","&"),
+                jpname: item.jpname.replace("&amp;", "&"),
                 releaseDate: item.releaseDate,
                 gender: item.gender,
                 obtain: item.obtain,
@@ -148,10 +151,10 @@ const jqQueries = {
                 },
                 type: item.type,
                 awakening: item.awakening,
-                awakeningType1: item.awakeningType1?.replace(" dmg", "").replace(".",""),
-                awakeningType2: item.awakeningType2?.replace(" dmg", "").replace(".",""),
+                awakeningType1: item.awakeningType1?.replace(" dmg", "").replace(".", ""),
+                awakeningType2: item.awakeningType2?.replace(" dmg", "").replace(".", ""),
                 jpname: item.jpname,
-                bullets: item.type.toLowerCase() =="gun"? [item.bullet1, item.bullet2, item.bullet3, item.bullet4, item.bullet5, item.bullet6].map(e=>e?.toLowerCase()) : null
+                bullets: item.type.toLowerCase() == "gun" ? [item.bullet1, item.bullet2, item.bullet3, item.bullet4, item.bullet5, item.bullet6].map(e => e?.toLowerCase()) : null
             }
         }
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
@@ -183,7 +186,7 @@ const jqQueries = {
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
 
     minos: data => data.map(item => {
-        addImageDownload(item.id, "gear", {type: "familiar", saveType: "minos"});
+        addImageDownload(item.id, "gear", { type: "familiar", saveType: "minos" });
 
         return {
             [item.id]: {
@@ -194,7 +197,7 @@ const jqQueries = {
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
 
     shields: data => data.map(item => {
-        addImageDownload(item.id, "gear", {type: "shield", saveType: "shields"});
+        addImageDownload(item.id, "gear", { type: "shield", saveType: "shields" });
 
         return {
             [item.id]: {
@@ -205,7 +208,7 @@ const jqQueries = {
     }).reduce((acc, curr) => Object.assign(acc, curr), {}),
 
     bullets: data => data.map(item => {
-        addImageDownload(item.id, "gear", {type: "bullet", saveType: "bullets"});
+        addImageDownload(item.id, "gear", { type: "bullet", saveType: "bullets" });
 
         return {
             [item.id]: {
@@ -278,8 +281,8 @@ async function processData() {
 function addImageDownload(itemID, itemType, options = {}) {
     switch (itemType) {
         case "character":
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/s/${itemID}.jpg`, `./assets/characters/square/${options.id? options.id : itemID}`);
-            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${itemID}.jpg`, `./assets/characters/tall/${options.id? options.id : itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/s/${itemID}.jpg`, `./assets/characters/square/${options.id ? options.id : itemID}`);
+            downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/npc/quest/${itemID}.jpg`, `./assets/characters/tall/${options.id ? options.id : itemID}`);
             break;
         case "summon":
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/summon/party_main/${itemID}.jpg`, `./assets/summons/party_main/${itemID}`);
@@ -298,7 +301,7 @@ function addImageDownload(itemID, itemType, options = {}) {
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/leader/quest/${itemID}_1_01.jpg`, `./assets/classes/tall/${itemID}_1`);
             break;
         case "weapon skill":
-            downloadImage(`https://gbf.wiki/Special:Redirect/file/${itemID}`, `./assets/weapons/skills/${itemID.replace(".png","")}`);
+            downloadImage(`https://gbf.wiki/Special:Redirect/file/${itemID}`, `./assets/weapons/skills/${itemID.replace(".png", "")}`);
             break;
         case "gear":
             downloadImage(`https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/assets/${options.type}/s/${itemID}.jpg`, `./assets/gear/${options.saveType}/${itemID}`);
