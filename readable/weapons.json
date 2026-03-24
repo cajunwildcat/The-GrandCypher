@@ -7463,7 +7463,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "赤き依代の剣",
     "bullets": null
   },
   "1030003700": {
@@ -8639,7 +8639,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "プロキシモ・レプリカ",
     "bullets": null
   },
   "1030008600": {
@@ -11063,7 +11063,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "パラゾビィウム",
     "bullets": null
   },
   "1030108700": {
@@ -12839,7 +12839,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "グラービィーザー",
     "bullets": null
   },
   "1030207500": {
@@ -14111,7 +14111,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "サイス・オブ・ベリアル",
     "bullets": null
   },
   "1030304600": {
@@ -14135,7 +14135,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ブラビィーラ",
     "bullets": null
   },
   "1030304700": {
@@ -15023,7 +15023,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "赤き依代の杖",
     "bullets": null
   },
   "1030402400": {
@@ -15047,7 +15047,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "青き依代の杖",
     "bullets": null
   },
   "1030402500": {
@@ -15071,7 +15071,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "緑の依代の杖",
     "bullets": null
   },
   "1030402600": {
@@ -15095,7 +15095,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "黄の依代の杖",
     "bullets": null
   },
   "1030402700": {
@@ -15119,7 +15119,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "白き依代の杖",
     "bullets": null
   },
   "1030402800": {
@@ -15143,7 +15143,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "黒き依代の杖",
     "bullets": null
   },
   "1030402900": {
@@ -16709,7 +16709,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "赤き依代の銃",
     "bullets": [
       "parabellum",
       null,
@@ -16740,7 +16740,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "青き依代の銃",
     "bullets": [
       "parabellum",
       null,
@@ -16771,7 +16771,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "緑の依代の銃",
     "bullets": [
       "parabellum",
       null,
@@ -16802,7 +16802,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "黄の依代の銃",
     "bullets": [
       "parabellum",
       null,
@@ -16833,7 +16833,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "白き依代の銃",
     "bullets": [
       "parabellum",
       null,
@@ -16864,7 +16864,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "黒き依代の銃",
     "bullets": [
       "parabellum",
       null,
@@ -21097,7 +21097,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ビィンブル",
     "bullets": null
   },
   "1030704600": {
@@ -22129,7 +22129,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ハープ・オブ・ハルワアムル",
     "bullets": null
   },
   "1030803900": {
@@ -22561,7 +22561,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "赤き依代の太刀",
     "bullets": null
   },
   "1030900800": {
@@ -22585,7 +22585,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "青き依代の太刀",
     "bullets": null
   },
   "1030900900": {
@@ -22609,7 +22609,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "緑の依代の太刀",
     "bullets": null
   },
   "1030901000": {
@@ -22633,7 +22633,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "黄の依代の太刀",
     "bullets": null
   },
   "1030901100": {
@@ -22657,7 +22657,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "白き依代の太刀",
     "bullets": null
   },
   "1030901200": {
@@ -22681,7 +22681,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "黒き依代の太刀",
     "bullets": null
   },
   "1030901300": {
@@ -23185,7 +23185,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ビィクサバ",
     "bullets": null
   },
   "1030903400": {
@@ -23809,7 +23809,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・焔",
     "bullets": null
   },
   "1040002600": {
@@ -23833,7 +23833,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・雪",
     "bullets": null
   },
   "1040002700": {
@@ -23857,7 +23857,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・凪",
     "bullets": null
   },
   "1040002800": {
@@ -23881,7 +23881,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・界",
     "bullets": null
   },
   "1040002900": {
@@ -23905,7 +23905,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・煌",
     "bullets": null
   },
   "1040003000": {
@@ -23929,7 +23929,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・煉",
     "bullets": null
   },
   "1040003100": {
@@ -24097,7 +24097,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・紅天",
     "bullets": null
   },
   "1040003800": {
@@ -24121,7 +24121,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・蒼天",
     "bullets": null
   },
   "1040003900": {
@@ -24145,7 +24145,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・疾天",
     "bullets": null
   },
   "1040004000": {
@@ -24169,7 +24169,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・轟天",
     "bullets": null
   },
   "1040004100": {
@@ -24193,7 +24193,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・白天",
     "bullets": null
   },
   "1040004200": {
@@ -24217,7 +24217,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "七星剣・黒天",
     "bullets": null
   },
   "1040004300": {
@@ -25421,7 +25421,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "銀の依代の剣",
     "bullets": null
   },
   "1040009900": {
@@ -27487,7 +27487,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十天光輝の佩剣",
     "bullets": null
   },
   "1040020100": {
@@ -29961,7 +29961,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・焔",
     "bullets": null
   },
   "1040102400": {
@@ -29985,7 +29985,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・雪",
     "bullets": null
   },
   "1040102500": {
@@ -30009,7 +30009,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・凪",
     "bullets": null
   },
   "1040102600": {
@@ -30033,7 +30033,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・界",
     "bullets": null
   },
   "1040102700": {
@@ -30057,7 +30057,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・煌",
     "bullets": null
   },
   "1040102800": {
@@ -30081,7 +30081,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・煉",
     "bullets": null
   },
   "1040102900": {
@@ -30153,7 +30153,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・紅天",
     "bullets": null
   },
   "1040103200": {
@@ -30177,7 +30177,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・蒼天",
     "bullets": null
   },
   "1040103300": {
@@ -30201,7 +30201,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・疾天",
     "bullets": null
   },
   "1040103400": {
@@ -30225,7 +30225,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・轟天",
     "bullets": null
   },
   "1040103500": {
@@ -30249,7 +30249,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・白天",
     "bullets": null
   },
   "1040103600": {
@@ -30273,7 +30273,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "四天刃・黒天",
     "bullets": null
   },
   "1040103700": {
@@ -32371,7 +32371,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十天光輝の懐剣",
     "bullets": null
   },
   "1040112900": {
@@ -34939,7 +34939,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・焔",
     "bullets": null
   },
   "1040202300": {
@@ -34963,7 +34963,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・雪",
     "bullets": null
   },
   "1040202400": {
@@ -34987,7 +34987,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・凪",
     "bullets": null
   },
   "1040202500": {
@@ -35011,7 +35011,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・界",
     "bullets": null
   },
   "1040202600": {
@@ -35035,7 +35035,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・煌",
     "bullets": null
   },
   "1040202700": {
@@ -35059,7 +35059,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・煉",
     "bullets": null
   },
   "1040202800": {
@@ -35155,7 +35155,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・紅天",
     "bullets": null
   },
   "1040203200": {
@@ -35179,7 +35179,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・蒼天",
     "bullets": null
   },
   "1040203300": {
@@ -35203,7 +35203,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・疾天",
     "bullets": null
   },
   "1040203400": {
@@ -35227,7 +35227,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・轟天",
     "bullets": null
   },
   "1040203500": {
@@ -35251,7 +35251,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・白天",
     "bullets": null
   },
   "1040203600": {
@@ -35275,7 +35275,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "一伐槍・黒天",
     "bullets": null
   },
   "1040203700": {
@@ -36045,7 +36045,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "銀の依代の槍",
     "bullets": null
   },
   "1040207400": {
@@ -37803,7 +37803,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十天光輝の長槍",
     "bullets": null
   },
   "1040214800": {
@@ -39703,7 +39703,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・焔",
     "bullets": null
   },
   "1040301800": {
@@ -39727,7 +39727,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・雪",
     "bullets": null
   },
   "1040301900": {
@@ -39751,7 +39751,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・凪",
     "bullets": null
   },
   "1040302000": {
@@ -39775,7 +39775,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・界",
     "bullets": null
   },
   "1040302100": {
@@ -39799,7 +39799,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・煌",
     "bullets": null
   },
   "1040302200": {
@@ -39823,7 +39823,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・煉",
     "bullets": null
   },
   "1040302300": {
@@ -39871,7 +39871,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・紅天",
     "bullets": null
   },
   "1040302500": {
@@ -39895,7 +39895,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・蒼天",
     "bullets": null
   },
   "1040302600": {
@@ -39919,7 +39919,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・疾天",
     "bullets": null
   },
   "1040302700": {
@@ -39943,7 +39943,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・轟天",
     "bullets": null
   },
   "1040302800": {
@@ -39967,7 +39967,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・白天",
     "bullets": null
   },
   "1040302900": {
@@ -39991,7 +39991,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "三寅斧・黒天",
     "bullets": null
   },
   "1040303000": {
@@ -42227,7 +42227,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十天光輝の斤斧",
     "bullets": null
   },
   "1040312800": {
@@ -44317,7 +44317,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "五神杖・雪",
     "bullets": null
   },
   "1040402300": {
@@ -44341,7 +44341,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "五神杖・凪",
     "bullets": null
   },
   "1040402400": {
@@ -44365,7 +44365,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "五神杖・界",
     "bullets": null
   },
   "1040402500": {
@@ -44389,7 +44389,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "五神杖・煌",
     "bullets": null
   },
   "1040402600": {
@@ -44413,7 +44413,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "五神杖・煉",
     "bullets": null
   },
   "1040402700": {
@@ -44533,7 +44533,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "五神杖・紅天",
     "bullets": null
   },
   "1040403200": {
@@ -44557,7 +44557,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "五神杖・蒼天",
     "bullets": null
   },
   "1040403300": {
@@ -44581,7 +44581,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "五神杖・疾天",
     "bullets": null
   },
   "1040403400": {
@@ -44605,7 +44605,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "五神杖・轟天",
     "bullets": null
   },
   "1040403500": {
@@ -44629,7 +44629,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "五神杖・白天",
     "bullets": null
   },
   "1040403600": {
@@ -44653,7 +44653,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "五神杖・黒天",
     "bullets": null
   },
   "1040403700": {
@@ -45975,7 +45975,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "銀の依代の杖",
     "bullets": null
   },
   "1040409700": {
@@ -47777,7 +47777,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十天光輝の錫杖",
     "bullets": null
   },
   "1040417200": {
@@ -50216,7 +50216,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・焔",
     "bullets": [
       "rifle",
       "rifle",
@@ -50247,7 +50247,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・雪",
     "bullets": [
       "rifle",
       "rifle",
@@ -50278,7 +50278,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・凪",
     "bullets": [
       "rifle",
       "rifle",
@@ -50309,7 +50309,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・界",
     "bullets": [
       "rifle",
       "rifle",
@@ -50340,7 +50340,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・煌",
     "bullets": [
       "rifle",
       "rifle",
@@ -50371,7 +50371,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・煉",
     "bullets": [
       "rifle",
       "rifle",
@@ -50433,7 +50433,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・紅天",
     "bullets": [
       "rifle",
       "rifle",
@@ -50464,7 +50464,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・蒼天",
     "bullets": [
       "rifle",
       "rifle",
@@ -50495,7 +50495,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・疾天",
     "bullets": [
       "rifle",
       "rifle",
@@ -50526,7 +50526,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・轟天",
     "bullets": [
       "rifle",
       "rifle",
@@ -50557,7 +50557,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・白天",
     "bullets": [
       "rifle",
       "rifle",
@@ -50588,7 +50588,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十狼雷・黒天",
     "bullets": [
       "rifle",
       "rifle",
@@ -51739,7 +51739,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "銀の依代の銃",
     "bullets": [
       "parabellum",
       null,
@@ -53816,7 +53816,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十天光輝の短銃",
     "bullets": [
       "parabellum",
       "parabellum",
@@ -55675,7 +55675,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "六崩拳・焔",
     "bullets": null
   },
   "1040601200": {
@@ -55699,7 +55699,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "六崩拳・雪",
     "bullets": null
   },
   "1040601300": {
@@ -55723,7 +55723,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "六崩拳・凪",
     "bullets": null
   },
   "1040601400": {
@@ -55747,7 +55747,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "六崩拳・界",
     "bullets": null
   },
   "1040601500": {
@@ -55843,7 +55843,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "六崩拳・紅天",
     "bullets": null
   },
   "1040601900": {
@@ -55867,7 +55867,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "六崩拳・蒼天",
     "bullets": null
   },
   "1040602000": {
@@ -55891,7 +55891,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "六崩拳・疾天",
     "bullets": null
   },
   "1040602100": {
@@ -55915,7 +55915,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "六崩拳・轟天",
     "bullets": null
   },
   "1040602200": {
@@ -55939,7 +55939,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "六崩拳・白天",
     "bullets": null
   },
   "1040602300": {
@@ -55963,7 +55963,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "六崩拳・黒天",
     "bullets": null
   },
   "1040602400": {
@@ -58269,7 +58269,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十天光輝の鉤爪",
     "bullets": null
   },
   "1040613000": {
@@ -58317,7 +58317,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "修武の籠手",
     "bullets": null
   },
   "1040613200": {
@@ -58341,7 +58341,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "修武の籠手",
     "bullets": null
   },
   "1040613300": {
@@ -58365,7 +58365,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "修武の籠手",
     "bullets": null
   },
   "1040613400": {
@@ -58389,7 +58389,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "修武の籠手",
     "bullets": null
   },
   "1040613500": {
@@ -58413,7 +58413,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "修武の籠手",
     "bullets": null
   },
   "1040613600": {
@@ -58437,7 +58437,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "修武の籠手",
     "bullets": null
   },
   "1040613700": {
@@ -60453,7 +60453,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "二王弓・焔",
     "bullets": null
   },
   "1040701200": {
@@ -60477,7 +60477,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "二王弓・雪",
     "bullets": null
   },
   "1040701300": {
@@ -60501,7 +60501,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "二王弓・凪",
     "bullets": null
   },
   "1040701400": {
@@ -60525,7 +60525,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "二王弓・界",
     "bullets": null
   },
   "1040701500": {
@@ -60573,7 +60573,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "二王弓・煉",
     "bullets": null
   },
   "1040701700": {
@@ -60621,7 +60621,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "二王弓・紅天",
     "bullets": null
   },
   "1040701900": {
@@ -60645,7 +60645,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "二王弓・蒼天",
     "bullets": null
   },
   "1040702000": {
@@ -60669,7 +60669,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "二王弓・疾天",
     "bullets": null
   },
   "1040702100": {
@@ -60693,7 +60693,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "二王弓・轟天",
     "bullets": null
   },
   "1040702200": {
@@ -60717,7 +60717,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "二王弓・白天",
     "bullets": null
   },
   "1040702300": {
@@ -60741,7 +60741,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "二王弓・黒天",
     "bullets": null
   },
   "1040702400": {
@@ -61437,7 +61437,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "銀の依代の弓",
     "bullets": null
   },
   "1040705900": {
@@ -62401,7 +62401,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十天光輝の突弓",
     "bullets": null
   },
   "1040709900": {
@@ -63841,7 +63841,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・焔",
     "bullets": null
   },
   "1040800600": {
@@ -63865,7 +63865,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・雪",
     "bullets": null
   },
   "1040800700": {
@@ -63889,7 +63889,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・凪",
     "bullets": null
   },
   "1040800800": {
@@ -63913,7 +63913,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・界",
     "bullets": null
   },
   "1040800900": {
@@ -63937,7 +63937,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・煌",
     "bullets": null
   },
   "1040801000": {
@@ -63961,7 +63961,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・煉",
     "bullets": null
   },
   "1040801100": {
@@ -64057,7 +64057,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・紅天",
     "bullets": null
   },
   "1040801500": {
@@ -64081,7 +64081,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・蒼天",
     "bullets": null
   },
   "1040801600": {
@@ -64105,7 +64105,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・疾天",
     "bullets": null
   },
   "1040801700": {
@@ -64129,7 +64129,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・轟天",
     "bullets": null
   },
   "1040801800": {
@@ -64153,7 +64153,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・白天",
     "bullets": null
   },
   "1040801900": {
@@ -64177,7 +64177,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "九界琴・黒天",
     "bullets": null
   },
   "1040802000": {
@@ -65713,7 +65713,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ゴールドスライムベル",
     "bullets": null
   },
   "1040809000": {
@@ -66629,7 +66629,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十天光輝の竪琴",
     "bullets": null
   },
   "1040812800": {
@@ -68117,7 +68117,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "八命切・焔",
     "bullets": null
   },
   "1040900800": {
@@ -68141,7 +68141,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "八命切・雪",
     "bullets": null
   },
   "1040900900": {
@@ -68189,7 +68189,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "八命切・界",
     "bullets": null
   },
   "1040901100": {
@@ -68213,7 +68213,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "八命切・煌",
     "bullets": null
   },
   "1040901200": {
@@ -68237,7 +68237,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "八命切・煉",
     "bullets": null
   },
   "1040901300": {
@@ -68285,7 +68285,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "八命切・紅天",
     "bullets": null
   },
   "1040901500": {
@@ -68309,7 +68309,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "八命切・蒼天",
     "bullets": null
   },
   "1040901600": {
@@ -68333,7 +68333,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "八命切・疾天",
     "bullets": null
   },
   "1040901700": {
@@ -68357,7 +68357,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "八命切・轟天",
     "bullets": null
   },
   "1040901800": {
@@ -68381,7 +68381,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "八命切・白天",
     "bullets": null
   },
   "1040901900": {
@@ -68405,7 +68405,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "八命切・黒天",
     "bullets": null
   },
   "1040902000": {
@@ -69317,7 +69317,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "銀の依代の太刀",
     "bullets": null
   },
   "1040906300": {
@@ -70281,7 +70281,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "テトラストリーマ",
     "bullets": null
   },
   "1040910400": {
@@ -70305,7 +70305,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "テトラストリーマ",
     "bullets": null
   },
   "1040910500": {
@@ -70329,7 +70329,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "テトラストリーマ",
     "bullets": null
   },
   "1040910600": {
@@ -70353,7 +70353,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "テトラストリーマ",
     "bullets": null
   },
   "1040910700": {
@@ -70377,7 +70377,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "テトラストリーマ",
     "bullets": null
   },
   "1040910800": {
@@ -70401,7 +70401,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "テトラストリーマ",
     "bullets": null
   },
   "1040910900": {
@@ -70739,7 +70739,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "十天光輝の陣刀",
     "bullets": null
   },
   "1040912300": {
@@ -72227,7 +72227,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "スコフニュング",
     "bullets": null
   },
   "1040006400_note": {
@@ -72251,7 +72251,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "アシュケロン",
     "bullets": null
   },
   "1040011300_note": {
@@ -72395,7 +72395,7 @@
     },
     "type": "sabre",
     "awakening": null,
-    "jpname": null,
+    "jpname": "プロキシモ",
     "bullets": null
   },
   "1040018100_note": {
@@ -72491,7 +72491,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "イペタム",
     "bullets": null
   },
   "1040104800_note": {
@@ -72515,7 +72515,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ファウスト",
     "bullets": null
   },
   "1040105700_note": {
@@ -72539,7 +72539,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ミセリコルデ",
     "bullets": null
   },
   "1040106600_note": {
@@ -72659,7 +72659,7 @@
     },
     "type": "dagger",
     "awakening": null,
-    "jpname": null,
+    "jpname": "アラベスク",
     "bullets": null
   },
   "1040114200_note": {
@@ -72779,7 +72779,7 @@
     },
     "type": "spear",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ロムルスの槍",
     "bullets": null
   },
   "1040208200_note": {
@@ -72923,7 +72923,7 @@
     },
     "type": "axe",
     "awakening": null,
-    "jpname": null,
+    "jpname": "アヴェンジャー",
     "bullets": null
   },
   "1040307200_note": {
@@ -73091,7 +73091,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ニルヴァーナ",
     "bullets": null
   },
   "1040405300_note": {
@@ -73115,7 +73115,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ケラウノス",
     "bullets": null
   },
   "1040406200_note": {
@@ -73139,7 +73139,7 @@
     },
     "type": "staff",
     "awakening": null,
-    "jpname": null,
+    "jpname": "カピラヴァストゥ",
     "bullets": null
   },
   "1040406900_note": {
@@ -73355,7 +73355,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "オリバー",
     "bullets": [
       null,
       null,
@@ -73386,7 +73386,7 @@
     },
     "type": "gun",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ネブカドネザル",
     "bullets": [
       "cartridge",
       "rifle",
@@ -73696,7 +73696,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "鬼神の籠手",
     "bullets": null
   },
   "1040604200_note": {
@@ -73816,7 +73816,7 @@
     },
     "type": "melee",
     "awakening": null,
-    "jpname": null,
+    "jpname": "修武の籠手",
     "bullets": null
   },
   "1040620200_note": {
@@ -73864,7 +73864,7 @@
     },
     "type": "bow",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ローゼンボーゲン",
     "bullets": null
   },
   "1040703600_note": {
@@ -74008,7 +74008,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "ランゲレイク",
     "bullets": null
   },
   "1040803700_note": {
@@ -74128,7 +74128,7 @@
     },
     "type": "harp",
     "awakening": null,
-    "jpname": null,
+    "jpname": "響魂の鼓",
     "bullets": null
   },
   "1040810900_note": {
@@ -74224,7 +74224,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "天叢雲剣",
     "bullets": null
   },
   "1040903600_note": {
@@ -74248,7 +74248,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "千子村正",
     "bullets": null
   },
   "1040904300_note": {
@@ -74368,7 +74368,7 @@
     },
     "type": "katana",
     "awakening": null,
-    "jpname": null,
+    "jpname": "テトラストリーマ",
     "bullets": null
   },
   "1040914600_note": {
