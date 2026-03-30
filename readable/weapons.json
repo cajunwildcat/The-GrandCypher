@@ -21172,6 +21172,30 @@
     "jpname": "グリフィスボウ",
     "bullets": null
   },
+  "1030704900": {
+    "pageName": "Motherly Flower Wreath",
+    "maxUncap": 3,
+    "rarity": "SR",
+    "series": null,
+    "element": "water",
+    "character": null,
+    "skill1": {
+      "name": "Willed Flood",
+      "icon": "ws_skill_hp_a_2_2.png"
+    },
+    "skill2": {
+      "name": null,
+      "icon": null
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "bow",
+    "awakening": null,
+    "jpname": "マザー・フラワーリース",
+    "bullets": null
+  },
   "1030799000": {
     "pageName": "Archangel Bow",
     "maxUncap": 3,
@@ -67926,6 +67950,30 @@
     "type": "harp",
     "awakening": null,
     "jpname": "禁望の憧弦",
+    "bullets": null
+  },
+  "1040818300": {
+    "pageName": "Materpent Lyre",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "water",
+    "character": null,
+    "skill1": {
+      "name": "Resilient Flood",
+      "icon": "ws_skill_hp_a_2_3.png"
+    },
+    "skill2": {
+      "name": "Synchronized Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "harp",
+    "awakening": null,
+    "jpname": "リラ・マテルペント",
     "bullets": null
   },
   "1040900000": {
