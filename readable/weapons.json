@@ -34558,6 +34558,30 @@
     "jpname": "禁破の禍刃",
     "bullets": null
   },
+  "1040122900": {
+    "pageName": "Morning Glory Fan",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "water",
+    "character": "Alliah (Yukata)",
+    "skill1": {
+      "name": "Tsunami's Celere",
+      "icon": "ws_skill_moment_2.png"
+    },
+    "skill2": {
+      "name": "Cobalt Craft",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": "Summer's Golden Twilight",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "dagger",
+    "awakening": null,
+    "jpname": null,
+    "bullets": null
+  },
   "1040200000": {
     "pageName": "Cletine",
     "maxUncap": 3,
@@ -49938,6 +49962,30 @@
     "type": "staff",
     "awakening": null,
     "jpname": "海の神秘",
+    "bullets": null
+  },
+  "1040426100": {
+    "pageName": "Forbidden Sunset",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "light",
+    "character": "Anthuria (Summer)",
+    "skill1": {
+      "name": "Zion's Trium",
+      "icon": "ws_skill_ta_5_3.png"
+    },
+    "skill2": {
+      "name": "Radiant Pearl Blow",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "staff",
+    "awakening": null,
+    "jpname": null,
     "bullets": null
   },
   "1040500000": {

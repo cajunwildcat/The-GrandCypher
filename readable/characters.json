@@ -28805,7 +28805,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Special",
     "race": [
       "Human"
@@ -29086,5 +29086,64 @@
     "artbouns": false,
     "artex": false,
     "charid": 3049
+  },
+  "3040647000": {
+    "pageName": "Anthuria (Summer)",
+    "name": "Anthuria",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": "summer",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "アンスリア",
+    "releaseDate": "2026-03-31",
+    "gender": "f",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Special",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Forbidden Sunset",
+    "weapon": [
+      "Melee",
+      "Harp"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3070
+  },
+  "3040648000": {
+    "pageName": "Alliah (Yukata)",
+    "name": "Alliah",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": "yukata",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "アリア",
+    "releaseDate": "2026-03-31",
+    "gender": "f",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Defense",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Morning Glory Fan",
+    "weapon": [
+      "Sabre"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3163
   }
 }
