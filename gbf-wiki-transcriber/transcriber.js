@@ -17,7 +17,7 @@ const getSubstringFromNInstance = (str, char, N = 3) => {
     }
 };
 
-const convertTableToTemplate = (tableText) => {
+/* const convertTableToTemplate = (tableText) => {
     tableText = tableText.substring(tableText.indexOf("|-")).replace(`|}`, "");
     // Split the input into rows based on the MediaWiki table row delimiter "|-"
     let rows = tableText.split("|-").filter(i => i.trim() != "");
@@ -54,11 +54,56 @@ ${notes}
 
     // Join all sections into the final output
     return `{{Advanced Grids/WeaponTable|color=core|\n${rows.join("\n\n")}\n}}`;
-};
+}; */
+
+function convertTeamSpread(input) {
+    let team = input.match(/\|team={{Team(.|\n)+}}\W?\|weapons=/)[0];
+    team = team.replace("|team={{Team\n", "").replace(/}}\W?\|weapons=/, "");
+    team.match(/\|\w+\d=/g).forEach(k => {
+        k = k.slice(1,-1)
+        if (!k.includes("class") && !k.includes("skill") && !k.includes("char")) {
+            let n = k.slice(-1);
+            team = team.replace(k, k.replace(n, `char${n}`));
+        }
+    });
+    ["artsupport","artmain","transmain","transsupport"].forEach(k=>{
+        let t = team.match(new RegExp(String.raw`\|${k}=(\w|\d)+`,'g'))
+        if (!t) return;
+        t = t[0];
+        team = team.replace(t, "");
+    })
+    let mainS = team.match(/\|main=.+\n/)[0];
+    let suppS = team.match(/\|support=.+\n/)[0];
+    team = team.replace(mainS, "");
+    team = team.replace(suppS, "");
+
+    let weapon = input.match(/\|weapons={{(.|\n)+}}\W?\|summons=/)[0];
+    weapon = weapon.replace("|weapons={{WeaponGridSkills\n","").replace(/}}\W?\|summons=/,"")
+    let summon = input.match(/\|summons={{(.|\n)+}}\n}}/)[0];
+    summon = summon.replace("|summons={{SummonGrid\n","","").replace("}}\n}}","");
+    summon.match(/\|\w+\d=/g).forEach(k => {
+        k = k.slice(1,-1)
+        if (!["s1", "s2", "s3", "s4", "sub1", "sub2"].includes(k)) {
+            let n = k.slice(-1);
+            summon = summon.replace(k, k.replace(n, `s${n}`));
+        }
+    });
+
+    return ["{{TeamSpread",
+        "\n",
+        team,
+        "\n",
+        weapon,
+        "\n",
+        mainS,
+        suppS,
+        summon
+].join("");
+}
 
 window.onload = e => {
     document.querySelector("#convert-button").onclick = (e) => {
         document.querySelector("#output-textarea").value =
-            convertTableToTemplate(document.querySelector("#input-textarea").value)
+            convertTeamSpread(document.querySelector("#input-textarea").value)
     }
 }
