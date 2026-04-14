@@ -97,7 +97,8 @@ function convertTeamSpread(input) {
         "\n",
         mainS,
         suppS,
-        summon
+        summon,
+        "\n|comments=\n|source=\n|rotation=\n}}"
 ].join("");
 }
 
