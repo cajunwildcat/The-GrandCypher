@@ -63772,6 +63772,30 @@
     "jpname": "禁望の輝弓",
     "bullets": null
   },
+  "1040715300": {
+    "pageName": "Vijaya",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "fire",
+    "character": "Parashurama",
+    "skill1": {
+      "name": "Hellfire's Restraint",
+      "icon": "ws_skill_coki_1_2.png"
+    },
+    "skill2": {
+      "name": "Scarlet Arts",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "bow",
+    "awakening": null,
+    "jpname": "ヴィジャヤ",
+    "bullets": null
+  },
   "1040800000": {
     "pageName": "Luminiera Harp Omega",
     "maxUncap": 5,
@@ -68022,6 +68046,30 @@
     "type": "harp",
     "awakening": null,
     "jpname": "リラ・マテルペント",
+    "bullets": null
+  },
+  "1040818400": {
+    "pageName": "Affectionate Bell",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "wind",
+    "character": "Echidna",
+    "skill1": {
+      "name": "Whirlwind's Grace",
+      "icon": "ws_skill_grace_4_2.png"
+    },
+    "skill2": {
+      "name": "Wind's Majesty",
+      "icon": "ws_skill_god_4.png"
+    },
+    "skill3": {
+      "name": "Wind's Garrison",
+      "icon": "ws_skill_guard_4_1.png"
+    },
+    "type": "harp",
+    "awakening": null,
+    "jpname": "慈愛の揺鈴",
     "bullets": null
   },
   "1040900000": {

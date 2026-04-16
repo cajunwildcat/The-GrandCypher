@@ -29145,5 +29145,65 @@
     "artbouns": false,
     "artex": false,
     "charid": 3163
+  },
+  "3040649000": {
+    "pageName": "Echidna",
+    "name": "Echidna",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": null,
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "エキドナ",
+    "releaseDate": "2026-04-15",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Defense",
+    "race": [
+      "Primal"
+    ],
+    "recruitWeapon": "Affectionate Bell",
+    "weapon": [
+      "Staff",
+      "Harp"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3304
+  },
+  "3040650000": {
+    "pageName": "Parashurama",
+    "name": "Parashurama",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": null,
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "パラシュラーマ",
+    "releaseDate": "2026-04-15",
+    "gender": "m",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Primal"
+    ],
+    "recruitWeapon": "Vijaya",
+    "weapon": [
+      "Bow",
+      "Axe"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3305
   }
 }
