@@ -81,6 +81,7 @@ function convertTeamSpread(input) {
     weapon = weapon.replace("|weapons={{WeaponGridSkills\n","").replace(/}}\W?\|summons=/,"")
     let summon = input.match(/\|summons={{(.|\n)+}}\n}}/)[0];
     summon = summon.replace("|summons={{SummonGrid\n","","").replace("}}\n}}","");
+    summon = summon.replace(/\|main=[\w| ={}]+\n/, "");
     summon.match(/\|\w+\d=/g).forEach(k => {
         k = k.slice(1,-1)
         if (!["s1", "s2", "s3", "s4", "sub1", "sub2"].includes(k)) {
