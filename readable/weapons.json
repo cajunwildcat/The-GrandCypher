@@ -29580,6 +29580,30 @@
     "jpname": "オーダーブリンガー",
     "bullets": null
   },
+  "1040029500": {
+    "pageName": "Ritesword of Sanctity Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Netherfell's Fandango III",
+      "icon": "ws_skill_ranbu_k_6_3.png"
+    },
+    "skill2": {
+      "name": "Taboo Netherfell's Trium",
+      "icon": "ws_skill_ta_k_6_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "sabre",
+    "awakening": null,
+    "jpname": "禁聖の儀剣",
+    "bullets": null
+  },
   "1040100000": {
     "pageName": "Azoth",
     "maxUncap": 3,
@@ -39346,6 +39370,30 @@
     "jpname": "凛雅の花槍",
     "bullets": null
   },
+  "1040221100": {
+    "pageName": "Spirelance of Knowledge Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "light",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Banelight's Stamina III",
+      "icon": "ws_skill_whole_k_5_3.png"
+    },
+    "skill2": {
+      "name": "Taboo Banelight's Trium",
+      "icon": "ws_skill_ta_k_5_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "spear",
+    "awakening": null,
+    "jpname": "禁知の尖塔",
+    "bullets": null
+  },
   "1040300000": {
     "pageName": "Ukonvasara",
     "maxUncap": 4,
@@ -43958,6 +44006,30 @@
     "type": "axe",
     "awakening": null,
     "jpname": "禁破の封槌",
+    "bullets": null
+  },
+  "1040320000": {
+    "pageName": "Spiritcleaver of Sanctity Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Netherfell's Majesty IV",
+      "icon": "ws_skill_god_k_6_4.png"
+    },
+    "skill2": {
+      "name": "Taboo Netherfell's Empowerment III",
+      "icon": "ws_skill_rise_k_6_3.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "axe",
+    "awakening": null,
+    "jpname": "禁聖の憑斧",
     "bullets": null
   },
   "1040400200": {
@@ -49988,6 +50060,30 @@
     "jpname": null,
     "bullets": null
   },
+  "1040426200": {
+    "pageName": "Codex of Sanctity Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Netherfell's Bastion III",
+      "icon": "ws_skill_stronghold_k_6_3.png"
+    },
+    "skill2": {
+      "name": "Taboo Netherfell's Aegis",
+      "icon": "ws_skill_hp_k_6_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "staff",
+    "awakening": null,
+    "jpname": "禁聖の写本",
+    "bullets": null
+  },
   "1040500000": {
     "pageName": "Gastraphetes",
     "maxUncap": 4,
@@ -55510,6 +55606,37 @@
       null
     ]
   },
+  "1040519000": {
+    "pageName": "Blightrifle of Knowledge Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "light",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Banelight's Majesty IV",
+      "icon": "ws_skill_god_k_5_4.png"
+    },
+    "skill2": {
+      "name": "Taboo Banelight's Empowerment III",
+      "icon": "ws_skill_rise_k_5_3.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "gun",
+    "awakening": null,
+    "jpname": "禁知の瘴銃",
+    "bullets": [
+      "cartridge",
+      "cartridge",
+      "cartridge",
+      "aetherial",
+      "aetherial",
+      "aetherial"
+    ]
+  },
   "1040600000": {
     "pageName": "Lion Khan Claw",
     "maxUncap": 4,
@@ -60238,6 +60365,30 @@
     "type": "melee",
     "awakening": null,
     "jpname": "禁栄の灼拳",
+    "bullets": null
+  },
+  "1040621500": {
+    "pageName": "Machinahand of Knowledge Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "light",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Banelight's Tempering II",
+      "icon": "ws_skill_train_k_5_2.png"
+    },
+    "skill2": {
+      "name": "Taboo Banelight's Tyranny",
+      "icon": "ws_skill_tyrant_k_5.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "melee",
+    "awakening": null,
+    "jpname": "禁知の機手",
     "bullets": null
   },
   "1040700000": {

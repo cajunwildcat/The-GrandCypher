@@ -29205,5 +29205,35 @@
     "artbouns": false,
     "artex": false,
     "charid": 3305
+  },
+  "3040651000": {
+    "pageName": "Fylkis",
+    "name": "Fylkis",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": null,
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "フィルキス",
+    "releaseDate": "2026-04-23",
+    "gender": "f",
+    "obtain": [
+      "main_quest,8-II"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Balanced",
+    "race": [
+      "Levleath"
+    ],
+    "recruitWeapon": null,
+    "weapon": [
+      "Dagger",
+      "Gun"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
   }
 }

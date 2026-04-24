@@ -3760,5 +3760,23 @@
     "element": "wind",
     "series": "odious",
     "jpname": "マクタンマカル"
+  },
+  "2040453000": {
+    "pageName": "Papahlukruva",
+    "name": "Papahlukruva",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "light",
+    "series": "odious",
+    "jpname": "パパルクルヴァ"
+  },
+  "2040454000": {
+    "pageName": "Zamalvoch",
+    "name": "Zamalvoch",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "dark",
+    "series": "odious",
+    "jpname": "ザマルヴォッチ"
   }
 }
