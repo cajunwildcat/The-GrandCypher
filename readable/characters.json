@@ -12562,7 +12562,7 @@
   "3040085000": {
     "pageName": "Nemone",
     "name": "Nemone",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Earth",
     "series": null,
@@ -12574,7 +12574,7 @@
     "obtain": [
       "classic2"
     ],
-    "flbDate": null,
+    "flbDate": "2026-04-28",
     "expeditionType": null,
     "type": "Attack",
     "race": [

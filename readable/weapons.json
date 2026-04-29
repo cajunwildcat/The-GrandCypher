@@ -11258,6 +11258,30 @@
     "jpname": "黒紫羽",
     "bullets": null
   },
+  "1030109500": {
+    "pageName": "Kahuan Pahoa",
+    "maxUncap": 3,
+    "rarity": "SR",
+    "series": null,
+    "element": "dark",
+    "character": null,
+    "skill1": {
+      "name": "Clawed Shadow",
+      "icon": "ws_skill_atk_a_6_2.png"
+    },
+    "skill2": {
+      "name": null,
+      "icon": null
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "dagger",
+    "awakening": null,
+    "jpname": "クフア・パホア",
+    "bullets": null
+  },
   "1030199000": {
     "pageName": "Archangel Knife",
     "maxUncap": 3,
@@ -39392,6 +39416,30 @@
     "type": "spear",
     "awakening": null,
     "jpname": "禁知の尖塔",
+    "bullets": null
+  },
+  "1040221200": {
+    "pageName": "Kahuan Pololu Kahiko",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": null,
+    "skill1": {
+      "name": "Armed Shadow",
+      "icon": "ws_skill_atk_a_6_3.png"
+    },
+    "skill2": {
+      "name": "Covert Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "spear",
+    "awakening": null,
+    "jpname": "クフア・カヒコ・ポロウ",
     "bullets": null
   },
   "1040300000": {
