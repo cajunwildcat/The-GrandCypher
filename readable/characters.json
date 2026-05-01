@@ -29235,5 +29235,65 @@
     "artbouns": false,
     "artex": false,
     "charid": null
+  },
+  "3040652000": {
+    "pageName": "Felluca",
+    "name": "Felluca",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": null,
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "フェルルカ",
+    "releaseDate": "2026-04-30",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "'Aina Alaka'i",
+    "weapon": [
+      "Staff",
+      "Axe"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
+  },
+  "3040653000": {
+    "pageName": "Manu Ponumau",
+    "name": "Manu Ponumau",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": null,
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "マヌ＝ポヌマウ",
+    "releaseDate": "2026-04-30",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Defense",
+    "race": [
+      "Wolvir"
+    ],
+    "recruitWeapon": "Massive Mentor Drill",
+    "weapon": [
+      "Spear",
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
   }
 }

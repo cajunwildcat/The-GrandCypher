@@ -39442,6 +39442,30 @@
     "jpname": "クフア・カヒコ・ポロウ",
     "bullets": null
   },
+  "1040221300": {
+    "pageName": "Massive Mentor Drill",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": "Manu Ponumau",
+    "skill1": {
+      "name": "Hatred's Majesty",
+      "icon": "ws_skill_god_6_2.png"
+    },
+    "skill2": {
+      "name": "Dark's Garrison",
+      "icon": "ws_skill_guard_6_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "spear",
+    "awakening": null,
+    "jpname": null,
+    "bullets": null
+  },
   "1040300000": {
     "pageName": "Ukonvasara",
     "maxUncap": 4,
@@ -44078,6 +44102,30 @@
     "type": "axe",
     "awakening": null,
     "jpname": "禁聖の憑斧",
+    "bullets": null
+  },
+  "1040320100": {
+    "pageName": "'Aina Alaka'i",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "earth",
+    "character": "Felluca",
+    "skill1": {
+      "name": "Terra's Verity",
+      "icon": "ws_skill_tec_3_3.png"
+    },
+    "skill2": {
+      "name": "Earth's Might",
+      "icon": "ws_skill_atk_3_1.png"
+    },
+    "skill3": {
+      "name": "Amber Arts",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "axe",
+    "awakening": null,
+    "jpname": null,
     "bullets": null
   },
   "1040400200": {
