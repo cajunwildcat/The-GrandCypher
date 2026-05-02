@@ -28834,7 +28834,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Balanced",
     "race": [
       "Human"
@@ -29252,7 +29252,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": "Naturalist",
     "type": "Special",
     "race": [
       "Erune"
@@ -29282,7 +29282,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": "bloodhound",
     "type": "Defense",
     "race": [
       "Wolvir"
