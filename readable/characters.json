@@ -29295,5 +29295,94 @@
     "artbouns": false,
     "artex": false,
     "charid": null
+  },
+  "3040654000": {
+    "pageName": "Edward Elric",
+    "name": "Edward Elric",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": "tie-in",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "エドワード・エルリック",
+    "releaseDate": "2026-05-15",
+    "gender": "m",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Balanced",
+    "race": [
+      "human"
+    ],
+    "recruitWeapon": null,
+    "weapon": [
+      "Melee",
+      "Spear"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3309
+  },
+  "3040656000": {
+    "pageName": "Roy Mustang",
+    "name": "Roy Mustang",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": "tie-in",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "ロイ・マスタング",
+    "releaseDate": "2026-05-15",
+    "gender": "m",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "human"
+    ],
+    "recruitWeapon": "Flame Alchemy Gloves",
+    "weapon": [
+      "Staff",
+      "Gun"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
+  },
+  "3040657000": {
+    "pageName": "Olivier Mira Armstrong",
+    "name": "Olivier Mira Armstrong",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": "tie-in",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "オリヴィエ・ミラ・アームストロング",
+    "releaseDate": "2026-05-15",
+    "gender": "f",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Defense",
+    "race": [
+      "human"
+    ],
+    "recruitWeapon": "Armstrong Family Sword",
+    "weapon": [
+      "Sabre"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
   }
 }

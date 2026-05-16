@@ -3778,5 +3778,23 @@
     "element": "dark",
     "series": "odious",
     "jpname": "ザマルヴォッチ"
+  },
+  "2040455000": {
+    "pageName": "Alphonse Elric",
+    "name": "Alphonse Elric",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "earth",
+    "series": null,
+    "jpname": "アルフォンス・エルリック"
+  },
+  "2040456000": {
+    "pageName": "Alex Louis Armstrong",
+    "name": "Alex Louis Armstrong",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "water",
+    "series": "collab",
+    "jpname": "アレックス・ルイ・アームストロング"
   }
 }

@@ -29628,6 +29628,30 @@
     "jpname": "禁聖の儀剣",
     "bullets": null
   },
+  "1040029600": {
+    "pageName": "Armstrong Family Sword",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "collab",
+    "element": "water",
+    "character": "Olivier Mira Armstrong",
+    "skill1": {
+      "name": "Hoarfrost's Might",
+      "icon": "ws_skill_atk_2_3.png"
+    },
+    "skill2": {
+      "name": "Water's Enmity",
+      "icon": "ws_skill_backwater_2_1.png"
+    },
+    "skill3": {
+      "name": "Water's Garrison",
+      "icon": "ws_skill_guard_2_1.png"
+    },
+    "type": "sabre",
+    "awakening": null,
+    "jpname": "アームストロング家に代々伝わる名刀",
+    "bullets": null
+  },
   "1040100000": {
     "pageName": "Azoth",
     "maxUncap": 3,
@@ -60487,6 +60511,54 @@
     "jpname": "禁知の機手",
     "bullets": null
   },
+  "1040621600": {
+    "pageName": "Automail Arm",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "collab",
+    "element": "earth",
+    "character": null,
+    "skill1": {
+      "name": "Fullmetal Right Arm",
+      "icon": "ws_skill_atk_a_3_3.png"
+    },
+    "skill2": {
+      "name": "Automail Design",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "melee",
+    "awakening": null,
+    "jpname": null,
+    "bullets": null
+  },
+  "1040621700": {
+    "pageName": "Flame Alchemy Gloves",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "collab",
+    "element": "fire",
+    "character": "Roy Mustang",
+    "skill1": {
+      "name": "Inferno's Verity",
+      "icon": "ws_skill_tec_1_3.png"
+    },
+    "skill2": {
+      "name": "Fire's Might",
+      "icon": "ws_skill_atk_1_1.png"
+    },
+    "skill3": {
+      "name": "Scarlet Arts",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "melee",
+    "awakening": null,
+    "jpname": "焰の錬成陣が刻まれた手袋",
+    "bullets": null
+  },
   "1040700000": {
     "pageName": "Eurytos Bow",
     "maxUncap": 4,
@@ -72571,6 +72643,30 @@
     "type": "katana",
     "awakening": null,
     "jpname": "絡繰刀・雲隠",
+    "bullets": null
+  },
+  "1040918500": {
+    "pageName": "Xingese Liuyedao",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "collab",
+    "element": "dark",
+    "character": null,
+    "skill1": {
+      "name": "Xingese Blade",
+      "icon": "ws_skill_atk_a_6_3.png"
+    },
+    "skill2": {
+      "name": "Twelfth Crown Prince's Favorite",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "katana",
+    "awakening": null,
+    "jpname": null,
     "bullets": null
   },
   "1040002000_note": {
