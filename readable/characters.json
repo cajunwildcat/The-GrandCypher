@@ -29326,6 +29326,36 @@
     "artex": false,
     "charid": 3309
   },
+  "3040655000": {
+    "pageName": "Greed and Ling Yao",
+    "name": "Greed and Ling Yao",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": "tie-in",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "グリード＆リン・ヤオ",
+    "releaseDate": "2026-05-20",
+    "gender": "m",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "other"
+    ],
+    "recruitWeapon": null,
+    "weapon": [
+      "Katana",
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
+  },
   "3040656000": {
     "pageName": "Roy Mustang",
     "name": "Roy Mustang",
