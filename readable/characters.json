@@ -15151,7 +15151,7 @@
   "3040174000": {
     "pageName": "Wulf and Renie",
     "name": "Wulf and Renie",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Dark",
     "series": null,
@@ -15163,7 +15163,7 @@
     "obtain": [
       "classic3"
     ],
-    "flbDate": null,
+    "flbDate": "2026-05-22",
     "expeditionType": "bloodhound",
     "type": "Attack",
     "race": [
@@ -29234,7 +29234,7 @@
     ],
     "artbouns": false,
     "artex": false,
-    "charid": null
+    "charid": 3306
   },
   "3040652000": {
     "pageName": "Felluca",
@@ -29354,7 +29354,7 @@
     ],
     "artbouns": false,
     "artex": false,
-    "charid": null
+    "charid": 3310
   },
   "3040656000": {
     "pageName": "Roy Mustang",
@@ -29384,7 +29384,7 @@
     ],
     "artbouns": false,
     "artex": false,
-    "charid": null
+    "charid": 3311
   },
   "3040657000": {
     "pageName": "Olivier Mira Armstrong",
@@ -29413,6 +29413,6 @@
     ],
     "artbouns": false,
     "artex": false,
-    "charid": null
+    "charid": 3312
   }
 }
