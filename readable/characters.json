@@ -29342,7 +29342,7 @@
       "collab"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Attack",
     "race": [
       "other"
@@ -29402,7 +29402,7 @@
       "premium,collab"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Defense",
     "race": [
       "human"
