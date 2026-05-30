@@ -14474,6 +14474,30 @@
     "jpname": "修祓の斧",
     "bullets": null
   },
+  "1030306100": {
+    "pageName": "Miner's Lantern",
+    "maxUncap": 3,
+    "rarity": "SR",
+    "series": null,
+    "element": "fire",
+    "character": null,
+    "skill1": {
+      "name": "Willed Blaze",
+      "icon": "ws_skill_hp_a_1_2.png"
+    },
+    "skill2": {
+      "name": null,
+      "icon": null
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "axe",
+    "awakening": null,
+    "jpname": "炭鉱用カンテラ",
+    "bullets": null
+  },
   "1030399000": {
     "pageName": "Archangel Axe",
     "maxUncap": 3,
@@ -44150,6 +44174,30 @@
     "type": "axe",
     "awakening": null,
     "jpname": null,
+    "bullets": null
+  },
+  "1040320200": {
+    "pageName": "Steelflame Hornaxe",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "fire",
+    "character": null,
+    "skill1": {
+      "name": "Armed Blaze",
+      "icon": "ws_skill_atk_a_1_3.png"
+    },
+    "skill2": {
+      "name": "Covert Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "axe",
+    "awakening": null,
+    "jpname": "鋼炎の角斧",
     "bullets": null
   },
   "1040400200": {
