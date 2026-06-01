@@ -3796,5 +3796,14 @@
     "element": "water",
     "series": "collab",
     "jpname": "アレックス・ルイ・アームストロング"
+  },
+  "2040457000": {
+    "pageName": "Lodern",
+    "name": "Lodern",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "element": "fire",
+    "series": "acies",
+    "jpname": "ローダーン"
   }
 }

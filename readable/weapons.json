@@ -50252,6 +50252,30 @@
     "jpname": "禁聖の写本",
     "bullets": null
   },
+  "1040426300": {
+    "pageName": "Radiant Rod",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "earth",
+    "character": "Io (SSR)",
+    "skill1": {
+      "name": "Earth's Auspice",
+      "icon": "ws_skill_hp_heal_limit_3_1.png"
+    },
+    "skill2": {
+      "name": "Mountain's Progression",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "staff",
+    "awakening": null,
+    "jpname": null,
+    "bullets": null
+  },
   "1040500000": {
     "pageName": "Gastraphetes",
     "maxUncap": 4,
@@ -60605,6 +60629,30 @@
     "type": "melee",
     "awakening": null,
     "jpname": "焰の錬成陣が刻まれた手袋",
+    "bullets": null
+  },
+  "1040621800": {
+    "pageName": "Nebula Gauntlets",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "grand",
+    "element": "fire",
+    "character": "Mikaboshi",
+    "skill1": {
+      "name": "Blaze's Maneuver",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill2": {
+      "name": "Hellfire's Majesty",
+      "icon": "ws_skill_god_1_2.png"
+    },
+    "skill3": {
+      "name": "Scarlet Athos",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "melee",
+    "awakening": null,
+    "jpname": null,
     "bullets": null
   },
   "1040700000": {
