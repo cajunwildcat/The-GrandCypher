@@ -1415,6 +1415,12 @@
     "ix": "s1",
     "icon": "Ability_m_1964_1.png"
   },
+  "zosimos_1": {
+    "name": "The Final Abstinence",
+    "jpname": null,
+    "ix": "s1",
+    "icon": "Ability_m_2891_1.png"
+  },
   "240301_gu_s1": {
     "name": "Three-Round Burst",
     "jpname": "スリーラウンドバースト",

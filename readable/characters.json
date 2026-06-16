@@ -20531,7 +20531,7 @@
   "3040356000": {
     "pageName": "Elmott (SSR)",
     "name": "Elmott",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Fire",
     "series": null,
@@ -20543,7 +20543,7 @@
     "obtain": [
       "premium,normal"
     ],
-    "flbDate": null,
+    "flbDate": "2026-06-15",
     "expeditionType": null,
     "type": "Attack",
     "race": [

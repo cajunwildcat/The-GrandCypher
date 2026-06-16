@@ -28214,7 +28214,7 @@
   },
   "1040022900": {
     "pageName": "Hrunting",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "earth",
@@ -33144,7 +33144,7 @@
   },
   "1040115700": {
     "pageName": "Futsunomitama",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "light",
@@ -38532,7 +38532,7 @@
   },
   "1040217300": {
     "pageName": "Blazing Mistral",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "fire",
@@ -38556,7 +38556,7 @@
   },
   "1040217400": {
     "pageName": "Rhomphaia",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "wind",
@@ -43002,7 +43002,7 @@
   },
   "1040315100": {
     "pageName": "Ereshkigal",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "dark",
@@ -48742,7 +48742,7 @@
   },
   "1040420000": {
     "pageName": "Zosimos",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "dark",
@@ -54746,7 +54746,7 @@
   },
   "1040515200": {
     "pageName": "Hraesvelgr",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "water",
@@ -59337,7 +59337,7 @@
   },
   "1040616300": {
     "pageName": "Golden Fists of Ura",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "light",
@@ -63325,7 +63325,7 @@
   },
   "1040711700": {
     "pageName": "Murcielago",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "wind",
@@ -63339,8 +63339,8 @@
       "icon": "ws_skill_job_weapon.png"
     },
     "skill3": {
-      "name": "Ventosus's Glory",
-      "icon": "ws_skill_hero_4_3.png"
+      "name": "Lluvia de Saetas",
+      "icon": "ws_skill_job_weapon.png"
     },
     "type": "bow",
     "awakening": null,
@@ -67529,7 +67529,7 @@
   },
   "1040814400": {
     "pageName": "Andromeda",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "earth",
@@ -71567,7 +71567,7 @@
   },
   "1040913400": {
     "pageName": "Higurashi",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "fire",
@@ -71591,7 +71591,7 @@
   },
   "1040913500": {
     "pageName": "Shishio",
-    "maxUncap": 4,
+    "maxUncap": 6,
     "rarity": "SSR",
     "series": "illustrious",
     "element": "water",
