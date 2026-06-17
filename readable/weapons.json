@@ -34678,6 +34678,30 @@
     "jpname": null,
     "bullets": null
   },
+  "1040123000": {
+    "pageName": "Mixing Spoon",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": "Shao (SSR)",
+    "skill1": {
+      "name": "Oblivion's Insignia",
+      "icon": "ws_skill_noroi_6.png"
+    },
+    "skill2": {
+      "name": "Dark's Healing",
+      "icon": "ws_skill_heal_limit_6_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "dagger",
+    "awakening": null,
+    "jpname": "ミスチェ・コクレアーレ",
+    "bullets": null
+  },
   "1040200000": {
     "pageName": "Cletine",
     "maxUncap": 3,
@@ -50274,6 +50298,30 @@
     "type": "staff",
     "awakening": null,
     "jpname": "レディエント・ロッド",
+    "bullets": null
+  },
+  "1040426400": {
+    "pageName": "Ever a Wanderer",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "wind",
+    "character": "Notus",
+    "skill1": {
+      "name": "Ventosus's Trium",
+      "icon": "ws_skill_ta_4_3.png"
+    },
+    "skill2": {
+      "name": "Preemptive Cloud Wall",
+      "icon": "ws_skill_guard_4.png"
+    },
+    "skill3": {
+      "name": "Gale Green Blow",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "staff",
+    "awakening": null,
+    "jpname": "エバーワンダラー",
     "bullets": null
   },
   "1040500000": {
