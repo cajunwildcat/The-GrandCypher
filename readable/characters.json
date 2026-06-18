@@ -29492,7 +29492,7 @@
     "expeditionType": "naturalist",
     "type": "Balanced",
     "race": [
-      "erune"
+      "Erune"
     ],
     "recruitWeapon": "Mixing Spoon",
     "weapon": [
@@ -29521,7 +29521,7 @@
     "expeditionType": null,
     "type": "Attack",
     "race": [
-      "primal"
+      "Primal"
     ],
     "recruitWeapon": "Ever a Wanderer",
     "weapon": [
