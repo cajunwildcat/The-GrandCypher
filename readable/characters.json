@@ -10142,7 +10142,8 @@
     "releaseDate": "2014-04-16",
     "gender": "m",
     "obtain": [
-      "classic,academy"
+      "classic",
+      "academy"
     ],
     "flbDate": "2022-06-20",
     "expeditionType": null,
@@ -10260,7 +10261,8 @@
     "releaseDate": "2014-04-30",
     "gender": "f",
     "obtain": [
-      "classic,academy"
+      "classic",
+      "academy"
     ],
     "flbDate": "2016-01-29",
     "expeditionType": null,
@@ -10290,7 +10292,8 @@
     "releaseDate": "2014-03-31",
     "gender": "f",
     "obtain": [
-      "classic,academy"
+      "classic",
+      "academy"
     ],
     "flbDate": "2019-04-11",
     "expeditionType": null,
@@ -10436,7 +10439,8 @@
     "releaseDate": "2014-06-30",
     "gender": "f",
     "obtain": [
-      "classic,academy"
+      "classic",
+      "academy"
     ],
     "flbDate": "2018-11-12",
     "expeditionType": null,
@@ -11401,7 +11405,8 @@
     "releaseDate": "2015-03-31",
     "gender": "m",
     "obtain": [
-      "classic,academy"
+      "classic",
+      "academy"
     ],
     "flbDate": "2019-02-16",
     "expeditionType": null,
@@ -11927,7 +11932,8 @@
     "releaseDate": "2015-10-31",
     "gender": "f",
     "obtain": [
-      "classic,academy"
+      "classic",
+      "academy"
     ],
     "flbDate": "2018-05-17",
     "expeditionType": null,
