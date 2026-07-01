@@ -64283,6 +64283,30 @@
     "jpname": "ヴィジャヤ",
     "bullets": null
   },
+  "1040715400": {
+    "pageName": "Engagement Snowflake",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "light",
+    "character": "Europa (Formal)",
+    "skill1": {
+      "name": "Zion's Might",
+      "icon": "ws_skill_atk_5_3.png"
+    },
+    "skill2": {
+      "name": "Light's Spearhead",
+      "icon": "ws_skill_ta_tec_5_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "bow",
+    "awakening": null,
+    "jpname": "エンゲージ・スノウピース",
+    "bullets": null
+  },
   "1040800000": {
     "pageName": "Luminiera Harp Omega",
     "maxUncap": 5,
@@ -68557,6 +68581,30 @@
     "type": "harp",
     "awakening": null,
     "jpname": "慈愛の揺鈴",
+    "bullets": null
+  },
+  "1040818500": {
+    "pageName": "Marriage Sharkbell",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "wind",
+    "character": "Meg and Mari (Formal)",
+    "skill1": {
+      "name": "Blessing Petals",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill2": {
+      "name": "Celebratory Peal",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "harp",
+    "awakening": null,
+    "jpname": "マリッジシャークベル",
     "bullets": null
   },
   "1040900000": {

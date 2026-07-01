@@ -29198,7 +29198,7 @@
       "premium,normal"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Attack",
     "race": [
       "Primal"
@@ -29537,5 +29537,66 @@
     "artbouns": false,
     "artex": false,
     "charid": 3314
+  },
+  "3040662000": {
+    "pageName": "Meg and Mari (Formal)",
+    "name": "Meg and Mari",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": "formal",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "メグ＆まりっぺ",
+    "releaseDate": "2026-06-30",
+    "gender": "f",
+    "obtain": [
+      "premium,formal"
+    ],
+    "flbDate": null,
+    "expeditionType": "mercenary/skyfarer",
+    "type": "Special",
+    "race": [
+      "Human",
+      "Erune"
+    ],
+    "recruitWeapon": "Marriage Sharkbell",
+    "weapon": [
+      "Dagger",
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 2147
+  },
+  "3040663000": {
+    "pageName": "Europa (Formal)",
+    "name": "Europa",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": "formal",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "エウロペ",
+    "releaseDate": "2026-06-30",
+    "gender": "f",
+    "obtain": [
+      "premium,formal"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Special",
+    "race": [
+      "Primal"
+    ],
+    "recruitWeapon": "Engagement Snowflake",
+    "weapon": [
+      "Staff",
+      "Spear"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3117
   }
 }
