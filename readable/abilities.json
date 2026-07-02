@@ -83,6 +83,12 @@
     "ix": "ex1",
     "icon": "Ability_Rage.png"
   },
+  "130501_wa_ex1": {
+    "name": "Burst Refrain",
+    "jpname": "バースト・リフレイン",
+    "ix": "ex1",
+    "icon": "Ability_m_2901_1.png"
+  },
   "100501_sw_ex1": {
     "name": "Charge Conversion",
     "jpname": "チャージ・コンバージョン",
@@ -497,6 +503,12 @@
     "ix": "ex2",
     "icon": "Ability_Frequency.png"
   },
+  "130501_wa_ex2": {
+    "name": "High Chaser",
+    "jpname": "ハイチェイサー",
+    "ix": "ex2",
+    "icon": "Ability_m_2902_3.png"
+  },
   "160201_me_ex2": {
     "name": "Horizontal Solace",
     "jpname": "一字構え",
@@ -676,6 +688,12 @@
     "jpname": "アドレナリンラッシュ",
     "ix": "ex3",
     "icon": "Ability Adrenaline Rush.png"
+  },
+  "130501_wa_ex3": {
+    "name": "Aether Xenoglossia",
+    "jpname": "エーテル・ゼノグロシア",
+    "ix": "ex3",
+    "icon": "Ability_m_2903_3.png"
   },
   "300301_sw_ex3": {
     "name": "Aurum Flow",
@@ -994,6 +1012,12 @@
     "jpname": "エーテルブラストIII",
     "ix": "s1",
     "icon": "Ability_Elemental.png"
+  },
+  "130501_wa_s1": {
+    "name": "Aether Blast IV",
+    "jpname": "エーテルブラストIV",
+    "ix": "s1",
+    "icon": "Ability_m_2900_1.png"
   },
   "130401_wa_s1": {
     "name": "Aether Siphon",
