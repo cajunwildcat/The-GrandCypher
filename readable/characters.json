@@ -29492,7 +29492,7 @@
     "releaseDate": "2026-06-16",
     "gender": "m",
     "obtain": [
-      "premium.normal"
+      "premium,normal"
     ],
     "flbDate": null,
     "expeditionType": "naturalist",
