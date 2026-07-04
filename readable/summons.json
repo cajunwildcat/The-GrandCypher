@@ -3805,5 +3805,14 @@
     "element": "fire",
     "series": "acies",
     "jpname": "ローダーン"
+  },
+  "2040458000": {
+    "pageName": "The Supreme Conqueror",
+    "name": "The Supreme Conqueror",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "dark",
+    "series": "providence",
+    "jpname": "至高無上の金剛覇者"
   }
 }
