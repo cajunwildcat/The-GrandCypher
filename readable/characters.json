@@ -14716,7 +14716,7 @@
   "3040159000": {
     "pageName": "Cucouroux (SSR)",
     "name": "Cucouroux",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Water",
     "series": null,
@@ -14728,7 +14728,7 @@
     "obtain": [
       "classic3"
     ],
-    "flbDate": null,
+    "flbDate": "2026-07-14",
     "expeditionType": "craftsman",
     "type": "Balanced",
     "race": [
