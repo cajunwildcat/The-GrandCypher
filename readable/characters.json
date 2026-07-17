@@ -29598,5 +29598,64 @@
     "artbouns": false,
     "artex": false,
     "charid": 3117
+  },
+  "3040664000": {
+    "pageName": "Osiris (Yukata)",
+    "name": "Osiris",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": "yukata",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "オシリス",
+    "releaseDate": "2026-07-16",
+    "gender": "f",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": "bloodhound",
+    "type": "Special",
+    "race": [
+      "Primal"
+    ],
+    "recruitWeapon": "Netherbloom Parasol",
+    "weapon": [
+      "Staff"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3315
+  },
+  "3040665000": {
+    "pageName": "Atman (Summer)",
+    "name": "Atman",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": "summer",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "アートマン",
+    "releaseDate": "2026-07-16",
+    "gender": "m",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Other"
+    ],
+    "recruitWeapon": "Exhilarating Banana",
+    "weapon": [
+      "Sabre",
+      "Harp"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3316
   }
 }

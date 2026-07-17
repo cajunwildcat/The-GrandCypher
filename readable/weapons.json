@@ -39562,6 +39562,30 @@
     "jpname": null,
     "bullets": null
   },
+  "1040221400": {
+    "pageName": "Netherbloom Parasol",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": "Osiris (Yukata)",
+    "skill1": {
+      "name": "Hatred's Auspice",
+      "icon": "ws_skill_hp_heal_limit_6_2.png"
+    },
+    "skill2": {
+      "name": "Hatred's Garrison",
+      "icon": "ws_skill_guard_6_2.png"
+    },
+    "skill3": {
+      "name": "Purgatory's Crux",
+      "icon": "ws_skill_secret_6_3.png"
+    },
+    "type": "spear",
+    "awakening": null,
+    "jpname": "冥絡の花傘",
+    "bullets": null
+  },
   "1040300000": {
     "pageName": "Ukonvasara",
     "maxUncap": 4,
@@ -44246,6 +44270,30 @@
     "type": "axe",
     "awakening": null,
     "jpname": "鋼炎の角斧",
+    "bullets": null
+  },
+  "1040320300": {
+    "pageName": "Exhilarating Banana",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "fire",
+    "character": "Atman (Summer)",
+    "skill1": {
+      "name": "Hellfire's Sentence",
+      "icon": "ws_skill_deadly_1_2.png"
+    },
+    "skill2": {
+      "name": "Hellfire's Garrison",
+      "icon": "ws_skill_guard_1_2.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "axe",
+    "awakening": null,
+    "jpname": "エキサイトバナーナ",
     "bullets": null
   },
   "1040400200": {
