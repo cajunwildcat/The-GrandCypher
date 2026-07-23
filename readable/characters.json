@@ -29657,5 +29657,93 @@
     "artbouns": false,
     "artex": false,
     "charid": 3316
+  },
+  "3040666000": {
+    "pageName": "Ichigo Kurosaki",
+    "name": "Ichigo Kurosaki",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": "tie-in",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "黒崎一護",
+    "releaseDate": "2026-07-22",
+    "gender": "m",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Defense",
+    "race": [
+      "Other"
+    ],
+    "recruitWeapon": null,
+    "weapon": [
+      "Katana"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3317
+  },
+  "3040668000": {
+    "pageName": "Nelliel Tu Odelschwanck",
+    "name": "Nelliel Tu Odelschwanck",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": "tie-in",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "ネリエル・トゥ・オーデルシュヴァンク",
+    "releaseDate": "2026-07-22",
+    "gender": "f",
+    "obtain": [
+      "premium,collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Other"
+    ],
+    "recruitWeapon": "Gamuza",
+    "weapon": [
+      "Katana",
+      "Spear"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
+  },
+  "3040669000": {
+    "pageName": "Toshiro Hitsugaya and Rangiku Matsumoto",
+    "name": "Toshiro Hitsugaya and Rangiku Matsumoto",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": "tie-in",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "日番谷冬獅郎＆松本乱菊",
+    "releaseDate": "2026-07-22",
+    "gender": "mf",
+    "obtain": [
+      "premium,collab"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Balanced",
+    "race": [
+      "Other"
+    ],
+    "recruitWeapon": "Hyorinmaru",
+    "weapon": [
+      "Katana"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
   }
 }

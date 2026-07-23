@@ -39586,6 +39586,30 @@
     "jpname": "冥絡の花傘",
     "bullets": null
   },
+  "1040221500": {
+    "pageName": "Gamuza",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "collab",
+    "element": "wind",
+    "character": "Nelliel Tu Odelschwanck",
+    "skill1": {
+      "name": "Whirlwind's Fandango",
+      "icon": "ws_skill_ranbu_4_2.png"
+    },
+    "skill2": {
+      "name": "Wind's Verity",
+      "icon": "ws_skill_tec_4_1.png"
+    },
+    "skill3": {
+      "name": "Jade Craft",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "spear",
+    "awakening": null,
+    "jpname": "羚騎士(ガミューサ)",
+    "bullets": null
+  },
   "1040300000": {
     "pageName": "Ukonvasara",
     "maxUncap": 4,
@@ -72955,6 +72979,78 @@
     "type": "katana",
     "awakening": null,
     "jpname": "血吸の吻刀",
+    "bullets": null
+  },
+  "1040918700": {
+    "pageName": "Zangetsu",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "collab",
+    "element": "dark",
+    "character": null,
+    "skill1": {
+      "name": "Old Man Zangetsu",
+      "icon": "ws_skill_atk_a_6_3.png"
+    },
+    "skill2": {
+      "name": "Inner Hollow",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "katana",
+    "awakening": null,
+    "jpname": "斬月",
+    "bullets": null
+  },
+  "1040918800": {
+    "pageName": "Asauchi",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "collab",
+    "element": "fire",
+    "character": null,
+    "skill1": {
+      "name": "Nameless Zanpakuto",
+      "icon": "ws_skill_atk_a_1_3.png"
+    },
+    "skill2": {
+      "name": "The Origin of All Zanpakuto",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "katana",
+    "awakening": null,
+    "jpname": "浅打",
+    "bullets": null
+  },
+  "1040918900": {
+    "pageName": "Hyorinmaru",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "collab",
+    "element": "water",
+    "character": "Toshiro Hitsugaya and Rangiku Matsumoto",
+    "skill1": {
+      "name": "Hoarfrost's Mystery",
+      "icon": "ws_skill_sp_atk_2_3.png"
+    },
+    "skill2": {
+      "name": "Cobalt Arts",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": "Aquae Excelsior",
+      "icon": "ws_skill_sp_limit_2.png"
+    },
+    "type": "katana",
+    "awakening": null,
+    "jpname": "氷輪丸",
     "bullets": null
   },
   "1040002000_note": {

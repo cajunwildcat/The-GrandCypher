@@ -3785,7 +3785,7 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "earth",
-    "series": null,
+    "series": "collab",
     "jpname": "アルフォンス・エルリック"
   },
   "2040456000": {
@@ -3814,5 +3814,23 @@
     "element": "dark",
     "series": "providence",
     "jpname": "至高無上の金剛覇者"
+  },
+  "2040459000": {
+    "pageName": "Byakuya Kuchiki, Kenpachi Zaraki, and Mayuri Kurotsuchi",
+    "name": "Byakuya Kuchiki, Kenpachi Zaraki, and Mayuri Kurotsuchi",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "wind",
+    "series": "collab",
+    "jpname": "朽木白哉&更木剣八&amp;涅マユリ"
+  },
+  "2040460000": {
+    "pageName": "Kisuke Urahara",
+    "name": "Kisuke Urahara",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "light",
+    "series": "collab",
+    "jpname": "浦原喜助"
   }
 }
