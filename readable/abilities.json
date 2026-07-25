@@ -1037,6 +1037,12 @@
     "ix": "s1",
     "icon": "Ability_m_2110_3.png"
   },
+  "solomonis_subhl_1": {
+    "name": "Armor Break Blue",
+    "jpname": null,
+    "ix": "s1",
+    "icon": "Ability_m_2311_1.png"
+  },
   "430301_me_s1": {
     "name": "Ascetic Stance",
     "jpname": "修験の構え",
@@ -1637,6 +1643,12 @@
     "ix": "s2",
     "icon": "Ability_Drive.png"
   },
+  "solomonis_subhl_2": {
+    "name": "Phalanx Blue",
+    "jpname": null,
+    "ix": "s2",
+    "icon": "Ability_m_2313_3.png"
+  },
   "100001_sw_s2": {
     "name": "Rage",
     "jpname": "レイジ",
@@ -1781,6 +1793,12 @@
     "ix": "s3",
     "icon": "Ability Decimate.png"
   },
+  "solomonis_subhl_3": {
+    "name": "Decimate Blue",
+    "jpname": null,
+    "ix": "s3",
+    "icon": "Ability_m_2312_1.png"
+  },
   "230201_sw_s3": {
     "name": "Energize",
     "jpname": "集気",
@@ -1906,6 +1924,12 @@
     "jpname": "リンガリング・セント",
     "ix": "s3",
     "icon": "Ability_TwoToTango.png"
+  },
+  "solomonis_subhl_4": {
+    "name": "Full Arsenal Blue",
+    "jpname": null,
+    "ix": "s4",
+    "icon": "Ability_m_2939_3.png"
   },
   "150301_sw_umex1": {
     "name": "Bleak Disorder",
