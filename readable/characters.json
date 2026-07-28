@@ -29687,6 +29687,35 @@
     "artex": false,
     "charid": 3317
   },
+  "3040667000": {
+    "pageName": "Yoruichi Shihoin",
+    "name": "Yoruichi Shihoin",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": "tie-in",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "四楓院夜一",
+    "releaseDate": "2026-07-27",
+    "gender": "f",
+    "obtain": [
+      "collab"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Attack",
+    "race": [
+      "Other"
+    ],
+    "recruitWeapon": null,
+    "weapon": [
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3318
+  },
   "3040668000": {
     "pageName": "Nelliel Tu Odelschwanck",
     "name": "Nelliel Tu Odelschwanck",
