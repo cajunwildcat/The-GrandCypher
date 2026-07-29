@@ -39610,6 +39610,30 @@
     "jpname": "羚騎士(ガミューサ)",
     "bullets": null
   },
+  "1040221600": {
+    "pageName": "Fiendspear of Mortality Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "water",
+    "character": null,
+    "skill1": {
+      "name": "Odious Exalto Aquae",
+      "icon": "ws_skill_evil_2.png"
+    },
+    "skill2": {
+      "name": "Taboo Allowater's Puncturing",
+      "icon": "ws_skill_penetrate_defense_k_2_1.png"
+    },
+    "skill3": {
+      "name": "Taboo Allowater's Pact III",
+      "icon": "ws_skill_secret_k_2_3.png"
+    },
+    "type": "spear",
+    "awakening": null,
+    "jpname": "禁命の魔槍",
+    "bullets": null
+  },
   "1040300000": {
     "pageName": "Ukonvasara",
     "maxUncap": 4,
@@ -68677,6 +68701,30 @@
     "type": "harp",
     "awakening": null,
     "jpname": "マリッジシャークベル",
+    "bullets": null
+  },
+  "1040818600": {
+    "pageName": "Deepstrings of Mortality Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "water",
+    "character": null,
+    "skill1": {
+      "name": "Taboo Allowater's Vitiation",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill2": {
+      "name": "Taboo Allowater's Stamina",
+      "icon": "ws_skill_whole_k_2_1.png"
+    },
+    "skill3": {
+      "name": "Taboo Allowater's Guile",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "harp",
+    "awakening": null,
+    "jpname": "禁命の溟弦",
     "bullets": null
   },
   "1040900000": {
