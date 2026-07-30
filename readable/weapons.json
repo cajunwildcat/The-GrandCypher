@@ -11306,6 +11306,30 @@
     "jpname": "クフア・パホア",
     "bullets": null
   },
+  "1030109600": {
+    "pageName": "Beach Flag",
+    "maxUncap": 3,
+    "rarity": "SR",
+    "series": null,
+    "element": "earth",
+    "character": null,
+    "skill1": {
+      "name": "Willed Grounds",
+      "icon": "ws_skill_hp_a_3_2.png"
+    },
+    "skill2": {
+      "name": null,
+      "icon": null
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "dagger",
+    "awakening": null,
+    "jpname": "ビーチフラッグ",
+    "bullets": null
+  },
   "1030199000": {
     "pageName": "Archangel Knife",
     "maxUncap": 3,
@@ -60821,6 +60845,30 @@
     "type": "melee",
     "awakening": null,
     "jpname": "ネビュラ・ガントレット",
+    "bullets": null
+  },
+  "1040621900": {
+    "pageName": "Seaside Guardian",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "earth",
+    "character": null,
+    "skill1": {
+      "name": "Resilient Grounds",
+      "icon": "ws_skill_hp_a_3_3.png"
+    },
+    "skill2": {
+      "name": "Synchronized Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "melee",
+    "awakening": null,
+    "jpname": "シーサイド・ガーディアン",
     "bullets": null
   },
   "1040700000": {
