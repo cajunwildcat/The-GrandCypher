@@ -29732,7 +29732,7 @@
       "premium,collab"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Attack",
     "race": [
       "Other"
@@ -29762,7 +29762,7 @@
       "premium,collab"
     ],
     "flbDate": null,
-    "expeditionType": "???",
+    "expeditionType": null,
     "type": "Balanced",
     "race": [
       "Other"
