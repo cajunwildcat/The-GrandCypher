@@ -60871,6 +60871,30 @@
     "jpname": "シーサイド・ガーディアン",
     "bullets": null
   },
+  "1040622000": {
+    "pageName": "Sagemon",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "wind",
+    "character": "Gwynne (Yukata)",
+    "skill1": {
+      "name": "Whirlwind's Fandango",
+      "icon": "ws_skill_ranbu_4_2.png"
+    },
+    "skill2": {
+      "name": "Strike: Wind",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": "Whirlwind's Sapience",
+      "icon": "ws_skill_ta_heal_limit_4_2.png"
+    },
+    "type": "melee",
+    "awakening": null,
+    "jpname": "炸華紋",
+    "bullets": null
+  },
   "1040700000": {
     "pageName": "Eurytos Bow",
     "maxUncap": 4,
@@ -64449,6 +64473,30 @@
     "type": "bow",
     "awakening": null,
     "jpname": "エンゲージ・スノウピース",
+    "bullets": null
+  },
+  "1040715500": {
+    "pageName": "Float of Loving Bonds",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "water",
+    "character": "You (Summer)",
+    "skill1": {
+      "name": "Hoarfrost's Insignia",
+      "icon": "ws_skill_noroi_2.png"
+    },
+    "skill2": {
+      "name": "Water's Enmity",
+      "icon": "ws_skill_backwater_2_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "bow",
+    "awakening": null,
+    "jpname": "愛沿之浮袋",
     "bullets": null
   },
   "1040800000": {

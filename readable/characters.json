@@ -29664,7 +29664,7 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "Dark",
-    "series": "tie-in",
+    "series": "collab",
     "styleName": "Default",
     "styleId": 1,
     "jpname": "黒崎一護",
@@ -29693,7 +29693,7 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "Light",
-    "series": "tie-in",
+    "series": "collab",
     "styleName": "Default",
     "styleId": 1,
     "jpname": "四楓院夜一",
@@ -29722,7 +29722,7 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "Wind",
-    "series": "tie-in",
+    "series": "collab",
     "styleName": "Default",
     "styleId": 1,
     "jpname": "ネリエル・トゥ・オーデルシュヴァンク",
@@ -29752,7 +29752,7 @@
     "maxUncap": 4,
     "rarity": "SSR",
     "element": "Water",
-    "series": "tie-in",
+    "series": "collab",
     "styleName": "Default",
     "styleId": 1,
     "jpname": "日番谷冬獅郎＆松本乱菊",
@@ -29774,5 +29774,65 @@
     "artbouns": false,
     "artex": false,
     "charid": null
+  },
+  "3040670000": {
+    "pageName": "Gwynne (Yukata)",
+    "name": "Gwynne",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": "yukata",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "グウィン",
+    "releaseDate": "2026-07-31",
+    "gender": "f",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Attack",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Sagemon",
+    "weapon": [
+      "Sabre",
+      "Gun"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3207
+  },
+  "3040671000": {
+    "pageName": "You (Summer)",
+    "name": "You",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": "summer",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "ヨウ",
+    "releaseDate": "2026-07-31",
+    "gender": "f",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Attack",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Float of Loving Bonds",
+    "weapon": [
+      "Melee",
+      "Katana"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 2145
   }
 }
