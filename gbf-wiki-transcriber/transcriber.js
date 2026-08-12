@@ -81,7 +81,7 @@ function convertTeamSpread(input) {
     weapon = weapon.replace("|weapons={{WeaponGridSkills\n","");
     if (weapon.includes("weapons2=")) {
         weapon = weapon.replace(/\|summons=/,"");
-        weapon = weapon.replace(/}}\W\|weapons2=/, "|weapons2=")
+        weapon = weapon.replace(/}}\W\|weapons2=/, "|weapons2=");
     } else {
         weapon = weapon.replace(/}}\W?\|summons=/,"");
     }
@@ -105,7 +105,7 @@ function convertTeamSpread(input) {
         mainS,
         suppS,
         summon,
-        "\n|source=\n|comments=\n|rotation=\n}}"
+        "\n|source=\n|setup=\n|comments=\n|rotation=\n}}"
 ].join("");
 }
 
