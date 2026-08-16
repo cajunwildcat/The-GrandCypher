@@ -29834,5 +29834,63 @@
     "artbouns": false,
     "artex": false,
     "charid": 2145
+  },
+  "3040672000": {
+    "pageName": "Payila (Summer)",
+    "name": "Payila",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": "12generals,summer",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "ハイラ",
+    "releaseDate": "2026-08-16",
+    "gender": "f",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Special",
+    "race": [
+      "Draph"
+    ],
+    "recruitWeapon": "Fifth Bottle of the Flight",
+    "weapon": [
+      "Staff"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3237
+  },
+  "3040673000": {
+    "pageName": "Seox (Summer)",
+    "name": "Seox",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": "eternals,summer",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "シス",
+    "releaseDate": "2026-08-16",
+    "gender": "m",
+    "obtain": [
+      "premium,swimsuit"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Attack",
+    "race": [
+      "Erune"
+    ],
+    "recruitWeapon": "Hidden Fang of the Heavenly Howl",
+    "weapon": [
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 4006
   }
 }

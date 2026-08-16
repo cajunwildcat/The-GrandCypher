@@ -60895,6 +60895,54 @@
     "jpname": "炸華紋",
     "bullets": null
   },
+  "1040622100": {
+    "pageName": "Fifth Bottle of the Flight",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "light",
+    "character": "Payila (Summer)",
+    "skill1": {
+      "name": "Thunder's Stamina",
+      "icon": "ws_skill_whole_5_2.png"
+    },
+    "skill2": {
+      "name": "Golden Craft",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": "Light's Spearhead",
+      "icon": "ws_skill_ta_tec_5_1.png"
+    },
+    "type": "melee",
+    "awakening": null,
+    "jpname": null,
+    "bullets": null
+  },
+  "1040622200": {
+    "pageName": "Hidden Fang of the Heavenly Howl",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "earth",
+    "character": "Seox (Summer)",
+    "skill1": {
+      "name": "Mountain's Might",
+      "icon": "ws_skill_atk_3_2.png"
+    },
+    "skill2": {
+      "name": "Strike: Earth",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "melee",
+    "awakening": null,
+    "jpname": null,
+    "bullets": null
+  },
   "1040700000": {
     "pageName": "Eurytos Bow",
     "maxUncap": 4,

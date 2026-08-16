@@ -3832,5 +3832,14 @@
     "element": "light",
     "series": "collab",
     "jpname": "浦原喜助"
+  },
+  "2040461000": {
+    "pageName": "Ms. Tart Man (Summer)",
+    "name": "Ms. Tart Man",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "earth",
+    "series": "summer",
+    "jpname": "タル子マン"
   }
 }
