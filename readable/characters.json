@@ -16017,7 +16017,7 @@
   "3040203000": {
     "pageName": "Tanya (SSR)",
     "name": "Tanya",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Dark",
     "series": null,
@@ -16029,7 +16029,7 @@
     "obtain": [
       "classic3"
     ],
-    "flbDate": null,
+    "flbDate": "2026-08-25",
     "expeditionType": null,
     "type": "Special",
     "race": [
