@@ -50468,6 +50468,30 @@
     "jpname": "エバーワンダラー",
     "bullets": null
   },
+  "1040426500": {
+    "pageName": "Prodigious Tome of Crimson",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "light",
+    "character": null,
+    "skill1": {
+      "name": "Armed Shine",
+      "icon": "ws_skill_atk_a_5_3.png"
+    },
+    "skill2": {
+      "name": "Technical Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "staff",
+    "awakening": null,
+    "jpname": "天才魔術師の緋装書",
+    "bullets": null
+  },
   "1040500000": {
     "pageName": "Gastraphetes",
     "maxUncap": 4,
