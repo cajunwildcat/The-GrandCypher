@@ -2,7 +2,8 @@ name: Update Data Daily
 
 on:
   schedule:
-    - cron: '0 4 * * *' 
+    - cron: '0 14 * * *' 
+      timezone: "Asia/Tokyo"
   workflow_dispatch:
 
 jobs:
