@@ -3841,5 +3841,14 @@
     "element": "earth",
     "series": "summer",
     "jpname": "タル子マン"
+  },
+  "2040462000": {
+    "pageName": "Bastet",
+    "name": "Bastet",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "element": "light",
+    "series": "acies",
+    "jpname": "バステト"
   }
 }

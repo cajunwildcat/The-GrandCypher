@@ -29724,6 +29724,30 @@
     "jpname": "アームストロング家に代々伝わる名刀",
     "bullets": null
   },
+  "1040029700": {
+    "pageName": "Clarent",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": "Mordred",
+    "skill1": {
+      "name": "Oblivion's Enmity",
+      "icon": "ws_skill_backwater_6_3.png"
+    },
+    "skill2": {
+      "name": "Dark's Garrison",
+      "icon": "ws_skill_guard_6_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "sabre",
+    "awakening": null,
+    "jpname": "宝剣クラレント",
+    "bullets": null
+  },
   "1040100000": {
     "pageName": "Azoth",
     "maxUncap": 3,
@@ -44366,6 +44390,30 @@
     "type": "axe",
     "awakening": null,
     "jpname": "エキサイトバナーナ",
+    "bullets": null
+  },
+  "1040320400": {
+    "pageName": "Bodhicitta Hammer",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "grand",
+    "element": "light",
+    "character": "Bhadra",
+    "skill1": {
+      "name": "Zion's Onslaught",
+      "icon": "ws_skill_special_skill_concurrent_attack_5_3.png"
+    },
+    "skill2": {
+      "name": "Golden Convergence",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": "Golden Porthos",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "axe",
+    "awakening": null,
+    "jpname": "菩提心槌",
     "bullets": null
   },
   "1040400200": {
