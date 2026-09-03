@@ -68927,7 +68927,7 @@
     "element": "water",
     "character": null,
     "skill1": {
-      "name": "Taboo Allowater's Vitiation",
+      "name": "Allowater's Vitiation",
       "icon": "ws_skill_job_weapon.png"
     },
     "skill2": {
@@ -68935,7 +68935,7 @@
       "icon": "ws_skill_whole_k_2_1.png"
     },
     "skill3": {
-      "name": "Taboo Allowater's Guile",
+      "name": "Allowater's Guile",
       "icon": "ws_skill_job_weapon.png"
     },
     "type": "harp",
