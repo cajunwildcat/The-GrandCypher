@@ -68943,6 +68943,30 @@
     "jpname": "禁命の溟弦",
     "bullets": null
   },
+  "1040818700": {
+    "pageName": "Penguin Pals",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "wind",
+    "character": "Uruki (Wind)",
+    "skill1": {
+      "name": "Wind's Auspice",
+      "icon": "ws_skill_hp_heal_limit_4_1.png"
+    },
+    "skill2": {
+      "name": "Whirlwind's Progression",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "harp",
+    "awakening": null,
+    "jpname": null,
+    "bullets": null
+  },
   "1040900000": {
     "pageName": "Asura",
     "maxUncap": 4,
@@ -73315,6 +73339,30 @@
     "type": "katana",
     "awakening": null,
     "jpname": "氷輪丸",
+    "bullets": null
+  },
+  "1040919000": {
+    "pageName": "Crimson Lordkeeper",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": null,
+    "element": "fire",
+    "character": "Cocopio",
+    "skill1": {
+      "name": "Inferno's Healing",
+      "icon": "ws_skill_heal_limit_1_3.png"
+    },
+    "skill2": {
+      "name": "Hellfire's Majesty",
+      "icon": "ws_skill_god_1_2.png"
+    },
+    "skill3": {
+      "name": "Fire's Aegis",
+      "icon": "ws_skill_hp_1_1.png"
+    },
+    "type": "katana",
+    "awakening": null,
+    "jpname": null,
     "bullets": null
   },
   "1040002000_note": {

@@ -17237,7 +17237,7 @@
   "3040244000": {
     "pageName": "Shitori",
     "name": "Shitori",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Light",
     "series": null,
@@ -17249,7 +17249,7 @@
     "obtain": [
       "classic3"
     ],
-    "flbDate": null,
+    "flbDate": "2026-09-15",
     "expeditionType": null,
     "type": "Balanced",
     "race": [
@@ -29950,5 +29950,64 @@
     "artbouns": false,
     "artex": false,
     "charid": 3322
+  },
+  "3040676000": {
+    "pageName": "Uruki (Wind)",
+    "name": "Uruki",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": "4saints",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "ウルキ",
+    "releaseDate": "2026-09-16",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Harvin"
+    ],
+    "recruitWeapon": "Penguin Pals",
+    "weapon": [
+      "Sabre"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3249
+  },
+  "3040677000": {
+    "pageName": "Cocopio",
+    "name": "Cocopio",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": null,
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "ココピオ",
+    "releaseDate": "2026-09-16",
+    "gender": "m",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Defense",
+    "race": [
+      "Grokkle"
+    ],
+    "recruitWeapon": "Crimson Lordkeeper",
+    "weapon": [
+      "Katana",
+      "Dagger"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
   }
 }
