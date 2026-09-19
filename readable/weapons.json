@@ -29748,6 +29748,30 @@
     "jpname": "宝剣クラレント",
     "bullets": null
   },
+  "1040029800": {
+    "pageName": "Karmasword of Prosperity Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "fire",
+    "character": null,
+    "skill1": {
+      "name": "Doomfire's Vitiation",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill2": {
+      "name": "Taboo Doomfire's Enmity",
+      "icon": "ws_skill_backwater_k_1_1.png"
+    },
+    "skill3": {
+      "name": "Doomfire's Execration",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "sabre",
+    "awakening": null,
+    "jpname": "禁栄の業剣",
+    "bullets": null
+  },
   "1040100000": {
     "pageName": "Azoth",
     "maxUncap": 3,
@@ -34772,6 +34796,30 @@
     "type": "dagger",
     "awakening": null,
     "jpname": "ミスチェ・コクレアーレ",
+    "bullets": null
+  },
+  "1040123100": {
+    "pageName": "Fienddagger of Prosperity Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "fire",
+    "character": null,
+    "skill1": {
+      "name": "Odious Exalto Ardendi",
+      "icon": "ws_skill_evil_1.png"
+    },
+    "skill2": {
+      "name": "Taboo Doomfire's Puncturing",
+      "icon": "ws_skill_penetrate_defense_k_1_1.png"
+    },
+    "skill3": {
+      "name": "Taboo Doomfire's Pact III",
+      "icon": "ws_skill_secret_k_1_3.png"
+    },
+    "type": "dagger",
+    "awakening": null,
+    "jpname": "禁栄の魔刃",
     "bullets": null
   },
   "1040200000": {
