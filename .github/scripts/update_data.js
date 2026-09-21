@@ -3,6 +3,7 @@ import { writeFileSync, existsSync, readFileSync } from 'fs';
 import https from 'follow-redirects/https.js';
 import { config } from 'dotenv';
 import sharp from 'sharp';
+import { gzipSync } from 'zlib';
 
 // Load environment variables from .env file (only in local development)
 if (process.env.NODE_ENV !== 'production') {
@@ -280,6 +281,7 @@ async function processData() {
         })
     }
     writeFileSync("bookmarklet-mins.json", JSON.stringify(mins, null, 0));
+    writeFileSync("bookmarklet-mins.gz", gzipSync(JSON.stringify(mins)));
 }
 
 function addImageDownload(itemID, itemType, options = {}) {
