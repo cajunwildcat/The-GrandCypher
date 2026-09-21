@@ -26,17 +26,14 @@ const urls = {
 };
 
 const files = {
-    characters: [
-        { query: "characters", file: "characters.json" },
-    ],
-    summons: [
-        { query: "summons", file: "summons.json" },
-    ],
-    weapons: [
-        { query: "weapons", file: "weapons.json" },
-    ],
     abilities: [
         { query: "abilities", file: "abilities.json" },
+    ],
+    bullets: [
+        { query: "bullets", file: "bullets.json" }
+    ],
+    characters: [
+        { query: "characters", file: "characters.json" },
     ],
     classes: [
         { query: "classes", file: "classes.json" }
@@ -47,18 +44,31 @@ const files = {
     shields: [
         { query: "shields", file: "shields.json" }
     ],
-    bullets: [
-        { query: "bullets", file: "bullets.json" }
+    summons: [
+        { query: "summons", file: "summons.json" },
+    ],
+    weapons: [
+        { query: "weapons", file: "weapons.json" },
     ],
 };
 
-const mins = {
+const bookmarkMins = {
     characters: {},
     summons: {},
     weapons: {},
     abilities: {},
     minos: {},
     shields: {},
+};
+const gridMakerMins = {
+    abilities: {},
+    bullets: {},
+    characters: {},
+    classes: {},
+    minos: {},
+    shields: {},
+    summons: {},
+    weapons: {},
 };
 
 const jqQueries = {
@@ -69,7 +79,7 @@ const jqQueries = {
             addImageDownload(item.id + "_03", "summon");
             addImageDownload(item.id + "_04", "summon");
         }
-        mins["summons"][item.id] = { pageName: item.pageName.replace(/&#039;/g, "'"), name: item.name.replace(/&#039;/g, "'"), maxUncap: item.maxUncap, jpname: item.jpname };
+        bookmarkMins["summons"][item.id] = { pageName: item.pageName.replace(/&#039;/g, "'"), name: item.name.replace(/&#039;/g, "'"), maxUncap: item.maxUncap, jpname: item.jpname };
 
         return {
             [item.id]: {
@@ -90,7 +100,7 @@ const jqQueries = {
         if (item.styleId > 1) addImageDownload(item.id + `_01_st${item.styleId}`, "character", { id: `${correctedId}_01` });
         if (item.maxUncap >= 5) addImageDownload(item.id + "_03", "character");
         if (item.maxUncap >= 6) addImageDownload(item.id + "_04", "character");
-        mins["characters"][correctedId] = item.pageName.replace(/&#039;/g, "'");
+        bookmarkMins["characters"][correctedId] = item.pageName.replace(/&#039;/g, "'");
 
         return {
             [correctedId]: {
@@ -130,7 +140,7 @@ const jqQueries = {
         if (item["s1Icon"]) addImageDownload(item["s1Icon"], "weapon skill");
         if (item["s2Icon"]) addImageDownload(item["s2Icon"], "weapon skill");
         if (item["s3Icon"]) addImageDownload(item["s3Icon"], "weapon skill");
-        mins["weapons"][item.id] = item.maxUncap;
+        bookmarkMins["weapons"][item.id] = item.maxUncap;
 
         return {
             [item.id]: {
@@ -164,7 +174,7 @@ const jqQueries = {
 
     abilities: data => data.map(item => {
         addImageDownload(item.icon.split(",")[0].replaceAll(" ", "_").replaceAll(/&#039;/g, "'"), "ability", { id: item.id });
-        mins["abilities"][item.id] = { name: item.name.replace(/&#039;/g, "'"), jpname: item.jpname };
+        bookmarkMins["abilities"][item.id] = { name: item.name.replace(/&#039;/g, "'"), jpname: item.jpname };
 
         return {
             [item.id]: {
@@ -190,7 +200,7 @@ const jqQueries = {
 
     minos: data => data.map(item => {
         addImageDownload(item.id, "gear", { type: "familiar", saveType: "minos" });
-        mins["minos"][item.id] = { name: item.name.replace(/&#039;/g, "'")};
+        bookmarkMins["minos"][item.id] = { name: item.name.replace(/&#039;/g, "'")};
 
         return {
             [item.id]: {
@@ -202,7 +212,7 @@ const jqQueries = {
 
     shields: data => data.map(item => {
         addImageDownload(item.id, "gear", { type: "shield", saveType: "shields" });
-        mins["shields"][item.id] = { name: item.name.replace(/&#039;/g, "'")};
+        bookmarkMins["shields"][item.id] = { name: item.name.replace(/&#039;/g, "'")};
 
         return {
             [item.id]: {
@@ -275,13 +285,13 @@ async function processData() {
         let data = await fetchData(url);
         files[key].forEach(f => {
             let query = jqQueries[f.query](data);
-            writeFileSync(f.file, JSON.stringify(query, null, 0));
+            gridMakerMins[key] = query;
             writeFileSync(`readable/${f.file}`, JSON.stringify(query, null, 2));
             console.log(`Saved ${f.file}.`);
         })
     }
-    writeFileSync("bookmarklet-mins.json", JSON.stringify(mins, null, 0));
-    writeFileSync("bookmarklet-mins.gz", gzipSync(JSON.stringify(mins)));
+    writeFileSync("bookmarklet-mins.json", JSON.stringify(bookmarkMins, null, 0));
+    writeFileSync("grid-maker-mins.json", JSON.stringify(gridMakerMins, null, 0));
 }
 
 function addImageDownload(itemID, itemType, options = {}) {
