@@ -56,6 +56,8 @@ const mins = {
     summons: {},
     weapons: {},
     abilities: {},
+    minos: {},
+    shields: {},
 };
 
 const jqQueries = {
@@ -187,6 +189,7 @@ const jqQueries = {
 
     minos: data => data.map(item => {
         addImageDownload(item.id, "gear", { type: "familiar", saveType: "minos" });
+        mins["minos"][item.id] = { name: item.name.replace(/&#039;/g, "'")};
 
         return {
             [item.id]: {
@@ -198,6 +201,7 @@ const jqQueries = {
 
     shields: data => data.map(item => {
         addImageDownload(item.id, "gear", { type: "shield", saveType: "shields" });
+        mins["shields"][item.id] = { name: item.name.replace(/&#039;/g, "'")};
 
         return {
             [item.id]: {
