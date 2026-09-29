@@ -56141,6 +56141,37 @@
       "aetherial"
     ]
   },
+  "1040519100": {
+    "pageName": "Anti-Asteroid Beam Cannon",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "water",
+    "character": null,
+    "skill1": {
+      "name": "Armed Flood",
+      "icon": "ws_skill_atk_a_2_3.png"
+    },
+    "skill2": {
+      "name": "Synchronized Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "gun",
+    "awakening": null,
+    "jpname": "小惑星破砕ビームキャノン",
+    "bullets": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
   "1040600000": {
     "pageName": "Lion Khan Claw",
     "maxUncap": 4,
