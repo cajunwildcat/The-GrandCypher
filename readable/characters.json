@@ -30009,5 +30009,63 @@
     "artbouns": false,
     "artex": false,
     "charid": 3323
+  },
+  "3040678000": {
+    "pageName": "Vaseraga (Grand)",
+    "name": "Vaseraga",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Earth",
+    "series": "grand",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "バザラガ",
+    "releaseDate": "2026-09-30",
+    "gender": "m",
+    "obtain": [
+      "premium,grand,gala"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Draph"
+    ],
+    "recruitWeapon": "Painkiller",
+    "weapon": [
+      "Axe"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3025
+  },
+  "3040679000": {
+    "pageName": "Alba",
+    "name": "Alba",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": null,
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "アルバ",
+    "releaseDate": "2026-09-30",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": null,
+    "type": "Attack",
+    "race": [
+      "Draph"
+    ],
+    "recruitWeapon": "Silver Vine",
+    "weapon": [
+      "Spear"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": null
   }
 }
