@@ -56212,12 +56212,12 @@
     "awakening": null,
     "jpname": "小惑星破砕ビームキャノン",
     "bullets": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
+      "aetherial",
+      "aetherial",
+      "aetherial",
+      "rifle",
+      "rifle",
+      "rifle"
     ]
   },
   "1040600000": {
