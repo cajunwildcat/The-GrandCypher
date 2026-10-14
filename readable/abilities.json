@@ -269,6 +269,12 @@
     "ix": "ex1",
     "icon": "Ability Steroid.png"
   },
+  "170501_bw_ex1": {
+    "name": "Ruthless Killstreak",
+    "jpname": "ルースレス・キルストリーク",
+    "ix": "ex1",
+    "icon": "Ability_m_2971_1.png"
+  },
   "180201_mc_ex1": {
     "name": "Sheep Song",
     "jpname": "ひつじのうた",
@@ -611,6 +617,12 @@
     "ix": "ex2",
     "icon": "Ability_m_1923_3.png"
   },
+  "170501_bw_ex2": {
+    "name": "Singular Shot",
+    "jpname": "シンギュラー・ショット",
+    "ix": "ex2",
+    "icon": "Ability_m_2972_4.png"
+  },
   "110201_sw_ex2": {
     "name": "Testudo",
     "jpname": "テストゥド",
@@ -784,6 +796,12 @@
     "jpname": "マントゥ・デュ・ルワ",
     "ix": "ex3",
     "icon": "Ability_m_2113_3.png"
+  },
+  "170501_bw_ex3": {
+    "name": "Limitless Focus",
+    "jpname": "オーバーリミット・フォーカス",
+    "ix": "ex3",
+    "icon": "Ability_m_2973_3.png"
   },
   "120401_wa_ex3": {
     "name": "Megali Fotia",
@@ -1354,6 +1372,12 @@
     "jpname": "ポーションリファイン",
     "ix": "s1",
     "icon": "Ability Potion Refinement.png"
+  },
+  "170501_bw_s1": {
+    "name": "Primal Arrow",
+    "jpname": "プライマルアロー",
+    "ix": "s1",
+    "icon": "Ability_m_2970_4.png"
   },
   "170001_bw_s1": {
     "name": "Quick Step",
