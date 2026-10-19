@@ -30067,5 +30067,92 @@
     "artbouns": false,
     "artex": false,
     "charid": null
+  },
+  "3040680000": {
+    "pageName": "Ewiyar (Halloween)",
+    "name": "Ewiyar",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": "halloween",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "イーウィヤ",
+    "releaseDate": "2026-10-19",
+    "gender": "o",
+    "obtain": [
+      "premium,halloween"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Special",
+    "race": [
+      "Other"
+    ],
+    "recruitWeapon": "Ewiyar-Pocus",
+    "weapon": [
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3193
+  },
+  "3040681000": {
+    "pageName": "Azusa (Halloween)",
+    "name": "Azusa",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": "halloween",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "アズサ",
+    "releaseDate": "2026-10-19",
+    "gender": "f",
+    "obtain": [
+      "premium,halloween"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Draph"
+    ],
+    "recruitWeapon": "Kumogirimaru",
+    "weapon": [
+      "Katana"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3185
+  },
+  "3040682000": {
+    "pageName": "Randall (Halloween)",
+    "name": "Randall",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Light",
+    "series": "halloween",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "アズサ",
+    "releaseDate": "2026-10-19",
+    "gender": "m",
+    "obtain": [
+      "premium,halloween"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Fugitive's Claw",
+    "weapon": [
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 1059
   }
 }
