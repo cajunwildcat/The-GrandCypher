@@ -61166,6 +61166,30 @@
     "jpname": "フュージティヴ・クロウ",
     "bullets": null
   },
+  "1040622500": {
+    "pageName": "Fiendclaw of Sanctity Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "dark",
+    "character": null,
+    "skill1": {
+      "name": "Odious Exalto Caliginis",
+      "icon": "ws_skill_evil_6.png"
+    },
+    "skill2": {
+      "name": "Taboo Netherfell's Puncturing",
+      "icon": "ws_skill_penetrate_defense_k_6_1.png"
+    },
+    "skill3": {
+      "name": "Taboo Netherfell's Pact III",
+      "icon": "ws_skill_secret_k_6_3.png"
+    },
+    "type": "melee",
+    "awakening": null,
+    "jpname": "禁聖の魔腕",
+    "bullets": null
+  },
   "1040700000": {
     "pageName": "Eurytos Bow",
     "maxUncap": 4,
@@ -64768,6 +64792,30 @@
     "type": "bow",
     "awakening": null,
     "jpname": "愛沿之浮袋",
+    "bullets": null
+  },
+  "1040715600": {
+    "pageName": "Derangebow of Sanctity Verboten",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "odious",
+    "element": "dark",
+    "character": null,
+    "skill1": {
+      "name": "Netherfell's Vitiation",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill2": {
+      "name": "Taboo Netherfell's Sentence II",
+      "icon": "ws_skill_deadly_k_6_2.png"
+    },
+    "skill3": {
+      "name": "Netherfell's Execration",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "type": "bow",
+    "awakening": null,
+    "jpname": "禁聖の狂弓",
     "bullets": null
   },
   "1040800000": {
