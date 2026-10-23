@@ -15333,7 +15333,7 @@
   "3040180000": {
     "pageName": "Tsubasa",
     "name": "Tsubasa",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Fire",
     "series": null,
@@ -15345,7 +15345,7 @@
     "obtain": [
       "classic3"
     ],
-    "flbDate": null,
+    "flbDate": "2026-10-23",
     "expeditionType": null,
     "type": "Attack",
     "race": [
