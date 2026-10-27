@@ -1,3 +1,4 @@
+Use the tool: https://cajunwildcat.github.io/The-GrandCypher/skill-cap/
 ## Modes
  - "Verify" works like the old damage calc sheet. It just runs the formula on the numbers you provide and if you provide observed inputs it will highlight matching ones
  - "Find" will use all of the inputs except for DMG Cap (which should be disabled on the UI) to find the DMG Cap of coresponding to the values provided to the observed inputs.
