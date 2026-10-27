@@ -247,7 +247,6 @@ function setupAddModRowSelect() {
 
 function createModRow(e) {
     addModsTableRow(e.target.value);
-    let inp = document.querySelector(`.mod-row[id="${e.target.value}"] input`);
     setupAddModRowSelect();
 }
 
@@ -304,7 +303,7 @@ function makeModList() {
     }
     addMod(MODS.def_down, getInputVal("enemy-def-down-input"));
     addMod(MODS.def_up, getInputVal("enemy-def-up-input"));
-    if (getCheckBox("def-down-sp-check")) addMod(MODS.sp_def_down);
+    if (getCheckBox("def-down-sp-check")) addMod(MODS.sp_def_down, 10);
     if (getsElemATK) {
         addMod(MODS.crew_ship, getInputVal("crew-ship-input"));
         addMod(MODS.crew_reactor, getInputVal("crew-reactor-input"));
