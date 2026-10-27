@@ -62,8 +62,8 @@ function correctMod(m, neg = false) {
     return (m + 100) / 100;
 }
 
-function correctDEF(modList, def) {
-    return def * (1 + (Math.max(-50, modList.getMod(MODS.def_up) - modList.getMod(MODS.def_down)) - modList.getMod(MODS.sp_def_down)) / 100) * (1 - (modList.getMod(MODS.def_ignore) / 100));
+function correctDEF(modList) {
+    return modList.getMod(MODS.base_def) * (1 + (Math.max(-50, modList.getMod(MODS.def_up) - modList.getMod(MODS.def_down)) - modList.getMod(MODS.sp_def_down)) / 100) * (1 - (modList.getMod(MODS.def_ignore) / 100));
 }
 
 const mainModNames = [
@@ -78,8 +78,8 @@ const mainModNames = [
     MODS.passive_enmity, MODS.sex_atk, MODS.debuff_atk, MODS.moon_prog,
     MODS.bounty_atk
 ];
-function calcRaw(dmgType, modList, baseATK, dmgInstanceMod, variance, baseEnemyDEF) {
-    let correctedATK = correctBaseATK(baseATK, 100, modList.getMod(MODS.crew_ship), modList.getMod(MODS.crew_reactor));
+function calcRaw(dmgType, modList, variance) {
+    let correctedATK = correctBaseATK(modList.getMod(MODS.base_atk), 100, modList.getMod(MODS.crew_ship), modList.getMod(MODS.crew_reactor));
 
     let raw = mainModNames.map(mm => {
         if ((mm == MODS.weapon_ca_dmg || mm == MODS.passive_ca_dmg) && dmgType != DMGTYPES.CA) return 1;
@@ -90,6 +90,7 @@ function calcRaw(dmgType, modList, baseATK, dmgInstanceMod, variance, baseEnemyD
 
     raw = Math.max(-0.5, raw);
     raw *= correctedATK;
+    let dmgInstanceMod = modList.getMod(MODS.dmg_mod);
     if (dmgType == DMGTYPES.SKILL || dmgType == DMGTYPES.SKILLSUMM || dmgType == DMGTYPES.FIXEDSUMM) {
         dmgInstanceMod += modList.getMod(MODS.skill_dmg) - modList.getMod(MODS.bf_skill_dmg);
     }
@@ -101,7 +102,7 @@ function calcRaw(dmgType, modList, baseATK, dmgInstanceMod, variance, baseEnemyD
         raw *= correctMod(modList.getMod(MODS.bf_ca_dmg), true);
     }
     raw *= variance;
-    raw /= correctDEF(modList, baseEnemyDEF);
+    raw /= correctDEF(modList);
     if (dmgType == DMGTYPES.CA) {
         raw += modList.getMod(MODS.fixed_ca, 2000);
     }
@@ -125,14 +126,15 @@ function applyCap(capPreset, incomingDMG) {
     return tiers.reduce(sumArr, 0);
 }
 
-function calcDamage(dmgType, capPreset, modList, baseATK, dmgInstanceMod, baseEnemyDEF, hardCap) {
+function calcDamage(dmgType, capPreset, modList, hardCap) {
     modList.getMod = (l, d) => getMod(modList, l, d);
+    dmgInstanceMod = modList.getMod(MODS.dmg_mod);
     modList = collapseBoosts(modList, dmgType);
     capPreset = boostCap(capPreset, modList.getMod(MODS.dmg_cap) / 100, correctMod(modList.getMod(MODS.dmg_cap_pen)));
     if (dmgType == DMGTYPES.CA) hardCap = boostCap(hardCap, modList.getMod(MODS.sp_ca_dmg_cap), 1);
 
     rngs = makeSeqArray(101, (i) => (i - 50) / 1000 + 1);
-    let raws = rngs.map(v => calcRaw(dmgType, modList, baseATK, dmgInstanceMod, v, baseEnemyDEF));
+    let raws = rngs.map(v => calcRaw(dmgType, modList, v));
     let dmgs = raws.map(r => applyCap(capPreset, r));
 
     const applyAmp = (dmgs) => dmgs.map(d => Math.ceil(d * correctMod(modList.getMod(MODS.dmg_amp))));
@@ -173,19 +175,32 @@ function calcDamage(dmgType, capPreset, modList, baseATK, dmgInstanceMod, baseEn
     return dmgs;
 }
 
-function calcCap(dmgType, modList, baseATK, dmgInstanceMod, enemyDEF, hardCap, inputs) {
+function calcCap(dmgType, modList, hardCap, inputs) {
     let matches = [];
+    let mlc = structuredClone(modList);
+    mlc.getMod = (l, d) => getMod(mlc, l, d);
+    mlc = collapseBoosts(mlc, dmgType);
+    //filter out caps we never want to check
+    let caps = Object.keys(DMGCAPS).filter(key => !(key.includes("Hard") || key.includes("Mjolnir") || key.includes("NA") || key == "Assassin"));
+    let raw = calcRaw(dmgType, mlc, 1);
+    //filter out caps that raw doesn't meet first threshold or the simple soft cap is less than 40% of 1.0 raw
+    caps = caps.filter(c => {
+        let boostedCap = boostCap(DMGCAPS[c], mlc.getMod(MODS.dmg_cap) / 100, correctMod(mlc.getMod(MODS.dmg_cap_pen)));
+        if (boostedCap.thresholds[0] > raw) return false;
+        if (simpleSoftCap(boostedCap) / raw < 0.4) return false;
+        return true;
+    }).map(c => DMGCAPS[c]);
+
     inputs = [...new Set(inputs)];
-    Object.keys(DMGCAPS).forEach(key => {
-        if (key.includes("Hard") || key.includes("Mjolnir")) return;
-        let dmgs = calcDamage(dmgType, DMGCAPS[key], modList, baseATK, dmgInstanceMod, enemyDEF, hardCap);
+    caps.forEach(cap => {
+        let dmgs = calcDamage(dmgType, cap, modList, hardCap);
         let match = 0;
         inputs.forEach(d => {
             if (dmgs.includes(d)) match++;
         });
-        matches.push([key, match, dmgs]);
+        if (match > 0) matches.push({ id: cap.id, match, dmgs });
     });
-    return matches.filter(p => p[1] > 0).sort((a, b) => b[1] - a[1]);
+    return [matches.filter(p => p.match > 0).sort((a, b) => b.match - a.match), caps.length];
 }
 
 function simpleSoftCap(cap) {

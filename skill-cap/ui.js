@@ -95,7 +95,7 @@ function highlightResultTable(dmgNumList) {
     let matchCount = document.querySelector("#result-match-count");
     if (dmgNumList.length == 0) matchCount.textContent = "There are no inputs";
     else {
-        matchCount.innerHTML = `Exact Matches: ${g} | OBO Matches: ${y} | Failed Matches: ${dmgNumList.length - (g + y)}`;
+        matchCount.innerHTML = `Exact: ${g} | OBO: ${y} | Failed: ${dmgNumList.length - (g + y)}`;
     }
 }
 
@@ -123,27 +123,26 @@ function calcDamageUI() {
         case "DEF Down": subResults = true; subModList[MODS.def_down] = getInputVal("sub-table-def-input") + (subModList[MODS.def_down] ?? 0); break;
         case "Custom": subResults = true; subModList = modList; modList = customModList; break;
     }
-    let baseResults = calcDamage(getInputVal("dmg-type-select"), DMGCAPS[document.querySelector("#dmg-cap-select").selectedOptions[0].dataset.cap], 
-        modList, getInputVal("base-atk-input"), getInputVal("dmg-mod-input"), getInputVal("enemy-def-input"), DMGCAPS[getInputVal("hard-cap-select")]);
-    if (subResults) subResults = calcDamage(getInputVal("dmg-type-select"), DMGCAPS[document.querySelector("#dmg-cap-select").selectedOptions[0].dataset.cap], 
-        subModList, getInputVal("base-atk-input"), getInputVal("dmg-mod-input"), getInputVal("enemy-def-input"), DMGCAPS[getInputVal("hard-cap-select")]);
+    let selectedCap = DMGCAPS[document.querySelector("#dmg-cap-select").selectedOptions[0].dataset.cap];
+    let baseResults = calcDamage(getInputVal("dmg-type-select"), selectedCap, modList, DMGCAPS[getInputVal("hard-cap-select")]);
+    if (subResults) subResults = calcDamage(getInputVal("dmg-type-select"), selectedCap, subModList, DMGCAPS[getInputVal("hard-cap-select")]);
     fillResultTable(baseResults, subResults);
 }
 
 function findDMGCap(input) {
-    let results = calcCap(getInputVal("dmg-type-select"), makeModList(), getInputVal("base-atk-input"), 
-        getInputVal("dmg-mod-input"), getInputVal("enemy-def-input"), DMGCAPS[getInputVal("hard-cap-select")], input);
+    let [results, checkCount] = calcCap(getInputVal("dmg-type-select"), makeModList(), DMGCAPS[getInputVal("hard-cap-select")], input);
     if (results.length == 1) {
-        let cap = results[0][0];
+        let cap = results[0].id;
         console.log(`Cap found: ${formatNum(simpleSoftCap(DMGCAPS[cap]))} (${cap})`);
-        fillResultTable(results[0][2]);
+        fillResultTable(results[0].dmgs);
+        document.querySelector("#result-match-count").textContent += ` | Checked: ${checkCount} Caps`;
         let capSel = document.querySelector("#dmg-cap-select");
         capSel.value = [...capSel.childNodes].find(n => n.dataset.cap == cap).textContent;
         $(".chosen-select").trigger("chosen:updated");
     }
     else if (results.length == 0) {
         fillResultTable(new Array(101).fill(0));
-        document.querySelector("#dmg-cap-select").value = 0;
+        document.querySelector("#dmg-cap-select").value = "";
     }
 }
 
@@ -308,8 +307,11 @@ function makeModList() {
         addMod(MODS.crew_ship, getInputVal("crew-ship-input"));
         addMod(MODS.crew_reactor, getInputVal("crew-reactor-input"));
     }
-    addMod(MODS.elem_res, getInputVal("elem-res-input"))
-    addMod(MODS.echo_mod, getInputVal("echo-mod-input"))
+    addMod(MODS.elem_res, getInputVal("elem-res-input"));
+    addMod(MODS.echo_mod, getInputVal("echo-mod-input"));
+    addMod(MODS.base_atk, getInputVal("base-atk-input"));
+    addMod(MODS.base_def, getInputVal("enemy-def-input"));
+    addMod(MODS.dmg_mod, getInputVal("dmg-mod-input"));
     return modList;
 }
 
@@ -320,11 +322,10 @@ window.onload = (e) => {
     setupModsTableRows();
     document.querySelector("#mode-select").oninput = switchMode;
     switchMode();
-    document.querySelector("#dmg-cap-select").value = "135,000 (1000003)";
     
     [...document.querySelectorAll("#amp-wonder-input, #crew-ship-input, #crew-reactor-input")].forEach(inp => {
         let id = inp.id.replace("-input","");
-        inp.value = getSetLocalStor(id);
+        inp.value = getSetLocalStor(id, null, 10);
         inp.addEventListener("input", (e) => getSetLocalStor(id, e.target.value));
     });
 

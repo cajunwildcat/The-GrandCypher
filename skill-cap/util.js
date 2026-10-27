@@ -1,6 +1,6 @@
-function getSetLocalStor(key, value = null) {
+function getSetLocalStor(key, value = null, def = null) {
     if (value) localStorage.setItem(key, value);
-    return localStorage.getItem(key)
+    return localStorage.getItem(key) ?? def;
 }
 
 function sumArr(acc, cur) {

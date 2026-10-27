@@ -99,4 +99,7 @@ const MODS = {
     dmg_mit: "dmg mit",
     fixed_ca: "fixed ca",
     echo_mod: "echo mod",
+    base_atk: "base atk",
+    dmg_mod: "dmg mod",
+    base_def: "base def",
 }
