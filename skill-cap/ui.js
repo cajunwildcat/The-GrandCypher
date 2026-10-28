@@ -394,6 +394,7 @@ function setupAddModRowSelect() {
     allowedMods.forEach(mod => {
         let opt = document.createElement("option");
         opt.textContent = mod;
+        if(mod.includes("dmg cap") || mod.includes("dmg amp")) opt.dataset.search = mod.replace("dmg ","");
         sel.appendChild(opt);
     });
     $(sel).trigger("chosen:updated");
@@ -509,4 +510,5 @@ window.onload = (e) => {
     });
     inputUpdated();
     $(".chosen-select").chosen({ width: "175px" });
+    document.querySelectorAll(".chosen-select").forEach(enableChosenAliasSearch);
 }
