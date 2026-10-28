@@ -1,5 +1,6 @@
 let MODE = "find";
 let allowedMods = new Set([MODS.normal_might, MODS.omega_might, MODS.od_might, MODS.ex_might, MODS.ex_might_sp, MODS.normal_stamina, MODS.omega_stamina, MODS.od_stamina, MODS.normal_enmity, MODS.omega_enmity, MODS.od_enmity, MODS.elem_atk, MODS.elem_atk_prog, MODS.counter_dmg, MODS.critical, MODS.perpetuity, MODS.strength, MODS.jammed, MODS.od_atk, MODS.break_atk, MODS.hype, MODS.sleep, MODS.stone, MODS.assassin, MODS.weapon_ca_dmg, MODS.passive_ca_dmg, MODS.na_dmg, MODS.stackable_atk_up, MODS.stackable_atk_up_sp, MODS.attack_down, MODS.stackable_atk_down, MODS.global_field, MODS.local_field, MODS.primarch_summon, MODS.passive_enmity, MODS.sex_atk, MODS.debuff_atk, MODS.moon_prog, MODS.bounty_atk, MODS.dmg_cap_pen, MODS.crit_dmg, MODS.bf_atk, MODS.bf_ca_dmg, MODS.bf_skill_dmg, MODS.skill_dmg, MODS.cb_dmg, MODS.def_ignore, MODS.dmg_cap, MODS.dmg_cap_sp, MODS.na_dmg_cap, MODS.skill_dmg_cap, MODS.skill_dmg_cap_sp, MODS.ca_dmg_cap, MODS.sp_ca_dmg_cap, MODS.cb_dmg_cap, MODS.fc_dmg_cap, MODS.dmg_amp, MODS.omega_dmg_amp, MODS.od_dmg_amp, MODS.elem_dmg_amp, MODS.null_amp, MODS.na_dmg_amp, MODS.na_dmg_amp_sp, MODS.skill_dmg_amp, MODS.skill_dmg_amp_sp, MODS.ca_dmg_amp, MODS.ca_dmg_amp_sp, MODS.cb_dmg_amp, MODS.fc_dmg_amp, MODS.dmg_supp, MODS.na_dmg_supp, MODS.na_dmg_supp_sp, MODS.skill_dmg_supp, MODS.skill_dmg_supp_sp, MODS.ca_dmg_supp, MODS.ca_dmg_supp_sp, MODS.wide_open_1, MODS.wide_open_2, MODS.wide_open_3, MODS.wide_open_4, MODS.wide_open_5, MODS.wide_open_6]);
+const modOrder = Object.values(MODS);
 let customModList = {};
 let EMPwarning = JSON.parse(getSetLocalStor("emp-warning", null, "true"));
 function toggleEMPWarning() {
@@ -32,7 +33,6 @@ function setupSaveTeamControls() {
         let opt = document.createElement("option");
         opt.textContent = teamName;
         teamSel.appendChild(opt);
-        saveButton.disabled = false;
     }
     function resetSel() {
         teamSel.value = "";
@@ -48,6 +48,7 @@ function setupSaveTeamControls() {
         savedTeams[teamName] = newTeam;
         getSetLocalStor("saved-teams", JSON.stringify(savedTeams));
         saveButton.textContent = "Saved";
+        saveButton.disabled = true;
     }
 
     let savedTeams = JSON.parse(getSetLocalStor("saved-teams"));
@@ -70,7 +71,6 @@ function setupSaveTeamControls() {
         }
         Object.keys(savedTeams[team]).forEach(m => addModsTableRow(m, savedTeams[team][m]));
         delButton.disabled = false;
-        saveButton.disabled = false;
         setupAddModRowSelect();
         inputUpdated();
     }
@@ -314,7 +314,10 @@ function addModsTableRow(modID, gridValue = []) {
     allowedMods.delete(modID);
     let table = document.querySelector("#mods-input-table");
     let cols = table.querySelector(".header-row").children.length - 1;
-    let row = table.insertRow(table.rows.length);
+    let modIndex = modOrder.indexOf(modID);
+    let rowIndex = [...table.rows].findIndex(existingRow =>
+        existingRow.classList.contains("mod-row") && modOrder.indexOf(existingRow.id) > modIndex);
+    let row = table.insertRow(rowIndex < 0 ? table.rows.length : rowIndex);
     row.id = modID;
     row.classList.add("mod-row")
     let labelCell = document.createElement("td");
@@ -337,7 +340,10 @@ function addModsTableRow(modID, gridValue = []) {
         cell.appendChild(input);
         input.oninput = () => {
             inputUpdated();
-            document.querySelector("#save-saved-team-button").textContent = "Save";
+            let team = document.querySelector("#saved-team-select").value;
+            let saveButton = document.querySelector("#save-saved-team-button");
+            saveButton.disabled = !team || team === "Empty";
+            if (!saveButton.disabled) saveButton.textContent = "Save";
         };
         input.onkeydown = navModInputs;
         input.onblur = () => {
@@ -402,8 +408,7 @@ function setupAddModRowSelect() {
     let blankOpt = document.createElement("option");
     sel.appendChild(blankOpt);
     allowedMods = sortSet(allowedMods, (a, b) => {
-        let modKeys = Object.values(MODS);
-        return modKeys.indexOf(a) - modKeys.indexOf(b)
+        return modOrder.indexOf(a) - modOrder.indexOf(b)
     });
     allowedMods.forEach(mod => {
         let opt = document.createElement("option");
@@ -512,7 +517,7 @@ window.onload = () => {
             case "add-mod-row-select": handler = createModRow; break;
             case "dmg-type-select": handler = dmgTypeChange; break;
         }
-        select.addEventListener("change", handler);
+        $(select).on("change", handler);
     });
     document.querySelector("#char-emp-import-button").onclick = importCharEMPS;
     setupResultTable();
