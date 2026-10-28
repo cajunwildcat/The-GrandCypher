@@ -414,6 +414,8 @@ function setupAddModRowSelect() {
         let opt = document.createElement("option");
         opt.textContent = mod;
         if (mod.includes("dmg cap") || mod.includes("dmg amp")) opt.dataset.search = mod.replace("dmg ", "");
+        if (mod.includes("elem")) opt.dataset.search = mod.replace("elem", "ele");
+        if (mod.includes("od")) opt.dataset.search = `${mod.replace("od", "taboo")}, ${mod.replace("od", "odious")}`;
         sel.appendChild(opt);
     });
     $(sel).trigger("chosen:updated");
