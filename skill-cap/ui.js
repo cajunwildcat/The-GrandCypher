@@ -1,10 +1,9 @@
 let MODE = "find";
-let activeMods = new Set();
 let allowedMods = new Set([MODS.normal_might, MODS.omega_might, MODS.od_might, MODS.ex_might, MODS.ex_might_sp, MODS.normal_stamina, MODS.omega_stamina, MODS.od_stamina, MODS.normal_enmity, MODS.omega_enmity, MODS.od_enmity, MODS.elem_atk, MODS.elem_atk_prog, MODS.counter_dmg, MODS.critical, MODS.perpetuity, MODS.strength, MODS.jammed, MODS.od_atk, MODS.break_atk, MODS.hype, MODS.sleep, MODS.stone, MODS.assassin, MODS.weapon_ca_dmg, MODS.passive_ca_dmg, MODS.na_dmg, MODS.stackable_atk_up, MODS.stackable_atk_up_sp, MODS.attack_down, MODS.stackable_atk_down, MODS.global_field, MODS.local_field, MODS.primarch_summon, MODS.passive_enmity, MODS.sex_atk, MODS.debuff_atk, MODS.moon_prog, MODS.bounty_atk, MODS.dmg_cap_pen, MODS.crit_dmg, MODS.bf_atk, MODS.bf_ca_dmg, MODS.bf_skill_dmg, MODS.skill_dmg, MODS.cb_dmg, MODS.def_ignore, MODS.dmg_cap, MODS.dmg_cap_sp, MODS.na_dmg_cap, MODS.skill_dmg_cap, MODS.skill_dmg_cap_sp, MODS.ca_dmg_cap, MODS.sp_ca_dmg_cap, MODS.cb_dmg_cap, MODS.fc_dmg_cap, MODS.dmg_amp, MODS.omega_dmg_amp, MODS.od_dmg_amp, MODS.elem_dmg_amp, MODS.null_amp, MODS.na_dmg_amp, MODS.na_dmg_amp_sp, MODS.skill_dmg_amp, MODS.skill_dmg_amp_sp, MODS.ca_dmg_amp, MODS.ca_dmg_amp_sp, MODS.cb_dmg_amp, MODS.fc_dmg_amp, MODS.dmg_supp, MODS.na_dmg_supp, MODS.na_dmg_supp_sp, MODS.skill_dmg_supp, MODS.skill_dmg_supp_sp, MODS.ca_dmg_supp, MODS.ca_dmg_supp_sp, MODS.wide_open_1, MODS.wide_open_2, MODS.wide_open_3, MODS.wide_open_4, MODS.wide_open_5, MODS.wide_open_6]);
 let customModList = {};
 let EMPwarning = JSON.parse(getSetLocalStor("emp-warning", null, "true"));
-function toggleEMPWarning() { 
-    EMPwarning = !EMPwarning; 
+function toggleEMPWarning() {
+    EMPwarning = !EMPwarning;
     getSetLocalStor("emp-warning", JSON.stringify(EMPwarning));
 }
 const EMPMap = {
@@ -50,7 +49,7 @@ function setupSaveTeamControls() {
         getSetLocalStor("saved-teams", JSON.stringify(savedTeams));
         saveButton.textContent = "Saved";
     }
-    
+
     let savedTeams = JSON.parse(getSetLocalStor("saved-teams"));
     if (!savedTeams) {
         savedTeams = JSON.parse(DEFAULTSAVEDTEAMS);
@@ -59,27 +58,34 @@ function setupSaveTeamControls() {
     Object.keys(savedTeams).forEach(addTeamToSel);
     teamSel.onchange = () => {
         let team = teamSel.value;
-        [...document.querySelectorAll(".remove-mod-row-button")].forEach(r => r.click());
-        if (team == "Empty") {
+        document.querySelectorAll("#mods-input-table .mod-row").forEach(row => {
+            row.remove();
+            allowedMods.add(row.id);
+        });
+        if (team == "Empty" || !savedTeams[team]) {
             resetSel();
+            setupAddModRowSelect();
+            inputUpdated();
             return;
         }
         Object.keys(savedTeams[team]).forEach(m => addModsTableRow(m, savedTeams[team][m]));
         delButton.disabled = false;
         saveButton.disabled = false;
+        setupAddModRowSelect();
         inputUpdated();
     }
     saveNewButton.onclick = () => {
         let newTeamName = prompt("Enter a name for the team:");
         let savedTeamNames = Object.keys(savedTeams);
+        let overwrite = false;
         do {
             if (newTeamName == "Empty") newTeamName = prompt("That is a reserved name. Enter another name:");
             if (newTeamName == "") newTeamName = prompt("That is an invalid name. Enter another name:");
-            if (savedTeamNames.includes(newTeamName) && !confirm("There is already a team with that name. Do you want to overrite it?")) return;
+            if (savedTeamNames.includes(newTeamName) && !(overwrite = confirm("There is already a team with that name. Do you want to overrite it?"))) return;
         } while (newTeamName == "Empty")
         if (!newTeamName) return;
         saveTeam(newTeamName);
-        addTeamToSel(newTeamName);
+        if (!overwrite) addTeamToSel(newTeamName);
         teamSel.value = newTeamName;
         $(teamSel).trigger("chosen:updated");
     }
@@ -107,8 +113,8 @@ function setupResultTable() {
 }
 
 function setupDMGCapSelect() {
-    dmgType = getInputVal("dmg-type-select")
-    sel = document.querySelector("#dmg-cap-select");
+    let dmgType = getInputVal("dmg-type-select")
+    let sel = document.querySelector("#dmg-cap-select");
     sel.innerHTML = "";
     Object.keys(DMGCAPS).forEach(key => {
         if (key.includes("Hard") || key.includes("Mjolnir")) return;
@@ -124,7 +130,6 @@ function setupDMGCapSelect() {
         sel.appendChild(opt);
     });
     $(sel).trigger("chosen:updated");
-    inputUpdated();
 }
 
 async function importCharEMPS() {
@@ -139,20 +144,22 @@ async function importCharEMPS() {
     }
     [...document.querySelectorAll("#mods-input-table td:nth-child(3) .mod-value-input")].forEach(inp => inp.value = "");
     importText.forEach(s => {
-        skill = s[0];
-        val = parseFloat(s[1]);
-        src = s[2];
+        let skill = s[0];
+        let val = parseFloat(s[1]);
+        let src = s[2];
         if (val == 0) return;
         skill = EMPMap[skill];
         if (skill == MODS.jammed) val = 1;
         else if (skill == MODS.strength) {
-            if (src == "emp") val = [3, 4, 6][val-1];
+            if (src == "emp") val = [3, 4, 6][val - 1];
             else val += 2;
         }
         let inp = document.querySelector(`#mods-input-table tr[id="${skill}"] td:nth-child(3) .mod-value-input`);
-        if (!inp) addModsTableRow(skill, [0,val]);
+        if (!inp) addModsTableRow(skill, [0, val]);
         else inp.value = val + parseFloat(inp.value || 0);
     });
+    setupAddModRowSelect();
+    inputUpdated();
 }
 
 function setupModsTableRows() {
@@ -199,7 +206,8 @@ function highlightResultTable(dmgNumList) {
     if (dmgNumList.length == 0) return;
     dmgNumList = [...new Set(dmgNumList)];
     let table = document.querySelector("#rng-result-table");
-    let g = y = 0;
+    let g = 0;
+    let y = 0;
     [...table.childNodes].forEach(cell => {
         [...cell.querySelectorAll("p")].forEach(num => {
             num.classList.toggle("green-highlight", dmgNumList.includes(parseInt(num.dataset.value)));
@@ -217,41 +225,42 @@ function highlightResultTable(dmgNumList) {
 }
 
 function getObsInput() {
-    obsInp = document.querySelector("#observed-input");
+    let obsInp = document.querySelector("#observed-input");
     let input = obsInp.value.trim();
     return input.split(/\s+/).filter(n => n != "").map(n => parseInt(n.replaceAll(",", "")));
 }
 
 function inputUpdated() {
-    input = getObsInput();
+    let input = getObsInput();
     switch (MODE) {
         case "find": findDMGCap(input); break;
         case "verify": calcDamageUI(); break;
     }
     displayCapInfo();
-    $(".chosen-select").trigger("chosen:updated");
 }
 
-function dmgTypeChange() {
+function dmgTypeChange(update = true) {
     let dmgType = getInputVal("dmg-type-select");
     [...document.querySelectorAll("#sub-table-echo-opt, span:has(>#echo-mod-input)")].forEach(ele => ele.hidden = dmgType == DMGTYPES.SKILL);
     let dmgModInput = document.querySelector("#dmg-mod-input");
+    let subTableSel = document.querySelector("#sub-table-select");
     dmgModInput.disabled = false;
     switch (dmgType) {
         case DMGTYPES.NA:
             dmgModInput.disabled = true;
             dmgModInput.value = 100;
             break;
-        case DMGTYPES.Skill:
-            if ((subTableSel = document.querySelector("#sub-table-select")).value == "Echo") {
+        case DMGTYPES.SKILL:
+            if (subTableSel.value == "Echo") {
                 subTableSel.value = "None";
-                subTableChange();
+                subTableChange(false);
             }
             break;
         case DMGTYPES.CA: break;
         case DMGTYPES.NA: break;
     }
     setupDMGCapSelect();
+    if (update) inputUpdated();
 }
 
 function calcDamageUI() {
@@ -282,11 +291,13 @@ function findDMGCap(input) {
         document.querySelector("#result-match-count").textContent += ` | Checked: ${checkCount} Caps`;
         let capSel = document.querySelector("#dmg-cap-select");
         capSel.value = [...capSel.childNodes].find(n => n.dataset.cap == cap).textContent;
-        $(".chosen-select").trigger("chosen:updated");
+        $(capSel).trigger("chosen:updated");
     }
     else if (results.length == 0) {
         fillResultTable(new Array(101).fill(0));
-        document.querySelector("#dmg-cap-select").value = "";
+        let capSel = document.querySelector("#dmg-cap-select");
+        capSel.value = "";
+        $(capSel).trigger("chosen:updated");
         document.querySelector("#result-match-count").textContent = `Inconclusive, none found. Check your inputs.`;
     }
     else {
@@ -296,9 +307,12 @@ function findDMGCap(input) {
 
 const flatModValues = [MODS.dmg_supp, MODS.ca_dmg_supp, MODS.ca_dmg_supp_sp, MODS.na_dmg_supp, MODS.na_dmg_supp_sp, MODS.skill_dmg_supp, MODS.skill_dmg_supp_sp];
 function addModsTableRow(modID, gridValue = []) {
-    activeMods.add(modID);
+    if (!allowedMods.has(modID)) {
+        console.warn(`Ignoring unsupported or already active mod: ${modID}`);
+        return;
+    }
     allowedMods.delete(modID);
-    table = document.querySelector("#mods-input-table");
+    let table = document.querySelector("#mods-input-table");
     let cols = table.querySelector(".header-row").children.length - 1;
     let row = table.insertRow(table.rows.length);
     row.id = modID;
@@ -308,9 +322,9 @@ function addModsTableRow(modID, gridValue = []) {
     labelCell.innerHTML = `<button class="remove-mod-row-button">X</button><img src="./assets/mod labels/${modID}.png" alt="${modID}">`;
     labelCell.querySelector(".remove-mod-row-button").onclick = () => {
         row.remove();
-        activeMods.delete(modID);
         allowedMods.add(modID);
         setupAddModRowSelect();
+        inputUpdated();
     }
     row.appendChild(labelCell);
     for (let i = 0; i < cols; i++) {
@@ -349,17 +363,16 @@ function navModInputs(e) {
     }
 }
 
-function switchMode() {
+function switchMode(update = true) {
     MODE = document.querySelector("#mode-select").value;
     let capSel = document.querySelector("#dmg-cap-select");
     capSel.disabled = MODE == "find";
-    $(".chosen-select").trigger("chosen:updated");
-    subTableSel = document.querySelector("#sub-table-select");
+    let subTableSel = document.querySelector("#sub-table-select");
     subTableSel.parentElement.hidden = MODE == "find";
-    inputUpdated();
+    if (update) inputUpdated();
 }
 
-function subTableChange() {
+function subTableChange(update = true) {
     let subTable = document.querySelector("#sub-table-select").value;
     customModList = {};
     [...document.querySelectorAll(".sub-table-input")].forEach(inp => inp.classList.remove("active"));
@@ -369,7 +382,7 @@ function subTableChange() {
         case "DEF Down": document.querySelector("#sub-table-def-input").classList.add("active"); break;
         case "Custom": customModList = makeModList(); break;
     }
-    inputUpdated();
+    if (update) inputUpdated();
 }
 
 function getInputVal(eleID) {
@@ -394,7 +407,7 @@ function setupAddModRowSelect() {
     allowedMods.forEach(mod => {
         let opt = document.createElement("option");
         opt.textContent = mod;
-        if(mod.includes("dmg cap") || mod.includes("dmg amp")) opt.dataset.search = mod.replace("dmg ","");
+        if (mod.includes("dmg cap") || mod.includes("dmg amp")) opt.dataset.search = mod.replace("dmg ", "");
         sel.appendChild(opt);
     });
     $(sel).trigger("chosen:updated");
@@ -403,6 +416,7 @@ function setupAddModRowSelect() {
 function createModRow(e) {
     addModsTableRow(e.target.value);
     setupAddModRowSelect();
+    inputUpdated();
 }
 
 function displayCapInfo(e) {
@@ -417,7 +431,7 @@ function displayCapInfo(e) {
 }
 
 function makeModList() {
-    trs = [...document.querySelectorAll("#mods-input-table .mod-row")]
+    let trs = [...document.querySelectorAll("#mods-input-table .mod-row")]
     let modList = {};
     const addMod = (m, v) => modList[m] = v + (modList[m] ?? 0);
     //elem superiority rules
@@ -484,23 +498,28 @@ function makeModList() {
     return modList;
 }
 
-window.onload = (e) => {
-    [...document.querySelectorAll("input, select, textarea")].forEach(i => {
-        i.oninput = inputUpdated;
-        switch (i.id) {
-            case "mode-select": i.oninput = switchMode; break;
-            case "sub-table-select": i.onchange = subTableChange; break;
-            case "add-mod-row-select": i.onchange = createModRow; break;
-            case "dmg-type-select": i.onchange = dmgTypeChange; break;
+window.onload = () => {
+    document.querySelectorAll("input, textarea").forEach(input => {
+        input.addEventListener("input", inputUpdated);
+    });
+    document.querySelectorAll("select").forEach(select => {
+        if (select.id == "saved-team-select") return;
+        let handler = inputUpdated;
+        switch (select.id) {
+            case "mode-select": handler = switchMode; break;
+            case "sub-table-select": handler = subTableChange; break;
+            case "add-mod-row-select": handler = createModRow; break;
+            case "dmg-type-select": handler = dmgTypeChange; break;
         }
+        select.addEventListener("change", handler);
     });
     document.querySelector("#char-emp-import-button").onclick = importCharEMPS;
     setupResultTable();
     setupDMGCapSelect();
     setupModsTableRows();
-    switchMode();
-    subTableChange();
-    dmgTypeChange();
+    switchMode(false);
+    subTableChange(false);
+    dmgTypeChange(false);
     setupAddModRowSelect();
     setupSaveTeamControls();
     [...document.querySelectorAll("#amp-wonder-input, #crew-ship-input, #crew-reactor-input")].forEach(inp => {
