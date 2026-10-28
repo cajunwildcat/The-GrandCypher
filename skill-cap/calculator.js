@@ -78,7 +78,7 @@ const mainModNames = [
     MODS.passive_enmity, MODS.sex_atk, MODS.debuff_atk, MODS.moon_prog,
     MODS.bounty_atk
 ];
-function calcRaw(dmgType, modList, variance) {
+function calcRaw(dmgType, modList) {
     let correctedATK = correctBaseATK(modList.getMod(MODS.base_atk), 100, modList.getMod(MODS.crew_ship), modList.getMod(MODS.crew_reactor));
 
     let raw = mainModNames.map(mm => {
@@ -101,12 +101,7 @@ function calcRaw(dmgType, modList, variance) {
     if (dmgType == DMGTYPES.CA) {
         raw *= correctMod(modList.getMod(MODS.bf_ca_dmg), true);
     }
-    raw *= variance;
     raw /= correctDEF(modList);
-    if (dmgType == DMGTYPES.CA) {
-        raw += modList.getMod(MODS.fixed_ca, 2000);
-    }
-    raw *= correctMod(modList.getMod(MODS.critical));
     return raw;
 }
 
@@ -126,16 +121,29 @@ function applyCap(capPreset, incomingDMG) {
     return tiers.reduce(sumArr, 0);
 }
 
-function calcDamage(dmgType, capPreset, modList, hardCap) {
+function calcDamage(dmgType, capPreset, modList, hardCap, options = {}) {
     modList.getMod = (l, d) => getMod(modList, l, d);
     dmgInstanceMod = modList.getMod(MODS.dmg_mod);
     modList = collapseBoosts(modList, dmgType);
     capPreset = boostCap(capPreset, modList.getMod(MODS.dmg_cap) / 100, correctMod(modList.getMod(MODS.dmg_cap_pen)));
     if (dmgType == DMGTYPES.CA) hardCap = boostCap(hardCap, modList.getMod(MODS.sp_ca_dmg_cap), 1);
 
-    rngs = makeSeqArray(101, (i) => (i - 50) / 1000 + 1);
-    let raws = rngs.map(v => calcRaw(dmgType, modList, v));
-    let dmgs = raws.map(r => applyCap(capPreset, r));
+    let rngs;
+    if (options.staticVariance) {
+        rngs = [options.staticVariance];
+    }
+    else rngs = makeSeqArray(101, (i) => (i - 50) / 1000 + 1);
+    let raw = calcRaw(dmgType, modList);
+    let dmgs = rngs.map(v => {
+        let newRaw
+        newRaw = raw * v;
+        if (dmgType == DMGTYPES.CA) {
+            newRaw += modList.getMod(MODS.fixed_ca, 2000);
+        }
+        newRaw *= correctMod(modList.getMod(MODS.critical));
+        return newRaw;
+    });
+    dmgs = dmgs.map(d => applyCap(capPreset, d));
 
     const applyAmp = (dmgs) => dmgs.map(d => Math.ceil(d * correctMod(modList.getMod(MODS.dmg_amp))));
     const applySupp = (dmgs) => dmgs.map(d => d + modList.getMod(MODS.dmg_supp) + makeSeqArray(6, (i) => Math.ceil(modList.getMod(MODS[`wide_open_${i}`]) / 100 * d)).reduce(sumArr));
@@ -182,12 +190,16 @@ function calcCap(dmgType, modList, hardCap, inputs) {
     mlc = collapseBoosts(mlc, dmgType);
     //filter out caps we never want to check
     let caps = Object.keys(DMGCAPS).filter(key => !(key.includes("Hard") || key.includes("Mjolnir") || key.includes("NA") || key == "Assassin"));
-    let raw = calcRaw(dmgType, mlc, 1);
-    //filter out caps that raw doesn't meet first threshold or the simple soft cap is less than 40% of 1.0 raw
+    let neutralRaw = calcRaw(dmgType, mlc) * correctMod(mlc.getMod(MODS.critical));
+    //filter out caps that raw doesn't meet first threshold
+    let minInput = Math.min(...inputs);
     caps = caps.filter(c => {
-        let boostedCap = boostCap(DMGCAPS[c], mlc.getMod(MODS.dmg_cap) / 100, correctMod(mlc.getMod(MODS.dmg_cap_pen)));
-        if (boostedCap.thresholds[0] > raw) return false;
-        //if (simpleSoftCap(boostedCap) / raw < 0.4) return false;
+        let mlc2 = {...mlc};
+        let boostedCap = boostCap(DMGCAPS[c], mlc2.getMod(MODS.dmg_cap) / 100, correctMod(mlc2.getMod(MODS.dmg_cap_pen)));
+        mlc2[MODS.dmg_cap] = 0;
+        mlc2[MODS.dmg_cap_pen] = 0;
+        if (boostedCap.thresholds[0] > neutralRaw) return false;
+        if (minInput > calcDamage(dmgType, boostedCap, mlc2, hardCap, { staticVariance: 1.05})) return false;
         return true;
     }).map(c => DMGCAPS[c]);
 

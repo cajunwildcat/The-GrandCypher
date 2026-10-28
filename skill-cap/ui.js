@@ -369,6 +369,7 @@ function switchMode(update = true) {
     capSel.disabled = MODE == "find";
     let subTableSel = document.querySelector("#sub-table-select");
     subTableSel.parentElement.hidden = MODE == "find";
+    $(capSel).trigger("chosen:updated");
     if (update) inputUpdated();
 }
 
