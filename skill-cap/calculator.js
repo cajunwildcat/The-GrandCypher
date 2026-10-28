@@ -187,7 +187,7 @@ function calcCap(dmgType, modList, hardCap, inputs) {
     caps = caps.filter(c => {
         let boostedCap = boostCap(DMGCAPS[c], mlc.getMod(MODS.dmg_cap) / 100, correctMod(mlc.getMod(MODS.dmg_cap_pen)));
         if (boostedCap.thresholds[0] > raw) return false;
-        if (simpleSoftCap(boostedCap) / raw < 0.4) return false;
+        //if (simpleSoftCap(boostedCap) / raw < 0.4) return false;
         return true;
     }).map(c => DMGCAPS[c]);
 

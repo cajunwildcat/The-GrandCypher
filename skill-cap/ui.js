@@ -2,6 +2,26 @@ let MODE = "find";
 let activeMods = new Set();
 let allowedMods = new Set([MODS.normal_might, MODS.omega_might, MODS.od_might, MODS.ex_might, MODS.ex_might_sp, MODS.normal_stamina, MODS.omega_stamina, MODS.od_stamina, MODS.normal_enmity, MODS.omega_enmity, MODS.od_enmity, MODS.elem_atk, MODS.elem_atk_prog, MODS.counter_dmg, MODS.critical, MODS.perpetuity, MODS.strength, MODS.jammed, MODS.od_atk, MODS.break_atk, MODS.hype, MODS.sleep, MODS.stone, MODS.assassin, MODS.weapon_ca_dmg, MODS.passive_ca_dmg, MODS.na_dmg, MODS.stackable_atk_up, MODS.stackable_atk_up_sp, MODS.attack_down, MODS.stackable_atk_down, MODS.global_field, MODS.local_field, MODS.primarch_summon, MODS.passive_enmity, MODS.sex_atk, MODS.debuff_atk, MODS.moon_prog, MODS.bounty_atk, MODS.dmg_cap_pen, MODS.crit_dmg, MODS.bf_atk, MODS.bf_ca_dmg, MODS.bf_skill_dmg, MODS.skill_dmg, MODS.cb_dmg, MODS.def_ignore, MODS.dmg_cap, MODS.dmg_cap_sp, MODS.na_dmg_cap, MODS.skill_dmg_cap, MODS.skill_dmg_cap_sp, MODS.ca_dmg_cap, MODS.sp_ca_dmg_cap, MODS.cb_dmg_cap, MODS.fc_dmg_cap, MODS.dmg_amp, MODS.omega_dmg_amp, MODS.od_dmg_amp, MODS.elem_dmg_amp, MODS.null_amp, MODS.na_dmg_amp, MODS.na_dmg_amp_sp, MODS.skill_dmg_amp, MODS.skill_dmg_amp_sp, MODS.ca_dmg_amp, MODS.ca_dmg_amp_sp, MODS.cb_dmg_amp, MODS.fc_dmg_amp, MODS.dmg_supp, MODS.na_dmg_supp, MODS.na_dmg_supp_sp, MODS.skill_dmg_supp, MODS.skill_dmg_supp_sp, MODS.ca_dmg_supp, MODS.ca_dmg_supp_sp, MODS.wide_open_1, MODS.wide_open_2, MODS.wide_open_3, MODS.wide_open_4, MODS.wide_open_5, MODS.wide_open_6]);
 let customModList = {};
+let EMPwarning = JSON.parse(getSetLocalStor("emp-warning", null, "true"));
+function toggleEMPWarning() { 
+    EMPwarning = !EMPwarning; 
+    getSetLocalStor("emp-warning", JSON.stringify(EMPwarning));
+}
+const EMPMap = {
+    "Skill DMG": MODS.skill_dmg,
+    "Skill DMG Cap": MODS.skill_dmg_cap,
+    "C.A. DMG": MODS.passive_ca_dmg,
+    "C.A. DMG Cap": MODS.ca_dmg_cap,
+    "Stamina": MODS.strength,
+    "Enmity": MODS.jammed,
+    "Supplemental DMG": MODS.dmg_supp,
+    "Fire ATK": MODS.elem_atk,
+    "Water ATK": MODS.elem_atk,
+    "Earth ATK": MODS.elem_atk,
+    "Wind ATK": MODS.elem_atk,
+    "Light ATK": MODS.elem_atk,
+    "Dark ATK": MODS.elem_atk,
+}
 
 function setupSaveTeamControls() {
     let delButton = document.querySelector("#delete-saved-team-button");
@@ -107,25 +127,48 @@ function setupDMGCapSelect() {
     inputUpdated();
 }
 
+async function importCharEMPS() {
+    if (EMPwarning && !confirm(`This will clear the "Passive" column in the mod table. Do you want to continue?\nYou can toggle this warning by typing "toggleEMPWarning()" in the dev console.`)) return;
+    let importText;
+    await navigator.clipboard.readText().then(r => importText = r);
+    try {
+        importText = JSON.parse(importText);
+    } catch (e) {
+        alert("The contents on the clipboard weren't in the expected format.")
+        return;
+    }
+    [...document.querySelectorAll("#mods-input-table td:nth-child(3) .mod-value-input")].forEach(inp => inp.value = "");
+    importText.forEach(s => {
+        skill = s[0];
+        val = parseFloat(s[1]);
+        src = s[2];
+        if (val == 0) return;
+        skill = EMPMap[skill];
+        if (skill == MODS.jammed) val = 1;
+        else if (skill == MODS.strength) {
+            if (src == "emp") val = [3, 4, 6][val-1];
+            else val += 2;
+        }
+        let inp = document.querySelector(`#mods-input-table tr[id="${skill}"] td:nth-child(3) .mod-value-input`);
+        if (!inp) addModsTableRow(skill, [0,val]);
+        else inp.value = val + parseFloat(inp.value || 0);
+    });
+}
+
 function setupModsTableRows() {
     addModsTableRow(MODS.normal_might, []);
     addModsTableRow(MODS.omega_might, []);
     addModsTableRow(MODS.ex_might, []);
     addModsTableRow(MODS.elem_atk, []);
-
     addModsTableRow(MODS.dmg_amp, []);
     addModsTableRow(MODS.elem_dmg_amp, []);
-
     addModsTableRow(MODS.dmg_cap, []);
     addModsTableRow(MODS.na_dmg_cap, []);
     addModsTableRow(MODS.skill_dmg_cap, []);
-
-    addModsTableRow(MODS.na_dmg_supp, [0]);
-
-    addModsTableRow(MODS.dmg_cap_pen, [0]);
-
-    addModsTableRow(MODS.skill_dmg, [0]);
-    addModsTableRow(MODS.perpetuity, [0]);
+    addModsTableRow(MODS.na_dmg_supp, []);
+    addModsTableRow(MODS.dmg_cap_pen, []);
+    addModsTableRow(MODS.skill_dmg, []);
+    addModsTableRow(MODS.perpetuity, []);
 }
 
 function fillResultTable(valueArr, subValueArr = null) {
@@ -450,6 +493,7 @@ window.onload = (e) => {
             case "dmg-type-select": i.onchange = dmgTypeChange; break;
         }
     });
+    document.querySelector("#char-emp-import-button").onclick = importCharEMPS;
     setupResultTable();
     setupDMGCapSelect();
     setupModsTableRows();

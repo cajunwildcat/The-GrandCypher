@@ -184,7 +184,7 @@ span:has(>.sub-table-input:not(.active)) {
     }
 }
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1200px) {
     #validate-area {
         flex-direction: column-reverse;
         gap: 0;
@@ -192,11 +192,11 @@ span:has(>.sub-table-input:not(.active)) {
 
     #observed-input {
         height: 6em;
-        width: 663px;
+        width: 723px;
     }
 
     #rng-result-table {
-        grid-template-columns: repeat(10, 67px);
+        grid-template-columns: repeat(10, 73px);
         width: min-content;
     }
 
