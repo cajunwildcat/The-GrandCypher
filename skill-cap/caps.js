@@ -1,15 +1,15 @@
 const DMGCAPS = {
-    "NA1": {
+    "NA Standard": {
         "id": "",
         "thresholds": [300000, 400000, 500000, 600000],
         "attenuations": [0.8, 0.6, 0.05, 0.01]
     },
-    "NA2": {
+    "NA Kaiser": {
         "id": "",
         "thresholds": [450000, 600000, 750000, 800000],
         "attenuations": [0.8, 0.6, 0.05, 0.01]
     },
-    "Assassin": {
+    "NA Assassin": {
         "id": "",
         "thresholds": [1000000, 1200000, 1300000, 1500000],
         "attenuations": [0.6, 0.3, 0.05, 0.01]

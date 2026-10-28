@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skill Cap Verifier</title>
+    <script src="default-saved-teams.js"></script>
     <script src="util.js"></script>
     <script src="caps.js"></script>
     <script src="mods.js"></script>
@@ -20,15 +21,25 @@
 
 <body>
     <div id="mods-area">
-        <table id="mods-input-table">
-            <tr><th colspan=20><select id="add-mod-row-select" class="chosen-select" data-placeholder="Add a mod +"></select></th></tr>
-            <tr class="header-row">
-                <th>Mod</th>
-                <th>Grid</th>
-                <th>Passive</th>
-                <th>Buff</th>
-            </tr>
-        </table>
+        <div>
+            <button disabled id="delete-saved-team-button">Delete</button>
+            <select id="saved-team-select" class="chosen-select" data-placeholder="Load a saved team"><option></option><option>Empty</option></select>
+            <button disabled id="save-saved-team-button">Save</button>
+            <button id="save-new-saved-team-button">Save As New</button>
+        </div>
+        <div>
+            <select id="add-mod-row-select" class="chosen-select" data-placeholder="Add a mod +"></select>
+        </div>
+        <div id="mods-table-overflow-wrapper">
+            <table id="mods-input-table">
+                <tr class="header-row">
+                    <th>Mod</th>
+                    <th>Grid</th>
+                    <th>Passive</th>
+                    <th>Buff</th>
+                </tr>
+            </table>
+        </div>
     </div>
     <div style="display:flex; flex-direction:column;">
         <div id="mods-area-top">
@@ -36,13 +47,48 @@
                 <span><img src="./assets/zhurong yupei.jpg" /><input id="yupei-check" type="checkbox" checked /></span>
                 <span><img src="./assets/signum heredis.jpg" /><input id="ele-atk-wonder-check" type="checkbox" checked /></span>
                 <span><img src="./assets/oppressus fragor.jpg" /><input id="dmg-cap-wonder-check" type="checkbox" checked /></span>
-                <span><img src="./assets/symbolum amicitiae.jpg" /><input id="amp-wonder-input" /><p>%</p></span>
-                <span><img src="./assets/Crew Ship.png" /><input id="crew-ship-input" value="10" /><p>%</p></span>
-                <span><img src="./assets/Rainbow Reactor.png" /><input id="crew-reactor-input" value="10" /><p>%</p></span>
+                <span><img src="./assets/symbolum amicitiae.jpg" /><input id="amp-wonder-input" />
+                    <p>%</p>
+                </span>
+                <span><img src="./assets/Crew Ship.png" /><input id="crew-ship-input" value="10" />
+                    <p>%</p>
+                </span>
+                <span><img src="./assets/Rainbow Reactor.png" /><input id="crew-reactor-input" value="10" />
+                    <p>%</p>
+                </span>
             </div>
             <div>
-                <span>Base ATK <input id="base-atk-input" /></span>
-                <span>DMG Mod <input id="dmg-mod-input" value="100" />%</span>
+                <span>Hard Cap <select id="hard-cap-select">
+                        <option value="Hard6">6,600,000</option>
+                        <option value="Hard13" selected>13,100,000</option>
+                    </select></span>
+                <span>Elem Res <input id="elem-res-input" value="0" />
+                    <p>%</p>
+                </span>
+            </div>
+            <div>
+                <span>Enemy Elem <select id="enemy-elem-select">
+                        <option>Inferior</option>
+                        <option>Fire</option>
+                        <option>Water</option>
+                        <option>Earth</option>
+                        <option>Wind</option>
+                        <option>Light</option>
+                        <option>Dark</option>
+                        <option>Null</option>
+                    </select></span>
+                <span>
+                    <p>DEF</p> <input id="enemy-def-input" value="10" />
+                </span>
+                <span><img src="./assets/DEF Up.png" /><input id="enemy-def-up-input" value="0" />
+                    <p>%</p>
+                </span>
+                <span><img src="./assets/DEF Down.png" /><input id="enemy-def-down-input" value="0" />
+                    <p>%</p>
+                </span>
+                <span><img src="./assets/Unique DEF Down.png" /><input id="def-down-sp-check" type="checkbox" /></span>
+            </div>
+            <div>
                 <span>Ally Elem <select id="ally-elem-select">
                         <option>Fire</option>
                         <option>Water</option>
@@ -51,6 +97,11 @@
                         <option>Light</option>
                         <option>Dark</option>
                     </select></span>
+                <span>Base ATK <input id="base-atk-input" /></span>
+                <span><img src="./assets/Piercing Sight.png" /><input id="piercing-sight-check" type="checkbox" /></span>
+                <span><img src="./assets/Perpetuity Ring.png" /><input id="perp-ring-check" type="checkbox" /></span>
+            </div>
+            <div>
                 <span>DMG Elem <select id="ally-dmg-elem-select">
                         <option selected>Ally Elem</option>
                         <option>Fire</option>
@@ -68,32 +119,8 @@
                         <option value=2>Charge Attack</option>
                         <option value=3 disabled>Counter</option>
                     </select></span>
-                <span><img src="./assets/Piercing Sight.png" /><input id="piercing-sight-check" type="checkbox" /></span>
-                <span><img src="./assets/Perpetuity Ring.png" /><input id="perp-ring-check" type="checkbox" /></span>
-                <span>Echo Mod <input id="echo-mod-input" value="0" /><p>%</p></span>
-            </div>
-            <div>
-                <span>Enemy Elem <select id="enemy-elem-select">
-                        <option>Inferior</option>
-                        <option>Fire</option>
-                        <option>Water</option>
-                        <option>Earth</option>
-                        <option>Wind</option>
-                        <option>Light</option>
-                        <option>Dark</option>
-                        <option>Null</option>
-                    </select></span>
-                <span><p>DEF</p> <input id="enemy-def-input" value="10" /></span>
-                <span><img src="./assets/DEF Up.png" /><input id="enemy-def-up-input" value="0" /><p>%</p></span>
-                <span><img src="./assets/DEF Down.png" /><input id="enemy-def-down-input" value="0" /><p>%</p></span>
-                <span><img src="./assets/Unique DEF Down.png" /><input id="def-down-sp-check" type="checkbox" /></span>
-            </div>
-            <div>
-                <span>Hard Cap <select id="hard-cap-select">
-                        <option value="Hard6">6,600,000</option>
-                        <option value="Hard13" selected>13,100,000</option>
-                    </select></span>
-                <span>Elem Res <input id="elem-res-input" value="0" /><p>%</p></span>
+                <span>DMG Mod <input id="dmg-mod-input" value="100" />%</span>
+                <span hidden>Echo Mod <input id="echo-mod-input" value="0" /><p>%</p></span>
             </div>
             <div>
                 <span>Mode <select id="mode-select">
@@ -106,16 +133,22 @@
                 <span>Sub Table
                     <select id="sub-table-select">
                         <option selected>None</option>
-                        <option>Echo</option>
+                        <option id="sub-table-echo-opt" hidden>Echo</option>
                         <option>RNG Crit</option>
                         <option>DEF Down</option>
                         <option>Custom</option>
                     </select>
                 </span>
 
-                <span>Echo Mod <input id="sub-table-echo-input" class="sub-table-input" value="0" /><p>%</p></span>
-                <span>RNG Crit Mod <input id="sub-table-crit-input" class="sub-table-input" value="0" /><p>%</p></span>
-                <span>DEF Down <input id="sub-table-def-input" class="sub-table-input" value="0" /><p>%</p></span>
+                <span>Echo Mod <input id="sub-table-echo-input" class="sub-table-input" value="0" />
+                    <p>%</p>
+                </span>
+                <span>RNG Crit Mod <input id="sub-table-crit-input" class="sub-table-input" value="0" />
+                    <p>%</p>
+                </span>
+                <span>DEF Down <input id="sub-table-def-input" class="sub-table-input" value="0" />
+                    <p>%</p>
+                </span>
             </div>
 
         </div>
@@ -123,7 +156,12 @@
         <div>
             <div id="validate-area">
                 <textarea id="observed-input"></textarea>
-                <div id="rng-result-table"></div>
+                <div>
+                    <div id="cap-info-row">
+                        <span class="cap-info-desc">Thresholds:</span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info-desc">Attenuations:</span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span>
+                    </div>
+                    <div id="rng-result-table"></div>
+                </div>
             </div>
         </div>
     </div>

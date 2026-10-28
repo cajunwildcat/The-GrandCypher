@@ -3,6 +3,7 @@ body {
     gap: 1em;
     margin-right: 0;
     margin-bottom: 0;
+    font-family: sans-serif;
 }
 
 input:not([type="checkbox"]) {
@@ -25,16 +26,30 @@ input.locked:focus {
     width: 30px;
 }
 
+#mods-area div:not(#mods-table-overflow-wrapper) {
+    text-align: center;
+    margin-bottom: 0.2em;
+    >* {
+        vertical-align: middle;
+    }
+}
+
+#mods-table-overflow-wrapper {
+    max-height: 94vh;
+    overflow-y: scroll;
+}
+
 #mods-area-top {
     display: flex;
     flex-direction: column;
-    gap: 0.2em;
+    gap: 0.7em;
 
     >div {
         display: flex;
         align-items: center;
         gap: 0.4em;
         flex-wrap: wrap;
+        /* border-bottom: 2px dotted black; */
 
         >span {
             white-space: nowrap;
@@ -63,7 +78,7 @@ input.locked:focus {
 
 #mods-input-table {
     border-spacing: 0;
-    min-width: 375px;
+    width: 418px;
 
     td,
     th {
@@ -102,6 +117,25 @@ span:has(>.sub-table-input:not(.active)) {
     margin-top: 1em;
 }
 
+#cap-info-row {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 3px;
+
+    .cap-info-desc {
+        width: min-content;
+    }
+
+    .cap-info {
+        flex-grow: 1;
+    }
+
+    span {
+        text-align: center;
+    }
+}
+
 #rng-result-table {
     display: grid;
     grid-template-columns: repeat(10, 74px);
@@ -134,7 +168,7 @@ span:has(>.sub-table-input:not(.active)) {
         background-color: rgb(252, 209, 160);
     }
 
-    :nth-child(102) {
+    #result-match-count {
         grid-column-start: 2;
         grid-column-end: 11;
     }
