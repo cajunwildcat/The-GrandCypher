@@ -14,12 +14,8 @@ const MODS = {
     elem_atk_prog: "elem atk (prog)",
     counter_dmg: "counter dmg",
     critical: "critical",
-    perpetuity: "perpetuity",
     weapon_ca_dmg: "weapon ca dmg",
     passive_ca_dmg: "passive ca dmg",
-
-    dmg_cap_pen: "dmg cap pen",
-    crit_dmg: "crit_dmg",
 
     bf_atk: "bf atk",
     bf_ca_dmg: "bf ca dmg",
@@ -61,6 +57,10 @@ const MODS = {
     ca_dmg_supp: "ca dmg supp",
     ca_dmg_supp_sp: "ca dmg supp (sp)",
 
+    dmg_cap_pen: "dmg cap pen",
+    crit_dmg: "crit dmg",
+
+    perpetuity: "perpetuity",
     strength: "strength",
     jammed: "jammed",
     od_atk: "od atk",
