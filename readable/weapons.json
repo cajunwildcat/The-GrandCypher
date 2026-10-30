@@ -29772,6 +29772,30 @@
     "jpname": "禁栄の業剣",
     "bullets": null
   },
+  "1040029900": {
+    "pageName": "Legacy of the Ruins",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "light",
+    "character": null,
+    "skill1": {
+      "name": "Resilient Shine",
+      "icon": "ws_skill_hp_a_5_3.png"
+    },
+    "skill2": {
+      "name": "Covert Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "sabre",
+    "awakening": null,
+    "jpname": "遺都の継ぎ刃",
+    "bullets": null
+  },
   "1040100000": {
     "pageName": "Azoth",
     "maxUncap": 3,
