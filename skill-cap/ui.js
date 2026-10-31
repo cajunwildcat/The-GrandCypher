@@ -1,11 +1,11 @@
 let MODE = "find";
-let allowedMods = new Set([MODS.normal_might, MODS.omega_might, MODS.od_might, MODS.ex_might, MODS.ex_might_sp, MODS.normal_stamina, MODS.omega_stamina, MODS.od_stamina, MODS.normal_enmity, MODS.omega_enmity, MODS.od_enmity, MODS.elem_atk, MODS.elem_atk_prog, MODS.counter_dmg, MODS.critical, MODS.perpetuity, MODS.strength, MODS.jammed, MODS.od_atk, MODS.break_atk, MODS.hype, MODS.sleep, MODS.stone, MODS.assassin, MODS.weapon_ca_dmg, MODS.passive_ca_dmg, MODS.na_dmg, MODS.stackable_atk_up, MODS.stackable_atk_up_sp, MODS.attack_down, MODS.stackable_atk_down, MODS.global_field, MODS.local_field, MODS.primarch_summon, MODS.passive_enmity, MODS.sex_atk, MODS.debuff_atk, MODS.moon_prog, MODS.bounty_atk, MODS.dmg_cap_pen, MODS.crit_dmg, MODS.bf_atk, MODS.bf_ca_dmg, MODS.bf_skill_dmg, MODS.skill_dmg, MODS.cb_dmg, MODS.def_ignore, MODS.dmg_cap, MODS.dmg_cap_sp, MODS.na_dmg_cap, MODS.skill_dmg_cap, MODS.skill_dmg_cap_sp, MODS.ca_dmg_cap, MODS.sp_ca_dmg_cap, MODS.cb_dmg_cap, MODS.fc_dmg_cap, MODS.dmg_amp, MODS.omega_dmg_amp, MODS.od_dmg_amp, MODS.elem_dmg_amp, MODS.null_amp, MODS.na_dmg_amp, MODS.na_dmg_amp_sp, MODS.skill_dmg_amp, MODS.skill_dmg_amp_sp, MODS.ca_dmg_amp, MODS.ca_dmg_amp_sp, MODS.cb_dmg_amp, MODS.fc_dmg_amp, MODS.dmg_supp, MODS.na_dmg_supp, MODS.na_dmg_supp_sp, MODS.skill_dmg_supp, MODS.skill_dmg_supp_sp, MODS.ca_dmg_supp, MODS.ca_dmg_supp_sp, MODS.wide_open_1, MODS.wide_open_2, MODS.wide_open_3, MODS.wide_open_4, MODS.wide_open_5, MODS.wide_open_6]);
+let allowedMods = new Set([MODS.normal_might, MODS.omega_might, MODS.od_might, MODS.ex_might, MODS.ex_might_sp, MODS.normal_stamina, MODS.omega_stamina, MODS.od_stamina, MODS.normal_enmity, MODS.omega_enmity, MODS.od_enmity, MODS.elem_atk, MODS.elem_atk_prog, MODS.counter_dmg, MODS.critical, MODS.perpetuity, MODS.strength, MODS.jammed, MODS.od_atk, MODS.break_atk, MODS.hype, MODS.sleep, MODS.stone, MODS.assassin, MODS.weapon_ca_dmg, MODS.passive_ca_dmg, MODS.na_dmg, MODS.stackable_atk_up, MODS.stackable_atk_up_sp, MODS.attack_down, MODS.stackable_atk_down, MODS.global_field, MODS.local_field, MODS.primarch_summon, MODS.passive_enmity, MODS.sex_atk, MODS.debuff_atk, MODS.moon_prog, MODS.bounty_atk, MODS.dmg_cap_pen, MODS.crit_dmg, MODS.bf_atk, MODS.bf_ca_dmg, MODS.bf_skill_dmg, MODS.skill_dmg, MODS.cb_dmg, MODS.def_ignore, MODS.dmg_cap, MODS.dmg_cap_sp, MODS.na_dmg_cap, MODS.skill_dmg_cap, MODS.skill_dmg_cap_sp, MODS.ca_dmg_cap, MODS.sp_ca_dmg_cap, MODS.cb_dmg_cap, MODS.fc_dmg_cap, MODS.dmg_amp, MODS.omega_dmg_amp, MODS.od_dmg_amp, MODS.elem_dmg_amp, MODS.null_amp, MODS.na_dmg_amp, MODS.na_dmg_amp_sp, MODS.skill_dmg_amp, MODS.skill_dmg_amp_sp, MODS.ca_dmg_amp, MODS.ca_dmg_amp_sp, MODS.cb_dmg_amp, MODS.fc_dmg_amp, MODS.dmg_supp, MODS.na_dmg_supp, MODS.na_dmg_supp_sp, MODS.skill_dmg_supp, MODS.skill_dmg_supp_sp, MODS.ca_dmg_supp, MODS.ca_dmg_supp_sp, MODS.wide_open_1, MODS.wide_open_2, MODS.wide_open_3, MODS.wide_open_4, MODS.wide_open_5, MODS.wide_open_6, MODS.unique_na_supp]);
 const modOrder = Object.values(MODS);
 let customModList = {};
-let EMPwarning = JSON.parse(getSetLocalStor("emp-warning", null, "true"));
+let EMPwarning = JSON.parse(getLocalStor("emp-warning", true));
 function toggleEMPWarning() {
     EMPwarning = !EMPwarning;
-    getSetLocalStor("emp-warning", JSON.stringify(EMPwarning));
+    setLocalStor("emp-warning", EMPwarning);
 }
 const EMPMap = {
     "Skill DMG": MODS.skill_dmg,
@@ -45,17 +45,14 @@ function setupSaveTeamControls() {
         [...document.querySelectorAll(".mod-row")].forEach(r => {
             newTeam[r.id] = [...r.querySelectorAll(".mod-value-input")].map(v => v.value);
         });
+        newTeam.elem = getInputVal("ally-elem-select");
         savedTeams[teamName] = newTeam;
-        getSetLocalStor("saved-teams", JSON.stringify(savedTeams));
+        setLocalStor("saved-teams", savedTeams);
         saveButton.textContent = "Saved";
         saveButton.disabled = true;
     }
 
-    let savedTeams = JSON.parse(getSetLocalStor("saved-teams"));
-    if (!savedTeams) {
-        savedTeams = JSON.parse(DEFAULTSAVEDTEAMS);
-        getSetLocalStor("saved-teams", DEFAULTSAVEDTEAMS);
-    }
+    let savedTeams = getLocalStor("saved-teams", DEFAULTSAVEDTEAMS);
     Object.keys(savedTeams).forEach(addTeamToSel);
     teamSel.onchange = () => {
         let team = teamSel.value;
@@ -65,12 +62,14 @@ function setupSaveTeamControls() {
         });
         if (team == "Empty" || !savedTeams[team]) {
             resetSel();
-            setupAddModRowSelect();
-            inputUpdated();
-            return;
         }
-        Object.keys(savedTeams[team]).forEach(m => addModsTableRow(m, savedTeams[team][m]));
-        delButton.disabled = false;
+        else {
+            Object.keys(savedTeams[team]).forEach(m => {
+                if (m != "elem") addModsTableRow(m, savedTeams[team][m]);
+            });
+            document.querySelector("#ally-elem-select").value = savedTeams[team].elem ?? "Fire";
+            delButton.disabled = false;
+        }
         setupAddModRowSelect();
         inputUpdated();
     }
@@ -82,7 +81,7 @@ function setupSaveTeamControls() {
             if (newTeamName == "Empty") newTeamName = prompt("That is a reserved name. Enter another name:");
             if (newTeamName == "") newTeamName = prompt("That is an invalid name. Enter another name:");
             if (savedTeamNames.includes(newTeamName) && !(overwrite = confirm("There is already a team with that name. Do you want to overrite it?"))) return;
-        } while (newTeamName == "Empty")
+        } while (newTeamName == "Empty" || newTeamName == "");
         if (!newTeamName) return;
         saveTeam(newTeamName);
         if (!overwrite) addTeamToSel(newTeamName);
@@ -94,7 +93,7 @@ function setupSaveTeamControls() {
         if (!confirm(`Are you sure you want to delete the saved team "${teamSel.value}"?`)) return;
         delete savedTeams[teamSel.value];
         teamSel.selectedOptions[0].remove();
-        getSetLocalStor("saved-teams", JSON.stringify(savedTeams));
+        setLocalStor("saved-teams", savedTeams);
         resetSel();
     }
 }
@@ -234,6 +233,7 @@ function inputUpdated() {
     let input = getObsInput();
     switch (MODE) {
         case "find": findDMGCap(input); break;
+        case "new":
         case "verify": calcDamageUI(); break;
     }
     displayCapInfo();
@@ -266,6 +266,7 @@ function dmgTypeChange(update = true) {
 function calcDamageUI() {
     document.querySelector("#result-match-count").textContent = "";
     let modList = makeModList();
+    if (modList[MODS.base_atk] == 0 || modList[MODS.dmg_mod] == 0) return;
     let subModList = structuredClone(modList);
     let subResults = null;
     switch (getInputVal("sub-table-select")) {
@@ -274,34 +275,48 @@ function calcDamageUI() {
         case "DEF Down": subResults = true; subModList[MODS.def_down] = getInputVal("sub-table-def-input") + (subModList[MODS.def_down] ?? 0); break;
         case "Custom": subResults = true; subModList = modList; modList = customModList; break;
     }
-    let selectedCap = document.querySelector("#dmg-cap-select").selectedOptions[0];
-    if (!selectedCap) return;
-    selectedCap = DMGCAPS[selectedCap.dataset.cap];
+    let selectedCap;
+    switch (MODE) {
+        case "verify":
+            selectedCap = document.querySelector("#dmg-cap-select").selectedOptions[0];
+            if (!selectedCap) return;
+            selectedCap = DMGCAPS[selectedCap.dataset.cap];
+            break;
+        case "new":
+            selectedCap = {
+                id: "",
+                thresholds: [...document.querySelectorAll(".custom-cap-info.threshold")].map(n => parseFloat(n.value.replaceAll(",",""))),
+                attenuations: [...document.querySelectorAll(".custom-cap-info.attenuation")].map(n => parseFloat(n.value.replaceAll(",","")) / 100),
+            }
+            break;
+    }
     let baseResults = calcDamage(getInputVal("dmg-type-select"), selectedCap, modList, DMGCAPS[getInputVal("hard-cap-select")]);
     if (subResults) subResults = calcDamage(getInputVal("dmg-type-select"), selectedCap, subModList, DMGCAPS[getInputVal("hard-cap-select")]);
     fillResultTable(baseResults, subResults);
 }
 
+function clearCapSel() {
+    let capSel = document.querySelector("#dmg-cap-select");
+    capSel.value = "";
+    $(capSel).trigger("chosen:updated");
+}
+
 function findDMGCap(input) {
-    let [results, checkCount] = calcCap(getInputVal("dmg-type-select"), makeModList(), DMGCAPS[getInputVal("hard-cap-select")], input);
+    let [results, checkCount, skipTypes] = calcCap(getInputVal("dmg-type-select"), makeModList(), DMGCAPS[getInputVal("hard-cap-select")], input);
     if (results.length == 1) {
         let cap = results[0].id;
         console.log(`Cap found: ${formatNum(simpleSoftCap(DMGCAPS[cap]))} (${cap})`);
         fillResultTable(results[0].dmgs);
-        document.querySelector("#result-match-count").textContent += ` | Checked: ${checkCount} Caps`;
+        document.querySelector("#result-match-count").innerHTML += ` | Checked: ${checkCount} Caps`;
         let capSel = document.querySelector("#dmg-cap-select");
-        capSel.value = [...capSel.childNodes].find(n => n.dataset.cap == cap).textContent;
+        capSel.value = [...capSel.childNodes].find(n => n.dataset.cap == cap).innerHTML;
         $(capSel).trigger("chosen:updated");
-    }
-    else if (results.length == 0) {
-        fillResultTable(new Array(101).fill(0));
-        let capSel = document.querySelector("#dmg-cap-select");
-        capSel.value = "";
-        $(capSel).trigger("chosen:updated");
-        document.querySelector("#result-match-count").textContent = `Inconclusive, none found. Check your inputs.`;
     }
     else {
-        document.querySelector("#result-match-count").textContent = `Inconclusive, multiple possible. Try inputting more observed values or increasing Raw.`;
+        fillResultTable(new Array(101).fill(0));
+        clearCapSel();
+        let totalSkips = skipTypes.shortRaw + skipTypes.smallCap;
+        document.querySelector("#result-match-count").innerHTML = `Double check your inputs or increase Raw.<br>${totalSkips} skipped Caps: ${skipTypes.shortRaw} short on Raw, ${skipTypes.smallCap} below smallest observed input`;
     }
 }
 
@@ -372,9 +387,12 @@ function navModInputs(e) {
 function switchMode(update = true) {
     MODE = document.querySelector("#mode-select").value;
     let capSel = document.querySelector("#dmg-cap-select");
-    capSel.disabled = MODE == "find";
+    capSel.disabled = MODE != "verify";
+    if (capSel.disabled) clearCapSel();
     let subTableSel = document.querySelector("#sub-table-select");
     subTableSel.parentElement.hidden = MODE == "find";
+    [...document.querySelectorAll("#cap-info-row .custom-cap-info")].forEach(inp => inp.hidden = !(MODE == "new"));
+    [...document.querySelectorAll("#cap-info-row .cap-info")].forEach(inp => inp.hidden = (MODE == "new"));
     $(capSel).trigger("chosen:updated");
     if (update) inputUpdated();
 }
@@ -395,7 +413,7 @@ function subTableChange(update = true) {
 function getInputVal(eleID) {
     let val = document.querySelector(`#${eleID}`).value;
     let pval = parseFloat(val);
-    return Number.isNaN(pval) ? val : pval;
+    return Number.isNaN(pval) ? val || 0 : pval;
 }
 
 function getCheckBox(eleID) {
@@ -428,6 +446,7 @@ function createModRow(e) {
 }
 
 function displayCapInfo(e) {
+    if (MODE == "new") return;
     let selectedCap = document.querySelector("#dmg-cap-select").selectedOptions[0];
     if (!selectedCap) return;
     selectedCap = DMGCAPS[selectedCap.dataset.cap];
@@ -475,7 +494,7 @@ function makeModList() {
     if (getCheckBox("ele-atk-wonder-check") && getsElemATK) addMod(MODS.elem_atk, 3);
     if (getCheckBox("dmg-cap-wonder-check")) addMod(MODS.dmg_cap, 3);
     addMod(MODS.dmg_amp, getInputVal("amp-wonder-input"));
-    if (getCheckBox("yupei-check")) {
+    if (getCheckBox(`${getInputVal("ally-elem-select").toLowerCase()}-yupei-check`)) {
         if (getsElemATK) addMod(MODS.elem_atk, 10);
         addMod(MODS.skill_dmg, 5);
         addMod(MODS.passive_ca_dmg, 5);
@@ -484,6 +503,8 @@ function makeModList() {
         addMod(MODS.skill_dmg_cap, 5);
         addMod(MODS.ca_dmg_cap, 5);
     }
+    if (seraphic && getCheckBox(`${getInputVal("ally-elem-select").toLowerCase()}-arcarum-ring-check`)) addMod(MODS.elem_dmg_amp, 10);
+    if (getCheckBox("perp-wonder-check")) addMod(MODS.perpetuity, 10);
     //misc
     if (getCheckBox("perp-ring-check")) {
         addMod(MODS.perpetuity, 10);
@@ -508,7 +529,19 @@ function makeModList() {
 
 window.onload = () => {
     document.querySelectorAll("input, textarea").forEach(input => {
-        input.addEventListener("input", inputUpdated);
+        let handler = inputUpdated;
+        switch (input.id) {
+            case "base-atk-input":
+            case "dmg-mod-input":
+                input.value = "";
+                input.classList.toggle("empty", input.value == "");
+                handler = () => {
+                    input.classList.toggle("empty", input.value == "");
+                    inputUpdated();
+                };
+                break;
+        }
+        input.addEventListener("input", handler);
     });
     document.querySelectorAll("select").forEach(select => {
         if (select.id == "saved-team-select") return;
@@ -518,6 +551,13 @@ window.onload = () => {
             case "sub-table-select": handler = subTableChange; break;
             case "add-mod-row-select": handler = createModRow; break;
             case "dmg-type-select": handler = dmgTypeChange; break;
+            case "ally-elem-select":
+                select.value = "Fire";
+                handler = () => {
+                    select.dataset.value = select.value;
+                    inputUpdated();
+                };
+                break;
         }
         $(select).on("change", handler);
     });
@@ -525,15 +565,21 @@ window.onload = () => {
     setupResultTable();
     setupDMGCapSelect();
     setupModsTableRows();
-    switchMode(false);
     subTableChange(false);
     dmgTypeChange(false);
+    switchMode(false);
     setupAddModRowSelect();
     setupSaveTeamControls();
-    [...document.querySelectorAll("#amp-wonder-input, #crew-ship-input, #crew-reactor-input")].forEach(inp => {
-        let id = inp.id.replace("-input", "");
-        inp.value = getSetLocalStor(id, null, getInputVal(inp.id));
-        inp.addEventListener("input", (e) => getSetLocalStor(id, e.target.value));
+    [...document.querySelectorAll(".wonder-input")].forEach(inp => {
+        let prop;
+        let event;
+        switch (inp.type) {
+            case "text": prop = "value"; event = "input"; break;
+            case "checkbox": prop = "checked"; event = "change"; break;
+        }
+        let id = inp.id.replace("-input", "").replace("-check", "");
+        inp[prop] = getLocalStor(id, inp[prop]);
+        inp.addEventListener(event, (e) => setLocalStor(id, inp[prop]));
     });
     inputUpdated();
     $(".chosen-select").chosen({ width: "175px" });

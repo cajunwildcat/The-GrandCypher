@@ -24,7 +24,10 @@
     <div id="mods-area">
         <div>
             <button disabled id="delete-saved-team-button">Delete</button>
-            <select id="saved-team-select" class="chosen-select" data-placeholder="Load a saved team"><option></option><option>Empty</option></select>
+            <select id="saved-team-select" class="chosen-select" data-placeholder="Load a saved team">
+                <option></option>
+                <option>Empty</option>
+            </select>
             <button disabled id="save-saved-team-button">Save</button>
             <button id="save-new-saved-team-button">Save As New</button>
         </div>
@@ -36,7 +39,7 @@
                 <tr class="header-row">
                     <th>Mod</th>
                     <th>Grid</th>
-                    <th>Passive</th>
+                    <th>Passive<br><button id="char-emp-import-button">Import EMPs</button></th>
                     <th>Buff</th>
                 </tr>
             </table>
@@ -45,16 +48,30 @@
     <div style="display:flex; flex-direction:column;">
         <div id="mods-area-top">
             <div>
-                <span><img src="./assets/zhurong yupei.jpg" /><input id="yupei-check" type="checkbox" checked /></span>
-                <span><img src="./assets/signum heredis.jpg" /><input id="ele-atk-wonder-check" type="checkbox" checked /></span>
-                <span><img src="./assets/oppressus fragor.jpg" /><input id="dmg-cap-wonder-check" type="checkbox" checked /></span>
-                <span><img src="./assets/symbolum amicitiae.jpg" /><input id="amp-wonder-input" />
+                <div id="elem-wonders">
+                    <span><img src="./assets/fire yupei.jpg" class="wonder-image" /><input id="fire-yupei-check" class="wonder-input" type="checkbox" checked /></span>
+                    <span><img src="./assets/water yupei.jpg" class="wonder-image" /><input id="water-yupei-check" class="wonder-input" type="checkbox" checked /></span>
+                    <span><img src="./assets/earth yupei.jpg" class="wonder-image" /><input id="earth-yupei-check" class="wonder-input" type="checkbox" checked /></span>
+                    <span><img src="./assets/wind yupei.jpg" class="wonder-image" /><input id="wind-yupei-check" class="wonder-input" type="checkbox" checked /></span>
+                    <span><img src="./assets/light yupei.jpg" class="wonder-image" /><input id="light-yupei-check" class="wonder-input" type="checkbox" checked /></span>
+                    <span><img src="./assets/dark yupei.jpg" class="wonder-image" /><input id="dark-yupei-check" class="wonder-input" type="checkbox" checked /></span>
+
+                    <span><img src="./assets/fire arcarum ring.jpg" class="wonder-image" /><input disabled id="fire-arcarum-ring-check" class="wonder-input" type="checkbox" /></span>
+                    <span><img src="./assets/water arcarum ring.jpg" class="wonder-image" /><input disabled id="water-arcarum-ring-check" class="wonder-input" type="checkbox" /></span>
+                    <span><img src="./assets/earth arcarum ring.jpg" class="wonder-image" /><input id="earth-arcarum-ring-check" class="wonder-input" type="checkbox" /></span>
+                    <span><img src="./assets/wind arcarum ring.jpg" class="wonder-image" /><input disabled id="wind-arcarum-ring-check" class="wonder-input" type="checkbox" /></span>
+                    <span><img src="./assets/light arcarum ring.jpg" class="wonder-image" /><input disabled id="light-arcarum-ring-check" class="wonder-input" type="checkbox" /></span>
+                    <span><img src="./assets/dark arcarum ring.jpg" class="wonder-image" /><input id="dark-arcarum-ring-check" class="wonder-input" type="checkbox" /></span>
+                </div>
+                <span><img src="./assets/signum heredis.jpg" class="wonder-image" /><input id="ele-atk-wonder-check" class="wonder-input" type="checkbox" checked /></span>
+                <span><img src="./assets/oppressus fragor.jpg" class="wonder-image" /><input id="dmg-cap-wonder-check" class="wonder-input" type="checkbox" checked /></span>
+                <span><img src="./assets/symbolum amicitiae.jpg" class="wonder-image" /><input id="amp-wonder-input" class="wonder-input" />
                     <p>%</p>
                 </span>
-                <span><img src="./assets/Crew Ship.png" /><input id="crew-ship-input" value="10" />
+                <span><img src="./assets/Crew Ship.png" class="wonder-image" /><input id="crew-ship-input" value="10" class="wonder-input" />
                     <p>%</p>
                 </span>
-                <span><img src="./assets/Rainbow Reactor.png" /><input id="crew-reactor-input" value="10" />
+                <span><img src="./assets/Rainbow Reactor.png" class="wonder-image" /><input id="crew-reactor-input" value="10" class="wonder-input" />
                     <p>%</p>
                 </span>
             </div>
@@ -90,20 +107,6 @@
                 <span><img src="./assets/Unique DEF Down.png" /><input id="def-down-sp-check" type="checkbox" /></span>
             </div>
             <div>
-                <span>Ally Elem <select id="ally-elem-select">
-                        <option>Fire</option>
-                        <option>Water</option>
-                        <option>Earth</option>
-                        <option>Wind</option>
-                        <option>Light</option>
-                        <option>Dark</option>
-                    </select></span>
-                <span>Base ATK <input id="base-atk-input" /></span>
-                <span><img src="./assets/Piercing Sight.png" /><input id="piercing-sight-check" type="checkbox" /></span>
-                <span><img src="./assets/Perpetuity Ring.png" /><input id="perp-ring-check" type="checkbox" /></span>
-                <button id="char-emp-import-button">Import Char EMPs</button>
-            </div>
-            <div>
                 <span>DMG Elem <select id="ally-dmg-elem-select">
                         <option selected>Ally Elem</option>
                         <option>Fire</option>
@@ -115,19 +118,37 @@
                         <option>Destruction</option>
                         <option>Plain</option>
                     </select></span>
+                <span><img src="./assets/Piercing Sight.png" /><input id="piercing-sight-check" type="checkbox" /></span>
                 <span>DMG Type <select id="dmg-type-select">
                         <option value=0>Normal Attack</option>
                         <option value=1 selected>Skill</option>
                         <option value=2>Charge Attack</option>
                         <option value=3 disabled>Counter</option>
                     </select></span>
-                <span>DMG Mod <input id="dmg-mod-input" value="100" />%</span>
-                <span hidden>Echo Mod <input id="echo-mod-input" value="0" /><p>%</p></span>
+                <span hidden>Echo Mod <input id="echo-mod-input" value="0" />
+                    <p>%</p>
+                </span>
+            </div>
+            <hr style="width: 100%;">
+            <div>
+                <span>Ally Elem <select id="ally-elem-select">
+                        <option>Fire</option>
+                        <option>Water</option>
+                        <option>Earth</option>
+                        <option>Wind</option>
+                        <option>Light</option>
+                        <option>Dark</option>
+                    </select></span>
+                <span>Base ATK <input id="base-atk-input" /></span>
+                <span>DMG Mod <input id="dmg-mod-input" />%</span>
+                <span><img src="./assets/Perpetuity Ring.png" /><input id="perp-ring-check" type="checkbox" /></span>
+                <span><img src="./assets/eternal wonder.jpg" /><img src="./assets/zodiac wonder.jpg" /><input id="perp-wonder-check" type="checkbox" /></span>
             </div>
             <div>
                 <span>Mode <select id="mode-select">
                         <option value="verify">Verify</option>
                         <option value="find">Find</option>
+                        <option value="new">New Cap</option>
                     </select></span>
 
                 <span>DMG Cap <select id="dmg-cap-select" class="chosen-select"></select></span>
@@ -160,7 +181,15 @@
                 <textarea id="observed-input"></textarea>
                 <div>
                     <div id="cap-info-row">
-                        <span class="cap-info-desc">Thresholds:</span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info-desc">Attenuations:</span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span>
+                        <span class="cap-info-desc">Thresholds:</span>
+                        <input class="custom-cap-info threshold" /><input class="custom-cap-info threshold" /><input class="custom-cap-info threshold" /><input class="custom-cap-info threshold" />
+                        <span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span>
+                        <span class="cap-info-desc">Attenuations:</span>
+                        <input class="custom-cap-info attenuation" /><p class="custom-cap-info">%</p>
+                        <input class="custom-cap-info attenuation" /><p class="custom-cap-info">%</p>
+                        <input class="custom-cap-info attenuation" /><p class="custom-cap-info">%</p>
+                        <input class="custom-cap-info attenuation" /><p class="custom-cap-info">%</p>
+                        <span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span>
                     </div>
                     <div id="rng-result-table"></div>
                 </div>

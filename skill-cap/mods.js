@@ -82,6 +82,7 @@ const MODS = {
     debuff_atk: "debuff atk",
     moon_prog: "moon prog",
     bounty_atk: "bounty atk",
+    unique_na_supp: "unique na supp",
 
     wide_open_1: "wide open 1",
     wide_open_2: "wide open 2",

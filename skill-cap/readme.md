@@ -21,14 +21,6 @@ Wonders and crew ship/reactor values are saved to local browser storage so you d
 
 ## Caveats (Things I'm aware of to reach parity with old sheet)
  - Bullet PWR isn't implemented.
- - There is no category for sp na supp (sorry faa0 bullet).
  - Fixed CA is fixed to 2000 currently.
  - Plain damage and Null enemy daamge numbers probably don't work right.
- - Earring/Ring/EMP Stamina/Enmity will eventually have unique input functionality; assuming max HP the following values can be used:
-    - Each Enmity source: 1% jammed
-    - Stamina EMP:
-    - 1★: 3% Strength
-    - 3★: 4% Strength
-    - 2★: 6% Strength
-    - Stamina Ring/Earring: (lvl + 2)%
-    - Supplemental Earring: (lvl * 2,000)
+ - MC class stat preselects

@@ -158,7 +158,9 @@ function calcDamage(dmgType, capPreset, modList, hardCap, options = {}) {
 
     switch (dmgType) {
         case DMGTYPES.NA:
+            let dmgsCop = dmgs;
             dmgs = applyAmp(dmgs);
+            dmgs.map((d, i) => d + Math.ceil(dmgsCop[i] * correctMod(MODS.unique_na_supp)))
             dmgs = applyHardCap(dmgs);
             dmgs = applyEchoMod(dmgs);
             dmgs = applySupp(dmgs);
@@ -190,16 +192,24 @@ function calcCap(dmgType, modList, hardCap, inputs) {
     mlc = collapseBoosts(mlc, dmgType);
     //filter out caps we never want to check
     let caps = Object.keys(DMGCAPS).filter(key => !(key.includes("Hard") || key.includes("Mjolnir") || key.includes("NA") || key == "Assassin"));
-    let neutralRaw = calcRaw(dmgType, mlc) * correctMod(mlc.getMod(MODS.critical));
-    //filter out caps that raw doesn't meet first threshold
+    let testRaw = calcRaw(dmgType, mlc) * correctMod(mlc.getMod(MODS.critical)) * 1.05;
     let minInput = Math.min(...inputs);
+    let skips = { shortRaw: 0, smallCap: 0 };
     caps = caps.filter(c => {
-        let mlc2 = {...mlc};
+        let mlc2 = { ...mlc };
         let boostedCap = boostCap(DMGCAPS[c], mlc2.getMod(MODS.dmg_cap) / 100, correctMod(mlc2.getMod(MODS.dmg_cap_pen)));
         mlc2[MODS.dmg_cap] = 0;
         mlc2[MODS.dmg_cap_pen] = 0;
-        if (boostedCap.thresholds[0] > neutralRaw) return false;
-        if (minInput > calcDamage(dmgType, boostedCap, mlc2, hardCap, { staticVariance: 1.05})) return false;
+        //if max simulated raw doesn't meet first cap thresholds then theres nothing to test
+        if (boostedCap.thresholds[0] > testRaw) {
+            skips.shortRaw++;
+            return false;
+        }
+        //if the smallest observed input isn't within range for the highest simulated raw, don't test the other 100 rngs
+        if (minInput > calcDamage(dmgType, boostedCap, mlc2, hardCap, { staticVariance: 1.05 })) {
+            skips.smallCap++;
+            return false;
+        }
         return true;
     }).map(c => DMGCAPS[c]);
 
@@ -212,7 +222,7 @@ function calcCap(dmgType, modList, hardCap, inputs) {
         });
         if (match > 0) matches.push({ id: cap.id, match, dmgs });
     });
-    return [matches.filter(p => p.match > 0).sort((a, b) => b.match - a.match), caps.length];
+    return [matches.filter(p => p.match > 0).sort((a, b) => b.match - a.match), caps.length, skips];
 }
 
 function simpleSoftCap(cap) {
