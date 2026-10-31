@@ -137,9 +137,9 @@ const jqQueries = {
             addImageDownload(item.id + "_02", "weapon");
             addImageDownload(item.id + "_03", "weapon");
         }
-        if (item["s1Icon"]) addImageDownload(item["s1Icon"], "weapon skill");
-        if (item["s2Icon"]) addImageDownload(item["s2Icon"], "weapon skill");
-        if (item["s3Icon"]) addImageDownload(item["s3Icon"], "weapon skill");
+        if (item["s1Icon"]) item["s1Icon"].split(";").forEach(icon => addImageDownload(icon, "weapon skill"));
+        if (item["s2Icon"]) item["s1Icon"].split(";").forEach(icon => addImageDownload(icon, "weapon skill"));
+        if (item["s3Icon"]) item["s1Icon"].split(";").forEach(icon => addImageDownload(icon, "weapon skill"));
         bookmarkMins["weapons"][item.id] = item.maxUncap;
 
         return {
@@ -337,7 +337,11 @@ function downloadImage(srcLink, destinationFile) {
     downloadlistqueue[destinationFile] = true;
 
     downloadlist.push(async () => {
-        https.get(srcLink, (res) => {
+        https.get(srcLink, {
+            headers: {
+                "User-Agent": USER_AGENT
+            }
+        }, (res) => {
             let data = [];
             res.on('data', chunk => data.push(chunk));
             res.on('end', async () => {
