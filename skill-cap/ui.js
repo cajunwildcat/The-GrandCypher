@@ -306,12 +306,12 @@ function findDMGCap(input) {
     let [results, checkCount, skipTypes] = calcCap(getInputVal("dmg-type-select"), makeModList(), DMGCAPS[getInputVal("hard-cap-select")], input);
     if (results.length == 1) {
         let cap = results[0].id;
-        console.log(`Cap found: ${formatNum(simpleSoftCap(DMGCAPS[cap]))} (${cap})`);
-        fillResultTable(results[0].dmgs);
-        document.querySelector("#result-match-count").innerHTML += ` | Checked: ${checkCount} Caps`;
         let capSel = document.querySelector("#dmg-cap-select");
         capSel.value = [...capSel.childNodes].find(n => n.dataset.cap == cap).innerHTML;
         $(capSel).trigger("chosen:updated");
+        console.log(`Cap found: ${formatNum(simpleSoftCap(DMGCAPS[cap]))} (${cap})`);
+        fillResultTable(results[0].dmgs);
+        document.querySelector("#result-match-count").innerHTML += ` | Checked: ${checkCount} Caps`;
     }
     else {
         fillResultTable(new Array(101).fill(0));
