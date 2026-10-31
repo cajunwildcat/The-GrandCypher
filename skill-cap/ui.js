@@ -270,10 +270,12 @@ function calcDamageUI() {
     if (modList[MODS.base_atk] == 0 || modList[MODS.dmg_mod] == 0) return;
     let subModList = structuredClone(modList);
     let subResults = null;
-    switch (getInputVal("sub-table-select")) {
+    let subTableVal = getInputVal("sub-table-select");
+    switch (subTableVal) {
         case "Echo": subResults = true; subModList[MODS.echo_mod] = getInputVal("sub-table-echo-input"); break;
         case "RNG Crit": subResults = true; subModList[MODS.critical] = getInputVal("sub-table-crit-input") + (subModList[MODS.critical] ?? 0); break;
         case "DEF Down": subResults = true; subModList[MODS.def_down] = getInputVal("sub-table-def-input") + (subModList[MODS.def_down] ?? 0); break;
+        case "% Cap": subResults = true; break;
         case "Custom": subResults = true; subModList = modList; modList = customModList; break;
     }
     let selectedCap;
@@ -286,13 +288,44 @@ function calcDamageUI() {
         case "new":
             selectedCap = {
                 id: "",
-                thresholds: [...document.querySelectorAll(".custom-cap-info.threshold")].map(n => parseFloat(n.value.replaceAll(",",""))),
-                attenuations: [...document.querySelectorAll(".custom-cap-info.attenuation")].map(n => parseFloat(n.value.replaceAll(",","")) / 100),
+                thresholds: [...document.querySelectorAll(".custom-cap-info.threshold")].map(n => parseFloat(n.value.replaceAll(",", ""))),
+                attenuations: [...document.querySelectorAll(".custom-cap-info.attenuation")].map(n => parseFloat(n.value.replaceAll(",", "")) / 100),
             }
             break;
     }
     let baseResults = calcDamage(getInputVal("dmg-type-select"), selectedCap, modList, DMGCAPS[getInputVal("hard-cap-select")]);
-    if (subResults) subResults = calcDamage(getInputVal("dmg-type-select"), selectedCap, subModList, DMGCAPS[getInputVal("hard-cap-select")]);
+    if (subResults) {
+        if (subTableVal == "% Cap") {
+            let dmgType = getInputVal("dmg-type-select")
+            subModList.getMod = (l, d) => getMod(subModList, l, d);
+            subModList = collapseBoosts(subModList, dmgType);
+            let boostedCap = boostCap(selectedCap, subModList.getMod(MODS.dmg_cap) / 100, correctMod(subModList.getMod(MODS.dmg_cap_pen)))
+            boostedCap.thresholds.splice(0, 0, 0);
+            boostedCap.attenuations.splice(0, 0, 1);
+            let rngs = makeSeqArray(101, (i) => (i - 50) / 1000 + 1);
+            let raw = calcRaw(dmgType, subModList);
+            let dmgs = rngs.map(v => {
+                let newRaw = raw * v;
+                if (dmgType == DMGTYPES.CA) {
+                    newRaw += subModList.getMod(MODS.fixed_ca, 2000);
+                }
+                newRaw *= correctMod(subModList.getMod(MODS.critical));
+                
+                let percent = 0;
+                for (let i = 0; i < boostedCap.thresholds.length - 1; i++) {
+                    ct = boostedCap.thresholds[i];
+                    nt = boostedCap.thresholds[i+1];
+                    percent += Math.min(newRaw > ct? newRaw : 0, nt) / nt;
+                }
+                percent += Math.max(0, (newRaw / boostedCap.thresholds[boostedCap.thresholds.length-1]) - 1)
+                return `${Math.trunc(percent * 100)}%`;
+            });
+            subResults = dmgs;
+        }
+        else {
+            subResults = calcDamage(getInputVal("dmg-type-select"), selectedCap, subModList, DMGCAPS[getInputVal("hard-cap-select")]);
+        }
+    }
     fillResultTable(baseResults, subResults);
 }
 

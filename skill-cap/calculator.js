@@ -135,8 +135,7 @@ function calcDamage(dmgType, capPreset, modList, hardCap, options = {}) {
     else rngs = makeSeqArray(101, (i) => (i - 50) / 1000 + 1);
     let raw = calcRaw(dmgType, modList);
     let dmgs = rngs.map(v => {
-        let newRaw
-        newRaw = raw * v;
+        let newRaw = raw * v;
         if (dmgType == DMGTYPES.CA) {
             newRaw += modList.getMod(MODS.fixed_ca, 2000);
         }

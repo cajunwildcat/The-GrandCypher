@@ -21,7 +21,7 @@ function makeSeqArray(n, cb = (i) => i) {
 
 let FMR = new Intl.NumberFormat("en-US");
 function formatNum(num) {
-    return FMR.format(num);
+    return isNaN(num)? num : FMR.format(num);
 }
 
 function sortSet(set, condition = (a, b) => a - b) {
