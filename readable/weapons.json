@@ -29796,6 +29796,30 @@
     "jpname": "遺都の継ぎ刃",
     "bullets": null
   },
+  "1040030000": {
+    "pageName": "Ragnarok",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "series": "grand",
+    "element": "dark",
+    "character": "Id",
+    "skill1": {
+      "name": "Oblivion's Verity",
+      "icon": "ws_skill_tec_6_3.png"
+    },
+    "skill2": {
+      "name": "Graphite Impulse",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": "Oblivion's Stratagem",
+      "icon": "ws_skill_tec_rise_6_3.png"
+    },
+    "type": "sabre",
+    "awakening": null,
+    "jpname": "ラグナロク",
+    "bullets": null
+  },
   "1040100000": {
     "pageName": "Azoth",
     "maxUncap": 3,
@@ -56242,6 +56266,37 @@
       "rifle",
       "rifle",
       "rifle"
+    ]
+  },
+  "1040519200": {
+    "pageName": "Escorting Arms",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "wind",
+    "character": "Eugen (SSR)",
+    "skill1": {
+      "name": "Whirlwind's Celere",
+      "icon": "ws_skill_moment_4.png"
+    },
+    "skill2": {
+      "name": "Wind's Stamina",
+      "icon": "ws_skill_whole_4_1.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "gun",
+    "awakening": null,
+    "jpname": null,
+    "bullets": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
     ]
   },
   "1040600000": {

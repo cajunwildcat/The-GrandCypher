@@ -3850,5 +3850,14 @@
     "element": "light",
     "series": "acies",
     "jpname": "バステト"
+  },
+  "2040463000": {
+    "pageName": "Poppet Hareloom",
+    "name": "Poppet Hareloom",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "element": "dark",
+    "series": "acies",
+    "jpname": "ポペットバニット"
   }
 }

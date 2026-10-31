@@ -30154,5 +30154,63 @@
     "artbouns": false,
     "artex": false,
     "charid": 1059
+  },
+  "3040683000": {
+    "pageName": "Id",
+    "name": "Id",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Dark",
+    "series": "grand",
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "イド",
+    "releaseDate": "2026-10-31",
+    "gender": "m",
+    "obtain": [
+      "premium,grand,gala"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Ragnarok",
+    "weapon": [
+      "Sabre"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3325
+  },
+  "3040684000": {
+    "pageName": "Eugen (SSR)",
+    "name": "Eugen",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Wind",
+    "series": null,
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "オイゲン",
+    "releaseDate": "2026-10-31",
+    "gender": "m",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Escorting Arms",
+    "weapon": [
+      "Gun"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 2007
   }
 }
