@@ -265,6 +265,7 @@ function dmgTypeChange(update = true) {
 
 function calcDamageUI() {
     document.querySelector("#result-match-count").textContent = "";
+    document.querySelector("#rng-result-table").classList.toggle("hide-sub-numbers", true);
     let modList = makeModList();
     if (modList[MODS.base_atk] == 0 || modList[MODS.dmg_mod] == 0) return;
     let subModList = structuredClone(modList);
