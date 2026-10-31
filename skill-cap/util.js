@@ -27,3 +27,23 @@ function formatNum(num) {
 function sortSet(set, condition = (a, b) => a - b) {
     return new Set(Array.from(set).sort(condition));
 }
+
+function printCustomCap() {
+    let thresholds = [...document.querySelectorAll(".custom-cap-info.threshold")]
+        .map(input => Number.parseFloat(input.value.replaceAll(",", "")));
+    let attenuations = [...document.querySelectorAll(".custom-cap-info.attenuation")]
+        .map(input => Number.parseFloat(input.value.replaceAll(",", "")) / 100);
+
+    if (thresholds.length != 4 || attenuations.length != 4 ||
+        [...thresholds, ...attenuations].some(value => !Number.isFinite(value))) {
+        throw new Error("Enter four valid thresholds and four valid attenuations before printing a cap.");
+    }
+
+    let simpleSoftCap = Math.round(
+        thresholds[0] +
+        (thresholds[1] - thresholds[0]) * attenuations[0] +
+        (thresholds[2] - thresholds[1]) * attenuations[1] +
+        (thresholds[3] - thresholds[2]) * attenuations[2]
+    );
+    console.log(`\t//${formatNum(simpleSoftCap)}\n\t"NEW_CAP_ID": {\n\t\t"id": "NEW_CAP_ID",\n\t\t"thresholds": [${thresholds.join(", ")}],\n\t\t"attenuations": [${attenuations.join(", ")}]\n\t},`);
+}
