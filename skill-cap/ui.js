@@ -131,6 +131,18 @@ function setupDMGCapSelect() {
     $(sel).trigger("chosen:updated");
 }
 
+function setupClassSelect() {
+    let sel = document.querySelector("#mc-class-select");
+    Object.keys(MCCLASS).forEach(cls => {
+        if (cls == "Class Completion" || cls == "Non-Row V") return;
+        let opt = document.createElement("option");
+        opt.textContent = cls;
+        if (cls.includes("Origin")) opt.dataset.search = cls[0] + "O";
+        sel.appendChild(opt);
+    });
+    $(sel).trigger("chosen:updated");
+}
+
 async function importCharEMPS() {
     if (EMPwarning && !confirm(`This will clear the "Passive" column in the mod table. Do you want to continue?\nYou can toggle this warning by typing "toggleEMPWarning()" in the dev console.`)) return;
     let importText;
@@ -556,6 +568,12 @@ function makeModList() {
     addMod(MODS.base_atk, getInputVal("base-atk-input"));
     addMod(MODS.base_def, getInputVal("enemy-def-input"));
     addMod(MODS.dmg_mod, getInputVal("dmg-mod-input"));
+    if ((mcClass = getInputVal("mc-class-select")) != "Non MC") {
+        let cls = MCCLASS[mcClass];
+        Object.keys(cls.mods).forEach(m => addMod(m, cls.mods[m]));
+        if (cls.row < 5) for (let m in mList=MCCLASS["Non-Row V"].mods) addMod(m, mList[m]);
+        for (let m in mList=MCCLASS["Class Completion"].mods) addMod(m, mList[m]);
+    }
 
     if (dmgElem == ELEMS.Plain) modList[MODS.elem_atk] = 0;
     return modList;
@@ -575,6 +593,7 @@ window.onload = () => {
                 };
                 break;
         }
+        input.value = input.defaultValue;
         input.addEventListener("input", handler);
     });
     document.querySelectorAll("select").forEach(select => {
@@ -604,6 +623,7 @@ window.onload = () => {
     switchMode(false);
     setupAddModRowSelect();
     setupSaveTeamControls();
+    setupClassSelect();
     [...document.querySelectorAll(".wonder-input")].forEach(inp => {
         let prop;
         let event;

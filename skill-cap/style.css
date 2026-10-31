@@ -11,6 +11,10 @@ input:not([type="checkbox"]) {
     text-align: right;
 }
 
+hr {
+    margin: 0;
+}
+
 input.custom-cap-info {
     margin-left: 3px;
     &.attenuation {

@@ -7,8 +7,9 @@
     <title>Skill Cap Verifier</title>
     <script src="default-saved-teams.js"></script>
     <script src="util.js"></script>
-    <script src="caps.js"></script>
     <script src="mods.js"></script>
+    <script src="mc-classes.js"></script>
+    <script src="caps.js"></script>
     <script src="calculator.js"></script>
     <script src="ui.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -131,6 +132,9 @@
             </div>
             <hr style="width: 100%;">
             <div>
+                <span><select id="mc-class-select" class="chosen-select"></select></span>
+            </div>
+            <div>
                 <span>Ally Elem <select id="ally-elem-select">
                         <option>Fire</option>
                         <option>Water</option>
@@ -186,10 +190,14 @@
                         <input class="custom-cap-info threshold" /><input class="custom-cap-info threshold" /><input class="custom-cap-info threshold" /><input class="custom-cap-info threshold" />
                         <span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span>
                         <span class="cap-info-desc">Attenuations:</span>
-                        <input class="custom-cap-info attenuation" /><p class="custom-cap-info">%</p>
-                        <input class="custom-cap-info attenuation" /><p class="custom-cap-info">%</p>
-                        <input class="custom-cap-info attenuation" /><p class="custom-cap-info">%</p>
-                        <input class="custom-cap-info attenuation" /><p class="custom-cap-info">%</p>
+                        <input class="custom-cap-info attenuation" />
+                        <p class="custom-cap-info">%</p>
+                        <input class="custom-cap-info attenuation" />
+                        <p class="custom-cap-info">%</p>
+                        <input class="custom-cap-info attenuation" />
+                        <p class="custom-cap-info">%</p>
+                        <input class="custom-cap-info attenuation" />
+                        <p class="custom-cap-info">%</p>
                         <span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span><span class="cap-info"></span>
                     </div>
                     <div id="rng-result-table"></div>
