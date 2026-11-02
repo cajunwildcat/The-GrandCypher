@@ -172,6 +172,7 @@ function statusSelectChanged() {
         setupStatusSelect(true);
     }
     statusList.appendChild(statusImg);
+    $(statusImg).tooltipster({side: "bottom", contentAsHTML: true}).tooltipster("content", Object.keys(status.mods).map(m=>`${m}: ${formatNum(status.mods[m])}`).join("<br>"));
     setupStatusSelect(true);
 }
 
@@ -219,7 +220,6 @@ function setupModsTableRows() {
     addModsTableRow(MODS.dmg_cap_pen, []);
     addModsTableRow(MODS.skill_dmg, []);
     addModsTableRow(MODS.perpetuity, []);
-    addModsTableRow(MODS.grid_critical, [])
 }
 
 function fillResultTable(valueArr, subValueArr = null) {
