@@ -306,6 +306,7 @@ function dmgTypeChange(update = true) {
         case DMGTYPES.NA: break;
     }
     setupDMGCapSelect();
+    setBulletPWRVis();
     if (update) inputUpdated();
 }
 
@@ -313,6 +314,8 @@ function classChange(update = true) {
     let classSel = document.querySelector("#mc-class-select");
     let awkSel = document.querySelector("#char-awk-select");
     awkSel.hidden = classSel.value != "Non MC";
+    [...document.querySelectorAll("span:has(>#perp-wonder-check), span:has(>#perp-ring-check)")].forEach(check => check.hidden = classSel.value != "Non MC");
+    setBulletPWRVis();
     if (update) inputUpdated();
 }
 
@@ -524,6 +527,12 @@ function getCheckBox(eleID) {
     return document.querySelector(`#${eleID}`).checked;
 }
 
+function setBulletPWRVis() {
+    let classSel = document.querySelector("#mc-class-select").value;
+    let dmgTypeSel = document.querySelector("#dmg-type-select").value;
+    document.querySelector("span:has(>#bullet-pwr-input)").hidden = !(dmgTypeSel == DMGTYPES.NA && (classSel == "Soldier" || classSel == "Gunslinger"));
+}
+
 function setupAddModRowSelect() {
     let sel = document.querySelector("#add-mod-row-select");
     sel.innerHTML = "";
@@ -609,12 +618,7 @@ function makeModList() {
         addMod(MODS.ca_dmg_cap, 5);
     }
     if (seraphic && getCheckBox(`${getInputVal("ally-elem-select").toLowerCase()}-arcarum-ring-check`)) addMod(MODS.elem_dmg_amp, 10);
-    if (getCheckBox("perp-wonder-check")) addMod(MODS.perpetuity, 10);
     //misc
-    if (getCheckBox("perp-ring-check")) {
-        addMod(MODS.perpetuity, 10);
-        addMod(MODS.dmg_cap, 5);
-    }
     addMod(MODS.def_down, getInputVal("enemy-def-down-input"));
     addMod(MODS.def_up, getInputVal("enemy-def-up-input"));
     if (getCheckBox("def-down-sp-check")) addMod(MODS.sp_def_down, 10);
@@ -632,6 +636,7 @@ function makeModList() {
         Object.keys(cls.mods).forEach(m => addMod(m, cls.mods[m]));
         if (cls.row < 5) for (let m in mList = MCCLASS["Non-Row V"].mods) addMod(m, mList[m]);
         for (let m in mList = MCCLASS["Class Completion"].mods) addMod(m, mList[m]);
+        if (mcClass == "Gunslinger" || mcClass == "Soldier") addMod(MODS.bullet_pwr, getInputVal("bullet-pwr-input"));
     }
     else {
         let awkSel = document.querySelector("#char-awk-select");
@@ -644,6 +649,11 @@ function makeModList() {
                 addMod(MODS.na_dmg_cap, 5);
                 addMod(MODS.na_dmg_amp, 5);
                 break;
+        }
+        if (getCheckBox("perp-wonder-check")) addMod(MODS.perpetuity, 10);
+        if (getCheckBox("perp-ring-check")) {
+            addMod(MODS.perpetuity, 10);
+            addMod(MODS.dmg_cap, 5);
         }
     }
     [...activeStatuses].forEach(status => {

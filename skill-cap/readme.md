@@ -33,7 +33,6 @@ Wonders and crew ship/reactor values are saved to local browser storage so you d
 ## TODO:
  - Add dmg mod range support to Find mode
  - Add standardized Testing statuses to `statuses.js`
- - Add Bullet PWR input field when class is set to Gunslinger/Soldier
  - Add Fixed CA input field when dmg type is set to CA
  - Add CA dmg caps to `caps.js`
 

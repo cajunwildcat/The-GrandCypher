@@ -106,4 +106,5 @@ const MODS = {
     dmg_mod: "dmg mod",
     base_def: "base def",
     critical: "critical",
+    bullet_pwr: "bullet power",
 }

@@ -80,7 +80,7 @@ const mainModNames = [
     MODS.bounty_atk
 ];
 function calcRaw(dmgType, modList) {
-    let correctedATK = correctBaseATK(modList.getMod(MODS.base_atk), 100, modList.getMod(MODS.crew_ship), modList.getMod(MODS.crew_reactor));
+    let correctedATK = correctBaseATK(modList.getMod(MODS.base_atk), modList.getMod(MODS.bullet_pwr, 100), modList.getMod(MODS.crew_ship), modList.getMod(MODS.crew_reactor));
 
     let raw = mainModNames.map(mm => {
         if ((mm == MODS.weapon_ca_dmg || mm == MODS.passive_ca_dmg) && dmgType != DMGTYPES.CA) return 1;
