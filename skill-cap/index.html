@@ -9,6 +9,7 @@
     <script src="util.js"></script>
     <script src="mods.js"></script>
     <script src="mc-classes.js"></script>
+    <script src="statuses.js"></script>
     <script src="caps.js"></script>
     <script src="calculator.js"></script>
     <script src="ui.js"></script>
@@ -34,7 +35,9 @@
         </div>
         <div>
             <select id="add-mod-row-select" class="chosen-select" data-placeholder="Add a mod +"></select>
+            <select disabled id="add-status-col-select" class="chosen-select" data-placeholder="Add a Status"></select>
         </div>
+        <div id="status-list"></div>
         <div id="mods-table-overflow-wrapper">
             <table id="mods-input-table">
                 <tr class="header-row">
@@ -132,7 +135,13 @@
             </div>
             <hr style="width: 100%;">
             <div>
-                <span><select id="mc-class-select" class="chosen-select"></select></span>
+                <span>Character <select id="mc-class-select" class="chosen-select"></select></span>
+                <span><select id="char-awk-select">
+                        <option>Balanced</option>
+                        <option>Attack</option>
+                        <option>Defense</option>
+                        <option>Multiattack</option>
+                    </select></span>
             </div>
             <div>
                 <span>Ally Elem <select id="ally-elem-select">

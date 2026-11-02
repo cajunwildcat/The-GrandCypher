@@ -1,5 +1,6 @@
 let MODE = "find";
-let allowedMods = new Set([MODS.normal_might, MODS.omega_might, MODS.od_might, MODS.ex_might, MODS.ex_might_sp, MODS.normal_stamina, MODS.omega_stamina, MODS.od_stamina, MODS.normal_enmity, MODS.omega_enmity, MODS.od_enmity, MODS.elem_atk, MODS.elem_atk_prog, MODS.counter_dmg, MODS.critical, MODS.perpetuity, MODS.strength, MODS.jammed, MODS.od_atk, MODS.break_atk, MODS.hype, MODS.sleep, MODS.stone, MODS.assassin, MODS.weapon_ca_dmg, MODS.passive_ca_dmg, MODS.na_dmg, MODS.stackable_atk_up, MODS.stackable_atk_up_sp, MODS.attack_down, MODS.stackable_atk_down, MODS.global_field, MODS.local_field, MODS.primarch_summon, MODS.passive_enmity, MODS.sex_atk, MODS.debuff_atk, MODS.moon_prog, MODS.bounty_atk, MODS.dmg_cap_pen, MODS.crit_dmg, MODS.bf_atk, MODS.bf_ca_dmg, MODS.bf_skill_dmg, MODS.skill_dmg, MODS.cb_dmg, MODS.def_ignore, MODS.dmg_cap, MODS.dmg_cap_sp, MODS.na_dmg_cap, MODS.skill_dmg_cap, MODS.skill_dmg_cap_sp, MODS.ca_dmg_cap, MODS.sp_ca_dmg_cap, MODS.cb_dmg_cap, MODS.fc_dmg_cap, MODS.dmg_amp, MODS.omega_dmg_amp, MODS.od_dmg_amp, MODS.elem_dmg_amp, MODS.null_amp, MODS.na_dmg_amp, MODS.na_dmg_amp_sp, MODS.skill_dmg_amp, MODS.skill_dmg_amp_sp, MODS.ca_dmg_amp, MODS.ca_dmg_amp_sp, MODS.cb_dmg_amp, MODS.fc_dmg_amp, MODS.dmg_supp, MODS.na_dmg_supp, MODS.na_dmg_supp_sp, MODS.skill_dmg_supp, MODS.skill_dmg_supp_sp, MODS.ca_dmg_supp, MODS.ca_dmg_supp_sp, MODS.wide_open_1, MODS.wide_open_2, MODS.wide_open_3, MODS.wide_open_4, MODS.wide_open_5, MODS.wide_open_6, MODS.unique_na_supp]);
+let allowedMods = new Set([MODS.normal_might, MODS.omega_might, MODS.od_might, MODS.ex_might, MODS.ex_might_sp, MODS.normal_stamina, MODS.omega_stamina, MODS.od_stamina, MODS.normal_enmity, MODS.omega_enmity, MODS.od_enmity, MODS.elem_atk, MODS.elem_atk_prog, MODS.counter_dmg, MODS.grid_critical, MODS.perpetuity, MODS.strength, MODS.jammed, MODS.od_atk, MODS.break_atk, MODS.hype, MODS.sleep, MODS.stone, MODS.assassin, MODS.weapon_ca_dmg, MODS.passive_ca_dmg, MODS.na_dmg, MODS.stackable_atk_up, MODS.stackable_atk_up_sp, MODS.attack_down, MODS.stackable_atk_down, MODS.global_field, MODS.local_field, MODS.primarch_summon, MODS.passive_enmity, MODS.sex_atk, MODS.debuff_atk, MODS.moon_prog, MODS.bounty_atk, MODS.dmg_cap_pen, MODS.crit_dmg, MODS.bf_atk, MODS.bf_ca_dmg, MODS.bf_skill_dmg, MODS.skill_dmg, MODS.cb_dmg, MODS.def_ignore, MODS.dmg_cap, MODS.dmg_cap_sp, MODS.na_dmg_cap, MODS.skill_dmg_cap, MODS.skill_dmg_cap_sp, MODS.ca_dmg_cap, MODS.sp_ca_dmg_cap, MODS.cb_dmg_cap, MODS.fc_dmg_cap, MODS.dmg_amp, MODS.omega_dmg_amp, MODS.od_dmg_amp, MODS.elem_dmg_amp, MODS.null_amp, MODS.na_dmg_amp, MODS.na_dmg_amp_sp, MODS.skill_dmg_amp, MODS.skill_dmg_amp_sp, MODS.ca_dmg_amp, MODS.ca_dmg_amp_sp, MODS.cb_dmg_amp, MODS.fc_dmg_amp, MODS.dmg_supp, MODS.na_dmg_supp, MODS.na_dmg_supp_sp, MODS.skill_dmg_supp, MODS.skill_dmg_supp_sp, MODS.ca_dmg_supp, MODS.ca_dmg_supp_sp, MODS.wide_open_1, MODS.wide_open_2, MODS.wide_open_3, MODS.wide_open_4, MODS.wide_open_5, MODS.wide_open_6, MODS.unique_na_supp, MODS.buff_critical]);
+let activeStatuses = new Set();
 const modOrder = Object.values(MODS);
 let customModList = {};
 let EMPwarning = JSON.parse(getLocalStor("emp-warning", true));
@@ -143,6 +144,37 @@ function setupClassSelect() {
     $(sel).trigger("chosen:updated");
 }
 
+function setupStatusSelect(update = false) {
+    let sel = document.querySelector("#add-status-col-select");
+    sel.innerHTML = "<option></option>";
+    for (let key in STATUSES) {
+        if (activeStatuses.has(key)) continue;
+        let opt = document.createElement("option");
+        opt.textContent = key;
+        opt.dataset.search = `${STATUSES[key].source} ${Object.keys(STATUSES[key].mods).join(" ")}`;
+        sel.appendChild(opt);
+    }
+    $(sel).trigger("chosen:updated");
+    if (update) inputUpdated();
+}
+
+function statusSelectChanged() {
+    let sel = document.querySelector("#add-status-col-select");
+    let statusKey = sel.value;
+    activeStatuses.add(statusKey);
+    let status = STATUSES[statusKey];
+    let statusList = document.querySelector("#status-list");
+    let statusImg = document.createElement("img");
+    statusImg.src = `https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/ui/icon/status/x64/${status.img}.png`;
+    statusImg.onclick = (e) => {
+        statusImg.remove();
+        activeStatuses.delete(statusKey)
+        setupStatusSelect(true);
+    }
+    statusList.appendChild(statusImg);
+    setupStatusSelect(true);
+}
+
 async function importCharEMPS() {
     if (EMPwarning && !confirm(`This will clear the "Passive" column in the mod table. Do you want to continue?\nYou can toggle this warning by typing "toggleEMPWarning()" in the dev console.`)) return;
     let importText;
@@ -187,6 +219,7 @@ function setupModsTableRows() {
     addModsTableRow(MODS.dmg_cap_pen, []);
     addModsTableRow(MODS.skill_dmg, []);
     addModsTableRow(MODS.perpetuity, []);
+    addModsTableRow(MODS.grid_critical, [])
 }
 
 function fillResultTable(valueArr, subValueArr = null) {
@@ -255,6 +288,7 @@ function dmgTypeChange(update = true) {
     let dmgType = getInputVal("dmg-type-select");
     [...document.querySelectorAll("#sub-table-echo-opt, span:has(>#echo-mod-input)")].forEach(ele => ele.hidden = dmgType == DMGTYPES.SKILL);
     let dmgModInput = document.querySelector("#dmg-mod-input");
+    dmgModInput.classList.toggle("empty", dmgType != DMGTYPES.NA && dmgModInput.value == "");
     let subTableSel = document.querySelector("#sub-table-select");
     dmgModInput.disabled = false;
     switch (dmgType) {
@@ -275,6 +309,13 @@ function dmgTypeChange(update = true) {
     if (update) inputUpdated();
 }
 
+function classChange(update = true) {
+    let classSel = document.querySelector("#mc-class-select");
+    let awkSel = document.querySelector("#char-awk-select");
+    awkSel.hidden = classSel.value != "Non MC";
+    if (update) inputUpdated();
+}
+
 function calcDamageUI() {
     document.querySelector("#result-match-count").textContent = "";
     document.querySelector("#rng-result-table").classList.toggle("hide-sub-numbers", true);
@@ -285,7 +326,7 @@ function calcDamageUI() {
     let subTableVal = getInputVal("sub-table-select");
     switch (subTableVal) {
         case "Echo": subResults = true; subModList[MODS.echo_mod] = getInputVal("sub-table-echo-input"); break;
-        case "RNG Crit": subResults = true; subModList[MODS.critical] = getInputVal("sub-table-crit-input") + (subModList[MODS.critical] ?? 0); break;
+        case "RNG Crit": subResults = true; subModList[MODS.grid_critical] = getInputVal("sub-table-crit-input") + (subModList[MODS.grid_critical] ?? 0); break;
         case "DEF Down": subResults = true; subModList[MODS.def_down] = getInputVal("sub-table-def-input") + (subModList[MODS.def_down] ?? 0); break;
         case "% Cap": subResults = true; break;
         case "Custom": subResults = true; subModList = modList; modList = customModList; break;
@@ -321,15 +362,15 @@ function calcDamageUI() {
                 if (dmgType == DMGTYPES.CA) {
                     newRaw += subModList.getMod(MODS.fixed_ca, 2000);
                 }
-                newRaw *= correctMod(subModList.getMod(MODS.critical));
-                
+                newRaw *= correctMod(subModList.getMod(MODS.grid_critical));
+
                 let percent = 0;
                 for (let i = 0; i < boostedCap.thresholds.length - 1; i++) {
                     ct = boostedCap.thresholds[i];
-                    nt = boostedCap.thresholds[i+1];
-                    percent += Math.min(newRaw > ct? newRaw : 0, nt) / nt;
+                    nt = boostedCap.thresholds[i + 1];
+                    percent += Math.min(newRaw > ct ? newRaw : 0, nt) / nt;
                 }
-                percent += Math.max(0, (newRaw / boostedCap.thresholds[boostedCap.thresholds.length-1]) - 1)
+                percent += Math.max(0, (newRaw / boostedCap.thresholds[boostedCap.thresholds.length - 1]) - 1)
                 return `${Math.trunc(percent * 100)}%`;
             });
             subResults = dmgs;
@@ -366,6 +407,14 @@ function findDMGCap(input) {
     }
 }
 
+function modListInput() {
+    inputUpdated();
+    let team = document.querySelector("#saved-team-select").value;
+    let saveButton = document.querySelector("#save-saved-team-button");
+    saveButton.disabled = !team || team === "Empty";
+    if (!saveButton.disabled) saveButton.textContent = "Save";
+}
+
 const flatModValues = [MODS.dmg_supp, MODS.ca_dmg_supp, MODS.ca_dmg_supp_sp, MODS.na_dmg_supp, MODS.na_dmg_supp_sp, MODS.skill_dmg_supp, MODS.skill_dmg_supp_sp];
 function addModsTableRow(modID, gridValue = []) {
     if (!allowedMods.has(modID)) {
@@ -391,6 +440,21 @@ function addModsTableRow(modID, gridValue = []) {
         inputUpdated();
     }
     row.appendChild(labelCell);
+    if (modID == MODS.grid_critical) {
+        let cell = document.createElement("td");
+        cell.classList.add("mod-value");
+        cell.colSpan = 3;
+        cell.style.textAlign = "center";
+        let input = document.createElement("input");
+        input.type = "checkbox";
+        input.oninput = modListInput;
+        let label = document.createElement("span");
+        label.textContent = "100%?";
+        cell.appendChild(input);
+        cell.appendChild(label);
+        row.appendChild(cell);
+        return;
+    }
     for (let i = 0; i < cols; i++) {
         let cell = document.createElement("td");
         cell.classList.add("mod-value");
@@ -399,13 +463,7 @@ function addModsTableRow(modID, gridValue = []) {
         input.classList.add("mod-value-input");
         if (gridValue[i] && gridValue[i] > 0) input.defaultValue = gridValue[i];
         cell.appendChild(input);
-        input.oninput = () => {
-            inputUpdated();
-            let team = document.querySelector("#saved-team-select").value;
-            let saveButton = document.querySelector("#save-saved-team-button");
-            saveButton.disabled = !team || team === "Empty";
-            if (!saveButton.disabled) saveButton.textContent = "Save";
-        };
+        input.oninput = modListInput;
         input.onkeydown = navModInputs;
         input.onblur = () => {
             input.classList.remove("locked");
@@ -534,7 +592,8 @@ function makeModList() {
         if (row.id == skipAmp) return;
         if (row.id == MODS.elem_dmg_amp && superior != 1) return;
         if ((row.id == MODS.elem_atk || row.id == MODS.elem_atk_prog) && !getsElemATK) return;
-        addMod(row.id, [...row.querySelectorAll("input")].map(i => parseFloat(i.value || 0)).reduce(sumArr));
+        if (row.id == MODS.grid_critical) addMod(row.id, row.querySelector("input").checked);
+        else addMod(row.id, [...row.querySelectorAll("input")].map(i => parseFloat(i.value || 0)).reduce(sumArr));
     });
     //wonders
     if (getCheckBox("ele-atk-wonder-check") && getsElemATK) addMod(MODS.elem_atk, 3);
@@ -571,9 +630,25 @@ function makeModList() {
     if ((mcClass = getInputVal("mc-class-select")) != "Non MC") {
         let cls = MCCLASS[mcClass];
         Object.keys(cls.mods).forEach(m => addMod(m, cls.mods[m]));
-        if (cls.row < 5) for (let m in mList=MCCLASS["Non-Row V"].mods) addMod(m, mList[m]);
-        for (let m in mList=MCCLASS["Class Completion"].mods) addMod(m, mList[m]);
+        if (cls.row < 5) for (let m in mList = MCCLASS["Non-Row V"].mods) addMod(m, mList[m]);
+        for (let m in mList = MCCLASS["Class Completion"].mods) addMod(m, mList[m]);
     }
+    else {
+        let awkSel = document.querySelector("#char-awk-select");
+        switch (awkSel.value) {
+            case "Attack":
+                addMod(MODS.passive_ca_dmg, 25);
+                addMod(MODS.ca_dmg_cap, 15);
+                break;
+            case "Multiattack":
+                addMod(MODS.na_dmg_cap, 5);
+                addMod(MODS.na_dmg_amp, 5);
+                break;
+        }
+    }
+    [...activeStatuses].forEach(status => {
+        for (let m in mList = STATUSES[status].mods) addMod(m, mList[m]);
+    });
 
     if (dmgElem == ELEMS.Plain) modList[MODS.elem_atk] = 0;
     return modList;
@@ -604,6 +679,8 @@ window.onload = () => {
             case "sub-table-select": handler = subTableChange; break;
             case "add-mod-row-select": handler = createModRow; break;
             case "dmg-type-select": handler = dmgTypeChange; break;
+            case "add-status-col-select": handler = statusSelectChanged; break;
+            case "mc-class-select": handler = classChange; break;
             case "ally-elem-select":
                 select.value = "Fire";
                 handler = () => {
@@ -622,6 +699,7 @@ window.onload = () => {
     dmgTypeChange(false);
     switchMode(false);
     setupAddModRowSelect();
+    setupStatusSelect();
     setupSaveTeamControls();
     setupClassSelect();
     [...document.querySelectorAll(".wonder-input")].forEach(inp => {

@@ -30,7 +30,12 @@ These are meant to provide a limited way to verify against 2 rng tables at once 
 ## Persistence
 Wonders and crew ship/reactor values are saved to local browser storage so you do not need to re-enter them every page visit.
 
-## Caveats (Things I'm aware of to reach parity with old sheet)
- - Bullet PWR isn't implemented.
- - Fixed CA is fixed to 2000 currently.
- - Plain damage and Null enemy daamge numbers probably don't work right.
+## TODO:
+ - Add dmg mod range support to Find mode
+ - Add standardized Testing statuses to `statuses.js`
+ - Add Bullet PWR input field when class is set to Gunslinger/Soldier
+ - Add Fixed CA input field when dmg type is set to CA
+ - Add CA dmg caps to `caps.js`
+
+ - Add Sim mode
+    - Replaces the rng results table with controls to "snapshot" the current mod list into a min, median, max value

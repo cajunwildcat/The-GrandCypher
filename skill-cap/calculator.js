@@ -17,8 +17,9 @@ function getMod(modList, mod, def = 0) {
 function collapseBoosts(modList, dmgType) {
     modList = { ...modList };
 
-    modList["ex might"] = modList.getMod(MODS.ex_might) + modList.getMod(MODS.ex_might_sp);
-    modList["elem atk"] = modList.getMod(MODS.elem_atk) + modList.getMod(MODS.elem_atk_prog);
+    modList[MODS.ex_might] = modList.getMod(MODS.ex_might) + modList.getMod(MODS.ex_might_sp);
+    modList[MODS.elem_atk] = modList.getMod(MODS.elem_atk) + modList.getMod(MODS.elem_atk_prog);
+    modList[MODS.critical] = modList.getMod(MODS.buff_critical) + (modList.getMod(MODS.grid_critical) * 50);
 
     let cap = 0;
     switch (dmgType) {

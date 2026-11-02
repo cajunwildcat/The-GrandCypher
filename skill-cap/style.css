@@ -53,6 +53,15 @@ input.empty {
     width: 30px;
 }
 
+#status-list {
+    display: flex;
+    
+    img {
+        max-width: 32px;
+        max-height: 32px;
+    }
+}
+
 #mods-area div:not(#mods-table-overflow-wrapper) {
     text-align: center;
     margin-bottom: 0.2em;

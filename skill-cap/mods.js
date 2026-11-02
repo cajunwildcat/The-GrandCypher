@@ -13,7 +13,7 @@ const MODS = {
     elem_atk: "elem atk",
     elem_atk_prog: "elem atk (prog)",
     counter_dmg: "counter dmg",
-    critical: "critical",
+    grid_critical: "grid critical",
     weapon_ca_dmg: "weapon ca dmg",
     passive_ca_dmg: "passive ca dmg",
 
@@ -60,6 +60,7 @@ const MODS = {
     dmg_cap_pen: "dmg cap pen",
     crit_dmg: "crit dmg",
 
+    buff_critical: "buff critical",
     perpetuity: "perpetuity",
     strength: "strength",
     jammed: "jammed",
@@ -104,4 +105,5 @@ const MODS = {
     base_atk: "base atk",
     dmg_mod: "dmg mod",
     base_def: "base def",
+    critical: "critical",
 }
