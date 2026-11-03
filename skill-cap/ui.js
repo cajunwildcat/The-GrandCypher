@@ -147,7 +147,7 @@ function setupClassSelect() {
 function setupStatusSelect(update = false) {
     let sel = document.querySelector("#add-status-col-select");
     sel.innerHTML = "<option></option>";
-    for (let key in STATUSES) {
+    for (let key of Object.keys(STATUSES).sort()) {
         if (activeStatuses.has(key)) continue;
         let opt = document.createElement("option");
         opt.textContent = key;
@@ -164,15 +164,24 @@ function statusSelectChanged() {
     activeStatuses.add(statusKey);
     let status = STATUSES[statusKey];
     let statusList = document.querySelector("#status-list");
-    let statusImg = document.createElement("img");
-    statusImg.src = `https://prd-game-a-granbluefantasy.akamaized.net/assets_en/img/sp/ui/icon/status/x64/${status.img}.png`;
-    statusImg.onclick = (e) => {
-        statusImg.remove();
+    let statusElement = status.img ? document.createElement("img") : document.createElement("button");
+    if (status.img) {
+        statusElement.src = `https://gbf.wiki/Special:Redirect/file/${status.img}.png`;
+        statusElement.alt = statusKey;
+    } else {
+        statusElement.type = "button";
+        statusElement.classList.add("status-placeholder");
+        statusElement.textContent = statusKey;
+        statusElement.setAttribute("aria-label", `Remove ${statusKey} status`);
+    }
+    statusElement.onclick = () => {
+        statusElement.remove();
         activeStatuses.delete(statusKey)
         setupStatusSelect(true);
     }
-    statusList.appendChild(statusImg);
-    $(statusImg).tooltipster({side: "bottom", contentAsHTML: true}).tooltipster("content", Object.keys(status.mods).map(m=>`${m}: ${formatNum(status.mods[m])}`).join("<br>"));
+    statusList.appendChild(statusElement);
+    $(statusElement).tooltipster({side: "bottom", contentAsHTML: true})
+        .tooltipster("content", `${statusKey}<hr>${Object.keys(status.mods).map(m=>`${m}: ${formatNum(status.mods[m])}`).join("<br>")}`);
     setupStatusSelect(true);
 }
 
@@ -290,10 +299,10 @@ function dmgTypeChange(update = true) {
     let dmgModInput = document.querySelector("#dmg-mod-input");
     dmgModInput.classList.toggle("empty", dmgType != DMGTYPES.NA && dmgModInput.value == "");
     let subTableSel = document.querySelector("#sub-table-select");
-    dmgModInput.disabled = false;
+    dmgModInput.disabled = dmgType == DMGTYPES.NA;
+    document.querySelector("span:has(>#fixed-ca-select)").hidden = dmgType != DMGTYPES.CA;
     switch (dmgType) {
         case DMGTYPES.NA:
-            dmgModInput.disabled = true;
             dmgModInput.value = 100;
             break;
         case DMGTYPES.SKILL:
@@ -303,7 +312,6 @@ function dmgTypeChange(update = true) {
             }
             break;
         case DMGTYPES.CA: break;
-        case DMGTYPES.NA: break;
     }
     setupDMGCapSelect();
     setBulletPWRVis();
@@ -628,6 +636,7 @@ function makeModList() {
     }
     addMod(MODS.elem_res, getInputVal("elem-res-input"));
     addMod(MODS.echo_mod, getInputVal("echo-mod-input"));
+    addMod(MODS.fixed_ca, getInputVal("fixed-ca-select"));
     addMod(MODS.base_atk, getInputVal("base-atk-input"));
     addMod(MODS.base_def, getInputVal("enemy-def-input"));
     addMod(MODS.dmg_mod, getInputVal("dmg-mod-input"));

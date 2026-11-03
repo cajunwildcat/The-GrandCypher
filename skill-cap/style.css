@@ -55,10 +55,20 @@ input.empty {
 
 #status-list {
     display: flex;
-    
+    align-items: center;
+    gap: 0.2em;
+
     img {
         max-width: 32px;
         max-height: 32px;
+    }
+
+    .status-placeholder {
+        max-width: 12em;
+        overflow: hidden;
+        padding: 2px 4px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 
@@ -76,7 +86,8 @@ input.empty {
     overflow-y: scroll;
 }
 
-#char-emp-import-button {
+#char-emp-import-button,
+#jedmund-grid-import-button {
     font-size: 12px;
 }
 

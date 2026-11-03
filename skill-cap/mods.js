@@ -13,6 +13,7 @@ const MODS = {
     elem_atk: "elem atk",
     elem_atk_prog: "elem atk (prog)",
     counter_dmg: "counter dmg",
+    counter_dmg_amp: "counter dmg amp",
     grid_critical: "grid critical",
     weapon_ca_dmg: "weapon ca dmg",
     passive_ca_dmg: "passive ca dmg",

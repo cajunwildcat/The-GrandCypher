@@ -37,15 +37,15 @@
         </div>
         <div>
             <select id="add-mod-row-select" class="chosen-select" data-placeholder="Add a mod +"></select>
-            <select disabled id="add-status-col-select" class="chosen-select" data-placeholder="Add a Status"></select>
+            <select id="add-status-col-select" class="chosen-select" data-placeholder="Add a Status"></select>
         </div>
         <div id="status-list"></div>
         <div id="mods-table-overflow-wrapper">
             <table id="mods-input-table">
                 <tr class="header-row">
                     <th>Mod</th>
-                    <th>Grid</th>
-                    <th>Passive<br><button id="char-emp-import-button">Import EMPs</button></th>
+                    <th>Grid<br><button disabled id="jedmund-grid-import-button">Import<br>Jedmund</button></th>
+                    <th>Passive<br><button id="char-emp-import-button">Import<br>EMPs</button></th>
                     <th>Buff</th>
                 </tr>
             </table>
@@ -156,6 +156,13 @@
                     </select></span>
                 <span>Base ATK <input id="base-atk-input" /></span>
                 <span>DMG Mod <input id="dmg-mod-input" />%</span>
+                <span hidden>Fixed CA <select id="fixed-ca-select">
+                    <option>2000</option>
+                    <option>2500</option>
+                    <option>3000</option>
+                    <option>3500</option>
+                    <option>4000</option>
+</select></span>
                 <span hidden>Bullet PWR <input id="bullet-pwr-input" value="100" /></span>
                 <span><img src="./assets/Perpetuity Ring.png" /><input id="perp-ring-check" type="checkbox" /></span>
                 <span><img src="./assets/eternal wonder.jpg" /><img src="./assets/zodiac wonder.jpg" /><input id="perp-wonder-check" type="checkbox" /></span>
