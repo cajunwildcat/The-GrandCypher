@@ -123,7 +123,8 @@ const STATUSES = {
         source: "Anila",
         img: "Status Sheep",
         mods: {
-            [MODS.buff_critical]: 30,
+            // Not mapped: critical chance is only 30%, not guaranteed.
+            // [MODS.buff_critical]: 30,
             [MODS.normal_might]: 50,
         }
     },
@@ -706,7 +707,8 @@ const STATUSES = {
         source: "Leona (Grand)",
         img: "status_3110",
         mods: {
-            [MODS.buff_critical]: 50,
+            // Not mapped: critical chance is only 50%, not guaranteed.
+            // [MODS.buff_critical]: 50,
             [MODS.dmg_cap]: 10,
         }
     },
@@ -1296,7 +1298,8 @@ const STATUSES = {
         img: "status_3137",
         mods: {
             [MODS.perpetuity]: 20,
-            [MODS.buff_critical]: 50,
+            // Not mapped: critical chance is only 50%, not guaranteed.
+            // [MODS.buff_critical]: 50,
         }
     },
     "Flyer": {
@@ -1443,7 +1446,8 @@ const STATUSES = {
         img: "Status VeightAwaken",
         mods: {
             [MODS.perpetuity]: 50,
-            [MODS.buff_critical]: 30,
+            // Not mapped: critical chance is only 70%, not guaranteed.
+            // [MODS.buff_critical]: 30,
         }
     },
     "Awakening+": {
@@ -1529,7 +1533,8 @@ const STATUSES = {
         img: "status_6980",
         mods: {
             [MODS.normal_might]: 80,
-            [MODS.buff_critical]: 50,
+            // Not mapped: critical chance is only 50%, not guaranteed.
+            // [MODS.buff_critical]: 50,
         }
     },
     "Urdarbrunnr": {

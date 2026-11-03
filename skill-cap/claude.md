@@ -39,7 +39,7 @@ When mapping `character_status_effects.json` into `STATUSES` in `statuses.js`, e
 | Strength / Stamina | `strength` | Highest listed percentage; retain the full range in a comment for reassessment |
 | Jammed or enmity-style ATK Up based on low HP | `jammed` for the confirmed effects below | Highest listed percentage; retain the full range in a comment for reassessment |
 | C.A. DMG Up | `passive ca dmg` | Listed percentage; do not use `weapon ca dmg` |
-| Critical templates (`{{crit\|text\|chance\|modifier}}`) | `buff critical` | Third parameter only; ignore the displayed text and chance |
+| Critical templates (`{{crit\|text\|chance\|modifier}}`) | `buff critical` | Third parameter only, and only when the chance (second parameter) is 100%; comment out the mapping with a reason when chance is below 100% |
 | Supplemental DMG | `dmg supp` | Damage cap value, not the percentage |
 | Supplemental Normal Attack DMG | `na dmg supp` | Damage cap value |
 | Supplemental Skill DMG | `skill dmg supp` | Damage cap value |
