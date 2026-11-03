@@ -32,9 +32,6 @@ Wonders and crew ship/reactor values are saved to local browser storage so you d
 
 ## TODO:
  - Add dmg mod range support to Find mode
- - Add standardized Testing statuses to `statuses.js`
- - Add Fixed CA input field when dmg type is set to CA
- - Add CA dmg caps to `caps.js`
 
  - Add Sim mode
     - Replaces the rng results table with controls to "snapshot" the current mod list into a min, median, max value
