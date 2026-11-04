@@ -151,6 +151,52 @@ function setupClassSelect() {
     $(sel).trigger("chosen:updated");
 }
 
+function setupDMGCapContextMenu() {
+    let capSelect = document.querySelector("#dmg-cap-select");
+    let capControl = capSelect.nextElementSibling?.classList.contains("chosen-container")
+        ? capSelect.nextElementSibling
+        : capSelect;
+    let menu = document.createElement("div");
+    menu.className = "context-menu";
+    menu.setAttribute("role", "menu");
+    let copyButton = document.createElement("button");
+    copyButton.type = "button";
+    copyButton.textContent = "Copy value";
+    copyButton.setAttribute("role", "menuitem");
+    menu.appendChild(copyButton);
+    document.body.appendChild(menu);
+
+    function hideMenu() {
+        menu.classList.remove("visible");
+    }
+
+    capControl.addEventListener("contextmenu", event => {
+        event.preventDefault();
+        copyButton.disabled = !capSelect.value;
+        menu.classList.add("visible");
+        menu.style.left = `${Math.max(0, Math.min(event.clientX, window.innerWidth - menu.offsetWidth))}px`;
+        menu.style.top = `${Math.max(0, Math.min(event.clientY, window.innerHeight - menu.offsetHeight))}px`;
+    });
+
+    copyButton.addEventListener("click", async () => {
+        try {
+            await navigator.clipboard.writeText(capSelect.value);
+            hideMenu();
+        } catch (error) {
+            console.error("Could not copy the selected damage cap.", error);
+            alert("Could not copy the selected damage cap. Clipboard access may be unavailable.");
+            hideMenu();
+        }
+    });
+
+    document.addEventListener("pointerdown", event => {
+        if (!menu.contains(event.target)) hideMenu();
+    });
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") hideMenu();
+    });
+}
+
 function setupStatusSelect(update = false) {
     let sel = document.querySelector("#add-status-col-select");
     sel.innerHTML = "<option></option>";
@@ -348,7 +394,7 @@ function calcDamageUI() {
     let subTableVal = getInputVal("sub-table-select");
     switch (subTableVal) {
         case "Echo": subResults = true; subModList[MODS.echo_mod] = getInputVal("sub-table-echo-input"); break;
-        case "RNG Crit": subResults = true; subModList[MODS.grid_critical] = getInputVal("sub-table-crit-input") + (subModList[MODS.grid_critical] ?? 0); break;
+        case "RNG Crit": subResults = true; subModList[MODS.buff_critical] = getInputVal("sub-table-crit-input") + (subModList[MODS.buff_critical] ?? 0); break;
         case "DEF Down": subResults = true; subModList[MODS.def_down] = getInputVal("sub-table-def-input") + (subModList[MODS.def_down] ?? 0); break;
         case "% Cap": subResults = true; break;
         case "Custom": subResults = true; subModList = modList; modList = customModList; break;
@@ -412,7 +458,7 @@ function clearCapSel() {
 
 function findDMGCap(input) {
     let [results, checkCount, skipTypes] = calcCap(getInputVal("dmg-type-select"), makeModList(), DMGCAPS[getInputVal("hard-cap-select")], input);
-    if (results.length == 1) {
+    if (results.length == 1 || (results.lentgth > 1 && results[0].matchCount > (results[1].matchCount * 2))) {
         let cap = results[0].id;
         let capSel = document.querySelector("#dmg-cap-select");
         capSel.value = [...capSel.childNodes].find(n => n.dataset.cap == cap).innerHTML;
@@ -425,7 +471,7 @@ function findDMGCap(input) {
         fillResultTable(new Array(101).fill(0));
         clearCapSel();
         let totalSkips = skipTypes.shortRaw + skipTypes.smallCap;
-        document.querySelector("#result-match-count").innerHTML = `Double check your inputs or increase Raw.<br>${totalSkips} skipped Caps: ${skipTypes.shortRaw} short on Raw, ${skipTypes.smallCap} below smallest observed input`;
+        document.querySelector("#result-match-count").innerHTML = `${(results.length > 1)? `${results.length} possible caps` : "0 possible caps"}. Double check your inputs, increase Raw, or increase observed inputs.<br>${totalSkips} skipped Caps: ${skipTypes.shortRaw} short on Raw, ${skipTypes.smallCap} below smallest observed input`;
     }
 }
 
@@ -745,5 +791,6 @@ window.onload = () => {
     });
     inputUpdated();
     $(".chosen-select").chosen({ width: "175px" });
+    setupDMGCapContextMenu();
     document.querySelectorAll(".chosen-select").forEach(enableChosenAliasSearch);
 }
