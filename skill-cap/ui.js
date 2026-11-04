@@ -22,6 +22,13 @@ const EMPMap = {
     "Wind ATK": MODS.elem_atk,
     "Light ATK": MODS.elem_atk,
     "Dark ATK": MODS.elem_atk,
+    "DMG Cap": MODS.dmg_cap,
+    "Normal Attack DMG": MODS.na_dmg_amp,
+    "Supp. C.A. DMG": MODS.ca_dmg_supp,
+    "Special C.A. DMG Cap": MODS.sp_ca_dmg_cap,
+    "Supp. Skill DMG": MODS.skill_dmg_supp,
+    "N.A. DMG Amplify": MODS.na_dmg_amp,
+    "C.A. DMG Amplify": MODS.ca_dmg_amp
 }
 
 function setupSaveTeamControls() {
@@ -180,8 +187,8 @@ function statusSelectChanged() {
         setupStatusSelect(true);
     }
     statusList.appendChild(statusElement);
-    $(statusElement).tooltipster({side: "bottom", contentAsHTML: true})
-        .tooltipster("content", `${statusKey}<hr>${Object.keys(status.mods).map(m=>`${m}: ${formatNum(status.mods[m])}`).join("<br>")}`);
+    $(statusElement).tooltipster({ side: "bottom", contentAsHTML: true })
+        .tooltipster("content", `${statusKey}<hr>${Object.keys(status.mods).map(m => `${m}: ${formatNum(status.mods[m])}`).join("<br>")}`);
     setupStatusSelect(true);
 }
 
@@ -206,6 +213,10 @@ async function importCharEMPS() {
         else if (skill == MODS.strength) {
             if (src == "emp") val = [3, 4, 6][val - 1];
             else val += 2;
+        }
+        else if (src == "perp-ring" && s[1]) {
+            document.querySelector("#perp-ring-check").checked = true;
+            return;
         }
         let inp = document.querySelector(`#mods-input-table tr[id="${skill}"] td:nth-child(3) .mod-value-input`);
         if (!inp) addModsTableRow(skill, [0, val]);

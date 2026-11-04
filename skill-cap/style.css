@@ -57,6 +57,7 @@ input.empty {
     display: flex;
     align-items: center;
     gap: 0.2em;
+    flex-wrap: wrap;
 
     img {
         max-width: 32px;
@@ -84,6 +85,7 @@ input.empty {
 #mods-table-overflow-wrapper {
     max-height: 90vh;
     overflow-y: scroll;
+    width: min-content;
 }
 
 #char-emp-import-button,
