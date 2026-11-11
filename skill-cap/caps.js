@@ -563,6 +563,12 @@ const DMGCAPS = {
 		"thresholds": [18000, 20000, 25000, 30000],
 		"attenuations": [0.5, 0.3, 0.05, 0.01]
 	},
+	//232,500
+	"Unk8": {
+		"id": "Unk8",
+		"thresholds": [150000, 200000, 250000, 500000],
+		"attenuations": [0.8, 0.6, 0.05, 0.01]
+	},
 
 	"Mjolnir100": {
 		"id": "",

@@ -44,9 +44,10 @@ function getCustomCapInfo() {
     return cap;
 }
 
-function printCustomCap() {
+function printCustomCap(id = "NEW_CAP_ID") {
     let cap = getCustomCapInfo();
-    console.log(`\t//${formatNum(simpleSoftCap(cap))}\n\t"NEW_CAP_ID": {\n\t\t"id": "NEW_CAP_ID",\n\t\t"thresholds": [${cap.thresholds.join(", ")}],\n\t\t"attenuations": [${cap.attenuations.join(", ")}]\n\t},`);
+    let capId = JSON.stringify(String(id));
+    console.log(`\t//${formatNum(simpleSoftCap(cap))}\n\t${capId}: {\n\t\t"id": ${capId},\n\t\t"thresholds": [${cap.thresholds.join(", ")}],\n\t\t"attenuations": [${cap.attenuations.join(", ")}]\n\t},`);
 }
 
 function printCustomCapLua(id = "NEW_CAP_ID") {
