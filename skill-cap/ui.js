@@ -430,7 +430,7 @@ function calcDamageUI() {
                 if (dmgType == DMGTYPES.CA) {
                     newRaw += subModList.getMod(MODS.fixed_ca, 2000);
                 }
-                newRaw *= correctMod(subModList.getMod(MODS.grid_critical));
+                newRaw *= correctMod(subModList.getMod(MODS.critical));
 
                 let percent = 0;
                 for (let i = 0; i < boostedCap.thresholds.length - 1; i++) {
