@@ -436,7 +436,7 @@ function calcDamageUI() {
                 for (let i = 0; i < boostedCap.thresholds.length - 1; i++) {
                     ct = boostedCap.thresholds[i];
                     nt = boostedCap.thresholds[i + 1];
-                    percent += Math.min(newRaw > ct ? newRaw : 0, nt) / nt;
+                    percent += Math.min(newRaw > ct ? Math.min(newRaw,nt) - ct : 0, nt) / (nt-ct);
                 }
                 percent += Math.max(0, (newRaw / boostedCap.thresholds[boostedCap.thresholds.length - 1]) - 1)
                 return `${Math.trunc(percent * 100)}%`;
