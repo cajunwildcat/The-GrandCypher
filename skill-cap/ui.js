@@ -458,7 +458,7 @@ function clearCapSel() {
 
 function findDMGCap(input) {
     let [results, checkCount, skipTypes] = calcCap(getInputVal("dmg-type-select"), makeModList(), DMGCAPS[getInputVal("hard-cap-select")], input);
-    if (results.length == 1 || (results.lentgth > 1 && results[0].matchCount > (results[1].matchCount * 2))) {
+    if (results.length == 1 || (results.lentgth > 1 && results[0].match > (results[1].match * 2))) {
         let cap = results[0].id;
         let capSel = document.querySelector("#dmg-cap-select");
         capSel.value = [...capSel.childNodes].find(n => n.dataset.cap == cap).innerHTML;
