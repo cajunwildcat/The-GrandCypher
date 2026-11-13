@@ -707,6 +707,9 @@ function makeModList() {
     else {
         let awkSel = document.querySelector("#char-awk-select");
         switch (awkSel.value) {
+            case "Balanced":
+                addMod(MODS.passive_ca_dmg, 20);
+                break;
             case "Attack":
                 addMod(MODS.passive_ca_dmg, 25);
                 addMod(MODS.ca_dmg_cap, 15);
