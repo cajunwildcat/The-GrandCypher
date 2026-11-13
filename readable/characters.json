@@ -12598,7 +12598,7 @@
   "3040086000": {
     "pageName": "Forte",
     "name": "Forte",
-    "maxUncap": 4,
+    "maxUncap": 5,
     "rarity": "SSR",
     "element": "Dark",
     "series": null,
@@ -12610,7 +12610,7 @@
     "obtain": [
       "classic2"
     ],
-    "flbDate": null,
+    "flbDate": "2026-11-13",
     "expeditionType": "mercenary/skyfarer",
     "type": "Attack",
     "race": [
