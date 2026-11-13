@@ -191,7 +191,7 @@ function calcCap(dmgType, modList, hardCap, inputs) {
     mlc.getMod = (l, d) => getMod(mlc, l, d);
     mlc = collapseBoosts(mlc, dmgType);
     //filter out caps we never want to check
-    let caps = Object.keys(DMGCAPS).filter(key => !(key.includes("Hard") || key.includes("Mjolnir") || key.includes("NA") || key == "Assassin"));
+    let caps = Object.keys(DMGCAPS).filter(key => !(key.includes("Hard") || key.includes("Mjolnir") || key.includes("NA") || key == "Assassin" || key == "5000010a"));
     let testRaw = calcRaw(dmgType, mlc) * correctMod(mlc.getMod(MODS.critical)) * 1.05;
     let minInput = Math.min(...inputs);
     let skips = { shortRaw: 0, smallCap: 0 };
