@@ -283,6 +283,10 @@ span:has(>.sub-table-input:not(.active)) {
                 padding: 3px;
             }
         }
+
+        p.sub-table-number {
+            display: none;
+        }
     }
 }
 
