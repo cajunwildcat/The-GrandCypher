@@ -608,9 +608,11 @@ function setupAddModRowSelect() {
     allowedMods.forEach(mod => {
         let opt = document.createElement("option");
         opt.textContent = mod;
-        if (mod.includes("dmg cap") || mod.includes("dmg amp")) opt.dataset.search = mod.replace("dmg ", "");
-        if (mod.includes("elem")) opt.dataset.search = `${mod.replace("elem", "ele")}, ${mod.replace("elem", "e")}`;
-        if (mod.includes("od")) opt.dataset.search = `${mod.replace("od", "taboo")}, ${mod.replace("od", "odious")}`;
+        let aliases = [];
+        if (mod.includes("dmg cap") || mod.includes("dmg amp")) aliases.push(mod.replace("dmg ", ""));
+        if (mod.includes("elem")) aliases.push(mod.replace("elem", "ele"), mod.replace("elem", "e"));
+        if (mod.includes("od")) aliases.push(mod.replace("od", "taboo"), mod.replace("od", "odious"));
+        opt.dataset.search = aliases.join(", ");
         sel.appendChild(opt);
     });
     $(sel).trigger("chosen:updated");
