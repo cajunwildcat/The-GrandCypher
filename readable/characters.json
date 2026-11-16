@@ -30212,5 +30212,63 @@
     "artbouns": false,
     "artex": false,
     "charid": 2007
+  },
+  "3040685000": {
+    "pageName": "Ayer (Fire)",
+    "name": "Ayer",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Fire",
+    "series": null,
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "アイル",
+    "releaseDate": "2026-11-16",
+    "gender": "m",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Attack",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Ignition Bandages",
+    "weapon": [
+      "Melee"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 3060
+  },
+  "3040686000": {
+    "pageName": "Farrah (SSR)",
+    "name": "Farrah",
+    "maxUncap": 4,
+    "rarity": "SSR",
+    "element": "Water",
+    "series": null,
+    "styleName": "Default",
+    "styleId": 1,
+    "jpname": "ファラ",
+    "releaseDate": "2026-11-16",
+    "gender": "f",
+    "obtain": [
+      "premium,normal"
+    ],
+    "flbDate": null,
+    "expeditionType": "???",
+    "type": "Defense",
+    "race": [
+      "Human"
+    ],
+    "recruitWeapon": "Sword of Resolve",
+    "weapon": [
+      "Sabre"
+    ],
+    "artbouns": false,
+    "artex": false,
+    "charid": 1006
   }
 }
