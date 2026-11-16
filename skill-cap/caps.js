@@ -605,6 +605,12 @@ const DMGCAPS = {
 		"thresholds": [75000, 80000, 90000, 100000],
 		"attenuations": [0.7, 0.5, 0.05, 0.01]
 	},
+	//222,222
+	"Unk15": {
+		"id": "Unk15",
+		"thresholds": [222222, 222222, 222222, 222222],
+		"attenuations": [0, 0, 0, 0]
+	},
 
 	"Mjolnir100": {
 		"id": "",

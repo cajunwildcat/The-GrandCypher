@@ -54,7 +54,7 @@ function collapseBoosts(modList, dmgType) {
 function boostCap(capPreset, capBoost, capPen) {
     capPreset = structuredClone(capPreset);
     capPreset.thresholds = capPreset.thresholds.map(t => t + Math.ceil(t * capBoost));
-    capPreset.attenuations = capPreset.attenuations.map(a => a * capPen);
+    capPreset.attenuations = capPreset.attenuations.map(a => Math.min(1, a * capPen));
     return capPreset;
 }
 
