@@ -612,6 +612,7 @@ function setupAddModRowSelect() {
         if (mod.includes("dmg cap") || mod.includes("dmg amp")) aliases.push(mod.replace("dmg ", ""));
         if (mod.includes("elem")) aliases.push(mod.replace("elem", "ele"), mod.replace("elem", "e"));
         if (mod.includes("od")) aliases.push(mod.replace("od", "taboo"), mod.replace("od", "odious"));
+        if (mod.includes("wide open")) aliases.push(mod.replace("wide open", "dmg taken amplified"));
         opt.dataset.search = aliases.join(", ");
         sel.appendChild(opt);
     });
