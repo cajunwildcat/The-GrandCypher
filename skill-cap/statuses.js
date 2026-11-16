@@ -1599,15 +1599,15 @@ const STATUSES = {
             [MODS.ca_dmg_supp]: 300000,
         }
     },
-    // These effects have missing values; verify all effects before enabling.
-    /*
     "Zangetsu": {
         source: "Ichigo Kurosaki",
         img: "status_6580_2",
         mods: {
-            // TODO: Verify all effects and numeric values.
+            [MODS.perpetuity]: 50,
+            [MODS.sp_ca_dmg_cap]: 20
         }
     },
+    /*
     "Zeal of the Feather (SR)": {
         source: "Mahira (Event)",
         img: "",
@@ -1616,5 +1616,25 @@ const STATUSES = {
         }
     },
     */
-
+    "Power of the Boundary": {
+        source: "Orologia (Summon)",
+        img: "Status_7980_1",
+        mods: {
+            [MODS.perpetuity]: 20,
+            [MODS.dmg_cap]: 10,
+            [MODS.dmg_amp]: 10
+        }
+    },
+    "Alfheimr": {
+        source: "Freyr",
+        img: "Ability_m_1688_3",
+        mods: {
+            [MODS.normal_might]: 50,
+            [MODS.dmg_cap]: 10,
+            [MODS.skill_dmg]: 80,
+            [MODS.passive_ca_dmg]: 20,
+            [MODS.cb_dmg]: 30,
+            [MODS.cb_dmg_cap]: 20
+        }
+    }
 }
