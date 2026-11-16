@@ -612,6 +612,13 @@ const DMGCAPS = {
 		"attenuations": [0, 0, 0, 0]
 	},
 
+	//0
+	"No Cap": {
+		"id": "No Cap",
+		"thresholds": [0, 0, 0, 0],
+		"attenuations": [1, 1, 1, 1]
+	},
+
 	"Mjolnir100": {
 		"id": "",
 		"thresholds": [3000000, 4500000],
@@ -646,12 +653,12 @@ const DMGCAPS = {
 	"Hard6": {
 		"id": "",
 		"thresholds": [6000000, 7000000, 8000000],
-		"attenuations": [0.5, 0.1, 0.001]
+		"attenuations": [0.5, 0.1, 0.0001]
 	},
 	"Hard13": {
 		"id": "",
 		"thresholds": [12000000, 14000000, 15000000],
-		"attenuations": [0.5, 0.1, 0.001]
+		"attenuations": [0.5, 0.1, 0.0001]
 	},
 
 	"CAStandard": {
