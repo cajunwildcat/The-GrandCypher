@@ -69,6 +69,30 @@ Confirmed per-effect mappings and review notes:
 - If one ability has the same MODS key at multiple values, create a second status entry for the higher-value version and append `+` to that status name (for example, `Reversed Ouroboros+`). For duplicate ability names across character pages, append the source character's parenthetical qualifier (for example, `Ardent Blade (Yukata)`).
 - Ignore effects whose description starts with bolded text (`'''...'''`), as these are generally conditional effects; also ignore other lines that begin with a conditional trigger (for example, upon an enemy special or after normal attacks).
 
+## Damage-calculation precision reference
+
+Translated summary of [the July 2026 article on one-damage discrepancies](https://gbf-dmg-calc.hatenablog.com/entry/2026/07/30/184000). The author compares complete 101-value RNG tables against in-game observations and uses values unique to competing models to reject hypotheses. A value outside every candidate table indicates an input or model error, not evidence for a rounding rule. Results are confirmed only for the tested paths; untested mechanics and models that produce identical outputs remain possible.
+
+### Article sections
+
+1. **Ship and reactor bonuses are not the same operation.** The ship bonus uses a float64 multiplication followed by `ceil`, so a product slightly above an integer can round up. The reactor uses a path that avoids that floating-point overshoot. These are represented as separate steps in `correctBaseATK`.
+2. **Soft-cap thresholds round only the increase.** The game uses `base threshold + ceil(base threshold * (total cap-up points / 100))`, not a rounded or continuously scaled final threshold. The division by 100 happens before multiplying by the threshold.
+3. **Cap-up values are accumulated in percentage points.** Build each enhanced source as `base points + (base points * enhancement-increase points) / 100`, without rounding the result. Add points within cap-type groups, subtotal those groups, then combine them. Weapon sources were found to follow equipment-slot order. Only some groupings and source orders were experimentally distinguished; other sources/orderings remain unverified.
+4. **Follow-up hits use truncation at specific stages.** For normal attacks, the post-cap damage increase is rounded up before hit splitting; follow-ups are derived from the resulting integer parent hit and floored after multiplying by the follow-up rate. Over-skill multi-hit follow-ups can involve two floors. The article also finds the follow-up rate is formed in percentage points before conversion to a ratio.
+5. **Damage-taken increases have different stacking rules by attack type.** For normal attacks, follow-ups, and abilities, each source contributes its own `ceil(base * rate)`; do not sum rates and round once. Counter damage instead applies damage-taken multipliers sequentially by effect frame, rounding up after each multiplier. The observed counter order was debuff-B, unique, n-hit, then elemental critical, with some order details still unresolved.
+
+The overall conclusion is that the game uses a precision patchwork: float64 `ceil` for some stages, an error-avoiding reactor path, point-based cap-up accumulation, float64 `floor` for follow-ups, and source-by-source or frame-by-frame rounding for damage-taken increases. Tiny floating-point differences matter only when a later `ceil`, `floor`, or threshold comparison exposes them. The article explicitly reports no rounding between soft-cap application and the later damage-increase step.
+
+### Terminology used by this calculator
+
+Keep the article's distinct effects separate when translating or documenting its formulas:
+
+- `与ダメUP`: **DMG Amp**, a multiplier applied after the soft cap (`calcDamage`'s `applyAmp` stage / `MODS.dmg_amp`).
+- `与ダメ上昇`: **Supplemental Damage**, a flat addition (`calcDamage`'s `applySupp` stage / `MODS.dmg_supp`).
+- `被ダメUP`: **Damage Taken Amplified (Wide Open)**, a per-source increase to the damage the enemy takes (`calcDamage`'s `applySupp` stage / `MODS.wide_open_*`).
+
+See [`calcDamage`](./calculator.js#L125): its normal-attack path applies DMG Amp before hard-cap/echo handling, then evaluates Wide Open and Supplemental Damage in `applySupp`. Those two additions share a helper but are different mechanics and must not be conflated. The article's normal-attack order is soft cap, DMG Amp, hit splitting/hard-cap handling, Damage Taken Amplified, Supplemental Damage, then elemental resistance. The calculator has different `applySupp`/`applyAmp` ordering for Skill and Charge Attack, so do not generalize the article's normal-attack sequence to every damage type.
+
 ## Validation
 
 For behavior changes, serve this directory as static files (for example, `python -m http.server`) and test in a browser. Check both Verify and Find modes, observed-value highlighting, affected damage types, and any relevant sub-table or saved-team behavior. The page loads jQuery and Chosen from CDNs, so those features require network access. For formula changes, compare representative inputs against known results and account for the limitations listed in [readme.md](./readme.md).

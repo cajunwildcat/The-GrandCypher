@@ -262,6 +262,13 @@ span:has(>.sub-table-input:not(.active)) {
 
     .rng-number .yellow-highlight {
         background-color: rgb(255, 244, 183);
+
+        &.plus-one::before {
+            content: "↑";
+        }
+        &.minus-one::before {
+            content: "↓";
+        }
     }
 
     .rng-number .orange-highlight {

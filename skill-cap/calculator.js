@@ -154,12 +154,12 @@ function calcDamage(dmgType, capPreset, modList, hardCap, options = {}) {
         if (dmgInstanceMod > 600) return dmgs;
         return dmgs.map(d => applyCap(DMGCAPS[`Mjolnir${Math.ceil(dmgInstanceMod / 100)}00`], d));
     }
-    const applyEchoMod = (dmgs) => dmgs.map(d => d * ((modList.getMod(MODS.echo_mod) / 100) || 1));
+    const applyEchoMod = (dmgs) => dmgs.map(d => Math.floor(d * ((modList.getMod(MODS.echo_mod) / 100) || 1)));
 
     switch (dmgType) {
         case DMGTYPES.NA:
             if (modList.getMod(MODS.flurry_count, 1) > 1) {
-                dmgs = dmgs.map(d => Math.ceil(d * (1 / modList.getMod(MODS.flurry_count))));
+                dmgs = dmgs.map(d => (d * (1 / modList.getMod(MODS.flurry_count))));
             }
             let dmgsCop = dmgs;
             dmgs = applyAmp(dmgs);

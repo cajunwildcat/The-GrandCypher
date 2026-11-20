@@ -15,6 +15,10 @@ function sumArr(acc, cur) {
     return acc + cur;
 }
 
+function cleanObservedInputs() {
+    $("#observed-input")[0].value = [...new Set($("#observed-input")[0].value.split(/\W+/))].join(" ");
+}
+
 function makeSeqArray(n, cb = (i) => i) {
     return new Array(n).fill(0).map((_, i) => cb(i));
 }
