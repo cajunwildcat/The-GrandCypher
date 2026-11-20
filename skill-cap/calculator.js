@@ -158,9 +158,12 @@ function calcDamage(dmgType, capPreset, modList, hardCap, options = {}) {
 
     switch (dmgType) {
         case DMGTYPES.NA:
+            if (modList.getMod(MODS.flurry_count, 1) > 1) {
+                dmgs = dmgs.map(d => Math.ceil(d * (1 / modList.getMod(MODS.flurry_count))));
+            }
             let dmgsCop = dmgs;
             dmgs = applyAmp(dmgs);
-            dmgs.map((d, i) => d + Math.ceil(dmgsCop[i] * correctMod(MODS.unique_na_supp)))
+            dmgs.map((d, i) => d + Math.ceil(dmgsCop[i] * correctMod(MODS.unique_na_supp)));
             dmgs = applyHardCap(dmgs);
             dmgs = applyEchoMod(dmgs);
             dmgs = applySupp(dmgs);

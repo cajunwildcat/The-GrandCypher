@@ -238,15 +238,16 @@ function statusSelectChanged() {
     setupStatusSelect(true);
 }
 
-async function importCharEMPS() {
+async function importCharEMPS(importText = null) {
     if (EMPwarning && !confirm(`This will clear the "Passive" column in the mod table. Do you want to continue?\nYou can toggle this warning by typing "toggleEMPWarning()" in the dev console.`)) return;
-    let importText;
-    await navigator.clipboard.readText().then(r => importText = r);
-    try {
-        importText = JSON.parse(importText);
-    } catch (e) {
-        alert("The contents on the clipboard weren't in the expected format.")
-        return;
+    if (!importText) {
+        await navigator.clipboard.readText().then(r => importText = r);
+        try {
+            importText = JSON.parse(importText);
+        } catch (e) {
+            alert("The contents on the clipboard weren't in the expected format.")
+            return;
+        }
     }
     [...document.querySelectorAll("#mods-input-table td:nth-child(3) .mod-value-input")].forEach(inp => inp.value = "");
     importText.forEach(s => {
@@ -353,11 +354,12 @@ function inputUpdated() {
 function dmgTypeChange(update = true) {
     let dmgType = getInputVal("dmg-type-select");
     [...document.querySelectorAll("#sub-table-echo-opt, span:has(>#echo-mod-input)")].forEach(ele => ele.hidden = dmgType == DMGTYPES.SKILL);
+    document.querySelector("span:has(>#flurry-count-input)").hidden = dmgType != DMGTYPES.NA;
     let dmgModInput = document.querySelector("#dmg-mod-input");
     dmgModInput.classList.toggle("empty", dmgType != DMGTYPES.NA && dmgModInput.value == "");
-    let subTableSel = document.querySelector("#sub-table-select");
     dmgModInput.disabled = dmgType == DMGTYPES.NA;
     document.querySelector("span:has(>#fixed-ca-select)").hidden = dmgType != DMGTYPES.CA;
+    let subTableSel = document.querySelector("#sub-table-select");
     switch (dmgType) {
         case DMGTYPES.NA:
             dmgModInput.value = 100;
@@ -609,7 +611,7 @@ function setupAddModRowSelect() {
         let opt = document.createElement("option");
         opt.textContent = mod;
         let aliases = [];
-        if (mod.includes("dmg cap") || mod.includes("dmg amp")) aliases.push(mod.replace("dmg ", ""));
+        if (mod.includes("dmg cap") || mod.includes("dmg amp") || mod.includes("dmg supp")) aliases.push(mod.replace("dmg ", ""));
         if (mod.includes("elem")) aliases.push(mod.replace("elem", "ele"), mod.replace("elem", "e"));
         if (mod.includes("od")) aliases.push(mod.replace("od", "taboo"), mod.replace("od", "odious"));
         if (mod.includes("wide open")) aliases.push(mod.replace("wide open", "dmg taken amplified"));
@@ -696,6 +698,7 @@ function makeModList() {
     addMod(MODS.elem_res, getInputVal("elem-res-input"));
     addMod(MODS.echo_mod, getInputVal("echo-mod-input"));
     addMod(MODS.fixed_ca, getInputVal("fixed-ca-select"));
+    addMod(MODS.flurry_count, getInputVal("flurry-count-input"));
     addMod(MODS.base_atk, getInputVal("base-atk-input"));
     addMod(MODS.base_def, getInputVal("enemy-def-input"));
     addMod(MODS.dmg_mod, getInputVal("dmg-mod-input"));
@@ -798,4 +801,6 @@ window.onload = () => {
     $(".chosen-select").chosen({ width: "175px" });
     setupDMGCapContextMenu();
     document.querySelectorAll(".chosen-select").forEach(enableChosenAliasSearch);
+
+    inputUpdated();
 }

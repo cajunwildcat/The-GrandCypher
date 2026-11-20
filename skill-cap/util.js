@@ -28,6 +28,12 @@ function sortSet(set, condition = (a, b) => a - b) {
     return new Set(Array.from(set).sort(condition));
 }
 
+function trunc(num, decimal) {
+    num = `${num}`.split(".");
+    num[1] = num[1].slice(0,decimal)
+    return parseFloat(num.join("."));
+}
+
 function findDuplicateDamageValues(minDmgMod, maxDmgMod) {
     if (!Number.isInteger(minDmgMod) || !Number.isInteger(maxDmgMod) || minDmgMod > maxDmgMod) {
         throw new Error("Damage mod bounds must be integers with min less than or equal to max.");
