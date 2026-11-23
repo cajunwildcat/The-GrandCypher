@@ -806,20 +806,6 @@ window.onload = () => {
     $(".chosen-select").chosen({ width: "175px" });
     setupDMGCapContextMenu();
     document.querySelectorAll(".chosen-select").forEach(enableChosenAliasSearch);
-    //temp
-    document.querySelector("#saved-team-select").value = "Dark Testing";
-    $("#saved-team-select").trigger("chosen:updated");
-    $("#saved-team-select").trigger("change");
-    $("#dmg-type-select")[0].value = "0";
-    $("#dmg-type-select").trigger("change");
-    $("#dmg-type-select").trigger("chosen:updated");
-    $("#base-atk-input")[0].value = "69888";
-    $("#flurry-count-input")[0].value = "2";
-    $("#echo-mod-input")[0].value = "20";
-    $("#observed-input")[0].value = "86543  86318  86353  86617 86370 86578 ";
-    $("#add-status-col-select")[0].value = "Honorary Bloodkin";
-    $("#add-status-col-select").trigger("change");
-    $("#add-status-col-select").trigger("chosen:updated");
 
     inputUpdated();
 }
