@@ -61317,6 +61317,30 @@
     "jpname": null,
     "bullets": null
   },
+  "1040622700": {
+    "pageName": "Befouled Gauntlet",
+    "maxUncap": 3,
+    "rarity": "SSR",
+    "series": null,
+    "element": "dark",
+    "character": null,
+    "skill1": {
+      "name": "Armed Shadow",
+      "icon": "ws_skill_atk_a_6_3.png"
+    },
+    "skill2": {
+      "name": "Synchronized Artistry",
+      "icon": "ws_skill_job_weapon.png"
+    },
+    "skill3": {
+      "name": null,
+      "icon": null
+    },
+    "type": "melee",
+    "awakening": null,
+    "jpname": "魔に穢された手甲",
+    "bullets": null
+  },
   "1040700000": {
     "pageName": "Eurytos Bow",
     "maxUncap": 4,
